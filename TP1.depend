@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1787889479 source:c:\users\victo\tp1\dominios\email.cpp
+	"Email.hpp"
+
+1787889056 c:\users\victo\tp1\dominios\email.hpp
+	<string>
+
+1787890037 source:c:\users\victo\tp1\main.cpp
+	<iostream>
+	"Email.hpp"
+

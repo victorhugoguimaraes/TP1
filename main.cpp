@@ -1,9 +1,11 @@
 #include <iostream>
-
+#include "Email.hpp"
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Email e;
+    e.setValor("qualquer coisa");
+    cout << e.getValor() << endl;
     return 0;
 }
