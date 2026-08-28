@@ -12,6 +12,6 @@ public:
     void setValor(string novoValor);
 
     string getValor() const;
-};
+}:
 
 #endif
