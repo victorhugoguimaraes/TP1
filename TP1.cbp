@@ -31,7 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="C:/Users/victo/TP1/apresentacao" />
+			<Add directory="C:/Users/victo/TP1/dominios" />
+			<Add directory="C:/Users/victo/TP1/entidades" />
+			<Add directory="C:/Users/victo/TP1/interfaces" />
+			<Add directory="C:/Users/victo/TP1/servico" />
+			<Add directory="C:/Users/victo/TP1/testes" />
 		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc -static-libstdc++" />
+		</Linker>
+		<Unit filename="dominios/Email.cpp" />
+		<Unit filename="dominios/Email.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

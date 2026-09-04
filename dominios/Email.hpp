@@ -1,17 +1,22 @@
-#ifndef EMAIL_H
-#define EMAIL_H
-#include <string>
+#ifndef EMAIL_HPP
+#define EMAIL_HPP
 
-using namespace std;
-
-class Email{
+class Email {
 private:
-    string valor;
-    bool validar(const string& email) const;
-public:
-    void setValor(string novoValor);
+    char valor[256];
 
-    string getValor() const;
-}:
+    bool ehLetra(char c) const;
+    bool ehDigito(char c) const;
+    bool ehAlfanumerico(char c) const;
+    bool ehEspecial(char c) const;
+
+    bool validarLocal(const char email[], int inicio, int fim) const;
+    bool validarDominio(const char email[], int inicio, int fim) const;
+    bool validar(const char email[]) const;
+
+public:
+    const char* getValor() const;
+    void setValor(const char novoValor[]);
+};
 
 #endif
