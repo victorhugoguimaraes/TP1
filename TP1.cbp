@@ -27,6 +27,16 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="Testes">
+				<Option output="bin/Testes/TestesDominios" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Testes/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
@@ -43,7 +53,26 @@
 		</Linker>
 		<Unit filename="dominios/Email.cpp" />
 		<Unit filename="dominios/Email.hpp" />
-		<Unit filename="main.cpp" />
+		<Unit filename="dominios/Estado.cpp" />
+		<Unit filename="dominios/Estado.hpp" />
+		<Unit filename="dominios/Identificador.cpp" />
+		<Unit filename="dominios/Identificador.hpp" />
+		<Unit filename="dominios/Limite.cpp" />
+		<Unit filename="dominios/Limite.hpp" />
+		<Unit filename="dominios/Papel.cpp" />
+		<Unit filename="dominios/Papel.hpp" />
+		<Unit filename="dominios/Prioridade.cpp" />
+		<Unit filename="dominios/Prioridade.hpp" />
+		<Unit filename="dominios/Senha.cpp" />
+		<Unit filename="dominios/Senha.hpp" />
+		<Unit filename="dominios/Tamanho.cpp" />
+		<Unit filename="dominios/Tamanho.hpp" />
+		<Unit filename="main.cpp">
+			<Option target="Debug;Release" />
+		</Unit>
+		<Unit filename="testes/TestesDominios.cpp">
+			<Option target="Testes" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

@@ -73,11 +73,11 @@ bool Email::validar(const string& email) const {
     return true;
 }
 
-void Email::setValor(const string& novoValor) {
-    if (!validar(novoValor)) {
+void Email::setValor(string valor) {
+    if (!validar(valor)) {
         throw invalid_argument("Email invalido");
     }
-    valor = novoValor;
+    this->valor = valor;
 }
 
 string Email::getValor() const {

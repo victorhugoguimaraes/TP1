@@ -1,11 +1,54 @@
 # depslib dependency file v1.0
-1788554572 source:c:\users\victo\tp1\dominios\email.cpp
+1788577680 source:c:\users\victo\tp1\dominios\email.cpp
 	"Email.hpp"
 	<stdexcept>
 
-1788554686 c:\users\victo\tp1\dominios\email.hpp
+1788577680 c:\users\victo\tp1\dominios\email.hpp
+	<string>
 
-1788549528 source:c:\users\victo\tp1\main.cpp
+1788581746 source:c:\users\victo\tp1\main.cpp
 	<iostream>
+	<stdexcept>
+	<string>
+	<vector>
 	"dominios/Email.hpp"
+	"dominios/Estado.hpp"
+	"dominios/Identificador.hpp"
+	"dominios/Limite.hpp"
+	"dominios/Papel.hpp"
+	"dominios/Prioridade.hpp"
+	"dominios/Tamanho.hpp"
+
+1788576391 c:\users\victo\tp1\dominios\identificador.hpp
+	<string>
+
+1788576585 source:c:\users\victo\tp1\dominios\identificador.cpp
+	"Identificador.hpp"
+	<stdexcept>
+
+1788581242 source:c:\users\victo\tp1\dominios\estado.cpp
+	"Estado.hpp"
+
+1788581294 c:\users\victo\tp1\dominios\estado.hpp
+
+1788579788 source:c:\users\victo\tp1\dominios\limite.cpp
+	"Limite.hpp"
+	<stdexcept>
+
+1788579791 c:\users\victo\tp1\dominios\limite.hpp
+
+1788580233 source:c:\users\victo\tp1\dominios\papel.cpp
+	"Papel.hpp"
+
+1788580374 c:\users\victo\tp1\dominios\papel.hpp
+
+1788580637 source:c:\users\victo\tp1\dominios\prioridade.cpp
+	"Prioridade.hpp"
+
+1788580891 c:\users\victo\tp1\dominios\prioridade.hpp
+
+1788580965 source:c:\users\victo\tp1\dominios\tamanho.cpp
+	"Tamanho.hpp"
+
+1788580954 c:\users\victo\tp1\dominios\tamanho.hpp
 
