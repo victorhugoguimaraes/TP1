@@ -15,7 +15,7 @@ bool Email::ehEspecial(char c) const {
     return c == '.' || c == '-';
 }
 
-bool Email::validarLocal(const char email[], int inicio, int fim) const {
+bool Email::validarLocal(const string& email, int inicio, int fim) const {
     int tamanho = fim - inicio;
     if (tamanho == 0 || tamanho > 64)
         return false;
@@ -32,13 +32,13 @@ bool Email::validarLocal(const char email[], int inicio, int fim) const {
     return true;
 }
 
-bool Email::validarDominio(const char email[], int inicio, int fim) const {
+bool Email::validarDominio(const string& email, int inicio, int fim) const {
     int tamanho = fim - inicio;
     if (tamanho == 0 || tamanho > 255)
         return false;
     int inicioParte = inicio;
     for (int i = inicio; i <= fim; i++) {
-        if (email[i] == '.' || i == fim) {
+        if (i == fim || email[i] == '.') {
             int tamanhoParte = i - inicioParte;
             if (tamanhoParte == 0)
                 return false;
@@ -54,16 +54,15 @@ bool Email::validarDominio(const char email[], int inicio, int fim) const {
     return true;
 }
 
-bool Email::validar(const char email[]) const {
-    int tamanho = 0;
+bool Email::validar(const string& email) const {
+    int tamanho = email.length();
     int posArroba = -1;
-    while (email[tamanho] != '\0') {
-        if (email[tamanho] == '@') {
+    for (int i = 0; i < tamanho; i++) {
+        if (email[i] == '@') {
             if (posArroba != -1)
                 return false;
-            posArroba = tamanho;
+            posArroba = i;
         }
-        tamanho++;
     }
     if (posArroba <= 0 || posArroba == tamanho - 1)
         return false;
@@ -74,18 +73,13 @@ bool Email::validar(const char email[]) const {
     return true;
 }
 
-void Email::setValor(const char novoValor[]) {
+void Email::setValor(const string& novoValor) {
     if (!validar(novoValor)) {
         throw invalid_argument("Email invalido");
     }
-    int i = 0;
-    while (novoValor[i] != '\0') {
-        valor[i] = novoValor[i];
-        i++;
-    }
-    valor[i] = '\0';
+    valor = novoValor;
 }
 
-const char* Email::getValor() const {
+string Email::getValor() const {
     return valor;
 }
