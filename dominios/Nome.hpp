@@ -6,7 +6,6 @@
 class Nome {
 private:
     bool ehLetra(char c) const;
-    bool ehDigito(char c) const;
     std::string nome;
     bool validar(const std::string&) const;
 public:
