@@ -1,16 +1,17 @@
 #ifndef SENHA_HPP_INCLUDED
 #define SENHA_HPP_INCLUDED
 
-using namespace std;
+#include <string>
 
-class Senha{
+class Senha {
     private:
-        static const int LIMITE = 5;
-        string valor;
-        bool validar(const string&) const;
+        bool ehLetra(char c) const;
+        bool ehDigito(char c) const;
+        std::string senha;
+        bool validar(const std::string&) const;
     public:
-        bool setValor(string);
-        string getValor() const;
-};
+        bool setValor(std::string);
+        std::string getValor() const;
+    };
 
 #endif // SENHA_HPP_INCLUDED
