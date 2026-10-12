@@ -43,7 +43,7 @@ bool Senha::validar(const string& senha) const{
 
 bool Senha::setValor(string senha){
     if (!validar(senha))
-        return false;
+        throw invalid_argument("Senha invalida");
     this->senha = senha;
     return true;
 }

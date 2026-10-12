@@ -67,6 +67,17 @@
 		<Unit filename="dominios/Senha.hpp" />
 		<Unit filename="dominios/Tamanho.cpp" />
 		<Unit filename="dominios/Tamanho.hpp" />
+		<Unit filename="dominios/Timestamp.cpp" />
+		<Unit filename="dominios/Timestamp.hpp" />
+		<Unit filename="entidades/CartaoAtividade.cpp" />
+		<Unit filename="entidades/CartaoAtividade.hpp" />
+		<Unit filename="entidades/Cartao.hpp" />
+		<Unit filename="entidades/Pessoa.cpp" />
+		<Unit filename="entidades/Pessoa.hpp" />
+		<Unit filename="entidades/Projeto.cpp" />
+		<Unit filename="entidades/Projeto.hpp" />
+		<Unit filename="entidades/Quadro.cpp" />
+		<Unit filename="entidades/Quadro.hpp" />
 		<Unit filename="main.cpp">
 			<Option target="Debug;Release" />
 		</Unit>

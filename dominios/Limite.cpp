@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 void Limite::setLimite(int limite) {
-    if(limite > limiteMax)
+    if(limite < 1 || limite > limiteMax)
     {
         throw invalid_argument("Limite máximo atingido");
     }
@@ -12,4 +12,3 @@ void Limite::setLimite(int limite) {
 int Limite::getLimite() const {
     return limite;
 }
-

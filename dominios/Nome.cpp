@@ -24,7 +24,7 @@ bool Nome::validar(const string& nome) const{
 
     for(int i = 0; i < tamanho; i++){
         if (nome[i]==' '){
-            if (!ehLetra(nome[i+1])){
+            if (i + 1 >= tamanho || !ehLetra(nome[i+1])){
                 return false;
             }
         }
@@ -37,7 +37,7 @@ bool Nome::validar(const string& nome) const{
 
 bool Nome::setNome(string nome){
     if (!validar(nome))
-        return false;
+        throw invalid_argument("Nome invalido");
     this->nome = nome;
     return true;
 }

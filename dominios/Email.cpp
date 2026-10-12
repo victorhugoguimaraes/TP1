@@ -3,7 +3,7 @@
 using namespace std;
 
 bool Email::ehLetra(char c) const {
-    return c >= 'a' && c <= 'z';
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
 bool Email::ehDigito(char c) const {
     return c >= '0' && c <= '9';

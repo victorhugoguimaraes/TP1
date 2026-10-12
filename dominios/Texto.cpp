@@ -41,7 +41,7 @@ bool Texto::validar(const string& texto) const{
 
     for(int i = 0; i < tamanho; i++){
         if (ehPontuacao(texto[i])){
-            if (ehPontuacao(texto[i+1])){
+            if (i + 1 < tamanho && ehPontuacao(texto[i+1])){
                 return false;
             }
         }
@@ -54,7 +54,7 @@ bool Texto::validar(const string& texto) const{
 
 bool Texto::setTexto(string texto){
     if (!validar(texto))
-        return false;
+        throw invalid_argument("Texto invalido");
     this->texto = texto;
     return true;
 }
