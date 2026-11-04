@@ -81,7 +81,19 @@
 		<Unit filename="main.cpp">
 			<Option target="Debug;Release" />
 		</Unit>
-		<Unit filename="testes/TestesDominios.cpp">
+		<Unit filename="testes/TesteDominios.cpp">
+			<Option target="Testes" />
+		</Unit>
+		<Unit filename="testes/TesteDominios.h">
+			<Option target="Testes" />
+		</Unit>
+		<Unit filename="testes/TesteEntidade.cpp">
+			<Option target="Testes" />
+		</Unit>
+		<Unit filename="testes/TesteEntidade.h">
+			<Option target="Testes" />
+		</Unit>
+		<Unit filename="testes/mainTestes.cpp">
 			<Option target="Testes" />
 		</Unit>
 		<Extensions>

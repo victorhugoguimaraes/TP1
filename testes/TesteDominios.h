@@ -1,5 +1,5 @@
-#ifndef TESTES_H_INCLUDED
-#define TESTES_H_INCLUDED
+#ifndef TESTE_DOMINIOS_H_INCLUDED
+#define TESTE_DOMINIOS_H_INCLUDED
 
 #include "../dominios/Email.hpp"
 #include "../dominios/Estado.hpp"
@@ -12,10 +12,6 @@
 #include "../dominios/Tamanho.hpp"
 #include "../dominios/Texto.hpp"
 #include "../dominios/Timestamp.hpp"
-#include "../entidades/CartaoAtividade.hpp"
-#include "../entidades/Pessoa.hpp"
-#include "../entidades/Projeto.hpp"
-#include "../entidades/Quadro.hpp"
 
 class TUEmail {
 private:
@@ -160,62 +156,6 @@ public:
 class TUTamanho {
 private:
     Tamanho* tamanho;
-    int estado;
-    void setUp();
-    void tearDown();
-    void testarCenarioSucesso();
-    void testarCenarioFalha();
-public:
-    static const int SUCESSO = 0;
-    static const int FALHA = -1;
-    int run();
-};
-
-class TUPessoa {
-private:
-    Pessoa* pessoa;
-    int estado;
-    void setUp();
-    void tearDown();
-    void testarCenarioSucesso();
-    void testarCenarioFalha();
-public:
-    static const int SUCESSO = 0;
-    static const int FALHA = -1;
-    int run();
-};
-
-class TUProjeto {
-private:
-    Projeto* projeto;
-    int estado;
-    void setUp();
-    void tearDown();
-    void testarCenarioSucesso();
-    void testarCenarioFalha();
-public:
-    static const int SUCESSO = 0;
-    static const int FALHA = -1;
-    int run();
-};
-
-class TUQuadro {
-private:
-    Quadro* quadro;
-    int estado;
-    void setUp();
-    void tearDown();
-    void testarCenarioSucesso();
-    void testarCenarioFalha();
-public:
-    static const int SUCESSO = 0;
-    static const int FALHA = -1;
-    int run();
-};
-
-class TUCartaoAtividade {
-private:
-    CartaoAtividade* cartao;
     int estado;
     void setUp();
     void tearDown();
