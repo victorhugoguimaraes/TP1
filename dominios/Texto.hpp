@@ -1,5 +1,5 @@
-#ifndef TEXTO_HPP_INCLUDED
-#define TEXTO_HPP_INCLUDED
+#ifndef TEXTO_HPP
+#define TEXTO_HPP
 
 #include <string>
 
@@ -81,4 +81,4 @@ public:
     std::string getTexto() const;
 };
 
-#endif // TEXTO_HPP_INCLUDED
+#endif // TEXTO_HPP

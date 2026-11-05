@@ -1,5 +1,5 @@
-#ifndef SENHA_HPP_INCLUDED
-#define SENHA_HPP_INCLUDED
+#ifndef SENHA_HPP
+#define SENHA_HPP
 
 #include <string>
 
@@ -60,4 +60,4 @@ class Senha {
         std::string getValor() const;
     };
 
-#endif // SENHA_HPP_INCLUDED
+#endif // SENHA_HPP

@@ -1,5 +1,5 @@
-#ifndef NOME_HPP_INCLUDED
-#define NOME_HPP_INCLUDED
+#ifndef NOME_HPP
+#define NOME_HPP
 
 #include <string>
 
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif // NOME_HPP_INCLUDED
+#endif // NOME_HPP

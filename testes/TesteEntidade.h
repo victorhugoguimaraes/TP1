@@ -1,5 +1,5 @@
-#ifndef TESTE_ENTIDADE_H_INCLUDED
-#define TESTE_ENTIDADE_H_INCLUDED
+#ifndef TESTE_ENTIDADE_H
+#define TESTE_ENTIDADE_H
 
 #include "../entidades/CartaoAtividade.hpp"
 #include "../entidades/Pessoa.hpp"

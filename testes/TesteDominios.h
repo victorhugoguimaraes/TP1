@@ -1,5 +1,5 @@
-#ifndef TESTE_DOMINIOS_H_INCLUDED
-#define TESTE_DOMINIOS_H_INCLUDED
+#ifndef TESTE_DOMINIOS_H
+#define TESTE_DOMINIOS_H
 
 #include "../dominios/Email.hpp"
 #include "../dominios/Estado.hpp"
