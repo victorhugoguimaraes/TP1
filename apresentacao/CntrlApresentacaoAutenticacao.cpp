@@ -4,10 +4,7 @@
 #include <stdexcept>
 #include <string>
 
-CntrlApresentacaoAutenticacao::CntrlApresentacaoAutenticacao(
-    ServicoAutenticacao& servico
-) : servico(servico) {
-}
+CntrlApresentacaoAutenticacao::CntrlApresentacaoAutenticacao(ServicoAutenticacao& servico) : servico(servico) {}
 
 bool CntrlApresentacaoAutenticacao::autenticar(Email& emailAutenticacao){
   string entradaEmail;
