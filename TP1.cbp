@@ -41,12 +41,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="C:/Users/victo/TP1/apresentacao" />
-			<Add directory="C:/Users/victo/TP1/dominios" />
-			<Add directory="C:/Users/victo/TP1/entidades" />
-			<Add directory="C:/Users/victo/TP1/interfaces" />
-			<Add directory="C:/Users/victo/TP1/servico" />
-			<Add directory="C:/Users/victo/TP1/testes" />
+			<Add option="-std=c++11" />
+			<Add directory="apresentacao" />
+			<Add directory="dominios" />
+			<Add directory="entidades" />
+			<Add directory="interfaces" />
+			<Add directory="servico" />
+			<Add directory="testes" />
 		</Compiler>
 		<Linker>
 			<Add option="-static-libgcc -static-libstdc++" />
@@ -59,6 +60,8 @@
 		<Unit filename="dominios/Identificador.hpp" />
 		<Unit filename="dominios/Limite.cpp" />
 		<Unit filename="dominios/Limite.hpp" />
+		<Unit filename="dominios/Nome.cpp" />
+		<Unit filename="dominios/Nome.hpp" />
 		<Unit filename="dominios/Papel.cpp" />
 		<Unit filename="dominios/Papel.hpp" />
 		<Unit filename="dominios/Prioridade.cpp" />
@@ -67,20 +70,25 @@
 		<Unit filename="dominios/Senha.hpp" />
 		<Unit filename="dominios/Tamanho.cpp" />
 		<Unit filename="dominios/Tamanho.hpp" />
+		<Unit filename="dominios/Texto.cpp" />
+		<Unit filename="dominios/Texto.hpp" />
 		<Unit filename="dominios/Timestamp.cpp" />
 		<Unit filename="dominios/Timestamp.hpp" />
 		<Unit filename="entidades/CartaoAtividade.cpp" />
 		<Unit filename="entidades/CartaoAtividade.hpp" />
-		<Unit filename="entidades/Cartao.hpp" />
 		<Unit filename="entidades/Pessoa.cpp" />
 		<Unit filename="entidades/Pessoa.hpp" />
 		<Unit filename="entidades/Projeto.cpp" />
 		<Unit filename="entidades/Projeto.hpp" />
 		<Unit filename="entidades/Quadro.cpp" />
 		<Unit filename="entidades/Quadro.hpp" />
-		<Unit filename="main.cpp">
-			<Option target="Debug;Release" />
-		</Unit>
+		<Unit filename="interfaces/ServicoAutenticacao.hpp" />
+		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.cpp" />
+		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.hpp" />
+		<Unit filename="servico/ContainerPessoa.cpp" />
+		<Unit filename="servico/ContainerPessoa.hpp" />
+		<Unit filename="servico/CntrlServicoAutenticacao.cpp" />
+		<Unit filename="servico/CntrlServicoAutenticacao.hpp" />
 		<Unit filename="testes/TesteDominios.cpp">
 			<Option target="Testes" />
 		</Unit>
