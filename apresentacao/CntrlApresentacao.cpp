@@ -41,7 +41,7 @@ void informarResultado(bool sucesso, const string &sucessoTexto, const string &f
         cout << falhaTexto << endl;
 }
 
-} // namespace
+}
 
 CntrlApresentacao::CntrlApresentacao(ServicoPessoa &pessoas, ServicoProjeto &projetos, ServicoQuadro &quadros,
                                      ServicoCartao &cartoes, ServicoRelatorio &relatorios,
