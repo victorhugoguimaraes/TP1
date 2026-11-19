@@ -3,33 +3,47 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+using namespace std;
 
-CntrlApresentacaoAutenticacao::CntrlApresentacaoAutenticacao(ServicoAutenticacao& servico) : servico(servico) {}
+CntrlApresentacaoAutenticacao::CntrlApresentacaoAutenticacao(ServicoAutenticacao& servico, ServicoPessoa& pessoas) : servico(servico), pessoas(pessoas) {}
 
 bool CntrlApresentacaoAutenticacao::autenticar(Email& emailAutenticacao){
   string entradaEmail;
   string entradaSenha;
 
-  cout<< "Email: ";
-  if (!std::getline(std::cin, entradaEmail))
-    return false;
-
-  cout<< "Senha: ";
-  if (!std::getline(std::cin, entradaSenha))
-    return false;
-
   Email email;
   Senha senha;
 
-  try { 
-  email.setValor(entradaEmail);
-  senha.setValor(entradaSenha);
-  } catch (const invalid_argument& erro){
-    cout<<"Dado invalido: " << erro.what() << '\n';
-    return false;
+  while (true) {
+    cout << "Email: ";
+    if (!getline(cin, entradaEmail))
+      return false;
+    try {
+      email.setValor(entradaEmail);
+      break;
+    } catch (const invalid_argument& erro) {
+      cout << "Dado invalido: " << erro.what() << '\n';
+    }
   }
+
+  while (true) {
+    cout << "Senha: ";
+    if (!getline(cin, entradaSenha))
+      return false;
+    try {
+      senha.setValor(entradaSenha);
+      break;
+    } catch (const invalid_argument& erro) {
+      cout << "Dado invalido: " << erro.what() << '\n';
+    }
+  }
+
   if(!servico.autenticar(email, senha)) {
-    cout <<"Email ou senha invalidos.\n";
+    Pessoa pessoa;
+    if (!pessoas.consultar(email, pessoa))
+      cout << "Nao foi possivel entrar: email nao cadastrado.\n";
+    else
+      cout << "Nao foi possivel entrar: senha incorreta.\n";
     return false;
   }
 

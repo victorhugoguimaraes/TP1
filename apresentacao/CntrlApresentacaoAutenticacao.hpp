@@ -2,6 +2,7 @@
 #define CNTRLAPRESENTACAOAUTENTICACAO_H
 
 #include "../interfaces/ServicoAutenticacao.hpp"
+#include "../interfaces/ServicoPessoa.hpp"
 
 /**
  * @class CntrlApresentacaoAutenticacao
@@ -16,15 +17,14 @@ class CntrlApresentacaoAutenticacao{
        * @brief Referencia ao servico responsavel por verificar as credenciais.
        */
       ServicoAutenticacao& servico;
+      ServicoPessoa& pessoas;
 
    public:
       /**
        * @brief Associa a apresentacao ao servico de autenticacao.
        * @param servico Servico que deve permanecer existente durante o uso da apresentacao.
        */
-      explicit CntrlApresentacaoAutenticacao(
-      ServicoAutenticacao&  servico
-      );
+      CntrlApresentacaoAutenticacao(ServicoAutenticacao& servico, ServicoPessoa& pessoas);
 
       /**
        * @brief Solicita e valida as credenciais pelo terminal.

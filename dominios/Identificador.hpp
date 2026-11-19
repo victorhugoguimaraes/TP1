@@ -14,24 +14,12 @@ using namespace std;
  */
 class Identificador{
     private:
+        static const int TAMANHO_IDENTIFICADOR = 6;
+        static const int QUANTIDADE_LETRAS = 3;
         /**
          * @brief Armazena o texto do identificador.
          */
         string identificador;
-
-        /**
-         * @brief Verifica se um caractere é uma letra alfabética (a-z, A-Z).
-         * @param c O caractere a ser verificado.
-         * @return true se for uma letra, false caso contrário.
-         */
-        bool ehLetra(char c) const;
-
-        /**
-         * @brief Verifica se um caractere é um dígito numérico (0-9).
-         * @param c O caractere a ser verificado.
-         * @return true se for um dígito, false caso contrário.
-         */
-        bool ehDigito(char c) const;
 
         /**
          * @brief Realiza a validação das regras de formato do identificador interno.
@@ -49,7 +37,7 @@ class Identificador{
         /**
          * @brief Tenta atualizar o identificador com um novo valor, verificando se é válido.
          * @param identificador O novo código identificador a ser validado e atribuído.
-         * @throws std::invalid_argument Se a string não possuir 6 caracteres no formato adequado ("Identificador invalido").
+         * @throws invalid_argument Se a string não possuir 6 caracteres no formato adequado ("Identificador invalido").
          */
         void setIdentificador(string identificador);
 

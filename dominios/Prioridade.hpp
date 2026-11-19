@@ -26,7 +26,7 @@ class Prioridade{
         /**
          * @brief Valida e define o novo nível de prioridade contanto que pertença ao enumerador Nivel.
          * @param prioridade O novo nível do tipo Prioridade::Nivel a ser atribuído.
-         * @throws std::invalid_argument Se o valor fornecido for inválido ou não mapeado ("Prioridade invalida").
+         * @throws invalid_argument Se o valor fornecido for inválido ou não mapeado ("Prioridade invalida").
          */
         void setPrioridade(Nivel prioridade);
 

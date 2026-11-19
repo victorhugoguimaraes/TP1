@@ -28,7 +28,7 @@ class Papel{
          * atribuição explícita, aceitando apenas @ref Gestor ou @ref Desenvolvedor.
          *
          * @param cargo O novo cargo do tipo Papel::Cargo a ser atribuído.
-         * @throws std::invalid_argument Se o cargo fornecido for inválido ou igual a Nenhum ("Papel invalido").
+         * @throws invalid_argument Se o cargo fornecido for inválido ou igual a Nenhum ("Papel invalido").
          */
         void setCargo(Cargo cargo);
 

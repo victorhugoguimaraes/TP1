@@ -1,6 +1,7 @@
 #include "TesteDominios.h"
 
 #include <stdexcept>
+using namespace std;
 
 namespace {
 
@@ -9,7 +10,7 @@ void testarFalha(Funcao funcao, int& estado) {
     try {
         funcao();
         estado = -1;
-    } catch (const std::invalid_argument&) {
+    } catch (const invalid_argument&) {
     }
 }
 
@@ -23,6 +24,9 @@ void TUEmail::testarCenarioSucesso() {
 }
 void TUEmail::testarCenarioFalha() {
     testarFalha([this] { email->setValor("email-invalido"); }, estado);
+    testarFalha([this] { email->setValor("Parte@dominio"); }, estado);
+    testarFalha([this] { email->setValor("parte-.local@dominio"); }, estado);
+    testarFalha([this] { email->setValor("parte@-dominio"); }, estado);
 }
 int TUEmail::run() {
     setUp();
@@ -37,9 +41,13 @@ void TUNome::tearDown() { delete nome; }
 void TUNome::testarCenarioSucesso() {
     nome->setNome("Victor Hugo");
     if (nome->getNome() != "Victor Hugo") estado = FALHA;
+    nome->setNome("Abcdefghijklmno");
+    if (nome->getNome() != "Abcdefghijklmno") estado = FALHA;
 }
 void TUNome::testarCenarioFalha() {
     testarFalha([this] { nome->setNome(" Victor"); }, estado);
+    testarFalha([this] { nome->setNome("Victor  Hugo"); }, estado);
+    testarFalha([this] { nome->setNome("Victor1"); }, estado);
 }
 int TUNome::run() {
     setUp();
@@ -57,6 +65,9 @@ void TUSenha::testarCenarioSucesso() {
 }
 void TUSenha::testarCenarioFalha() {
     testarFalha([this] { senha->setValor("abcde"); }, estado);
+    testarFalha([this] { senha->setValor("12345"); }, estado);
+    testarFalha([this] { senha->setValor("Ab12"); }, estado);
+    testarFalha([this] { senha->setValor("Abc1!"); }, estado);
 }
 int TUSenha::run() {
     setUp();
@@ -74,6 +85,9 @@ void TUTexto::testarCenarioSucesso() {
 }
 void TUTexto::testarCenarioFalha() {
     testarFalha([this] { texto->setTexto("texto invalido"); }, estado);
+    testarFalha([this] { texto->setTexto("Texto.. invalido."); }, estado);
+    testarFalha([this] { texto->setTexto("Texto invalido!"); }, estado);
+    testarFalha([this] { texto->setTexto("Texto1"); }, estado);
 }
 int TUTexto::run() {
     setUp();
@@ -88,9 +102,15 @@ void TUTimestamp::tearDown() { delete timestamp; }
 void TUTimestamp::testarCenarioSucesso() {
     timestamp->setTimestamp("29-FEV-2024-23:59");
     if (timestamp->getTimestamp() != "29-FEV-2024-23:59") estado = FALHA;
+    timestamp->setTimestamp("31-DEZ-2099-23:59");
+    if (timestamp->getTimestamp() != "31-DEZ-2099-23:59") estado = FALHA;
 }
 void TUTimestamp::testarCenarioFalha() {
     testarFalha([this] { timestamp->setTimestamp("29-FEV-2023-12:00"); }, estado);
+    testarFalha([this] { timestamp->setTimestamp("31-ABR-2024-12:00"); }, estado);
+    testarFalha([this] { timestamp->setTimestamp("01-JAN-1999-12:00"); }, estado);
+    testarFalha([this] { timestamp->setTimestamp("01-JAN-2100-12:00"); }, estado);
+    testarFalha([this] { timestamp->setTimestamp("01-JAN-2024-24:00"); }, estado);
 }
 int TUTimestamp::run() {
     setUp();
@@ -105,9 +125,13 @@ void TUIdentificador::tearDown() { delete identificador; }
 void TUIdentificador::testarCenarioSucesso() {
     identificador->setIdentificador("Abc123");
     if (identificador->getIdentificador() != "Abc123") estado = FALHA;
+    identificador->setIdentificador("ABC123");
+    if (identificador->getIdentificador() != "ABC123") estado = FALHA;
 }
 void TUIdentificador::testarCenarioFalha() {
     testarFalha([this] { identificador->setIdentificador("abc12"); }, estado);
+    testarFalha([this] { identificador->setIdentificador("AB1234"); }, estado);
+    testarFalha([this] { identificador->setIdentificador("ABC12A"); }, estado);
 }
 int TUIdentificador::run() {
     setUp();
@@ -122,9 +146,12 @@ void TULimite::tearDown() { delete limite; }
 void TULimite::testarCenarioSucesso() {
     limite->setLimite(25);
     if (limite->getLimite() != 25) estado = FALHA;
+    limite->setLimite(1);
+    if (limite->getLimite() != 1) estado = FALHA;
 }
 void TULimite::testarCenarioFalha() {
     testarFalha([this] { limite->setLimite(26); }, estado);
+    testarFalha([this] { limite->setLimite(0); }, estado);
 }
 int TULimite::run() {
     setUp();

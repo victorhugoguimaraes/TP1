@@ -1,28 +1,8 @@
 #include "Texto.hpp"
+#include "Utilitario.hpp"
 #include <stdexcept>
 
 using namespace std;
-
-bool Texto::ehMaius(char c) const {
-    return (c >= 'A' && c <= 'Z');
-}
-
-bool Texto::ehLetra(char c) const {
-    return (c >= 'a' && c <= 'z') || ehMaius(c);
-}
-
-bool Texto::ehDigito(char c) const {
-    return c >= '0' && c <= '9';
-}
-
-bool Texto::ehAlfanumerico(char c) const {
-    return ehLetra(c) || ehDigito(c);
-}
-
-bool Texto::ehPontuacao(char c) const {
-    std::string pontuacao = ",;.:?!";
-    return pontuacao.find(c) != std::string::npos;
-}
 
 string Texto::getTexto() const{
     return texto;
@@ -31,21 +11,21 @@ string Texto::getTexto() const{
 bool Texto::validar(const string& texto) const{
     int tamanho = texto.length();
 
-    if ((tamanho > 30)||(tamanho == 0)){
+    if ((tamanho > TAMANHO_MAXIMO_TEXTO)||(tamanho == 0)){
         return false;
     }
 
-    if ((texto[tamanho-1]!='.')||(!ehMaius(texto[0]))) {
+    if ((texto[tamanho-1]!='.')||(!Utilitario::ehMaiuscula(texto[0]))) {
         return false;
     }
 
     for(int i = 0; i < tamanho; i++){
-        if (ehPontuacao(texto[i])){
-            if (i + 1 < tamanho && ehPontuacao(texto[i+1])){
+        if (Utilitario::ehPontuacao(texto[i])){
+            if (i + 1 < tamanho && Utilitario::ehPontuacao(texto[i+1])){
                 return false;
             }
         }
-        else if ((!ehAlfanumerico(texto[i]))&&(texto[i]!=' ')){
+        else if ((!Utilitario::ehAlfanumerico(texto[i]))&&(texto[i]!=' ')){
             return false;
         }
     }
@@ -53,8 +33,20 @@ bool Texto::validar(const string& texto) const{
     }
 
 bool Texto::setTexto(string texto){
-    if (!validar(texto))
-        throw invalid_argument("Texto invalido");
+    if (texto.empty())
+        throw invalid_argument("Texto invalido: nao pode ser vazio");
+    if (texto.length() > TAMANHO_MAXIMO_TEXTO)
+        throw invalid_argument("Texto invalido: limite maximo de 30 caracteres");
+    if (!Utilitario::ehMaiuscula(texto[0]))
+        throw invalid_argument("Texto invalido: deve comecar com letra maiuscula");
+    if (texto[texto.length() - 1] != '.')
+        throw invalid_argument("Texto invalido: deve terminar com ponto");
+    for (int i = 0; i < static_cast<int>(texto.length()); ++i) {
+        if (Utilitario::ehPontuacao(texto[i]) && i + 1 < static_cast<int>(texto.length()) && Utilitario::ehPontuacao(texto[i + 1]))
+            throw invalid_argument("Texto invalido: nao use sinais de pontuacao consecutivos");
+        if (!Utilitario::ehAlfanumerico(texto[i]) && texto[i] != ' ' && !Utilitario::ehPontuacao(texto[i]))
+            throw invalid_argument("Texto invalido: use letras, numeros, espacos e pontuacao");
+    }
     this->texto = texto;
     return true;
 }

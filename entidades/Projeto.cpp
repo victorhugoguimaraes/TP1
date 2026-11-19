@@ -8,6 +8,14 @@ Identificador Projeto::getIdentificador() const {
     return identificador;
 }
 
+void Projeto::setGestor(Email gestor) {
+    this->gestor = gestor;
+}
+
+Email Projeto::getGestor() const {
+    return gestor;
+}
+
 void Projeto::setNome(Nome nome) {
     this->nome = nome;
 }
@@ -46,4 +54,12 @@ void Projeto::adicionarQuadro(Quadro* quadro) {
 
 vector<Quadro*> Projeto::getQuadros() const {
     return quadros;
+}
+
+void Projeto::adicionarPessoa(Pessoa* pessoa) {
+    pessoas.push_back(pessoa);
+}
+
+vector<Pessoa*> Projeto::getPessoas() const {
+    return pessoas;
 }

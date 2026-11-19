@@ -26,7 +26,7 @@ class Tamanho{
         /**
          * @brief Valida e altera a escala do tamanho contanto que pertença ao enumerador Nivel.
          * @param tamanho O novo nível do tipo Tamanho::Nivel a ser atribuído.
-         * @throws std::invalid_argument Se o valor fornecido for inválido ou não mapeado ("Tamanho invalido").
+         * @throws invalid_argument Se o valor fornecido for inválido ou não mapeado ("Tamanho invalido").
          */
         void setTamanho(Nivel tamanho);
 

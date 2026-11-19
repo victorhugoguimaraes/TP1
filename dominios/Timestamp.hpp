@@ -14,6 +14,11 @@ using namespace std;
  */
 class Timestamp {
 private:
+    static const int TAMANHO_TIMESTAMP_CURTO = 16;
+    static const int TAMANHO_TIMESTAMP_LONGO = 17;
+    static const int ANO_MINIMO = 2000;
+    static const int ANO_MAXIMO = 2099;
+    static const int QUANTIDADE_MESES = 12;
     /**
      * @brief Armazena a string do carimbo de data e hora validado.
      */
@@ -43,7 +48,7 @@ public:
      * critérios cronológicos ou estruturais, a alteração é abortada e uma exceção é lançada.
      *
      * @param timestamp A string do carimbo proposto.
-     * @throws std::invalid_argument Se a string falhar nos critérios de validação ("Timestamp invalido").
+     * @throws invalid_argument Se a string falhar nos critérios de validação ("Timestamp invalido").
      */
     void setTimestamp(const string& timestamp);
 
@@ -56,7 +61,7 @@ public:
     /**
      * @brief Método alternativo (alias) para definir o valor do timestamp.
      * @param timestamp A string do carimbo proposto.
-     * @throws std::invalid_argument Se a string falhar nos critérios de validação ("Timestamp invalido").
+     * @throws invalid_argument Se a string falhar nos critérios de validação ("Timestamp invalido").
      */
     void setValor(const string& timestamp);
 

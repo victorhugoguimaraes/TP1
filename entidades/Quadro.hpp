@@ -14,6 +14,7 @@ class CartaoAtividade;
 class Quadro {
     private:
         Identificador identificador;
+        Identificador projeto;
         Nome nome;
         Limite limite;
         vector<CartaoAtividade*> cartoes;
@@ -21,6 +22,8 @@ class Quadro {
     public:
         void setIdentificador(Identificador identificador);
         Identificador getIdentificador() const;
+        void setProjeto(Identificador projeto);
+        Identificador getProjeto() const;
         void setNome(Nome nome);
         Nome getNome() const;
         void setLimite(Limite limite);

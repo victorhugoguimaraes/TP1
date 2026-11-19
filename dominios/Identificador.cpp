@@ -1,24 +1,17 @@
 #include "Identificador.hpp"
+#include "Utilitario.hpp"
 #include <stdexcept>
-
-bool Identificador::ehLetra(char c) const {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
-}
-
-bool Identificador::ehDigito(char c) const {
-    return c >= '0' && c <= '9';
-}
 
 bool Identificador::validacaoIdentificador() const {
     int tamanho = identificador.length();
-    if(tamanho != 6)
+    if(tamanho != TAMANHO_IDENTIFICADOR)
     {
         return false;
     }
 
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < QUANTIDADE_LETRAS; i++)
     {   
-        if(!ehLetra(identificador[i]))
+        if(!Utilitario::ehLetra(identificador[i]))
         {
             return false;
         }
@@ -26,7 +19,7 @@ bool Identificador::validacaoIdentificador() const {
 
     for(int i = 3; i < tamanho; i++)
     {
-        if(!ehDigito(identificador[i] ))
+        if(!Utilitario::ehDigito(identificador[i] ))
         {
             return false;
         }
@@ -36,11 +29,15 @@ bool Identificador::validacaoIdentificador() const {
 
 }
 void Identificador::setIdentificador(string identificador) {
+    if (identificador.length() != TAMANHO_IDENTIFICADOR)
+        throw invalid_argument("Identificador invalido: use 3 letras seguidas de 3 numeros");
+    for (int i = 0; i < QUANTIDADE_LETRAS; ++i)
+        if (!Utilitario::ehLetra(identificador[i]))
+            throw invalid_argument("Identificador invalido: os 3 primeiros caracteres devem ser letras");
+    for (int i = QUANTIDADE_LETRAS; i < TAMANHO_IDENTIFICADOR; ++i)
+        if (!Utilitario::ehDigito(identificador[i]))
+            throw invalid_argument("Identificador invalido: os 3 ultimos caracteres devem ser numeros");
     this->identificador = identificador;
-
-    if (!validacaoIdentificador()) {
-        throw invalid_argument("Identificador invalido");
-    }
 }
 
 string Identificador::getIdentificador() const {

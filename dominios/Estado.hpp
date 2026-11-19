@@ -26,7 +26,7 @@ class Estado{
         /**
          * @brief Define e valida o novo estado, caso ele pertença ao enumerador status.
          * @param estado O novo status a ser atribuído à tarefa.
-         * @throws std::invalid_argument Se o valor fornecido não corresponder a nenhum dos estados mapeados ("Estado invalido").
+         * @throws invalid_argument Se o valor fornecido não corresponder a nenhum dos estados mapeados ("Estado invalido").
          */
         void setEstado(Status estado);
 

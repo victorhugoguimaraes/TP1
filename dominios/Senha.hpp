@@ -2,6 +2,7 @@
 #define SENHA_HPP
 
 #include <string>
+using namespace std;
 
 /**
  * @class Senha
@@ -12,24 +13,23 @@
  */
 class Senha {
     private:
+        static const int TAMANHO_SENHA = 5;
         /**
          * @brief Verifica se um caractere é uma letra alfabética (a-z, A-Z).
          * @param c O caractere a ser verificado.
          * @return true se for uma letra, false caso contrário.
          */
-        bool ehLetra(char c) const;
 
         /**
          * @brief Verifica se um caractere é um dígito numérico (0-9).
          * @param c O caractere a ser verificado.
          * @return true se for um dígito, false caso contrário.
          */
-        bool ehDigito(char c) const;
 
         /**
          * @brief Armazena a string da senha que foi validada com sucesso.
          */
-        std::string senha;
+        string senha;
 
         /**
          * @brief Realiza a validação estrutural da senha fornecida.
@@ -43,21 +43,21 @@ class Senha {
          * @param senha A string da senha a ser submetida aos testes.
          * @return true se a senha cumprir todas as exigências de segurança, false caso contrário.
          */
-        bool validar(const std::string&) const;
+        bool validar(const string&) const;
     public:
         /**
          * @brief Valida e atualiza a senha caso ela cumpra os requisitos.
          * @param senha A nova string de senha proposta para atribuição.
          * @return true se a operação foi concluída com sucesso.
-         * @throws std::invalid_argument Se a string falhar nos critérios de validação ("Senha invalida").
+         * @throws invalid_argument Se a string falhar nos critérios de validação ("Senha invalida").
          */
-        bool setValor(std::string);
+        bool setValor(string);
 
         /**
          * @brief Recupera a senha atualmente armazenada.
          * @return Uma cópia da string da senha validada.
          */
-        std::string getValor() const;
+        string getValor() const;
     };
 
 #endif // SENHA_HPP

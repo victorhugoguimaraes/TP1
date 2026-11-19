@@ -2,15 +2,16 @@
 #define NOME_HPP
 
 #include <string>
+using namespace std;
 
 class Nome {
 private:
-    bool ehLetra(char c) const;
-    std::string nome;
-    bool validar(const std::string&) const;
+    static const int TAMANHO_MAXIMO_NOME = 15;
+    string nome;
+    bool validar(const string&) const;
 public:
-    bool setNome(std::string);
-    std::string getNome() const;
+    bool setNome(string);
+    string getNome() const;
 };
 
 

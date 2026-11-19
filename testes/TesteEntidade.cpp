@@ -1,6 +1,7 @@
 #include "TesteEntidade.h"
 
 #include <stdexcept>
+using namespace std;
 
 namespace {
 
@@ -9,7 +10,7 @@ void testarFalha(Funcao funcao, int& estado) {
     try {
         funcao();
         estado = -1;
-    } catch (const std::invalid_argument&) {
+    } catch (const invalid_argument&) {
     }
 }
 

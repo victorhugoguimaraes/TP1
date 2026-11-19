@@ -17,7 +17,7 @@ class Limite{
          *
          * Define o teto constante da validação, configurado estaticamente como 25.
          */
-        static const int limiteMax = 25;
+        static const int LIMITE_MAXIMO = 25;
 
         /**
          * @brief O valor numérico do limite atual.
@@ -29,7 +29,7 @@ class Limite{
         /**
          * @brief Valida e define o novo valor do limite, caso dentro do intervalo permitido.
          * @param limite O novo valor inteiro a ser atribuído.
-         * @throws std::invalid_argument Se o valor for menor que 1 ou maior que limiteMax ("Limite máximo atingido").
+         * @throws invalid_argument Se o valor for menor que 1 ou maior que limiteMax ("Limite máximo atingido").
          */
         void setLimite(int limite);
 

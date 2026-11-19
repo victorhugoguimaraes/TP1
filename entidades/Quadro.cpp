@@ -8,6 +8,14 @@ Identificador Quadro::getIdentificador() const {
     return identificador;
 }
 
+void Quadro::setProjeto(Identificador projeto) {
+    this->projeto = projeto;
+}
+
+Identificador Quadro::getProjeto() const {
+    return projeto;
+}
+
 void Quadro::setNome(Nome nome) {
     this->nome = nome;
 }

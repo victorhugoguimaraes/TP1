@@ -16,38 +16,12 @@ using namespace std;
 
 class Email {
     private:
+        static const int TAMANHO_MAXIMO_LOCAL = 64;
+        static const int TAMANHO_MAXIMO_DOMINIO = 255;
         /**
          * @brief Armazena o endereço de e-mail validado.
          */
         string valor;
-
-        /**
-         * @brief Verifica se um caractere é uma letra alfabética (a-z, A-Z).
-         * @param c O caractere a ser verificado.
-         * @return true se for uma letra, false caso contrário.
-         */
-        bool ehLetra(char c) const;
-
-        /**
-         * @brief Verifica se um caractere é um dígito numérico (0-9).
-         * @param c O caractere a ser verificado.
-         * @return true se for um dígito, false caso contrário.
-         */
-        bool ehDigito(char c) const;
-
-        /**
-         * @brief Verifica se um caractere é alfanumérico (letra ou dígito).
-         * @param c O caractere a ser verificado.
-         * @return true se for alfanumérico, false caso contrário.
-         */
-        bool ehAlfanumerico(char c) const;
-
-        /**
-         * @brief Verifica se um caractere é um caractere especial permitido na parte local ('.' ou '-').
-         * @param c O caractere a ser verificado.
-         * @return true se for '.' ou '-', false caso contrário.
-         */
-        bool ehEspecial(char c) const;
 
         /**
          * @brief Valida a parte local do e-mail (antes do arroba).
@@ -97,7 +71,7 @@ class Email {
         /**
          * @brief Valida e atualiza o endereço de e-mail.
          * @param valor O novo e-mail a ser atribuído.
-         * @throws std::invalid_argument Se a string falhar nas restrições de validação ("Email invalido").
+         * @throws invalid_argument Se a string falhar nas restrições de validação ("Email invalido").
          */
         void setValor(string valor);
 

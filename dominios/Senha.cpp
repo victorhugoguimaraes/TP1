@@ -1,14 +1,8 @@
 #include "Senha.hpp"
+#include "Utilitario.hpp"
 #include <stdexcept>
 
 using namespace std;
-
-bool Senha::ehLetra(char c) const {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');;
-}
-bool Senha::ehDigito(char c) const {
-    return c >= '0' && c <= '9';
-}
 
 string Senha::getValor() const{
     return senha;
@@ -19,15 +13,15 @@ bool Senha::validar(const string& senha) const{
     int digito = 0;
     int letra = 0;
 
-    if (tamanho != 5){
+    if (tamanho != TAMANHO_SENHA){
         return false;
     }
 
-    for(int i = 0; i < 5; i++){
-        if(ehLetra(senha[i])){
+    for(int i = 0; i < TAMANHO_SENHA; i++){
+        if(Utilitario::ehLetra(senha[i])){
             letra = letra + 1;
         }
-        else if (ehDigito(senha[i])){
+        else if (Utilitario::ehDigito(senha[i])){
             digito = digito + 1;
         }
         else {
@@ -42,8 +36,22 @@ bool Senha::validar(const string& senha) const{
 }
 
 bool Senha::setValor(string senha){
-    if (!validar(senha))
-        throw invalid_argument("Senha invalida");
+    if (senha.length() != TAMANHO_SENHA)
+        throw invalid_argument("Senha invalida: deve ter exatamente 5 caracteres");
+    int letras = 0;
+    int digitos = 0;
+    for (char caractere : senha) {
+        if (Utilitario::ehLetra(caractere))
+            ++letras;
+        else if (Utilitario::ehDigito(caractere))
+            ++digitos;
+        else
+            throw invalid_argument("Senha invalida: use somente letras e numeros");
+    }
+    if (letras == 0)
+        throw invalid_argument("Senha invalida: deve conter pelo menos uma letra");
+    if (digitos == 0)
+        throw invalid_argument("Senha invalida: deve conter pelo menos um numero");
     this->senha = senha;
     return true;
 }

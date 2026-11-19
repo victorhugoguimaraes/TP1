@@ -8,6 +8,14 @@ Identificador CartaoAtividade::getIdentificador() const {
     return identificador;
 }
 
+void CartaoAtividade::setQuadro(Identificador quadro) {
+    this->quadro = quadro;
+}
+
+Identificador CartaoAtividade::getQuadro() const {
+    return quadro;
+}
+
 void CartaoAtividade::setNome(Nome nome) {
     this->nome = nome;
 }

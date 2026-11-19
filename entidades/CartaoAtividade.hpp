@@ -14,6 +14,7 @@ using namespace std;
 class CartaoAtividade {
     private:
         Identificador identificador;
+        Identificador quadro;
         Nome nome;
         Texto descricao;
         Prioridade prioridade;
@@ -26,6 +27,8 @@ class CartaoAtividade {
     public:
         void setIdentificador(Identificador identificador);
         Identificador getIdentificador() const;
+        void setQuadro(Identificador quadro);
+        Identificador getQuadro() const;
         void setNome(Nome nome);
         Nome getNome() const;
         void setDescricao(Texto descricao);

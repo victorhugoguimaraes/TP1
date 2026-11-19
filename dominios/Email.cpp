@@ -1,31 +1,19 @@
 #include "Email.hpp"
+#include "Utilitario.hpp"
 #include <stdexcept>
 using namespace std;
 
-bool Email::ehLetra(char c) const {
-    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
-}
-bool Email::ehDigito(char c) const {
-    return c >= '0' && c <= '9';
-}
-bool Email::ehAlfanumerico(char c) const {
-    return ehLetra(c) || ehDigito(c);
-}
-bool Email::ehEspecial(char c) const {
-    return c == '.' || c == '-';
-}
-
 bool Email::validarLocal(const string& email, int inicio, int fim) const {
     int tamanho = fim - inicio;
-    if (tamanho == 0 || tamanho > 64)
+    if (tamanho == 0 || tamanho > TAMANHO_MAXIMO_LOCAL)
         return false;
-    if (ehEspecial(email[inicio]) || ehEspecial(email[fim - 1]))
+    if (Utilitario::ehEspecial(email[inicio]) || Utilitario::ehEspecial(email[fim - 1]))
         return false;
     for (int i = inicio; i < fim; i++) {
-        if (!ehAlfanumerico(email[i]) && !ehEspecial(email[i]))
+        if ((!Utilitario::ehLetraMinuscula(email[i]) && !Utilitario::ehDigito(email[i])) && !Utilitario::ehEspecial(email[i]))
             return false;
-        if (ehEspecial(email[i]) && i + 1 < fim) {
-            if (!ehAlfanumerico(email[i + 1]))
+        if (Utilitario::ehEspecial(email[i]) && i + 1 < fim) {
+            if (!Utilitario::ehLetraMinuscula(email[i + 1]) && !Utilitario::ehDigito(email[i + 1]))
                 return false;
         }
     }
@@ -34,7 +22,7 @@ bool Email::validarLocal(const string& email, int inicio, int fim) const {
 
 bool Email::validarDominio(const string& email, int inicio, int fim) const {
     int tamanho = fim - inicio;
-    if (tamanho == 0 || tamanho > 255)
+    if (tamanho == 0 || tamanho > TAMANHO_MAXIMO_DOMINIO)
         return false;
     int inicioParte = inicio;
     for (int i = inicio; i <= fim; i++) {
@@ -45,7 +33,7 @@ bool Email::validarDominio(const string& email, int inicio, int fim) const {
             if (email[inicioParte] == '-' || email[i - 1] == '-')
                 return false;
             for (int j = inicioParte; j < i; j++) {
-                if (!ehAlfanumerico(email[j]) && email[j] != '-')
+            if (!Utilitario::ehLetraMinuscula(email[j]) && !Utilitario::ehDigito(email[j]) && email[j] != '-')
                     return false;
             }
             inicioParte = i + 1;
@@ -74,9 +62,16 @@ bool Email::validar(const string& email) const {
 }
 
 void Email::setValor(string valor) {
-    if (!validar(valor)) {
-        throw invalid_argument("Email invalido");
-    }
+    size_t posicaoArroba = valor.find('@');
+    if (posicaoArroba == string::npos || posicaoArroba != valor.rfind('@'))
+        throw invalid_argument("Email invalido: deve possuir um unico @");
+    int arroba = static_cast<int>(posicaoArroba);
+    if (arroba == 0 || arroba == static_cast<int>(valor.length()) - 1)
+        throw invalid_argument("Email invalido: informe a parte antes e depois do @");
+    if (!validarLocal(valor, 0, arroba))
+        throw invalid_argument("Email invalido: a parte antes do @ deve usar letras minusculas, numeros e . ou -");
+    if (!validarDominio(valor, arroba + 1, valor.length()))
+        throw invalid_argument("Email invalido: dominio invalido; use letras minusculas, numeros, pontos e hifens");
     this->valor = valor;
 }
 

@@ -1,9 +1,10 @@
 #include "Tamanho.hpp"
 #include <stdexcept>
+using namespace std;
 
 void Tamanho::setTamanho(Nivel tamanho){
     if (tamanho != GRANDE && tamanho != MEDIO && tamanho != PEQUENO)
-        throw std::invalid_argument("Tamanho invalido");
+        throw invalid_argument("Tamanho invalido: use Grande, Medio ou Pequeno");
     this->tamanho = tamanho;
 }
 
