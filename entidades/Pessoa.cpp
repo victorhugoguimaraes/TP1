@@ -36,22 +36,22 @@ Papel Pessoa::getPapel() const {
     return papel;
 }
 
-void Pessoa::adicionarProjeto(Projeto* projeto) {
+void Pessoa::adicionarProjeto(Projeto *projeto) {
     if (papel.getCargo() != Papel::Gestor)
         throw invalid_argument("Somente gestor pode possuir projetos");
     projetos.push_back(projeto);
 }
 
-vector<Projeto*> Pessoa::getProjetos() const {
+vector<Projeto *> Pessoa::getProjetos() const {
     return projetos;
 }
 
-void Pessoa::adicionarCartao(CartaoAtividade* cartao) {
+void Pessoa::adicionarCartao(CartaoAtividade *cartao) {
     if (papel.getCargo() != Papel::Desenvolvedor)
         throw invalid_argument("Somente desenvolvedor pode possuir cartoes");
     cartoes.push_back(cartao);
 }
 
-vector<CartaoAtividade*> Pessoa::getCartoes() const {
+vector<CartaoAtividade *> Pessoa::getCartoes() const {
     return cartoes;
 }

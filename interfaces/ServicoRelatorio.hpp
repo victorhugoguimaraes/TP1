@@ -8,14 +8,14 @@
 using namespace std;
 
 class ServicoRelatorio {
-public:
-  virtual int lerTempoCiclo(const Identificador& identificador) const = 0;
-  virtual double lerTempoCicloMedio(const Identificador& quadro) const = 0;
-  virtual int lerLeadTime(const Identificador& identificador) const = 0;
-  virtual double lerLeadTimeMedio(const Identificador& quadro) const = 0;
-  virtual int lerWIP(const Identificador& quadro) const = 0;
+  public:
+    virtual int lerTempoCiclo(const Identificador &identificador) const = 0;
+    virtual double lerTempoCicloMedio(const Identificador &quadro) const = 0;
+    virtual int lerLeadTime(const Identificador &identificador) const = 0;
+    virtual double lerLeadTimeMedio(const Identificador &quadro) const = 0;
+    virtual int lerWIP(const Identificador &quadro) const = 0;
 
-  virtual ~ServicoRelatorio() = default;
+    virtual ~ServicoRelatorio() = default;
 };
 
 #endif

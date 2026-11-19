@@ -5,19 +5,23 @@ using namespace std;
 
 namespace {
 
-template <typename Funcao>
-void testarFalha(Funcao funcao, int& estado) {
+template <typename Funcao> void testarFalha(Funcao funcao, int &estado) {
     try {
         funcao();
         estado = -1;
-    } catch (const invalid_argument&) {
+    } catch (const invalid_argument &) {
     }
 }
 
-}
+} // namespace
 
-void TUPessoa::setUp() { pessoa = new Pessoa(); estado = SUCESSO; }
-void TUPessoa::tearDown() { delete pessoa; }
+void TUPessoa::setUp() {
+    pessoa = new Pessoa();
+    estado = SUCESSO;
+}
+void TUPessoa::tearDown() {
+    delete pessoa;
+}
 void TUPessoa::testarCenarioSucesso() {
     Email email;
     email.setValor("pessoa@dominio");
@@ -37,12 +41,9 @@ void TUPessoa::testarCenarioSucesso() {
     pessoa->adicionarProjeto(&projeto);
 
     pessoa->setPapel(papel);
-    if (pessoa->getEmail().getValor() != "pessoa@dominio" ||
-        pessoa->getNome().getNome() != "Pessoa Teste" ||
-        pessoa->getSenha().getValor() != "Abc12" ||
-        pessoa->getPapel().getCargo() != Papel::Gestor ||
-        pessoa->getProjetos().size() != 1 ||
-        pessoa->getProjetos()[0] != &projeto)
+    if (pessoa->getEmail().getValor() != "pessoa@dominio" || pessoa->getNome().getNome() != "Pessoa Teste" ||
+        pessoa->getSenha().getValor() != "Abc12" || pessoa->getPapel().getCargo() != Papel::Gestor ||
+        pessoa->getProjetos().size() != 1 || pessoa->getProjetos()[0] != &projeto)
         estado = FALHA;
 }
 void TUPessoa::testarCenarioFalha() {
@@ -60,8 +61,13 @@ int TUPessoa::run() {
     return estado;
 }
 
-void TUProjeto::setUp() { projeto = new Projeto(); estado = SUCESSO; }
-void TUProjeto::tearDown() { delete projeto; }
+void TUProjeto::setUp() {
+    projeto = new Projeto();
+    estado = SUCESSO;
+}
+void TUProjeto::tearDown() {
+    delete projeto;
+}
 void TUProjeto::testarCenarioSucesso() {
     Identificador identificador;
     identificador.setIdentificador("Pro123");
@@ -82,12 +88,10 @@ void TUProjeto::testarCenarioSucesso() {
     projeto->setTermino(termino);
     projeto->adicionarQuadro(&quadro);
 
-    if (projeto->getIdentificador().getIdentificador() != "Pro123" ||
-        projeto->getNome().getNome() != "Projeto" ||
+    if (projeto->getIdentificador().getIdentificador() != "Pro123" || projeto->getNome().getNome() != "Projeto" ||
         projeto->getDescricao().getTexto() != "Descricao valida." ||
         projeto->getInicio().getTimestamp() != "01-JAN-2024-08:00" ||
-        projeto->getTermino().getTimestamp() != "31-JAN-2024-18:00" ||
-        projeto->getQuadros().size() != 1 ||
+        projeto->getTermino().getTimestamp() != "31-JAN-2024-18:00" || projeto->getQuadros().size() != 1 ||
         projeto->getQuadros()[0] != &quadro)
         estado = FALHA;
 }
@@ -98,8 +102,13 @@ int TUProjeto::run() {
     return estado;
 }
 
-void TUQuadro::setUp() { quadro = new Quadro(); estado = SUCESSO; }
-void TUQuadro::tearDown() { delete quadro; }
+void TUQuadro::setUp() {
+    quadro = new Quadro();
+    estado = SUCESSO;
+}
+void TUQuadro::tearDown() {
+    delete quadro;
+}
 void TUQuadro::testarCenarioSucesso() {
     Identificador identificador;
     identificador.setIdentificador("Qua123");
@@ -114,11 +123,8 @@ void TUQuadro::testarCenarioSucesso() {
     quadro->setLimite(limite);
     quadro->adicionarCartao(&cartao);
 
-    if (quadro->getIdentificador().getIdentificador() != "Qua123" ||
-        quadro->getNome().getNome() != "Quadro" ||
-        quadro->getLimite().getLimite() != 10 ||
-        quadro->getCartoes().size() != 1 ||
-        quadro->getCartoes()[0] != &cartao)
+    if (quadro->getIdentificador().getIdentificador() != "Qua123" || quadro->getNome().getNome() != "Quadro" ||
+        quadro->getLimite().getLimite() != 10 || quadro->getCartoes().size() != 1 || quadro->getCartoes()[0] != &cartao)
         estado = FALHA;
 }
 int TUQuadro::run() {
@@ -128,8 +134,13 @@ int TUQuadro::run() {
     return estado;
 }
 
-void TUCartaoAtividade::setUp() { cartao = new CartaoAtividade(); estado = SUCESSO; }
-void TUCartaoAtividade::tearDown() { delete cartao; }
+void TUCartaoAtividade::setUp() {
+    cartao = new CartaoAtividade();
+    estado = SUCESSO;
+}
+void TUCartaoAtividade::tearDown() {
+    delete cartao;
+}
 void TUCartaoAtividade::testarCenarioSucesso() {
     Identificador identificador;
     identificador.setIdentificador("Car123");
@@ -160,12 +171,10 @@ void TUCartaoAtividade::testarCenarioSucesso() {
     cartao->setInicio(inicio);
     cartao->setTermino(termino);
 
-    if (cartao->getIdentificador().getIdentificador() != "Car123" ||
-        cartao->getNome().getNome() != "Cartao" ||
+    if (cartao->getIdentificador().getIdentificador() != "Car123" || cartao->getNome().getNome() != "Cartao" ||
         cartao->getDescricao().getTexto() != "Tarefa valida." ||
         cartao->getPrioridade().getPrioridade() != Prioridade::ALTA ||
-        cartao->getEstado().getEstado() != Estado::FAZENDO ||
-        cartao->getTamanho().getTamanho() != Tamanho::MEDIO ||
+        cartao->getEstado().getEstado() != Estado::FAZENDO || cartao->getTamanho().getTamanho() != Tamanho::MEDIO ||
         cartao->getEntrada().getTimestamp() != "01-JAN-2024-08:00" ||
         cartao->getInicio().getTimestamp() != "01-JAN-2024-09:00" ||
         cartao->getTermino().getTimestamp() != "01-JAN-2024-10:00")

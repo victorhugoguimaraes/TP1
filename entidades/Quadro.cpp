@@ -32,10 +32,10 @@ Limite Quadro::getLimite() const {
     return limite;
 }
 
-void Quadro::adicionarCartao(CartaoAtividade* cartao) {
+void Quadro::adicionarCartao(CartaoAtividade *cartao) {
     cartoes.push_back(cartao);
 }
 
-vector<CartaoAtividade*> Quadro::getCartoes() const {
+vector<CartaoAtividade *> Quadro::getCartoes() const {
     return cartoes;
 }

@@ -4,29 +4,23 @@
 
 bool Identificador::validacaoIdentificador() const {
     int tamanho = identificador.length();
-    if(tamanho != TAMANHO_IDENTIFICADOR)
-    {
+    if (tamanho != TAMANHO_IDENTIFICADOR) {
         return false;
     }
 
-    for(int i = 0; i < QUANTIDADE_LETRAS; i++)
-    {   
-        if(!Utilitario::ehLetra(identificador[i]))
-        {
+    for (int i = 0; i < QUANTIDADE_LETRAS; i++) {
+        if (!Utilitario::ehLetra(identificador[i])) {
             return false;
         }
     }
 
-    for(int i = 3; i < tamanho; i++)
-    {
-        if(!Utilitario::ehDigito(identificador[i] ))
-        {
+    for (int i = 3; i < tamanho; i++) {
+        if (!Utilitario::ehDigito(identificador[i])) {
             return false;
         }
     }
 
     return true;
-
 }
 void Identificador::setIdentificador(string identificador) {
     if (identificador.length() != TAMANHO_IDENTIFICADOR)

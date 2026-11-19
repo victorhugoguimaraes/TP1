@@ -12,39 +12,39 @@
 using namespace std;
 
 class CartaoAtividade {
-    private:
-        Identificador identificador;
-        Identificador quadro;
-        Nome nome;
-        Texto descricao;
-        Prioridade prioridade;
-        Estado estado;
-        Tamanho tamanho;
-        Timestamp entrada;
-        Timestamp inicio;
-        Timestamp termino;
+  private:
+    Identificador identificador;
+    Identificador quadro;
+    Nome nome;
+    Texto descricao;
+    Prioridade prioridade;
+    Estado estado;
+    Tamanho tamanho;
+    Timestamp entrada;
+    Timestamp inicio;
+    Timestamp termino;
 
-    public:
-        void setIdentificador(Identificador identificador);
-        Identificador getIdentificador() const;
-        void setQuadro(Identificador quadro);
-        Identificador getQuadro() const;
-        void setNome(Nome nome);
-        Nome getNome() const;
-        void setDescricao(Texto descricao);
-        Texto getDescricao() const;
-        void setPrioridade(Prioridade prioridade);
-        Prioridade getPrioridade() const;
-        void setEstado(Estado estado);
-        Estado getEstado() const;
-        void setTamanho(Tamanho tamanho);
-        Tamanho getTamanho() const;
-        void setEntrada(Timestamp entrada);
-        Timestamp getEntrada() const;
-        void setInicio(Timestamp inicio);
-        Timestamp getInicio() const;
-        void setTermino(Timestamp termino);
-        Timestamp getTermino() const;
+  public:
+    void setIdentificador(Identificador identificador);
+    Identificador getIdentificador() const;
+    void setQuadro(Identificador quadro);
+    Identificador getQuadro() const;
+    void setNome(Nome nome);
+    Nome getNome() const;
+    void setDescricao(Texto descricao);
+    Texto getDescricao() const;
+    void setPrioridade(Prioridade prioridade);
+    Prioridade getPrioridade() const;
+    void setEstado(Estado estado);
+    Estado getEstado() const;
+    void setTamanho(Tamanho tamanho);
+    Tamanho getTamanho() const;
+    void setEntrada(Timestamp entrada);
+    Timestamp getEntrada() const;
+    void setInicio(Timestamp inicio);
+    Timestamp getInicio() const;
+    void setTermino(Timestamp termino);
+    Timestamp getTermino() const;
 };
 
 using Cartao = CartaoAtividade;

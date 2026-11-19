@@ -14,28 +14,28 @@ class Projeto;
 class CartaoAtividade;
 
 class Pessoa {
-    private:
-        Email email;
-        Nome nome;
-        Senha senha;
-        Papel papel;
-        vector<Projeto*> projetos;
-        vector<CartaoAtividade*> cartoes;
+  private:
+    Email email;
+    Nome nome;
+    Senha senha;
+    Papel papel;
+    vector<Projeto *> projetos;
+    vector<CartaoAtividade *> cartoes;
 
-    public:
-        void setEmail(Email email);
-        Email getEmail() const;
-        void setNome(Nome nome);
-        Nome getNome() const;
-        void setSenha(Senha senha);
-        Senha getSenha() const;
-        void setPapel(Papel papel);
-        Papel getPapel() const;
+  public:
+    void setEmail(Email email);
+    Email getEmail() const;
+    void setNome(Nome nome);
+    Nome getNome() const;
+    void setSenha(Senha senha);
+    Senha getSenha() const;
+    void setPapel(Papel papel);
+    Papel getPapel() const;
 
-        void adicionarProjeto(Projeto* projeto);
-        vector<Projeto*> getProjetos() const;
-        void adicionarCartao(CartaoAtividade* cartao);
-        vector<CartaoAtividade*> getCartoes() const;
+    void adicionarProjeto(Projeto *projeto);
+    vector<Projeto *> getProjetos() const;
+    void adicionarCartao(CartaoAtividade *cartao);
+    vector<CartaoAtividade *> getCartoes() const;
 };
 
 #endif

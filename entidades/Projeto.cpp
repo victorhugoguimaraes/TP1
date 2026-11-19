@@ -48,18 +48,18 @@ Timestamp Projeto::getTermino() const {
     return termino;
 }
 
-void Projeto::adicionarQuadro(Quadro* quadro) {
+void Projeto::adicionarQuadro(Quadro *quadro) {
     quadros.push_back(quadro);
 }
 
-vector<Quadro*> Projeto::getQuadros() const {
+vector<Quadro *> Projeto::getQuadros() const {
     return quadros;
 }
 
-void Projeto::adicionarPessoa(Pessoa* pessoa) {
+void Projeto::adicionarPessoa(Pessoa *pessoa) {
     pessoas.push_back(pessoa);
 }
 
-vector<Pessoa*> Projeto::getPessoas() const {
+vector<Pessoa *> Projeto::getPessoas() const {
     return pessoas;
 }

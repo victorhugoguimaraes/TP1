@@ -19,7 +19,7 @@ using namespace std;
  * - São permitidos apenas caracteres alfanuméricos, espaços em branco e pontuações.
  */
 class Texto {
-private:
+  private:
     static const int TAMANHO_MAXIMO_TEXTO = 30;
 
     /**
@@ -32,8 +32,9 @@ private:
      * @param texto String a ser validada.
      * @return true se o texto for válido, false caso contrário.
      */
-    bool validar(const string&) const;
-public:
+    bool validar(const string &) const;
+
+  public:
     /**
      * @brief Define o valor do texto, caso passe pelo método de validação.
      * @param texto String que se deseja armazenar.

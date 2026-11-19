@@ -11,28 +11,28 @@
  * Solicita email e senha, valida seus formatos usando os dominios e delega
  * a verificacao das credenciais ao servico de autenticacao.
  */
-class CntrlApresentacaoAutenticacao{
-    private:
-      /**
-       * @brief Referencia ao servico responsavel por verificar as credenciais.
-       */
-      ServicoAutenticacao& servico;
-      ServicoPessoa& pessoas;
+class CntrlApresentacaoAutenticacao {
+  private:
+    /**
+     * @brief Referencia ao servico responsavel por verificar as credenciais.
+     */
+    ServicoAutenticacao &servico;
+    ServicoPessoa &pessoas;
 
-   public:
-      /**
-       * @brief Associa a apresentacao ao servico de autenticacao.
-       * @param servico Servico que deve permanecer existente durante o uso da apresentacao.
-       */
-      CntrlApresentacaoAutenticacao(ServicoAutenticacao& servico, ServicoPessoa& pessoas);
+  public:
+    /**
+     * @brief Associa a apresentacao ao servico de autenticacao.
+     * @param servico Servico que deve permanecer existente durante o uso da apresentacao.
+     */
+    CntrlApresentacaoAutenticacao(ServicoAutenticacao &servico, ServicoPessoa &pessoas);
 
-      /**
-       * @brief Solicita e valida as credenciais pelo terminal.
-       * @param emailAutenticacao Recebe o email em caso de sucesso; permanece inalterado em caso de falha.
-       * @return true se autenticada; false para formato invalido, credenciais incorretas ou falha de leitura.
-       * @details Exibe o resultado no terminal e trata excecoes de formato dos dominios.
-       */
-      bool autenticar(Email& emailAutenticacao);
-  };
+    /**
+     * @brief Solicita e valida as credenciais pelo terminal.
+     * @param emailAutenticacao Recebe o email em caso de sucesso; permanece inalterado em caso de falha.
+     * @return true se autenticada; false para formato invalido, credenciais incorretas ou falha de leitura.
+     * @details Exibe o resultado no terminal e trata excecoes de formato dos dominios.
+     */
+    bool autenticar(Email &emailAutenticacao);
+};
 
 #endif

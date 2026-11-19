@@ -42,7 +42,7 @@ void TUServicos::tearDown() {
     delete banco;
 }
 
-Pessoa TUServicos::criarPessoa(const string& email, Papel::Cargo cargo) {
+Pessoa TUServicos::criarPessoa(const string &email, Papel::Cargo cargo) {
     Pessoa pessoa;
     Email valorEmail;
     valorEmail.setValor(email);
@@ -92,7 +92,7 @@ Quadro TUServicos::criarQuadro() {
     return quadro;
 }
 
-CartaoAtividade TUServicos::criarCartao(const string& identificadorTexto) {
+CartaoAtividade TUServicos::criarCartao(const string &identificadorTexto) {
     CartaoAtividade cartao;
     Identificador identificador;
     identificador.setIdentificador(identificadorTexto);
@@ -111,54 +111,74 @@ CartaoAtividade TUServicos::criarCartao(const string& identificadorTexto) {
 
 void TUServicos::testarCenarioSucesso() {
     Projeto projeto = criarProjeto();
-    if (!servicoProjetoGestor->criar(projeto)) estado = FALHA;
-    if (!servicoProjetoGestor->adicionarPessoa(projeto.getIdentificador(), desenvolvedor->getEmail())) estado = FALHA;
-    if (servicoProjetoGestor->listarPessoas(projeto.getIdentificador()).size() != 1) estado = FALHA;
+    if (!servicoProjetoGestor->criar(projeto))
+        estado = FALHA;
+    if (!servicoProjetoGestor->adicionarPessoa(projeto.getIdentificador(), desenvolvedor->getEmail()))
+        estado = FALHA;
+    if (servicoProjetoGestor->listarPessoas(projeto.getIdentificador()).size() != 1)
+        estado = FALHA;
 
     Quadro quadro = criarQuadro();
     quadro.setProjeto(projeto.getIdentificador());
-    if (!servicoQuadroGestor->criar(quadro)) estado = FALHA;
+    if (!servicoQuadroGestor->criar(quadro))
+        estado = FALHA;
 
     CartaoAtividade cartao = criarCartao("CAR001");
-    if (!servicoCartaoGestor->criar(cartao)) estado = FALHA;
+    if (!servicoCartaoGestor->criar(cartao))
+        estado = FALHA;
 
     Estado fazendo;
     fazendo.setEstado(Estado::FAZENDO);
-    if (!servicoCartaoDesenvolvedor->mover(cartao.getIdentificador(), fazendo)) estado = FALHA;
-    if (servicoRelatorioGestor->lerWIP(quadro.getIdentificador()) != 1) estado = FALHA;
+    if (!servicoCartaoDesenvolvedor->mover(cartao.getIdentificador(), fazendo))
+        estado = FALHA;
+    if (servicoRelatorioGestor->lerWIP(quadro.getIdentificador()) != 1)
+        estado = FALHA;
 
     Estado feito;
     feito.setEstado(Estado::FEITO);
-    if (!servicoCartaoDesenvolvedor->mover(cartao.getIdentificador(), feito)) estado = FALHA;
-    if (servicoRelatorioGestor->lerWIP(quadro.getIdentificador()) != 0) estado = FALHA;
-    if (servicoRelatorioGestor->lerTempoCiclo(cartao.getIdentificador()) < 0) estado = FALHA;
-    if (servicoRelatorioGestor->lerLeadTime(cartao.getIdentificador()) < 0) estado = FALHA;
+    if (!servicoCartaoDesenvolvedor->mover(cartao.getIdentificador(), feito))
+        estado = FALHA;
+    if (servicoRelatorioGestor->lerWIP(quadro.getIdentificador()) != 0)
+        estado = FALHA;
+    if (servicoRelatorioGestor->lerTempoCiclo(cartao.getIdentificador()) < 0)
+        estado = FALHA;
+    if (servicoRelatorioGestor->lerLeadTime(cartao.getIdentificador()) < 0)
+        estado = FALHA;
 }
 
 void TUServicos::testarCenarioFalha() {
     Projeto projeto = criarProjeto();
-    if (servicoProjetoDesenvolvedor->criar(projeto)) estado = FALHA;
+    if (servicoProjetoDesenvolvedor->criar(projeto))
+        estado = FALHA;
 
     Quadro quadro = criarQuadro();
     quadro.setProjeto(projeto.getIdentificador());
-    if (servicoQuadroDesenvolvedor->criar(quadro)) estado = FALHA;
+    if (servicoQuadroDesenvolvedor->criar(quadro))
+        estado = FALHA;
 
-    if (!servicoProjetoGestor->criar(projeto)) estado = FALHA;
-    if (!servicoQuadroGestor->criar(quadro)) estado = FALHA;
+    if (!servicoProjetoGestor->criar(projeto))
+        estado = FALHA;
+    if (!servicoQuadroGestor->criar(quadro))
+        estado = FALHA;
 
     CartaoAtividade primeiro = criarCartao("CAR001");
     CartaoAtividade segundo = criarCartao("CAR002");
-    if (!servicoCartaoGestor->criar(primeiro)) estado = FALHA;
-    if (!servicoCartaoGestor->criar(segundo)) estado = FALHA;
+    if (!servicoCartaoGestor->criar(primeiro))
+        estado = FALHA;
+    if (!servicoCartaoGestor->criar(segundo))
+        estado = FALHA;
 
     Estado fazendo;
     fazendo.setEstado(Estado::FAZENDO);
-    if (!servicoCartaoGestor->mover(primeiro.getIdentificador(), fazendo)) estado = FALHA;
-    if (servicoCartaoGestor->mover(segundo.getIdentificador(), fazendo)) estado = FALHA;
+    if (!servicoCartaoGestor->mover(primeiro.getIdentificador(), fazendo))
+        estado = FALHA;
+    if (servicoCartaoGestor->mover(segundo.getIdentificador(), fazendo))
+        estado = FALHA;
 
     Estado aFazer;
     aFazer.setEstado(Estado::A_FAZER);
-    if (servicoCartaoGestor->mover(primeiro.getIdentificador(), aFazer)) estado = FALHA;
+    if (servicoCartaoGestor->mover(primeiro.getIdentificador(), aFazer))
+        estado = FALHA;
 }
 
 int TUServicos::run() {

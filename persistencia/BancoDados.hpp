@@ -7,16 +7,16 @@
 using namespace std;
 
 class BancoDados {
-private:
-  sqlite3 *banco;
+  private:
+    sqlite3 *banco;
 
-public:
-  explicit BancoDados(const string &caminho);
-  ~BancoDados();
+  public:
+    explicit BancoDados(const string &caminho);
+    ~BancoDados();
 
-  sqlite3* obterBanco() const;
+    sqlite3 *obterBanco() const;
 
-  void executar(const string &sql) const;
+    void executar(const string &sql) const;
 };
 
 #endif

@@ -3,6 +3,6 @@
 
 #include "BancoDados.hpp"
 
-void criarTabelas(BancoDados& banco);
+void criarTabelas(BancoDados &banco);
 
 #endif

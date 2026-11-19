@@ -24,7 +24,8 @@ int main() {
     CntrlServicoCartao servicoCartao(cartoesContainer, quadrosContainer, usuario);
     CntrlServicoRelatorio servicoRelatorio(cartoesContainer, usuario);
     CntrlApresentacaoAutenticacao apresentacaoAutenticacao(servicoAutenticacao, servicoPessoa);
-    CntrlApresentacao apresentacao(servicoPessoa, servicoProjeto, servicoQuadro, servicoCartao, servicoRelatorio, apresentacaoAutenticacao, usuario);
+    CntrlApresentacao apresentacao(servicoPessoa, servicoProjeto, servicoQuadro, servicoCartao, servicoRelatorio,
+                                   apresentacaoAutenticacao, usuario);
 
     apresentacao.executar();
     return 0;

@@ -1,40 +1,42 @@
 #include "CntrlServicoQuadro.hpp"
 
-CntrlServicoQuadro::CntrlServicoQuadro(ContainerQuadros& container, const Pessoa& usuario) : container(container), usuario(usuario) {}
+CntrlServicoQuadro::CntrlServicoQuadro(ContainerQuadros &container, const Pessoa &usuario)
+    : container(container), usuario(usuario) {
+}
 
 namespace {
 
-bool ehGestor(const Pessoa& pessoa) {
-  return pessoa.getPapel().getCargo() == Papel::Gestor;
+bool ehGestor(const Pessoa &pessoa) {
+    return pessoa.getPapel().getCargo() == Papel::Gestor;
 }
 
-}
+} // namespace
 
-bool CntrlServicoQuadro::criar(const Quadro& quadro) {
-  if (!ehGestor(usuario))
-    return false;
+bool CntrlServicoQuadro::criar(const Quadro &quadro) {
+    if (!ehGestor(usuario))
+        return false;
 
-  return container.inserir(quadro);
+    return container.inserir(quadro);
 }
 
 vector<Quadro> CntrlServicoQuadro::listar() const {
-  return container.listar();
+    return container.listar();
 }
 
-bool CntrlServicoQuadro::consultar(const Identificador& identificador, Quadro& quadro) {
-  return container.buscar(identificador, quadro);
+bool CntrlServicoQuadro::consultar(const Identificador &identificador, Quadro &quadro) {
+    return container.buscar(identificador, quadro);
 }
 
-bool CntrlServicoQuadro::editar(const Quadro& quadro) {
-  if (!ehGestor(usuario))
-    return false;
+bool CntrlServicoQuadro::editar(const Quadro &quadro) {
+    if (!ehGestor(usuario))
+        return false;
 
-  return container.editar(quadro);
+    return container.editar(quadro);
 }
 
-bool CntrlServicoQuadro::excluir(const Identificador& identificador) {
-  if (!ehGestor(usuario))
-    return false;
+bool CntrlServicoQuadro::excluir(const Identificador &identificador) {
+    if (!ehGestor(usuario))
+        return false;
 
-  return container.excluir(identificador);
+    return container.excluir(identificador);
 }

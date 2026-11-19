@@ -3,14 +3,15 @@
 #include <stdexcept>
 using namespace std;
 
-bool Email::validarLocal(const string& email, int inicio, int fim) const {
+bool Email::validarLocal(const string &email, int inicio, int fim) const {
     int tamanho = fim - inicio;
     if (tamanho == 0 || tamanho > TAMANHO_MAXIMO_LOCAL)
         return false;
     if (Utilitario::ehEspecial(email[inicio]) || Utilitario::ehEspecial(email[fim - 1]))
         return false;
     for (int i = inicio; i < fim; i++) {
-        if ((!Utilitario::ehLetraMinuscula(email[i]) && !Utilitario::ehDigito(email[i])) && !Utilitario::ehEspecial(email[i]))
+        if ((!Utilitario::ehLetraMinuscula(email[i]) && !Utilitario::ehDigito(email[i])) &&
+            !Utilitario::ehEspecial(email[i]))
             return false;
         if (Utilitario::ehEspecial(email[i]) && i + 1 < fim) {
             if (!Utilitario::ehLetraMinuscula(email[i + 1]) && !Utilitario::ehDigito(email[i + 1]))
@@ -20,7 +21,7 @@ bool Email::validarLocal(const string& email, int inicio, int fim) const {
     return true;
 }
 
-bool Email::validarDominio(const string& email, int inicio, int fim) const {
+bool Email::validarDominio(const string &email, int inicio, int fim) const {
     int tamanho = fim - inicio;
     if (tamanho == 0 || tamanho > TAMANHO_MAXIMO_DOMINIO)
         return false;
@@ -33,7 +34,7 @@ bool Email::validarDominio(const string& email, int inicio, int fim) const {
             if (email[inicioParte] == '-' || email[i - 1] == '-')
                 return false;
             for (int j = inicioParte; j < i; j++) {
-            if (!Utilitario::ehLetraMinuscula(email[j]) && !Utilitario::ehDigito(email[j]) && email[j] != '-')
+                if (!Utilitario::ehLetraMinuscula(email[j]) && !Utilitario::ehDigito(email[j]) && email[j] != '-')
                     return false;
             }
             inicioParte = i + 1;
@@ -42,7 +43,7 @@ bool Email::validarDominio(const string& email, int inicio, int fim) const {
     return true;
 }
 
-bool Email::validar(const string& email) const {
+bool Email::validar(const string &email) const {
     int tamanho = email.length();
     int posArroba = -1;
     for (int i = 0; i < tamanho; i++) {

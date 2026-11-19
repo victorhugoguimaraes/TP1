@@ -7,53 +7,57 @@
 #include "../entidades/Quadro.hpp"
 
 class TUPessoa {
-private:
-    Pessoa* pessoa;
+  private:
+    Pessoa *pessoa;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUProjeto {
-private:
-    Projeto* projeto;
+  private:
+    Projeto *projeto;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUQuadro {
-private:
-    Quadro* quadro;
+  private:
+    Quadro *quadro;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUCartaoAtividade {
-private:
-    CartaoAtividade* cartao;
+  private:
+    CartaoAtividade *cartao;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();

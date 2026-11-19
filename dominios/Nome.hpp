@@ -5,14 +5,14 @@
 using namespace std;
 
 class Nome {
-private:
+  private:
     static const int TAMANHO_MAXIMO_NOME = 15;
     string nome;
-    bool validar(const string&) const;
-public:
+    bool validar(const string &) const;
+
+  public:
     bool setNome(string);
     string getNome() const;
 };
-
 
 #endif // NOME_HPP

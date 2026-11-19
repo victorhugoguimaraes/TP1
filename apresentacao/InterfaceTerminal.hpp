@@ -6,11 +6,11 @@
 using namespace std;
 
 class InterfaceTerminal {
-public:
+  public:
     void limpar();
-    void cabecalho(const string& titulo, const string& subtitulo);
-    void sucesso(const string& mensagem);
-    void erro(const string& mensagem);
+    void cabecalho(const string &titulo, const string &subtitulo);
+    void sucesso(const string &mensagem);
+    void erro(const string &mensagem);
 };
 
 #endif

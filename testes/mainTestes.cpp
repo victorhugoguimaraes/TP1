@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-void imprimirResultado(const string& nome, int estado) {
+void imprimirResultado(const string &nome, int estado) {
     if (estado == 0)
         cout << "[OK] " << nome << endl;
     else

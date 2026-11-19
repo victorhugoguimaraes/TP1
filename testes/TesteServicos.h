@@ -12,33 +12,33 @@
 #include "../servico/ContainerQuadro.hpp"
 
 class TUServicos {
-private:
-    BancoDados* banco;
-    ContainerPessoas* pessoas;
-    ContainerProjetos* projetos;
-    ContainerQuadros* quadros;
-    ContainerCartoes* cartoes;
-    Pessoa* gestor;
-    Pessoa* desenvolvedor;
-    CntrlServicoProjeto* servicoProjetoGestor;
-    CntrlServicoProjeto* servicoProjetoDesenvolvedor;
-    CntrlServicoQuadro* servicoQuadroGestor;
-    CntrlServicoQuadro* servicoQuadroDesenvolvedor;
-    CntrlServicoCartao* servicoCartaoGestor;
-    CntrlServicoCartao* servicoCartaoDesenvolvedor;
-    CntrlServicoRelatorio* servicoRelatorioGestor;
+  private:
+    BancoDados *banco;
+    ContainerPessoas *pessoas;
+    ContainerProjetos *projetos;
+    ContainerQuadros *quadros;
+    ContainerCartoes *cartoes;
+    Pessoa *gestor;
+    Pessoa *desenvolvedor;
+    CntrlServicoProjeto *servicoProjetoGestor;
+    CntrlServicoProjeto *servicoProjetoDesenvolvedor;
+    CntrlServicoQuadro *servicoQuadroGestor;
+    CntrlServicoQuadro *servicoQuadroDesenvolvedor;
+    CntrlServicoCartao *servicoCartaoGestor;
+    CntrlServicoCartao *servicoCartaoDesenvolvedor;
+    CntrlServicoRelatorio *servicoRelatorioGestor;
     int estado;
 
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-    Pessoa criarPessoa(const string& email, Papel::Cargo cargo);
+    Pessoa criarPessoa(const string &email, Papel::Cargo cargo);
     Projeto criarProjeto();
     Quadro criarQuadro();
-    CartaoAtividade criarCartao(const string& identificador);
+    CartaoAtividade criarCartao(const string &identificador);
 
-public:
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();

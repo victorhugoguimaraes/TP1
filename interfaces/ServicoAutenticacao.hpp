@@ -13,26 +13,20 @@ using namespace std;
  * Permite que a camada de apresentacao solicite autenticacao sem depender
  * da implementacao do armazenamento de pessoas.
  */
-class ServicoAutenticacao{
+class ServicoAutenticacao {
   public:
-
     /**
      * @brief Verifica as credenciais de uma pessoa cadastrada.
      * @param email Email da pessoa que deseja acessar o sistema.
      * @param senha Senha informada para autenticacao.
      * @return true se as credenciais corresponderem a um cadastro; false caso contrario.
      */
-    virtual bool autenticar(
-        const Email& email,
-        const Senha& senha
-        ) = 0;
+    virtual bool autenticar(const Email &email, const Senha &senha) = 0;
 
     /**
      * @brief Permite destruir uma implementacao por meio da interface.
      */
-    virtual ~ServicoAutenticacao() = default; 
-}; 
+    virtual ~ServicoAutenticacao() = default;
+};
 
-
-
-#endif 
+#endif

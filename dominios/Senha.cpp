@@ -4,38 +4,36 @@
 
 using namespace std;
 
-string Senha::getValor() const{
+string Senha::getValor() const {
     return senha;
 }
 
-bool Senha::validar(const string& senha) const{
+bool Senha::validar(const string &senha) const {
     int tamanho = senha.length();
     int digito = 0;
     int letra = 0;
 
-    if (tamanho != TAMANHO_SENHA){
+    if (tamanho != TAMANHO_SENHA) {
         return false;
     }
 
-    for(int i = 0; i < TAMANHO_SENHA; i++){
-        if(Utilitario::ehLetra(senha[i])){
+    for (int i = 0; i < TAMANHO_SENHA; i++) {
+        if (Utilitario::ehLetra(senha[i])) {
             letra = letra + 1;
-        }
-        else if (Utilitario::ehDigito(senha[i])){
+        } else if (Utilitario::ehDigito(senha[i])) {
             digito = digito + 1;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
-    if ((letra==0)||(digito==0)){
+    if ((letra == 0) || (digito == 0)) {
         return false;
     }
     return true;
 }
 
-bool Senha::setValor(string senha){
+bool Senha::setValor(string senha) {
     if (senha.length() != TAMANHO_SENHA)
         throw invalid_argument("Senha invalida: deve ter exatamente 5 caracteres");
     int letras = 0;

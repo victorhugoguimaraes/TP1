@@ -14,154 +14,165 @@
 #include "../dominios/Timestamp.hpp"
 
 class TUEmail {
-private:
-    Email* email;
+  private:
+    Email *email;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUNome {
-private:
-    Nome* nome;
+  private:
+    Nome *nome;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUSenha {
-private:
-    Senha* senha;
+  private:
+    Senha *senha;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUTexto {
-private:
-    Texto* texto;
+  private:
+    Texto *texto;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUTimestamp {
-private:
-    Timestamp* timestamp;
+  private:
+    Timestamp *timestamp;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUIdentificador {
-private:
-    Identificador* identificador;
+  private:
+    Identificador *identificador;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TULimite {
-private:
-    Limite* limite;
+  private:
+    Limite *limite;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUEstado {
-private:
-    Estado* estado;
+  private:
+    Estado *estado;
     int resultado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUPapel {
-private:
-    Papel* papel;
+  private:
+    Papel *papel;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUPrioridade {
-private:
-    Prioridade* prioridade;
+  private:
+    Prioridade *prioridade;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();
 };
 
 class TUTamanho {
-private:
-    Tamanho* tamanho;
+  private:
+    Tamanho *tamanho;
     int estado;
     void setUp();
     void tearDown();
     void testarCenarioSucesso();
     void testarCenarioFalha();
-public:
+
+  public:
     static const int SUCESSO = 0;
     static const int FALHA = -1;
     int run();

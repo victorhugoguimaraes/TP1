@@ -6,19 +6,19 @@
 
 using namespace std;
 
-inline string obterTexto(sqlite3_stmt* comando, int coluna) {
-  const unsigned char* valor = sqlite3_column_text(comando, coluna);
-  string resultado;
+inline string obterTexto(sqlite3_stmt *comando, int coluna) {
+    const unsigned char *valor = sqlite3_column_text(comando, coluna);
+    string resultado;
 
-  if (valor == nullptr)
+    if (valor == nullptr)
+        return resultado;
+
+    while (*valor != '\0') {
+        resultado += static_cast<char>(*valor);
+        ++valor;
+    }
+
     return resultado;
-
-  while (*valor != '\0') {
-    resultado += static_cast<char>(*valor);
-    ++valor;
-  }
-
-  return resultado;
 }
 
 #endif
