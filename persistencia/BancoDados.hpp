@@ -1,7 +1,7 @@
 #ifndef BANCODADOS_H
 #define BANCODADOS_H
 
-#include <sqlite3.h>
+#include "../sqlite3.h"
 #include <string>
 
 using namespace std;

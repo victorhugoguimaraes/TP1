@@ -51,11 +51,12 @@
 		</Compiler>
 		<Linker>
 			<Add option="-static-libgcc -static-libstdc++" />
-			<Add library="sqlite3" />
 		</Linker>
 		<Unit filename="main.cpp">
 			<Option target="Debug;Release" />
 		</Unit>
+		<Unit filename="sqlite3.c" />
+		<Unit filename="sqlite3.h" />
 		<Unit filename="dominios/Email.cpp" />
 		<Unit filename="dominios/Email.hpp" />
 		<Unit filename="dominios/Estado.cpp" />
