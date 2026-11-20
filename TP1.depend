@@ -1,54 +1,309 @@
 # depslib dependency file v1.0
-1788577680 source:c:\users\victo\tp1\dominios\email.cpp
-	"Email.hpp"
-	<stdexcept>
-
-1788577680 c:\users\victo\tp1\dominios\email.hpp
-	<string>
-
-1788581746 source:c:\users\victo\tp1\main.cpp
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\cntrlapresentacaoautenticacao.cpp
+	"CntrlApresentacaoAutenticacao.hpp"
 	<iostream>
 	<stdexcept>
 	<string>
-	<vector>
-	"dominios/Email.hpp"
-	"dominios/Estado.hpp"
-	"dominios/Identificador.hpp"
-	"dominios/Limite.hpp"
-	"dominios/Papel.hpp"
-	"dominios/Prioridade.hpp"
-	"dominios/Tamanho.hpp"
 
-1788576391 c:\users\victo\tp1\dominios\identificador.hpp
+1795210803 c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\cntrlapresentacaoautenticacao.hpp
+	"../interfaces/ServicoAutenticacao.hpp"
+	"../interfaces/ServicoPessoa.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicoautenticacao.hpp
+	"../dominios/Email.hpp"
+	"../dominios/Senha.hpp"
+
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\email.hpp
 	<string>
 
-1788576585 source:c:\users\victo\tp1\dominios\identificador.cpp
-	"Identificador.hpp"
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\senha.hpp
+	<string>
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicopessoa.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../entidades/Pessoa.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\pessoa.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Papel.hpp"
+	"../dominios/Senha.hpp"
+
+1795210803 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\nome.hpp
+	<string>
+
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\papel.hpp
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\email.cpp
+	"Email.hpp"
+	"Utilitario.hpp"
 	<stdexcept>
 
-1788581242 source:c:\users\victo\tp1\dominios\estado.cpp
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\utilitario.hpp
+	<string>
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\estado.cpp
 	"Estado.hpp"
+	<stdexcept>
 
-1788581294 c:\users\victo\tp1\dominios\estado.hpp
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\estado.hpp
 
-1788579788 source:c:\users\victo\tp1\dominios\limite.cpp
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\identificador.cpp
+	"Identificador.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\identificador.hpp
+	<string>
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\limite.cpp
 	"Limite.hpp"
 	<stdexcept>
 
-1788579791 c:\users\victo\tp1\dominios\limite.hpp
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\limite.hpp
 
-1788580233 source:c:\users\victo\tp1\dominios\papel.cpp
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\nome.cpp
+	"Nome.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\papel.cpp
 	"Papel.hpp"
+	<stdexcept>
 
-1788580374 c:\users\victo\tp1\dominios\papel.hpp
-
-1788580637 source:c:\users\victo\tp1\dominios\prioridade.cpp
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\prioridade.cpp
 	"Prioridade.hpp"
+	<stdexcept>
 
-1788580891 c:\users\victo\tp1\dominios\prioridade.hpp
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\prioridade.hpp
 
-1788580965 source:c:\users\victo\tp1\dominios\tamanho.cpp
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\senha.cpp
+	"Senha.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\tamanho.cpp
 	"Tamanho.hpp"
+	<stdexcept>
 
-1788580954 c:\users\victo\tp1\dominios\tamanho.hpp
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\tamanho.hpp
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\texto.cpp
+	"Texto.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\texto.hpp
+	<string>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\timestamp.cpp
+	"Timestamp.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795212077 c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\timestamp.hpp
+	<string>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\dominios\utilitario.cpp
+	"Utilitario.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\cartaoatividade.cpp
+	"CartaoAtividade.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\cartaoatividade.hpp
+	"../dominios/Estado.hpp"
+	"../dominios/Identificador.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Prioridade.hpp"
+	"../dominios/Tamanho.hpp"
+	"../dominios/Texto.hpp"
+	"../dominios/Timestamp.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\pessoa.cpp
+	"Pessoa.hpp"
+	<stdexcept>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\projeto.cpp
+	"Projeto.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\projeto.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Identificador.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Texto.hpp"
+	"../dominios/Timestamp.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\quadro.cpp
+	"Quadro.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\entidades\quadro.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+	"../dominios/Limite.hpp"
+	"../dominios/Nome.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\persistencia\bancodados.cpp
+	"BancoDados.hpp"
+	<stdexcept>
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\persistencia\bancodados.hpp
+	"../sqlite/sqlite3.h"
+	<string>
+
+1795211864 c:\users\victo\downloads\leitor\tp1-github-76da3d6\sqlite\sqlite3.h
+	<stdarg.h>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\persistencia\schema.cpp
+	"Schema.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\persistencia\schema.hpp
+	"BancoDados.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoautenticacao.cpp
+	"CntrlServicoAutenticacao.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoautenticacao.hpp
+	"../interfaces/ServicoAutenticacao.hpp"
+	"ContainerPessoa.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerpessoa.hpp
+	"../entidades/Pessoa.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicocartao.cpp
+	"CntrlServicoCartao.hpp"
+	<ctime>
+	<string>
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicocartao.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoCartao.hpp"
+	"ContainerCartao.hpp"
+	"ContainerQuadro.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicocartao.hpp
+	<vector>
+	"../dominios/Estado.hpp"
+	"../dominios/Identificador.hpp"
+	"../entidades/CartaoAtividade.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containercartao.hpp
+	<vector>
+	"../entidades/CartaoAtividade.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795210807 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerquadro.hpp
+	"../entidades/Quadro.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicopessoa.cpp
+	"CntrlServicoPessoa.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicopessoa.hpp
+	"../interfaces/ServicoPessoa.hpp"
+	"ContainerPessoa.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoprojeto.cpp
+	"CntrlServicoProjeto.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoprojeto.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoProjeto.hpp"
+	"ContainerProjeto.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicoprojeto.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Identificador.hpp"
+	"../entidades/Projeto.hpp"
+
+1795210807 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerprojeto.hpp
+	"../entidades/Projeto.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoquadro.cpp
+	"CntrlServicoQuadro.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicoquadro.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoQuadro.hpp"
+	"ContainerQuadro.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicoquadro.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+	"../entidades/Quadro.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicorelatorio.cpp
+	"CntrlServicoRelatorio.hpp"
+	<ctime>
+	<string>
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\cntrlservicorelatorio.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoRelatorio.hpp"
+	"ContainerCartao.hpp"
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\interfaces\servicorelatorio.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containercartao.cpp
+	"ContainerCartao.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795210805 c:\users\victo\downloads\leitor\tp1-github-76da3d6\persistencia\sqliteutil.hpp
+	"../sqlite/sqlite3.h"
+	<string>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerpessoa.cpp
+	"ContainerPessoa.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795210807 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerprojeto.cpp
+	"ContainerProjeto.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795210807 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\servico\containerquadro.cpp
+	"ContainerQuadro.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795211864 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\cntrlapresentacao.cpp
+	"CntrlApresentacao.hpp"
+	<iostream>
+	<sstream>
+	<stdexcept>
+
+1795210803 c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\cntrlapresentacao.hpp
+	"../interfaces/ServicoCartao.hpp"
+	"../interfaces/ServicoPessoa.hpp"
+	"../interfaces/ServicoProjeto.hpp"
+	"../interfaces/ServicoQuadro.hpp"
+	"../interfaces/ServicoRelatorio.hpp"
+	"CntrlApresentacaoAutenticacao.hpp"
+	"InterfaceTerminal.hpp"
+
+1795210803 c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\interfaceterminal.hpp
+	<string>
+
+1795210803 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\apresentacao\interfaceterminal.cpp
+	"InterfaceTerminal.hpp"
+	<iostream>
+
+1795210805 source:c:\users\victo\downloads\leitor\tp1-github-76da3d6\main.cpp
+	"apresentacao/CntrlApresentacao.hpp"
+	"persistencia/Schema.hpp"
+	"servico/CntrlServicoAutenticacao.hpp"
+	"servico/CntrlServicoCartao.hpp"
+	"servico/CntrlServicoPessoa.hpp"
+	"servico/CntrlServicoProjeto.hpp"
+	"servico/CntrlServicoQuadro.hpp"
+	"servico/CntrlServicoRelatorio.hpp"
 
