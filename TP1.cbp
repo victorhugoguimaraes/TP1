@@ -55,8 +55,8 @@
 		<Unit filename="main.cpp">
 			<Option target="Debug;Release" />
 		</Unit>
-		<Unit filename="sqlite3.c" />
-		<Unit filename="sqlite3.h" />
+		<Unit filename="sqlite/sqlite3.c" />
+		<Unit filename="sqlite/sqlite3.h" />
 		<Unit filename="dominios/Email.cpp" />
 		<Unit filename="dominios/Email.hpp" />
 		<Unit filename="dominios/Estado.cpp" />

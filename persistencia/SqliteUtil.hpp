@@ -1,7 +1,7 @@
 #ifndef SQLITEUTIL_H
 #define SQLITEUTIL_H
 
-#include <sqlite3.h>
+#include "../sqlite/sqlite3.h"
 #include <string>
 
 using namespace std;
