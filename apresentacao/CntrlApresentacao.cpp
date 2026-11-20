@@ -72,6 +72,32 @@ bool CntrlApresentacao::lerInteiro(const string &mensagem, int &valor) {
     return true;
 }
 
+bool CntrlApresentacao::lerEmail(Email &email) {
+    string valor;
+
+    while (true) {
+        if (!lerTexto("Email: ", valor))
+            return false;
+        if (criarEmail(valor, email))
+            return true;
+    }
+}
+
+bool CntrlApresentacao::lerIdentificador(Identificador &identificador, const string &mensagem) {
+    string valor;
+
+    while (true) {
+        if (!lerTexto(mensagem, valor))
+            return false;
+        try {
+            identificador.setIdentificador(valor);
+            return true;
+        } catch (const invalid_argument &erro) {
+            cout << "Dado invalido: " << erro.what() << endl;
+        }
+    }
+}
+
 bool CntrlApresentacao::lerPessoa(Pessoa &pessoa, bool incluirEmail) {
     string valor;
     Email email;
@@ -384,9 +410,42 @@ void CntrlApresentacao::listarCartoes(ServicoCartao &servico) {
              << estadoTexto(cartao.getEstado().getEstado()) << endl;
 }
 
+void CntrlApresentacao::mostrarPessoa(const Pessoa &pessoa) {
+    cout << "Email: " << pessoa.getEmail().getValor() << endl;
+    cout << "Nome: " << pessoa.getNome().getNome() << endl;
+    cout << "Cargo: " << cargoTexto(pessoa.getPapel().getCargo()) << endl;
+}
+
+void CntrlApresentacao::mostrarProjeto(const Projeto &projeto) {
+    cout << "Identificador: " << projeto.getIdentificador().getIdentificador() << endl;
+    cout << "Gestor: " << projeto.getGestor().getValor() << endl;
+    cout << "Nome: " << projeto.getNome().getNome() << endl;
+    cout << "Descricao: " << projeto.getDescricao().getTexto() << endl;
+    cout << "Inicio: " << projeto.getInicio().getValor() << endl;
+    cout << "Termino: " << projeto.getTermino().getValor() << endl;
+}
+
+void CntrlApresentacao::mostrarQuadro(const Quadro &quadro) {
+    cout << "Identificador: " << quadro.getIdentificador().getIdentificador() << endl;
+    cout << "Projeto: " << quadro.getProjeto().getIdentificador() << endl;
+    cout << "Nome: " << quadro.getNome().getNome() << endl;
+    cout << "Limite WIP: " << quadro.getLimite().getLimite() << endl;
+}
+
+void CntrlApresentacao::mostrarCartao(const CartaoAtividade &cartao) {
+    cout << "Identificador: " << cartao.getIdentificador().getIdentificador() << endl;
+    cout << "Quadro: " << cartao.getQuadro().getIdentificador() << endl;
+    cout << "Nome: " << cartao.getNome().getNome() << endl;
+    cout << "Descricao: " << cartao.getDescricao().getTexto() << endl;
+    cout << "Estado: " << estadoTexto(cartao.getEstado().getEstado()) << endl;
+    cout << "Entrada: " << cartao.getEntrada().getValor() << endl;
+    cout << "Inicio: " << cartao.getInicio().getValor() << endl;
+    cout << "Termino: " << cartao.getTermino().getValor() << endl;
+}
+
 void CntrlApresentacao::menuPessoa() {
     int opcao;
-    if (!lerInteiro("1-Criar 2-Listar 3-Excluir 0-Voltar: ", opcao))
+    if (!lerInteiro("1-Criar 2-Listar 3-Consultar 4-Editar 5-Excluir 0-Voltar: ", opcao))
         return;
     if (opcao == 1) {
         Pessoa pessoa;
@@ -395,16 +454,34 @@ void CntrlApresentacao::menuPessoa() {
     } else if (opcao == 2)
         listarPessoas();
     else if (opcao == 3) {
-        string valor;
         Email email;
-        if (lerTexto("Email: ", valor) && criarEmail(valor, email))
+        if (lerEmail(email)) {
+            Pessoa pessoa;
+            if (pessoas.consultar(email, pessoa))
+                mostrarPessoa(pessoa);
+            else
+                cout << "Pessoa nao encontrada." << endl;
+        }
+    } else if (opcao == 4) {
+        Email email;
+        Pessoa pessoa;
+        if (lerEmail(email) && pessoas.consultar(email, pessoa)) {
+            cout << "Novos dados da pessoa:\n";
+            if (lerPessoa(pessoa, false))
+                informarResultado(pessoas.editar(pessoa), "Pessoa editada.", "Falha ao editar pessoa.");
+        } else {
+            cout << "Pessoa nao encontrada." << endl;
+        }
+    } else if (opcao == 5) {
+        Email email;
+        if (lerEmail(email))
             informarResultado(pessoas.excluir(email), "Pessoa excluida.", "Pessoa nao encontrada.");
     }
 }
 
 void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
     int opcao;
-    if (!lerInteiro("1-Criar 2-Listar 3-Excluir 4-Adicionar pessoa 0-Voltar: ", opcao))
+    if (!lerInteiro("1-Criar 2-Listar 3-Consultar 4-Editar 5-Excluir 6-Adicionar pessoa 7-Remover pessoa 8-Listar pessoas 0-Voltar: ", opcao))
         return;
     if (opcao == 1) {
         Projeto projeto;
@@ -413,20 +490,48 @@ void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
     } else if (opcao == 2)
         listarProjetos(projetos);
     else if (opcao == 3) {
-        string valor;
         Identificador id;
-        if (lerTexto("Identificador: ", valor)) {
-            id.setIdentificador(valor);
-            informarResultado(projetos.excluir(id), "Projeto excluido.", "Projeto nao encontrado.");
+        if (lerIdentificador(id, "Identificador: ")) {
+            Projeto projeto;
+            if (projetos.consultar(id, projeto))
+                mostrarProjeto(projeto);
+            else
+                cout << "Projeto nao encontrado." << endl;
         }
     } else if (opcao == 4) {
-        string valor;
+        Identificador id;
+        if (lerIdentificador(id, "Identificador do projeto: ")) {
+            Projeto projeto;
+            if (projetos.consultar(id, projeto)) {
+                cout << "Novos dados do projeto (o identificador sera mantido).\n";
+                if (lerProjeto(projeto)) {
+                    projeto.setIdentificador(id);
+                    informarResultado(projetos.editar(projeto), "Projeto editado.", "Falha ao editar projeto.");
+                }
+            } else {
+                cout << "Projeto nao encontrado." << endl;
+            }
+        }
+    } else if (opcao == 5) {
+        Identificador id;
+        if (lerIdentificador(id, "Identificador: "))
+            informarResultado(projetos.excluir(id), "Projeto excluido.", "Projeto nao encontrado.");
+    } else if (opcao == 6) {
         Identificador id;
         Email email;
-        if (lerTexto("Projeto: ", valor)) {
-            id.setIdentificador(valor);
-            if (lerTexto("Email da pessoa: ", valor) && criarEmail(valor, email))
-                informarResultado(projetos.adicionarPessoa(id, email), "Pessoa associada.", "Falha ao associar.");
+        if (lerIdentificador(id, "Identificador do projeto: ") && lerEmail(email))
+            informarResultado(projetos.adicionarPessoa(id, email), "Pessoa associada.", "Falha ao associar.");
+    } else if (opcao == 7) {
+        Identificador id;
+        Email email;
+        if (lerIdentificador(id, "Identificador do projeto: ") && lerEmail(email))
+            informarResultado(projetos.removerPessoa(id, email), "Pessoa removida.", "Falha ao remover pessoa.");
+    } else if (opcao == 8) {
+        Identificador id;
+        if (lerIdentificador(id, "Identificador do projeto: ")) {
+            vector<Email> lista = projetos.listarPessoas(id);
+            for (const Email &email : lista)
+                cout << email.getValor() << endl;
         }
     }
     (void)usuario;
@@ -434,7 +539,7 @@ void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
 
 void CntrlApresentacao::menuQuadro(const Pessoa &usuario) {
     int opcao;
-    if (!lerInteiro("1-Criar 2-Listar 3-Excluir 0-Voltar: ", opcao))
+    if (!lerInteiro("1-Criar 2-Listar 3-Consultar 4-Editar 5-Excluir 0-Voltar: ", opcao))
         return;
     if (opcao == 1) {
         Quadro quadro;
@@ -443,19 +548,39 @@ void CntrlApresentacao::menuQuadro(const Pessoa &usuario) {
     } else if (opcao == 2)
         listarQuadros(quadros);
     else if (opcao == 3) {
-        string valor;
         Identificador id;
-        if (lerTexto("Identificador: ", valor)) {
-            id.setIdentificador(valor);
-            informarResultado(quadros.excluir(id), "Quadro excluido.", "Quadro nao encontrado.");
+        if (lerIdentificador(id, "Identificador: ")) {
+            Quadro quadro;
+            if (quadros.consultar(id, quadro))
+                mostrarQuadro(quadro);
+            else
+                cout << "Quadro nao encontrado." << endl;
         }
+    } else if (opcao == 4) {
+        Identificador id;
+        if (lerIdentificador(id, "Identificador do quadro: ")) {
+            Quadro quadro;
+            if (quadros.consultar(id, quadro)) {
+                cout << "Novos dados do quadro (o identificador sera mantido).\n";
+                if (lerQuadro(quadro)) {
+                    quadro.setIdentificador(id);
+                    informarResultado(quadros.editar(quadro), "Quadro editado.", "Falha ao editar quadro.");
+                }
+            } else {
+                cout << "Quadro nao encontrado." << endl;
+            }
+        }
+    } else if (opcao == 5) {
+        Identificador id;
+        if (lerIdentificador(id, "Identificador: "))
+            informarResultado(quadros.excluir(id), "Quadro excluido.", "Quadro nao encontrado.");
     }
     (void)usuario;
 }
 
 void CntrlApresentacao::menuCartao(const Pessoa &usuario) {
     int opcao;
-    if (!lerInteiro("1-Criar 2-Listar 3-Mover 4-Excluir 0-Voltar: ", opcao))
+    if (!lerInteiro("1-Criar 2-Listar 3-Consultar 4-Editar 5-Mover 6-Excluir 0-Voltar: ", opcao))
         return;
     if (opcao == 1) {
         CartaoAtividade cartao;
@@ -464,47 +589,65 @@ void CntrlApresentacao::menuCartao(const Pessoa &usuario) {
     } else if (opcao == 2)
         listarCartoes(cartoes);
     else if (opcao == 3) {
-        string valor;
+        Identificador id;
+        if (lerIdentificador(id, "Identificador: ")) {
+            CartaoAtividade cartao;
+            if (cartoes.consultar(id, cartao))
+                mostrarCartao(cartao);
+            else
+                cout << "Cartao nao encontrado." << endl;
+        }
+    } else if (opcao == 4) {
+        Identificador id;
+        if (lerIdentificador(id, "Identificador do cartao: ")) {
+            CartaoAtividade cartao;
+            if (cartoes.consultar(id, cartao)) {
+                cout << "Novos dados do cartao (o identificador sera mantido).\n";
+                if (lerCartao(cartao)) {
+                    cartao.setIdentificador(id);
+                    informarResultado(cartoes.editar(cartao), "Cartao editado.", "Falha ao editar cartao.");
+                }
+            } else {
+                cout << "Cartao nao encontrado." << endl;
+            }
+        }
+    } else if (opcao == 5) {
         int estado;
         Identificador id;
         Estado novo;
-        if (lerTexto("Identificador: ", valor)) {
-            id.setIdentificador(valor);
-            if (lerInteiro("Estado (1-Fazendo, 2-Feito): ", estado)) {
-                if (estado == 1)
-                    novo.setEstado(Estado::FAZENDO);
-                else if (estado == 2)
-                    novo.setEstado(Estado::FEITO);
-                else
-                    return;
-                informarResultado(cartoes.mover(id, novo), "Cartao movido.", "Movimento recusado.");
-            }
+        if (lerIdentificador(id, "Identificador: ") && lerInteiro("Estado (1-Fazendo, 2-Feito): ", estado)) {
+            if (estado == 1)
+                novo.setEstado(Estado::FAZENDO);
+            else if (estado == 2)
+                novo.setEstado(Estado::FEITO);
+            else
+                return;
+            informarResultado(cartoes.mover(id, novo), "Cartao movido.", "Movimento recusado.");
         }
-    } else if (opcao == 4) {
-        string valor;
+    } else if (opcao == 6) {
         Identificador id;
-        if (lerTexto("Identificador: ", valor)) {
-            id.setIdentificador(valor);
+        if (lerIdentificador(id, "Identificador: "))
             informarResultado(cartoes.excluir(id), "Cartao excluido.", "Cartao nao encontrado.");
-        }
     }
     (void)usuario;
 }
 
 void CntrlApresentacao::menuRelatorio(const Pessoa &usuario) {
-    string valor;
     Identificador id;
     int opcao;
-    if (!lerInteiro("1-Tempo ciclo 2-Lead time 3-WIP 0-Voltar: ", opcao))
+    if (!lerInteiro("1-Tempo ciclo 2-Ciclo medio 3-Lead time 4-Lead medio 5-WIP 0-Voltar: ", opcao))
         return;
-    if (!lerTexto("Identificador do cartao/quadro: ", valor))
+    if (!lerIdentificador(id, "Identificador do cartao/quadro: "))
         return;
-    id.setIdentificador(valor);
     if (opcao == 1)
         cout << "Tempo de ciclo: " << relatorios.lerTempoCiclo(id) << " minutos\n";
     else if (opcao == 2)
-        cout << "Lead time: " << relatorios.lerLeadTime(id) << " minutos\n";
+        cout << "Tempo de ciclo medio: " << relatorios.lerTempoCicloMedio(id) << " minutos\n";
     else if (opcao == 3)
+        cout << "Lead time: " << relatorios.lerLeadTime(id) << " minutos\n";
+    else if (opcao == 4)
+        cout << "Lead time medio: " << relatorios.lerLeadTimeMedio(id) << " minutos\n";
+    else if (opcao == 5)
         cout << "WIP: " << relatorios.lerWIP(id) << "\n";
     (void)usuario;
 }

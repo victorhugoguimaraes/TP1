@@ -22,6 +22,8 @@ class CntrlApresentacao {
 
     bool lerTexto(const string &mensagem, string &valor);
     bool lerInteiro(const string &mensagem, int &valor);
+    bool lerEmail(Email &email);
+    bool lerIdentificador(Identificador &identificador, const string &mensagem);
     bool autenticar(Pessoa &usuario);
     bool cadastrarPessoaInicial();
     void menuPessoa();
@@ -37,6 +39,10 @@ class CntrlApresentacao {
     void listarProjetos(ServicoProjeto &servico);
     void listarQuadros(ServicoQuadro &servico);
     void listarCartoes(ServicoCartao &servico);
+    void mostrarPessoa(const Pessoa &pessoa);
+    void mostrarProjeto(const Projeto &projeto);
+    void mostrarQuadro(const Quadro &quadro);
+    void mostrarCartao(const CartaoAtividade &cartao);
 
   public:
     CntrlApresentacao(ServicoPessoa &pessoas, ServicoProjeto &projetos, ServicoQuadro &quadros, ServicoCartao &cartoes,
