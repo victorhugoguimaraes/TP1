@@ -22,6 +22,7 @@ class CntrlApresentacao {
 
     bool lerTexto(const string &mensagem, string &valor);
     bool lerInteiro(const string &mensagem, int &valor);
+    void pausar();
     bool lerEmail(Email &email);
     bool lerIdentificador(Identificador &identificador, const string &mensagem);
     bool autenticar(Pessoa &usuario);

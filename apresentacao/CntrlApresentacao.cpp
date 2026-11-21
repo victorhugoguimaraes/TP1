@@ -72,6 +72,12 @@ bool CntrlApresentacao::lerInteiro(const string &mensagem, int &valor) {
     return true;
 }
 
+void CntrlApresentacao::pausar() {
+    string entrada;
+    cout << "\nPressione ENTER para continuar...";
+    getline(cin, entrada);
+}
+
 bool CntrlApresentacao::lerEmail(Email &email) {
     string valor;
 
@@ -676,13 +682,16 @@ void CntrlApresentacao::executar() {
             return;
         if (opcao == 0)
             return;
-        if (opcao == 1)
+        if (opcao == 1) {
             informarResultado(cadastrarPessoaInicial(), "Pessoa criada.", "Falha ao criar pessoa.");
-        else if (opcao == 2) {
+            pausar();
+        } else if (opcao == 2) {
             interfaceTerminal.limpar();
             interfaceTerminal.cabecalho("AUTENTICACAO", "Informe suas credenciais");
-            if (!autenticar(usuario))
+            if (!autenticar(usuario)) {
+                pausar();
                 continue;
+            }
             while (true) {
                 interfaceTerminal.limpar();
                 interfaceTerminal.cabecalho("MENU PRINCIPAL", "Usuario: " + usuario.getNome().getNome() + " (" +
@@ -690,16 +699,22 @@ void CntrlApresentacao::executar() {
                 cout << "\n1 - Pessoas\n2 - Projetos\n3 - Quadros\n4 - Cartoes\n5 - Relatorios\n0 - Sair\n";
                 if (!lerInteiro("Opcao: ", opcao) || opcao == 0)
                     break;
-                if (opcao == 1)
+                if (opcao == 1) {
                     menuPessoa();
-                else if (opcao == 2)
+                    pausar();
+                } else if (opcao == 2) {
                     menuProjeto(usuario);
-                else if (opcao == 3)
+                    pausar();
+                } else if (opcao == 3) {
                     menuQuadro(usuario);
-                else if (opcao == 4)
+                    pausar();
+                } else if (opcao == 4) {
                     menuCartao(usuario);
-                else if (opcao == 5)
+                    pausar();
+                } else if (opcao == 5) {
                     menuRelatorio(usuario);
+                    pausar();
+                }
             }
         }
     }
