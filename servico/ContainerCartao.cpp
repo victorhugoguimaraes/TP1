@@ -179,7 +179,7 @@ bool ContainerCartoes::excluir(const Identificador &identificador) {
     codigo = sqlite3_step(comando);
     sqlite3_finalize(comando);
 
-    if ((codigo & 0xff) == SQLITE_CONSTRAINT)
+    if (codigo == SQLITE_CONSTRAINT || codigo == SQLITE_CONSTRAINT_FOREIGNKEY)
         return false;
 
     verificarResultado(codigo, banco.obterBanco());
