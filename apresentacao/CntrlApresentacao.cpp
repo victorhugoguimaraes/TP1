@@ -73,6 +73,7 @@ bool CntrlApresentacao::lerTexto(const string &mensagem, string &valor) {
 
 bool CntrlApresentacao::lerInteiro(const string &mensagem, int &valor) {
     string texto;
+    char sobra;
 
     if (!lerTexto(mensagem, texto))
         return false;
@@ -80,7 +81,7 @@ bool CntrlApresentacao::lerInteiro(const string &mensagem, int &valor) {
     stringstream entrada(texto);
     entrada >> valor;
 
-    if (entrada.fail()) {
+    if (entrada.fail() || (entrada >> sobra)) {
         cout << "Entrada invalida: informe um numero.\n";
         return false;
     }
@@ -406,6 +407,12 @@ bool CntrlApresentacao::lerCartao(CartaoAtividade &cartao) {
 
 void CntrlApresentacao::listarPessoas() {
     vector<Pessoa> lista = pessoas.listar();
+
+    if (lista.empty()) {
+        cout << "Nenhuma pessoa cadastrada." << endl;
+        return;
+    }
+
     for (const Pessoa &pessoa : lista)
         cout << pessoa.getEmail().getValor() << " - " << pessoa.getNome().getNome() << " - "
              << cargoTexto(pessoa.getPapel().getCargo()) << endl;
@@ -413,6 +420,12 @@ void CntrlApresentacao::listarPessoas() {
 
 void CntrlApresentacao::listarProjetos(ServicoProjeto &servico) {
     vector<Projeto> lista = servico.listar();
+
+    if (lista.empty()) {
+        cout << "Nenhum projeto cadastrado." << endl;
+        return;
+    }
+
     for (const Projeto &projeto : lista)
         cout << projeto.getIdentificador().getIdentificador() << " - " << projeto.getNome().getNome()
              << " - gestor: " << projeto.getGestor().getValor() << endl;
@@ -420,6 +433,12 @@ void CntrlApresentacao::listarProjetos(ServicoProjeto &servico) {
 
 void CntrlApresentacao::listarQuadros(ServicoQuadro &servico) {
     vector<Quadro> lista = servico.listar();
+
+    if (lista.empty()) {
+        cout << "Nenhum quadro cadastrado." << endl;
+        return;
+    }
+
     for (const Quadro &quadro : lista)
         cout << quadro.getIdentificador().getIdentificador() << " - " << quadro.getNome().getNome()
              << " - limite: " << quadro.getLimite().getLimite() << endl;
@@ -427,6 +446,12 @@ void CntrlApresentacao::listarQuadros(ServicoQuadro &servico) {
 
 void CntrlApresentacao::listarCartoes(ServicoCartao &servico) {
     vector<CartaoAtividade> lista = servico.listar();
+
+    if (lista.empty()) {
+        cout << "Nenhum cartao cadastrado." << endl;
+        return;
+    }
+
     for (const CartaoAtividade &cartao : lista)
         cout << cartao.getIdentificador().getIdentificador() << " - " << cartao.getNome().getNome() << " - "
              << estadoTexto(cartao.getEstado().getEstado()) << endl;
@@ -501,7 +526,8 @@ void CntrlApresentacao::menuPessoa() {
         if (lerEmail(email))
             informarResultado(pessoas.excluir(email), "Pessoa excluida.",
                               "Pessoa nao excluida: nao encontrada ou ainda possui relacionamentos.");
-    }
+    } else if (opcao != 0)
+        cout << "Opcao invalida." << endl;
 }
 
 void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
@@ -546,20 +572,31 @@ void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
         Identificador id;
         Email email;
         if (lerIdentificador(id, "Identificador do projeto: ") && lerEmail(email))
-            informarResultado(projetos.adicionarPessoa(id, email), "Pessoa associada.", "Falha ao associar.");
+            informarResultado(projetos.adicionarPessoa(id, email), "Pessoa associada.",
+                              "Falha ao associar: projeto ou pessoa nao encontrada, ou associacao ja existente.");
     } else if (opcao == 7) {
         Identificador id;
         Email email;
         if (lerIdentificador(id, "Identificador do projeto: ") && lerEmail(email))
-            informarResultado(projetos.removerPessoa(id, email), "Pessoa removida.", "Falha ao remover pessoa.");
+            informarResultado(projetos.removerPessoa(id, email), "Pessoa removida.",
+                              "Falha ao remover: projeto, pessoa ou associacao nao encontrada.");
     } else if (opcao == 8) {
         Identificador id;
         if (lerIdentificador(id, "Identificador do projeto: ")) {
-            vector<Email> lista = projetos.listarPessoas(id);
-            for (const Email &email : lista)
-                cout << email.getValor() << endl;
+            Projeto projeto;
+            if (!projetos.consultar(id, projeto))
+                cout << "Projeto nao encontrado." << endl;
+            else {
+                vector<Email> lista = projetos.listarPessoas(id);
+                if (lista.empty())
+                    cout << "Nenhuma pessoa associada ao projeto." << endl;
+                else
+                    for (const Email &email : lista)
+                        cout << email.getValor() << endl;
+            }
         }
-    }
+    } else if (opcao != 0)
+        cout << "Opcao invalida." << endl;
     (void)usuario;
 }
 
@@ -600,7 +637,8 @@ void CntrlApresentacao::menuQuadro(const Pessoa &usuario) {
         Identificador id;
         if (lerIdentificador(id, "Identificador: "))
             informarResultado(quadros.excluir(id), "Quadro excluido.", "Quadro nao encontrado.");
-    }
+    } else if (opcao != 0)
+        cout << "Opcao invalida." << endl;
     (void)usuario;
 }
 
@@ -646,15 +684,18 @@ void CntrlApresentacao::menuCartao(const Pessoa &usuario) {
                 novo.setEstado(Estado::FAZENDO);
             else if (estado == 2)
                 novo.setEstado(Estado::FEITO);
-            else
+            else {
+                cout << "Estado invalido: escolha 1 para FAZENDO ou 2 para FEITO." << endl;
                 return;
+            }
             informarResultado(cartoes.mover(id, novo), "Cartao movido.", "Movimento recusado.");
         }
     } else if (opcao == 6) {
         Identificador id;
         if (lerIdentificador(id, "Identificador: "))
             informarResultado(cartoes.excluir(id), "Cartao excluido.", "Cartao nao encontrado.");
-    }
+    } else if (opcao != 0)
+        cout << "Opcao invalida." << endl;
     (void)usuario;
 }
 
@@ -663,18 +704,46 @@ void CntrlApresentacao::menuRelatorio(const Pessoa &usuario) {
     int opcao;
     if (!lerInteiro("1-Tempo ciclo 2-Ciclo medio 3-Lead time 4-Lead medio 5-WIP 0-Voltar: ", opcao))
         return;
+
+    if (opcao < 1 || opcao > 5) {
+        if (opcao != 0)
+            cout << "Opcao invalida." << endl;
+        return;
+    }
+
     if (!lerIdentificador(id, "Identificador do cartao/quadro: "))
         return;
-    if (opcao == 1)
-        cout << "Tempo de ciclo: " << relatorios.lerTempoCiclo(id) << " minutos\n";
-    else if (opcao == 2)
-        cout << "Tempo de ciclo medio: " << relatorios.lerTempoCicloMedio(id) << " minutos\n";
-    else if (opcao == 3)
-        cout << "Lead time: " << relatorios.lerLeadTime(id) << " minutos\n";
-    else if (opcao == 4)
-        cout << "Lead time medio: " << relatorios.lerLeadTimeMedio(id) << " minutos\n";
-    else if (opcao == 5)
-        cout << "WIP: " << relatorios.lerWIP(id) << "\n";
+    if (opcao == 1) {
+        int resultado = relatorios.lerTempoCiclo(id);
+        if (resultado < 0)
+            cout << "Relatorio indisponivel: cartao nao encontrado ou timestamps incompletos." << endl;
+        else
+            cout << "Tempo de ciclo: " << resultado << " minutos\n";
+    } else if (opcao == 2) {
+        double resultado = relatorios.lerTempoCicloMedio(id);
+        if (resultado < 0)
+            cout << "Relatorio indisponivel: quadro nao encontrado ou sem cartoes concluidos." << endl;
+        else
+            cout << "Tempo de ciclo medio: " << resultado << " minutos\n";
+    } else if (opcao == 3) {
+        int resultado = relatorios.lerLeadTime(id);
+        if (resultado < 0)
+            cout << "Relatorio indisponivel: cartao nao encontrado ou timestamps incompletos." << endl;
+        else
+            cout << "Lead time: " << resultado << " minutos\n";
+    } else if (opcao == 4) {
+        double resultado = relatorios.lerLeadTimeMedio(id);
+        if (resultado < 0)
+            cout << "Relatorio indisponivel: quadro nao encontrado ou sem cartoes concluidos." << endl;
+        else
+            cout << "Lead time medio: " << resultado << " minutos\n";
+    } else if (opcao == 5) {
+        Quadro quadro;
+        if (!quadros.consultar(id, quadro))
+            cout << "Relatorio indisponivel: quadro nao encontrado." << endl;
+        else
+            cout << "WIP: " << relatorios.lerWIP(id) << "\n";
+    }
     (void)usuario;
 }
 
@@ -734,7 +803,8 @@ void CntrlApresentacao::executar() {
                 } else if (opcao == 5) {
                     menuRelatorio(usuario);
                     pausar();
-                }
+                } else
+                    cout << "Opcao invalida." << endl;
             }
         }
     }
