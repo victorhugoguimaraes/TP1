@@ -131,6 +131,10 @@ bool ContainerPessoas::excluir(const Email &email) {
     sqlite3_bind_text(comando, 1, email.getValor().c_str(), -1, SQLITE_TRANSIENT);
     codigo = sqlite3_step(comando);
     sqlite3_finalize(comando);
+
+    if ((codigo & 0xff) == SQLITE_CONSTRAINT)
+        return false;
+
     verificarResultado(codigo, banco.obterBanco());
 
     return sqlite3_changes(banco.obterBanco()) > 0;

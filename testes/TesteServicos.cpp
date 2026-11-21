@@ -2,6 +2,8 @@
 
 #include "../persistencia/Schema.hpp"
 
+#include <stdexcept>
+
 using namespace std;
 
 void TUServicos::setUp() {
@@ -178,6 +180,24 @@ void TUServicos::testarCenarioFalha() {
     Estado aFazer;
     aFazer.setEstado(Estado::A_FAZER);
     if (servicoCartaoGestor->mover(primeiro.getIdentificador(), aFazer))
+        estado = FALHA;
+
+    bool excluiu = false;
+    try {
+        excluiu = servicoProjetoGestor->excluir(projeto.getIdentificador());
+    } catch (const runtime_error &) {
+        estado = FALHA;
+    }
+    if (excluiu)
+        estado = FALHA;
+
+    excluiu = false;
+    try {
+        excluiu = pessoas->excluir(gestor->getEmail());
+    } catch (const runtime_error &) {
+        estado = FALHA;
+    }
+    if (excluiu)
         estado = FALHA;
 }
 

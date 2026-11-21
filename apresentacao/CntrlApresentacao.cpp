@@ -24,6 +24,22 @@ string estadoTexto(Estado::Status estado) {
     return "A FAZER";
 }
 
+string prioridadeTexto(Prioridade::Nivel prioridade) {
+    if (prioridade == Prioridade::ALTA)
+        return "ALTA";
+    if (prioridade == Prioridade::MEDIA)
+        return "MEDIA";
+    return "BAIXA";
+}
+
+string tamanhoTexto(Tamanho::Nivel tamanho) {
+    if (tamanho == Tamanho::GRANDE)
+        return "GRANDE";
+    if (tamanho == Tamanho::MEDIO)
+        return "MEDIO";
+    return "PEQUENO";
+}
+
 bool criarEmail(const string &texto, Email &email) {
     try {
         email.setValor(texto);
@@ -443,10 +459,12 @@ void CntrlApresentacao::mostrarCartao(const CartaoAtividade &cartao) {
     cout << "Quadro: " << cartao.getQuadro().getIdentificador() << endl;
     cout << "Nome: " << cartao.getNome().getNome() << endl;
     cout << "Descricao: " << cartao.getDescricao().getTexto() << endl;
+    cout << "Prioridade: " << prioridadeTexto(cartao.getPrioridade().getPrioridade()) << endl;
+    cout << "Tamanho: " << tamanhoTexto(cartao.getTamanho().getTamanho()) << endl;
     cout << "Estado: " << estadoTexto(cartao.getEstado().getEstado()) << endl;
-    cout << "Entrada: " << cartao.getEntrada().getValor() << endl;
-    cout << "Inicio: " << cartao.getInicio().getValor() << endl;
-    cout << "Termino: " << cartao.getTermino().getValor() << endl;
+    cout << "Entrada (automatica na criacao): " << cartao.getEntrada().getValor() << endl;
+    cout << "Inicio (automatico ao mover para FAZENDO): " << cartao.getInicio().getValor() << endl;
+    cout << "Termino (automatico ao mover para FEITO): " << cartao.getTermino().getValor() << endl;
 }
 
 void CntrlApresentacao::menuPessoa() {
@@ -481,7 +499,8 @@ void CntrlApresentacao::menuPessoa() {
     } else if (opcao == 5) {
         Email email;
         if (lerEmail(email))
-            informarResultado(pessoas.excluir(email), "Pessoa excluida.", "Pessoa nao encontrada.");
+            informarResultado(pessoas.excluir(email), "Pessoa excluida.",
+                              "Pessoa nao excluida: nao encontrada ou ainda possui relacionamentos.");
     }
 }
 
@@ -521,7 +540,8 @@ void CntrlApresentacao::menuProjeto(const Pessoa &usuario) {
     } else if (opcao == 5) {
         Identificador id;
         if (lerIdentificador(id, "Identificador: "))
-            informarResultado(projetos.excluir(id), "Projeto excluido.", "Projeto nao encontrado.");
+            informarResultado(projetos.excluir(id), "Projeto excluido.",
+                              "Projeto nao excluido: nao encontrado ou ainda possui quadros/relacionamentos.");
     } else if (opcao == 6) {
         Identificador id;
         Email email;
