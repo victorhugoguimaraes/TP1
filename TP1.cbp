@@ -52,11 +52,20 @@
 		<Linker>
 			<Add option="-static-libgcc -static-libstdc++" />
 		</Linker>
-		<Unit filename="main.cpp">
+		<Unit filename="apresentacao/CntrlApresentacao.cpp">
 			<Option target="Debug;Release" />
 		</Unit>
-		<Unit filename="sqlite/sqlite3.c" />
-		<Unit filename="sqlite/sqlite3.h" />
+		<Unit filename="apresentacao/CntrlApresentacao.hpp">
+			<Option target="Debug;Release" />
+		</Unit>
+		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.cpp" />
+		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.hpp" />
+		<Unit filename="apresentacao/InterfaceTerminal.cpp">
+			<Option target="Debug;Release" />
+		</Unit>
+		<Unit filename="apresentacao/InterfaceTerminal.hpp">
+			<Option target="Debug;Release" />
+		</Unit>
 		<Unit filename="dominios/Email.cpp" />
 		<Unit filename="dominios/Email.hpp" />
 		<Unit filename="dominios/Estado.cpp" />
@@ -95,33 +104,14 @@
 		<Unit filename="interfaces/ServicoProjeto.hpp" />
 		<Unit filename="interfaces/ServicoQuadro.hpp" />
 		<Unit filename="interfaces/ServicoRelatorio.hpp" />
-		<Unit filename="apresentacao/CntrlApresentacao.cpp">
+		<Unit filename="main.cpp">
 			<Option target="Debug;Release" />
 		</Unit>
-		<Unit filename="apresentacao/CntrlApresentacao.hpp">
-			<Option target="Debug;Release" />
-		</Unit>
-		<Unit filename="apresentacao/InterfaceTerminal.cpp">
-			<Option target="Debug;Release" />
-		</Unit>
-		<Unit filename="apresentacao/InterfaceTerminal.hpp">
-			<Option target="Debug;Release" />
-		</Unit>
-		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.cpp" />
-		<Unit filename="apresentacao/CntrlApresentacaoAutenticacao.hpp" />
 		<Unit filename="persistencia/BancoDados.cpp" />
 		<Unit filename="persistencia/BancoDados.hpp" />
 		<Unit filename="persistencia/Schema.cpp" />
 		<Unit filename="persistencia/Schema.hpp" />
 		<Unit filename="persistencia/SqliteUtil.hpp" />
-		<Unit filename="servico/ContainerCartao.cpp" />
-		<Unit filename="servico/ContainerCartao.hpp" />
-		<Unit filename="servico/ContainerPessoa.cpp" />
-		<Unit filename="servico/ContainerPessoa.hpp" />
-		<Unit filename="servico/ContainerProjeto.cpp" />
-		<Unit filename="servico/ContainerProjeto.hpp" />
-		<Unit filename="servico/ContainerQuadro.cpp" />
-		<Unit filename="servico/ContainerQuadro.hpp" />
 		<Unit filename="servico/CntrlServicoAutenticacao.cpp" />
 		<Unit filename="servico/CntrlServicoAutenticacao.hpp" />
 		<Unit filename="servico/CntrlServicoCartao.cpp" />
@@ -134,6 +124,18 @@
 		<Unit filename="servico/CntrlServicoQuadro.hpp" />
 		<Unit filename="servico/CntrlServicoRelatorio.cpp" />
 		<Unit filename="servico/CntrlServicoRelatorio.hpp" />
+		<Unit filename="servico/ContainerCartao.cpp" />
+		<Unit filename="servico/ContainerCartao.hpp" />
+		<Unit filename="servico/ContainerPessoa.cpp" />
+		<Unit filename="servico/ContainerPessoa.hpp" />
+		<Unit filename="servico/ContainerProjeto.cpp" />
+		<Unit filename="servico/ContainerProjeto.hpp" />
+		<Unit filename="servico/ContainerQuadro.cpp" />
+		<Unit filename="servico/ContainerQuadro.hpp" />
+		<Unit filename="sqlite/sqlite3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sqlite/sqlite3.h" />
 		<Unit filename="testes/TesteDominios.cpp">
 			<Option target="Testes" />
 		</Unit>
