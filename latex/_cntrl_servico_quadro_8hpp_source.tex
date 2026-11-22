@@ -1,0 +1,32 @@
+\doxysection{Cntrl\+Servico\+Quadro.\+hpp}
+\hypertarget{_cntrl_servico_quadro_8hpp_source}{}\label{_cntrl_servico_quadro_8hpp_source}\index{servico/CntrlServicoQuadro.hpp@{servico/CntrlServicoQuadro.hpp}}
+\doxymbox{\hyperlink{_cntrl_servico_quadro_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CNTRLSERVICOQUADRO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CNTRLSERVICOQUADRO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_quadro_8hpp}{../interfaces/ServicoQuadro.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_quadro_8hpp}{ContainerQuadro.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_servico_quadro_a04ec035c4c8ce90e1b49926627c52188}{CntrlServicoQuadro}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_servico_quadro}{ServicoQuadro}}\ \{}
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_container_quadros}{ContainerQuadros}}\ \&container;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_quadro_a04ec035c4c8ce90e1b49926627c52188}{CntrlServicoQuadro}}(\doxymbox{\hyperlink{class_container_quadros}{ContainerQuadros}}\ \&container,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_quadro_a7ccb4abcbe31bccc060dc33875df455e}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ vector<Quadro>\ \doxymbox{\hyperlink{class_cntrl_servico_quadro_af0b57e758212c03a5c714303eed3b8cb}{listar}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_quadro_a8f4a6a7fe277195fe3ae217f1c410bcf}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_quadro_a498febd122eb8d16f50993797f47bcee}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_quadro_a0847ffa11ed4b3a8246266e779be82e2}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

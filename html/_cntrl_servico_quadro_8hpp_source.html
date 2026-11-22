@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: CÃ³digo-Fonte de servico/CntrlServicoQuadro.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_cntrl_servico_quadro_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CntrlServicoQuadro.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_cntrl_servico_quadro_8hpp.html">Ir para a documentaÃ§Ã£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CNTRLSERVICOQUADRO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CNTRLSERVICOQUADRO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_pessoa_8hpp.html">../entidades/Pessoa.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_servico_quadro_8hpp.html">../interfaces/ServicoQuadro.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_container_quadro_8hpp.html">ContainerQuadro.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_cntrl_servico_quadro.html">   19</a></span><span class="keyword">class </span><a class="code hl_function" href="class_cntrl_servico_quadro.html#a04ec035c4c8ce90e1b49926627c52188">CntrlServicoQuadro</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_servico_quadro.html">ServicoQuadro</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_container_quadros.html">ContainerQuadros</a> &amp;container;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_pessoa.html">Pessoa</a> &amp;usuario;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="class_cntrl_servico_quadro.html#a04ec035c4c8ce90e1b49926627c52188">CntrlServicoQuadro</a>(<a class="code hl_class" href="class_container_quadros.html">ContainerQuadros</a> &amp;container, <span class="keyword">const</span> <a class="code hl_class" href="class_pessoa.html">Pessoa</a> &amp;usuario);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cntrl_servico_quadro.html#a7ccb4abcbe31bccc060dc33875df455e">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;quadro) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    vector&lt;Quadro&gt; <a class="code hl_function" href="class_cntrl_servico_quadro.html#af0b57e758212c03a5c714303eed3b8cb">listar</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cntrl_servico_quadro.html#a8f4a6a7fe277195fe3ae217f1c410bcf">consultar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador, <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;quadro) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cntrl_servico_quadro.html#a498febd122eb8d16f50993797f47bcee">editar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;quadro) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cntrl_servico_quadro.html#a0847ffa11ed4b3a8246266e779be82e2">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_container_quadro_8hpp_html"><div class="ttname"><a href="_container_quadro_8hpp.html">ContainerQuadro.hpp</a></div><div class="ttdoc">Declaração da classe de persistência (container) para quadros de atividades.</div></div>
+<div class="ttc" id="a_pessoa_8hpp_html"><div class="ttname"><a href="_pessoa_8hpp.html">Pessoa.hpp</a></div><div class="ttdoc">Declaração da classe de entidade Pessoa.</div></div>
+<div class="ttc" id="a_servico_quadro_8hpp_html"><div class="ttname"><a href="_servico_quadro_8hpp.html">ServicoQuadro.hpp</a></div><div class="ttdoc">Declaração da interface de serviço para gerenciamento de quadros de atividades.</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_a04ec035c4c8ce90e1b49926627c52188"><div class="ttname"><a href="class_cntrl_servico_quadro.html#a04ec035c4c8ce90e1b49926627c52188">CntrlServicoQuadro::CntrlServicoQuadro</a></div><div class="ttdeci">CntrlServicoQuadro(ContainerQuadros &amp;container, const Pessoa &amp;usuario)</div><div class="ttdoc">Constrói a controladora associando o container de projetos e o usuário autenticado.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:3</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_a0847ffa11ed4b3a8246266e779be82e2"><div class="ttname"><a href="class_cntrl_servico_quadro.html#a0847ffa11ed4b3a8246266e779be82e2">CntrlServicoQuadro::excluir</a></div><div class="ttdeci">bool excluir(const Identificador &amp;identificador) override</div><div class="ttdoc">Remove um quadro de atividades do sistema pelo seu identificador.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:37</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_a498febd122eb8d16f50993797f47bcee"><div class="ttname"><a href="class_cntrl_servico_quadro.html#a498febd122eb8d16f50993797f47bcee">CntrlServicoQuadro::editar</a></div><div class="ttdeci">bool editar(const Quadro &amp;quadro) override</div><div class="ttdoc">Atualiza os dados de um quadro de atividades já cadastrado.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:30</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_a7ccb4abcbe31bccc060dc33875df455e"><div class="ttname"><a href="class_cntrl_servico_quadro.html#a7ccb4abcbe31bccc060dc33875df455e">CntrlServicoQuadro::criar</a></div><div class="ttdeci">bool criar(const Quadro &amp;quadro) override</div><div class="ttdoc">Cria e armazena um novo quadro de atividades no sistema.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:15</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_a8f4a6a7fe277195fe3ae217f1c410bcf"><div class="ttname"><a href="class_cntrl_servico_quadro.html#a8f4a6a7fe277195fe3ae217f1c410bcf">CntrlServicoQuadro::consultar</a></div><div class="ttdeci">bool consultar(const Identificador &amp;identificador, Quadro &amp;quadro) override</div><div class="ttdoc">Consulta um quadro específico pelo seu identificador.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:26</div></div>
+<div class="ttc" id="aclass_cntrl_servico_quadro_html_af0b57e758212c03a5c714303eed3b8cb"><div class="ttname"><a href="class_cntrl_servico_quadro.html#af0b57e758212c03a5c714303eed3b8cb">CntrlServicoQuadro::listar</a></div><div class="ttdeci">vector&lt; Quadro &gt; listar() const override</div><div class="ttdoc">Lista todos os quadros de atividades cadastrados no sistema.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> CntrlServicoQuadro.cpp:22</div></div>
+<div class="ttc" id="aclass_container_quadros_html"><div class="ttname"><a href="class_container_quadros.html">ContainerQuadros</a></div><div class="ttdoc">Gerencia a persistência de objetos Quadro no banco de dados SQLite.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> ContainerQuadro.hpp:20</div></div>
+<div class="ttc" id="aclass_identificador_html"><div class="ttname"><a href="class_identificador.html">Identificador</a></div><div class="ttdoc">Representa e valida um código de identificação alfanumérico com formato fixo.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Identificador.hpp:15</div></div>
+<div class="ttc" id="aclass_pessoa_html"><div class="ttname"><a href="class_pessoa.html">Pessoa</a></div><div class="ttdoc">Entidade que representa uma pessoa (usuário) no sistema.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Pessoa.hpp:27</div></div>
+<div class="ttc" id="aclass_quadro_html"><div class="ttname"><a href="class_quadro.html">Quadro</a></div><div class="ttdoc">Entidade que representa um quadro de atividades dentro de um projeto.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Quadro.hpp:25</div></div>
+<div class="ttc" id="aclass_servico_quadro_html"><div class="ttname"><a href="class_servico_quadro.html">ServicoQuadro</a></div><div class="ttdoc">Define a interface de operações de negócio sobre quadros de atividades.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> ServicoQuadro.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_e946b11746fe93bccb3c3b0faa59667c.html">servico</a></li><li class="navelem"><a href="_cntrl_servico_quadro_8hpp.html">CntrlServicoQuadro.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

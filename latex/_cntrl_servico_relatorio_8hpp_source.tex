@@ -1,0 +1,32 @@
+\doxysection{Cntrl\+Servico\+Relatorio.\+hpp}
+\hypertarget{_cntrl_servico_relatorio_8hpp_source}{}\label{_cntrl_servico_relatorio_8hpp_source}\index{servico/CntrlServicoRelatorio.hpp@{servico/CntrlServicoRelatorio.hpp}}
+\doxymbox{\hyperlink{_cntrl_servico_relatorio_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CNTRLSERVICORELATORIO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CNTRLSERVICORELATORIO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_relatorio_8hpp}{../interfaces/ServicoRelatorio.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_cartao_8hpp}{ContainerCartao.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_servico_relatorio_ab02c60a572f521db323cdf956eea0199}{CntrlServicoRelatorio}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_servico_relatorio}{ServicoRelatorio}}\ \{}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_container_cartoes}{ContainerCartoes}}\ \&container;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_ab02c60a572f521db323cdf956eea0199}{CntrlServicoRelatorio}}(\doxymbox{\hyperlink{class_container_cartoes}{ContainerCartoes}}\ \&container,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a5693f95b2505c36b806820e34d086b71}{lerTempoCiclo}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a0f24b55ba3ff1626f9150bc7ccd1d0db}{lerTempoCicloMedio}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a78d3bff6867c824219cd99b8115cdddf}{lerLeadTime}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a287a9f5d36c7e04b0c87f1d2a652fad7}{lerLeadTimeMedio}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a002067f17d7c9320d356dcdc23367cb5}{lerWIP}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

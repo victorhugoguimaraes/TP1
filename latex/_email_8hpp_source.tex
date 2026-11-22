@@ -1,0 +1,31 @@
+\doxysection{Email.\+hpp}
+\hypertarget{_email_8hpp_source}{}\label{_email_8hpp_source}\index{dominios/Email.hpp@{dominios/Email.hpp}}
+\doxymbox{\hyperlink{_email_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ EMAIL\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ EMAIL\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_email}{Email}}\ \{}
+\DoxyCodeLine{00017\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_MAXIMO\_LOCAL\ =\ 64;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_MAXIMO\_DOMINIO\ =\ 255;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{string}\ valor;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarLocal(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&email,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fim)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarDominio(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&email,\ \textcolor{keywordtype}{int}\ inicio,\ \textcolor{keywordtype}{int}\ fim)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ validar(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&email)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_email_a5148a6dcb03d12577ea56ccfd344d1c2}{setValor}}(\textcolor{keywordtype}{string}\ valor);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_email_a573b7a1f21085bbb13cf6ec4dd802ecc}{getValor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

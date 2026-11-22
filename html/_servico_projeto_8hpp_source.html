@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: CÃ³digo-Fonte de interfaces/ServicoProjeto.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_servico_projeto_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ServicoProjeto.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_servico_projeto_8hpp.html">Ir para a documentaÃ§Ã£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef SERVICOPROJETO_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define SERVICOPROJETO_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_email_8hpp.html">../dominios/Email.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_identificador_8hpp.html">../dominios/Identificador.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_projeto_8hpp.html">../entidades/Projeto.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_servico_projeto.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_servico_projeto.html">ServicoProjeto</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a001f7a4bc76902336dc5169cefc60809">   31</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#a001f7a4bc76902336dc5169cefc60809">criar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_projeto.html">Projeto</a> &amp;projeto) = 0;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a0f7c732479108f460fd12f33473bc338">   37</a></span>    <span class="keyword">virtual</span> vector&lt;Projeto&gt; <a class="code hl_function" href="class_servico_projeto.html#a0f7c732479108f460fd12f33473bc338">listar</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#ae966a313daf0242d07237b2bdc567f8f">   45</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#ae966a313daf0242d07237b2bdc567f8f">consultar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador, <a class="code hl_class" href="class_projeto.html">Projeto</a> &amp;projeto) = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a99afc5d7bd60d630cf21191182aa120a">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#a99afc5d7bd60d630cf21191182aa120a">editar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_projeto.html">Projeto</a> &amp;projeto) = 0;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a04a1e11e3949e4a1035f101185ee498d">   59</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#a04a1e11e3949e4a1035f101185ee498d">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador) = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a124e1b8622f872c83ca0142ba3839002">   67</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#a124e1b8622f872c83ca0142ba3839002">adicionarPessoa</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;projeto, <span class="keyword">const</span> <a class="code hl_class" href="class_email.html">Email</a> &amp;pessoa) = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#abcfc5822fe69df9bf773b8b05e735f34">   75</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_servico_projeto.html#abcfc5822fe69df9bf773b8b05e735f34">removerPessoa</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;projeto, <span class="keyword">const</span> <a class="code hl_class" href="class_email.html">Email</a> &amp;pessoa) = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a14a5e0e6cec975243863d3c516c548bb">   82</a></span>    <span class="keyword">virtual</span> vector&lt;Email&gt; <a class="code hl_function" href="class_servico_projeto.html#a14a5e0e6cec975243863d3c516c548bb">listarPessoas</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;projeto) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_servico_projeto.html#a4a103d38cd29a8840879bd538a4881d9">   87</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_servico_projeto.html#a4a103d38cd29a8840879bd538a4881d9">~ServicoProjeto</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_email_8hpp_html"><div class="ttname"><a href="_email_8hpp.html">Email.hpp</a></div></div>
+<div class="ttc" id="a_identificador_8hpp_html"><div class="ttname"><a href="_identificador_8hpp.html">Identificador.hpp</a></div></div>
+<div class="ttc" id="a_projeto_8hpp_html"><div class="ttname"><a href="_projeto_8hpp.html">Projeto.hpp</a></div><div class="ttdoc">Declaração da classe de entidade Projeto.</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">Representa e valida sintaticamente um endereço de e-mail.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Email.hpp:16</div></div>
+<div class="ttc" id="aclass_identificador_html"><div class="ttname"><a href="class_identificador.html">Identificador</a></div><div class="ttdoc">Representa e valida um código de identificação alfanumérico com formato fixo.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Identificador.hpp:15</div></div>
+<div class="ttc" id="aclass_projeto_html"><div class="ttname"><a href="class_projeto.html">Projeto</a></div><div class="ttdoc">Entidade que representa um projeto no sistema.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> Projeto.hpp:28</div></div>
+<div class="ttc" id="aclass_servico_projeto_html"><div class="ttname"><a href="class_servico_projeto.html">ServicoProjeto</a></div><div class="ttdoc">Define a interface de operações de negócio sobre projetos.</div><div class="ttdef"><b>DefiniÃ§Ã£o</b> ServicoProjeto.hpp:24</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a001f7a4bc76902336dc5169cefc60809"><div class="ttname"><a href="class_servico_projeto.html#a001f7a4bc76902336dc5169cefc60809">ServicoProjeto::criar</a></div><div class="ttdeci">virtual bool criar(const Projeto &amp;projeto)=0</div><div class="ttdoc">Cria e armazena um novo projeto no sistema.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a04a1e11e3949e4a1035f101185ee498d"><div class="ttname"><a href="class_servico_projeto.html#a04a1e11e3949e4a1035f101185ee498d">ServicoProjeto::excluir</a></div><div class="ttdeci">virtual bool excluir(const Identificador &amp;identificador)=0</div><div class="ttdoc">Remove um projeto do sistema pelo seu identificador.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a0f7c732479108f460fd12f33473bc338"><div class="ttname"><a href="class_servico_projeto.html#a0f7c732479108f460fd12f33473bc338">ServicoProjeto::listar</a></div><div class="ttdeci">virtual vector&lt; Projeto &gt; listar() const =0</div><div class="ttdoc">Lista todos os projetos cadastrados no sistema.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a124e1b8622f872c83ca0142ba3839002"><div class="ttname"><a href="class_servico_projeto.html#a124e1b8622f872c83ca0142ba3839002">ServicoProjeto::adicionarPessoa</a></div><div class="ttdeci">virtual bool adicionarPessoa(const Identificador &amp;projeto, const Email &amp;pessoa)=0</div><div class="ttdoc">Vincula uma pessoa à equipe participante de um projeto.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a14a5e0e6cec975243863d3c516c548bb"><div class="ttname"><a href="class_servico_projeto.html#a14a5e0e6cec975243863d3c516c548bb">ServicoProjeto::listarPessoas</a></div><div class="ttdeci">virtual vector&lt; Email &gt; listarPessoas(const Identificador &amp;projeto) const =0</div><div class="ttdoc">Lista os e-mails de todas as pessoas vinculadas a um projeto.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a4a103d38cd29a8840879bd538a4881d9"><div class="ttname"><a href="class_servico_projeto.html#a4a103d38cd29a8840879bd538a4881d9">ServicoProjeto::~ServicoProjeto</a></div><div class="ttdeci">virtual ~ServicoProjeto()=default</div><div class="ttdoc">Permite destruir uma implementação por meio da interface.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_a99afc5d7bd60d630cf21191182aa120a"><div class="ttname"><a href="class_servico_projeto.html#a99afc5d7bd60d630cf21191182aa120a">ServicoProjeto::editar</a></div><div class="ttdeci">virtual bool editar(const Projeto &amp;projeto)=0</div><div class="ttdoc">Atualiza os dados de um projeto já cadastrado.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_abcfc5822fe69df9bf773b8b05e735f34"><div class="ttname"><a href="class_servico_projeto.html#abcfc5822fe69df9bf773b8b05e735f34">ServicoProjeto::removerPessoa</a></div><div class="ttdeci">virtual bool removerPessoa(const Identificador &amp;projeto, const Email &amp;pessoa)=0</div><div class="ttdoc">Remove o vínculo de uma pessoa com um projeto.</div></div>
+<div class="ttc" id="aclass_servico_projeto_html_ae966a313daf0242d07237b2bdc567f8f"><div class="ttname"><a href="class_servico_projeto.html#ae966a313daf0242d07237b2bdc567f8f">ServicoProjeto::consultar</a></div><div class="ttdeci">virtual bool consultar(const Identificador &amp;identificador, Projeto &amp;projeto)=0</div><div class="ttdoc">Consulta um projeto específico pelo seu identificador.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_ff6b5900125bb0123025c1cb24bdc726.html">interfaces</a></li><li class="navelem"><a href="_servico_projeto_8hpp.html">ServicoProjeto.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

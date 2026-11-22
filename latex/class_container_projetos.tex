@@ -1,0 +1,213 @@
+\doxysection{ReferÃªncia da Classe Container\+Projetos}
+\hypertarget{class_container_projetos}{}\label{class_container_projetos}\index{ContainerProjetos@{ContainerProjetos}}
+
+
+Gerencia a persistência de objetos \doxylink{class_projeto}{Projeto} e seus vínculos com pessoas no banco SQLite.  
+
+
+
+
+{\ttfamily \+\#include $<$Container\+Projeto.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_container_projetos_ab34364f08f624b42299dd6c6be16de24}{Container\+Projetos}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_a71604450be0a22e2c07bbf82a796c58d}{inserir}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)
+\begin{DoxyCompactList}\small\item\em Insere um novo projeto no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_aeacaa566d91d9d785e79a9f561e21214}{buscar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_projeto}{Projeto}} \&resultado) const
+\begin{DoxyCompactList}\small\item\em Busca um projeto pelo seu identificador único. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} $>$ \doxymbox{\hyperlink{class_container_projetos_acf694a320440efd52c395ef91fe7e620}{listar}} () const
+\begin{DoxyCompactList}\small\item\em Recupera todos os projetos cadastrados no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_ab4b460acd99bd700efe712dc77c838ec}{editar}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um projeto existente no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_a408ff679c677dbdb2dc03eaf3e5c1419}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador)
+\begin{DoxyCompactList}\small\item\em Remove um projeto do banco de dados pelo seu identificador. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_aca895103dd5e40c1835fcd7cc49be207}{adicionar\+Pessoa}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto, const \doxymbox{\hyperlink{class_email}{Email}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Vincula uma pessoa (participante) a um projeto no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_projetos_a2b7ab783816d080eee37ada06a809153}{remover\+Pessoa}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto, const \doxymbox{\hyperlink{class_email}{Email}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Remove o vínculo de uma pessoa com um projeto no banco de dados. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_email}{Email}} $>$ \doxymbox{\hyperlink{class_container_projetos_ac411b8924dc9793de70a8bca6abf369c}{listar\+Pessoas}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto) const
+\begin{DoxyCompactList}\small\item\em Lista os e-\/mails de todas as pessoas vinculadas a um projeto específico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia a persistência de objetos \doxylink{class_projeto}{Projeto} e seus vínculos com pessoas no banco SQLite. 
+
+Encapsula as operações CRUD de projetos (inserção, busca, listagem, edição e exclusão), além das operações na tabela associativa para adicionar, remover e listar os e-\/mails dos participantes vinculados a cada projeto. 
+
+\label{class_container_projetos_doc-constructors}
+\Hypertarget{class_container_projetos_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_container_projetos_ab34364f08f624b42299dd6c6be16de24}\index{ContainerProjetos@{ContainerProjetos}!ContainerProjetos@{ContainerProjetos}}
+\index{ContainerProjetos@{ContainerProjetos}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{ContainerProjetos()}{ContainerProjetos()}}
+{\footnotesize\ttfamily \label{class_container_projetos_ab34364f08f624b42299dd6c6be16de24} 
+Container\+Projetos::\+\+Container\+Projetos (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em banco} & Referência ao objeto \doxylink{class_banco_dados}{Banco\+Dados} utilizado nas operações SQL. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_container_projetos_doc-func-members}
+\Hypertarget{class_container_projetos_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_container_projetos_aca895103dd5e40c1835fcd7cc49be207}\index{ContainerProjetos@{ContainerProjetos}!adicionarPessoa@{adicionarPessoa}}
+\index{adicionarPessoa@{adicionarPessoa}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{adicionarPessoa()}{adicionarPessoa()}}
+{\footnotesize\ttfamily \label{class_container_projetos_aca895103dd5e40c1835fcd7cc49be207} 
+bool Container\+Projetos::\+adicionar\+Pessoa (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{, }\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Vincula uma pessoa (participante) a um projeto no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto ao qual a pessoa será associada. \\
+\hline
+{\em pessoa} & Objeto \doxylink{class_email}{Email} da pessoa a ser adicionada ao projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o vínculo for registrado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_aeacaa566d91d9d785e79a9f561e21214}\index{ContainerProjetos@{ContainerProjetos}!buscar@{buscar}}
+\index{buscar@{buscar}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily \label{class_container_projetos_aeacaa566d91d9d785e79a9f561e21214} 
+bool Container\+Projetos::\+buscar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{resultado}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca um projeto pelo seu identificador único. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do projeto pesquisado. \\
+\hline
+{\em resultado} & Referência para o objeto \doxylink{class_projeto}{Projeto} que receberá os dados encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o projeto for encontrado; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_ab4b460acd99bd700efe712dc77c838ec}\index{ContainerProjetos@{ContainerProjetos}!editar@{editar}}
+\index{editar@{editar}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_container_projetos_ab4b460acd99bd700efe712dc77c838ec} 
+bool Container\+Projetos::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um projeto existente no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_projeto}{Projeto} contendo os novos dados do registro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o registro for atualizado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_a408ff679c677dbdb2dc03eaf3e5c1419}\index{ContainerProjetos@{ContainerProjetos}!excluir@{excluir}}
+\index{excluir@{excluir}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_container_projetos_a408ff679c677dbdb2dc03eaf3e5c1419} 
+bool Container\+Projetos::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})}
+
+
+
+Remove um projeto do banco de dados pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do projeto a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o projeto for removido com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_a71604450be0a22e2c07bbf82a796c58d}\index{ContainerProjetos@{ContainerProjetos}!inserir@{inserir}}
+\index{inserir@{inserir}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{inserir()}{inserir()}}
+{\footnotesize\ttfamily \label{class_container_projetos_a71604450be0a22e2c07bbf82a796c58d} 
+bool Container\+Projetos::\+inserir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})}
+
+
+
+Insere um novo projeto no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_projeto}{Projeto} contendo os dados a serem persistidos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a inserção for concluída com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_acf694a320440efd52c395ef91fe7e620}\index{ContainerProjetos@{ContainerProjetos}!listar@{listar}}
+\index{listar@{listar}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_container_projetos_acf694a320440efd52c395ef91fe7e620} 
+vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} $>$ Container\+Projetos::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera todos os projetos cadastrados no banco de dados. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo todos os objetos \doxylink{class_projeto}{Projeto} armazenados. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_ac411b8924dc9793de70a8bca6abf369c}\index{ContainerProjetos@{ContainerProjetos}!listarPessoas@{listarPessoas}}
+\index{listarPessoas@{listarPessoas}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{listarPessoas()}{listarPessoas()}}
+{\footnotesize\ttfamily \label{class_container_projetos_ac411b8924dc9793de70a8bca6abf369c} 
+vector$<$ \doxymbox{\hyperlink{class_email}{Email}} $>$ Container\+Projetos::\+listar\+Pessoas (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption}) const}
+
+
+
+Lista os e-\/mails de todas as pessoas vinculadas a um projeto específico. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto consultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_email}{Email} dos participantes associados ao projeto. 
+\end{DoxyReturn}
+\Hypertarget{class_container_projetos_a2b7ab783816d080eee37ada06a809153}\index{ContainerProjetos@{ContainerProjetos}!removerPessoa@{removerPessoa}}
+\index{removerPessoa@{removerPessoa}!ContainerProjetos@{ContainerProjetos}}
+\doxysubsubsection{\texorpdfstring{removerPessoa()}{removerPessoa()}}
+{\footnotesize\ttfamily \label{class_container_projetos_a2b7ab783816d080eee37ada06a809153} 
+bool Container\+Projetos::\+remover\+Pessoa (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{, }\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Remove o vínculo de uma pessoa com um projeto no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto do qual a pessoa será desvinculada. \\
+\hline
+{\em pessoa} & Objeto \doxylink{class_email}{Email} da pessoa a ser removida do projeto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o vínculo for removido com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_container_projeto_8hpp}{Container\+Projeto.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_container_projeto_8cpp}{Container\+Projeto.\+cpp}}\end{DoxyCompactItemize}

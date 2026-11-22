@@ -1,0 +1,207 @@
+\doxysection{Referência da Estrutura Wal}
+\hypertarget{struct_wal}{}\label{struct_wal}\index{Wal@{Wal}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a4b3859573509d792fc68dfed06ba888b}{sqlite3\+\_\+vfs}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_wal_a5431b060acbc998a7e3710587abaa11e}{p\+Vfs}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_wal_a3a4d051c55228e554b36691c5095ed14}{p\+Db\+Fd}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_wal_aea2a72ead42cfe57e3a6809e80884397}{p\+Wal\+Fd}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_aae230a2317817739a5f08ebb28b644b0}{i\+Callback}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} \doxymbox{\hyperlink{struct_wal_a413f9f82c15d31627a2ed6eac9b6cc27}{mx\+Wal\+Size}}
+\item 
+int \doxymbox{\hyperlink{struct_wal_ae3e69420adab92acd90dd7c03d37815f}{n\+Wi\+Data}}
+\item 
+int \doxymbox{\hyperlink{struct_wal_a901c02626270f4d51db89786e4994da9}{sz\+First\+Block}}
+\item 
+volatile \doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_wal_a2b0078e3adfd1fb21794561bb12bbfac}{ap\+Wi\+Data}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_a771c3a8c81326babc7d623255a6034c5}{sz\+Page}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a7b32340f65cd15f029caad258fb3355c}{i16}} \doxymbox{\hyperlink{struct_wal_a260550c859ac7224fbdad0586dca664a}{read\+Lock}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_ac1382875f5fe049ccf09f1c2d370c429}{sync\+Flags}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_ada255c96ca65d9d8955bbf139af4e6f4}{exclusive\+Mode}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_ad7f4ba84f07115b7ce3a6133479c9d24}{write\+Lock}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_a29153bfb37a9a32f1171e5c1d10994d2}{ckpt\+Lock}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_a38f0810e34bdc89acdf27574473c0495}{read\+Only}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_a12870bbe7755271c94c3eb1fd0280c56}{truncate\+On\+Commit}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_ae3de9666170c103a835a2c767932d3f9}{sync\+Header}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_af10e79ca8fe617d7df706182ebdf7039}{pad\+To\+Sector\+Boundary}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_a5f2961175582eb8c832263b88ca1ec55}{b\+Shm\+Unreliable}}
+\item 
+\doxymbox{\hyperlink{struct_wal_index_hdr}{Wal\+Index\+Hdr}} \doxymbox{\hyperlink{struct_wal_adbeef9e632541fbf07c926652b165906}{hdr}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_a8062e125a5a4393c34cd1d9758a82e74}{min\+Frame}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_a409c7d261a92893913e2e631974bf1aa}{i\+Re\+Cksum}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_wal_ac54961758701702d67eaf3ce15c69ea5}{z\+Wal\+Name}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_a8fbe9b014342db76d8167b518b70acad}{n\+Ckpt}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_wal_doc-variable-members}
+\Hypertarget{struct_wal_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_wal_a2b0078e3adfd1fb21794561bb12bbfac}\index{Wal@{Wal}!apWiData@{apWiData}}
+\index{apWiData@{apWiData}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{apWiData}{apWiData}}
+{\footnotesize\ttfamily \label{struct_wal_a2b0078e3adfd1fb21794561bb12bbfac} 
+volatile \doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Wal::\+ap\+Wi\+Data}
+
+\Hypertarget{struct_wal_a5f2961175582eb8c832263b88ca1ec55}\index{Wal@{Wal}!bShmUnreliable@{bShmUnreliable}}
+\index{bShmUnreliable@{bShmUnreliable}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{bShmUnreliable}{bShmUnreliable}}
+{\footnotesize\ttfamily \label{struct_wal_a5f2961175582eb8c832263b88ca1ec55} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+b\+Shm\+Unreliable}
+
+\Hypertarget{struct_wal_a29153bfb37a9a32f1171e5c1d10994d2}\index{Wal@{Wal}!ckptLock@{ckptLock}}
+\index{ckptLock@{ckptLock}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{ckptLock}{ckptLock}}
+{\footnotesize\ttfamily \label{struct_wal_a29153bfb37a9a32f1171e5c1d10994d2} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+ckpt\+Lock}
+
+\Hypertarget{struct_wal_ada255c96ca65d9d8955bbf139af4e6f4}\index{Wal@{Wal}!exclusiveMode@{exclusiveMode}}
+\index{exclusiveMode@{exclusiveMode}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{exclusiveMode}{exclusiveMode}}
+{\footnotesize\ttfamily \label{struct_wal_ada255c96ca65d9d8955bbf139af4e6f4} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+exclusive\+Mode}
+
+\Hypertarget{struct_wal_adbeef9e632541fbf07c926652b165906}\index{Wal@{Wal}!hdr@{hdr}}
+\index{hdr@{hdr}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{hdr}{hdr}}
+{\footnotesize\ttfamily \label{struct_wal_adbeef9e632541fbf07c926652b165906} 
+\doxymbox{\hyperlink{struct_wal_index_hdr}{Wal\+Index\+Hdr}} Wal::\+hdr}
+
+\Hypertarget{struct_wal_aae230a2317817739a5f08ebb28b644b0}\index{Wal@{Wal}!iCallback@{iCallback}}
+\index{iCallback@{iCallback}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{iCallback}{iCallback}}
+{\footnotesize\ttfamily \label{struct_wal_aae230a2317817739a5f08ebb28b644b0} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal::\+i\+Callback}
+
+\Hypertarget{struct_wal_a409c7d261a92893913e2e631974bf1aa}\index{Wal@{Wal}!iReCksum@{iReCksum}}
+\index{iReCksum@{iReCksum}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{iReCksum}{iReCksum}}
+{\footnotesize\ttfamily \label{struct_wal_a409c7d261a92893913e2e631974bf1aa} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal::\+i\+Re\+Cksum}
+
+\Hypertarget{struct_wal_a8062e125a5a4393c34cd1d9758a82e74}\index{Wal@{Wal}!minFrame@{minFrame}}
+\index{minFrame@{minFrame}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{minFrame}{minFrame}}
+{\footnotesize\ttfamily \label{struct_wal_a8062e125a5a4393c34cd1d9758a82e74} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal::\+min\+Frame}
+
+\Hypertarget{struct_wal_a413f9f82c15d31627a2ed6eac9b6cc27}\index{Wal@{Wal}!mxWalSize@{mxWalSize}}
+\index{mxWalSize@{mxWalSize}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{mxWalSize}{mxWalSize}}
+{\footnotesize\ttfamily \label{struct_wal_a413f9f82c15d31627a2ed6eac9b6cc27} 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} Wal::\+mx\+Wal\+Size}
+
+\Hypertarget{struct_wal_a8fbe9b014342db76d8167b518b70acad}\index{Wal@{Wal}!nCkpt@{nCkpt}}
+\index{nCkpt@{nCkpt}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{nCkpt}{nCkpt}}
+{\footnotesize\ttfamily \label{struct_wal_a8fbe9b014342db76d8167b518b70acad} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal::\+n\+Ckpt}
+
+\Hypertarget{struct_wal_ae3e69420adab92acd90dd7c03d37815f}\index{Wal@{Wal}!nWiData@{nWiData}}
+\index{nWiData@{nWiData}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{nWiData}{nWiData}}
+{\footnotesize\ttfamily \label{struct_wal_ae3e69420adab92acd90dd7c03d37815f} 
+int Wal::\+n\+Wi\+Data}
+
+\Hypertarget{struct_wal_af10e79ca8fe617d7df706182ebdf7039}\index{Wal@{Wal}!padToSectorBoundary@{padToSectorBoundary}}
+\index{padToSectorBoundary@{padToSectorBoundary}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{padToSectorBoundary}{padToSectorBoundary}}
+{\footnotesize\ttfamily \label{struct_wal_af10e79ca8fe617d7df706182ebdf7039} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+pad\+To\+Sector\+Boundary}
+
+\Hypertarget{struct_wal_a3a4d051c55228e554b36691c5095ed14}\index{Wal@{Wal}!pDbFd@{pDbFd}}
+\index{pDbFd@{pDbFd}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{pDbFd}{pDbFd}}
+{\footnotesize\ttfamily \label{struct_wal_a3a4d051c55228e554b36691c5095ed14} 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}}\texorpdfstring{$\ast$}{*} Wal::\+p\+Db\+Fd}
+
+\Hypertarget{struct_wal_a5431b060acbc998a7e3710587abaa11e}\index{Wal@{Wal}!pVfs@{pVfs}}
+\index{pVfs@{pVfs}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{pVfs}{pVfs}}
+{\footnotesize\ttfamily \label{struct_wal_a5431b060acbc998a7e3710587abaa11e} 
+\doxymbox{\hyperlink{sqlite3_8c_a4b3859573509d792fc68dfed06ba888b}{sqlite3\+\_\+vfs}}\texorpdfstring{$\ast$}{*} Wal::\+p\+Vfs}
+
+\Hypertarget{struct_wal_aea2a72ead42cfe57e3a6809e80884397}\index{Wal@{Wal}!pWalFd@{pWalFd}}
+\index{pWalFd@{pWalFd}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{pWalFd}{pWalFd}}
+{\footnotesize\ttfamily \label{struct_wal_aea2a72ead42cfe57e3a6809e80884397} 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}}\texorpdfstring{$\ast$}{*} Wal::\+p\+Wal\+Fd}
+
+\Hypertarget{struct_wal_a260550c859ac7224fbdad0586dca664a}\index{Wal@{Wal}!readLock@{readLock}}
+\index{readLock@{readLock}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{readLock}{readLock}}
+{\footnotesize\ttfamily \label{struct_wal_a260550c859ac7224fbdad0586dca664a} 
+\doxymbox{\hyperlink{sqlite3_8c_a7b32340f65cd15f029caad258fb3355c}{i16}} Wal::\+read\+Lock}
+
+\Hypertarget{struct_wal_a38f0810e34bdc89acdf27574473c0495}\index{Wal@{Wal}!readOnly@{readOnly}}
+\index{readOnly@{readOnly}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{readOnly}{readOnly}}
+{\footnotesize\ttfamily \label{struct_wal_a38f0810e34bdc89acdf27574473c0495} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+read\+Only}
+
+\Hypertarget{struct_wal_ac1382875f5fe049ccf09f1c2d370c429}\index{Wal@{Wal}!syncFlags@{syncFlags}}
+\index{syncFlags@{syncFlags}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{syncFlags}{syncFlags}}
+{\footnotesize\ttfamily \label{struct_wal_ac1382875f5fe049ccf09f1c2d370c429} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+sync\+Flags}
+
+\Hypertarget{struct_wal_ae3de9666170c103a835a2c767932d3f9}\index{Wal@{Wal}!syncHeader@{syncHeader}}
+\index{syncHeader@{syncHeader}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{syncHeader}{syncHeader}}
+{\footnotesize\ttfamily \label{struct_wal_ae3de9666170c103a835a2c767932d3f9} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+sync\+Header}
+
+\Hypertarget{struct_wal_a901c02626270f4d51db89786e4994da9}\index{Wal@{Wal}!szFirstBlock@{szFirstBlock}}
+\index{szFirstBlock@{szFirstBlock}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{szFirstBlock}{szFirstBlock}}
+{\footnotesize\ttfamily \label{struct_wal_a901c02626270f4d51db89786e4994da9} 
+int Wal::\+sz\+First\+Block}
+
+\Hypertarget{struct_wal_a771c3a8c81326babc7d623255a6034c5}\index{Wal@{Wal}!szPage@{szPage}}
+\index{szPage@{szPage}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{szPage}{szPage}}
+{\footnotesize\ttfamily \label{struct_wal_a771c3a8c81326babc7d623255a6034c5} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal::\+sz\+Page}
+
+\Hypertarget{struct_wal_a12870bbe7755271c94c3eb1fd0280c56}\index{Wal@{Wal}!truncateOnCommit@{truncateOnCommit}}
+\index{truncateOnCommit@{truncateOnCommit}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{truncateOnCommit}{truncateOnCommit}}
+{\footnotesize\ttfamily \label{struct_wal_a12870bbe7755271c94c3eb1fd0280c56} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+truncate\+On\+Commit}
+
+\Hypertarget{struct_wal_ad7f4ba84f07115b7ce3a6133479c9d24}\index{Wal@{Wal}!writeLock@{writeLock}}
+\index{writeLock@{writeLock}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{writeLock}{writeLock}}
+{\footnotesize\ttfamily \label{struct_wal_ad7f4ba84f07115b7ce3a6133479c9d24} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal::\+write\+Lock}
+
+\Hypertarget{struct_wal_ac54961758701702d67eaf3ce15c69ea5}\index{Wal@{Wal}!zWalName@{zWalName}}
+\index{zWalName@{zWalName}!Wal@{Wal}}
+\doxysubsubsection{\texorpdfstring{zWalName}{zWalName}}
+{\footnotesize\ttfamily \label{struct_wal_ac54961758701702d67eaf3ce15c69ea5} 
+const char\texorpdfstring{$\ast$}{*} Wal::\+z\+Wal\+Name}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

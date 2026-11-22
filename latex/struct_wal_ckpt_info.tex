@@ -1,0 +1,55 @@
+\doxysection{Referência da Estrutura Wal\+Ckpt\+Info}
+\hypertarget{struct_wal_ckpt_info}{}\label{struct_wal_ckpt_info}\index{WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_ckpt_info_a5185e508f7da44c391b692e957a84ff6}{n\+Backfill}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_ckpt_info_a3bc01a8244045941d5f59f01123a7735}{a\+Read\+Mark}} \+[\doxymbox{\hyperlink{sqlite3_8c_a07fdcff8ba16a6a679a65ff4956087f6}{WAL\+\_\+\+NREADER}}]
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_wal_ckpt_info_a0aaaef8cfe5d45c613de6b63ea185d41}{a\+Lock}} \+[\doxymbox{\hyperlink{sqlite3_8c_ac96d8f12e0c83cf92e8ab586c4b52dd5}{SQLITE\+\_\+\+SHM\+\_\+\+NLOCK}}]
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_ckpt_info_a3598a8ba26b253492f9c1fa0d078b3a5}{n\+Backfill\+Attempted}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_ckpt_info_ac33050a373fd89719253c3cddcc9e5fe}{not\+Used0}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_wal_ckpt_info_doc-variable-members}
+\Hypertarget{struct_wal_ckpt_info_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_wal_ckpt_info_a0aaaef8cfe5d45c613de6b63ea185d41}\index{WalCkptInfo@{WalCkptInfo}!aLock@{aLock}}
+\index{aLock@{aLock}!WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection{\texorpdfstring{aLock}{aLock}}
+{\footnotesize\ttfamily \label{struct_wal_ckpt_info_a0aaaef8cfe5d45c613de6b63ea185d41} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Wal\+Ckpt\+Info::\+a\+Lock\+[\doxymbox{\hyperlink{sqlite3_8c_ac96d8f12e0c83cf92e8ab586c4b52dd5}{SQLITE\+\_\+\+SHM\+\_\+\+NLOCK}}]}
+
+\Hypertarget{struct_wal_ckpt_info_a3bc01a8244045941d5f59f01123a7735}\index{WalCkptInfo@{WalCkptInfo}!aReadMark@{aReadMark}}
+\index{aReadMark@{aReadMark}!WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection{\texorpdfstring{aReadMark}{aReadMark}}
+{\footnotesize\ttfamily \label{struct_wal_ckpt_info_a3bc01a8244045941d5f59f01123a7735} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Ckpt\+Info::\+a\+Read\+Mark\+[\doxymbox{\hyperlink{sqlite3_8c_a07fdcff8ba16a6a679a65ff4956087f6}{WAL\+\_\+\+NREADER}}]}
+
+\Hypertarget{struct_wal_ckpt_info_a5185e508f7da44c391b692e957a84ff6}\index{WalCkptInfo@{WalCkptInfo}!nBackfill@{nBackfill}}
+\index{nBackfill@{nBackfill}!WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection{\texorpdfstring{nBackfill}{nBackfill}}
+{\footnotesize\ttfamily \label{struct_wal_ckpt_info_a5185e508f7da44c391b692e957a84ff6} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Ckpt\+Info::\+n\+Backfill}
+
+\Hypertarget{struct_wal_ckpt_info_a3598a8ba26b253492f9c1fa0d078b3a5}\index{WalCkptInfo@{WalCkptInfo}!nBackfillAttempted@{nBackfillAttempted}}
+\index{nBackfillAttempted@{nBackfillAttempted}!WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection{\texorpdfstring{nBackfillAttempted}{nBackfillAttempted}}
+{\footnotesize\ttfamily \label{struct_wal_ckpt_info_a3598a8ba26b253492f9c1fa0d078b3a5} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Ckpt\+Info::\+n\+Backfill\+Attempted}
+
+\Hypertarget{struct_wal_ckpt_info_ac33050a373fd89719253c3cddcc9e5fe}\index{WalCkptInfo@{WalCkptInfo}!notUsed0@{notUsed0}}
+\index{notUsed0@{notUsed0}!WalCkptInfo@{WalCkptInfo}}
+\doxysubsubsection{\texorpdfstring{notUsed0}{notUsed0}}
+{\footnotesize\ttfamily \label{struct_wal_ckpt_info_ac33050a373fd89719253c3cddcc9e5fe} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Ckpt\+Info::\+not\+Used0}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

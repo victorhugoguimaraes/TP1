@@ -1,0 +1,149 @@
+\doxysection{ReferÃªncia da Classe Container\+Quadros}
+\hypertarget{class_container_quadros}{}\label{class_container_quadros}\index{ContainerQuadros@{ContainerQuadros}}
+
+
+Gerencia a persistência de objetos \doxylink{class_quadro}{Quadro} no banco de dados SQLite.  
+
+
+
+
+{\ttfamily \+\#include $<$Container\+Quadro.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_container_quadros_a5093bdb07cb07f33be910b001b0745d7}{Container\+Quadros}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_quadros_af72ab224aeb2f449a6712a63ae702a6a}{inserir}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro)
+\begin{DoxyCompactList}\small\item\em Insere um novo quadro de atividades no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_quadros_a2e2b21c223708ffe8d6b4d657ae5553a}{buscar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_quadro}{Quadro}} \&resultado) const
+\begin{DoxyCompactList}\small\item\em Busca um quadro de atividades pelo seu identificador único. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} $>$ \doxymbox{\hyperlink{class_container_quadros_a9ad9755f0694adcc570921a689042dc3}{listar}} () const
+\begin{DoxyCompactList}\small\item\em Recupera todos os quadros de atividades cadastrados no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_quadros_a91cc6edf14daa489bb6ffb74fbc65421}{editar}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um quadro de atividades existente no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_quadros_a0b303dc112c132368dc0ce2788678fd2}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador)
+\begin{DoxyCompactList}\small\item\em Remove um quadro de atividades do banco de dados pelo seu identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia a persistência de objetos \doxylink{class_quadro}{Quadro} no banco de dados SQLite. 
+
+Encapsula as operações CRUD (inserção, busca, listagem, edição e exclusão) dos quadros de atividades armazenados no banco de dados. 
+
+\label{class_container_quadros_doc-constructors}
+\Hypertarget{class_container_quadros_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_container_quadros_a5093bdb07cb07f33be910b001b0745d7}\index{ContainerQuadros@{ContainerQuadros}!ContainerQuadros@{ContainerQuadros}}
+\index{ContainerQuadros@{ContainerQuadros}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{ContainerQuadros()}{ContainerQuadros()}}
+{\footnotesize\ttfamily \label{class_container_quadros_a5093bdb07cb07f33be910b001b0745d7} 
+Container\+Quadros::\+\+Container\+Quadros (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em banco} & Referência ao objeto \doxylink{class_banco_dados}{Banco\+Dados} utilizado nas operações SQL. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_container_quadros_doc-func-members}
+\Hypertarget{class_container_quadros_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_container_quadros_a2e2b21c223708ffe8d6b4d657ae5553a}\index{ContainerQuadros@{ContainerQuadros}!buscar@{buscar}}
+\index{buscar@{buscar}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily \label{class_container_quadros_a2e2b21c223708ffe8d6b4d657ae5553a} 
+bool Container\+Quadros::\+buscar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{resultado}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca um quadro de atividades pelo seu identificador único. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do quadro pesquisado. \\
+\hline
+{\em resultado} & Referência para o objeto \doxylink{class_quadro}{Quadro} que receberá os dados encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o quadro for encontrado; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_quadros_a91cc6edf14daa489bb6ffb74fbc65421}\index{ContainerQuadros@{ContainerQuadros}!editar@{editar}}
+\index{editar@{editar}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_container_quadros_a91cc6edf14daa489bb6ffb74fbc65421} 
+bool Container\+Quadros::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um quadro de atividades existente no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_quadro}{Quadro} contendo os novos dados do registro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o registro for atualizado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_quadros_a0b303dc112c132368dc0ce2788678fd2}\index{ContainerQuadros@{ContainerQuadros}!excluir@{excluir}}
+\index{excluir@{excluir}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_container_quadros_a0b303dc112c132368dc0ce2788678fd2} 
+bool Container\+Quadros::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})}
+
+
+
+Remove um quadro de atividades do banco de dados pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do quadro a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o quadro for removido com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_quadros_af72ab224aeb2f449a6712a63ae702a6a}\index{ContainerQuadros@{ContainerQuadros}!inserir@{inserir}}
+\index{inserir@{inserir}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{inserir()}{inserir()}}
+{\footnotesize\ttfamily \label{class_container_quadros_af72ab224aeb2f449a6712a63ae702a6a} 
+bool Container\+Quadros::\+inserir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})}
+
+
+
+Insere um novo quadro de atividades no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_quadro}{Quadro} contendo os dados a serem persistidos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a inserção for concluída com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_quadros_a9ad9755f0694adcc570921a689042dc3}\index{ContainerQuadros@{ContainerQuadros}!listar@{listar}}
+\index{listar@{listar}!ContainerQuadros@{ContainerQuadros}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_container_quadros_a9ad9755f0694adcc570921a689042dc3} 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} $>$ Container\+Quadros::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera todos os quadros de atividades cadastrados no banco de dados. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo todos os objetos \doxylink{class_quadro}{Quadro} armazenados. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_container_quadro_8hpp}{Container\+Quadro.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_container_quadro_8cpp}{Container\+Quadro.\+cpp}}\end{DoxyCompactItemize}

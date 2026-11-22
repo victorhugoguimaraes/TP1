@@ -1,0 +1,172 @@
+\doxysection{ReferÃªncia da Classe Cntrl\+Servico\+Quadro}
+\hypertarget{class_cntrl_servico_quadro}{}\label{class_cntrl_servico_quadro}\index{CntrlServicoQuadro@{CntrlServicoQuadro}}
+
+
+{\ttfamily \+\#include $<$Cntrl\+Servico\+Quadro.\+hpp$>$}
+
+Diagrama de hierarquia da classe Cntrl\+Servico\+Quadro:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntrl_servico_quadro}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cntrl_servico_quadro_a04ec035c4c8ce90e1b49926627c52188}{Cntrl\+Servico\+Quadro}} (\doxymbox{\hyperlink{class_container_quadros}{Container\+Quadros}} \&container, const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&usuario)
+\begin{DoxyCompactList}\small\item\em Constrói a controladora associando o container de projetos e o usuário autenticado. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_servico_quadro_a7ccb4abcbe31bccc060dc33875df455e}{criar}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro) override
+\begin{DoxyCompactList}\small\item\em Cria e armazena um novo quadro de atividades no sistema. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} $>$ \doxymbox{\hyperlink{class_cntrl_servico_quadro_af0b57e758212c03a5c714303eed3b8cb}{listar}} () const override
+\begin{DoxyCompactList}\small\item\em Lista todos os quadros de atividades cadastrados no sistema. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_servico_quadro_a8f4a6a7fe277195fe3ae217f1c410bcf}{consultar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro) override
+\begin{DoxyCompactList}\small\item\em Consulta um quadro específico pelo seu identificador. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_servico_quadro_a498febd122eb8d16f50993797f47bcee}{editar}} (const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&quadro) override
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um quadro de atividades já cadastrado. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_servico_quadro_a0847ffa11ed4b3a8246266e779be82e2}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador) override
+\begin{DoxyCompactList}\small\item\em Remove um quadro de atividades do sistema pelo seu identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros PÃºblicos herdados de \doxymbox{\hyperlink{class_servico_quadro}{Servico\+Quadro}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_servico_quadro_aefcf15d0b0b5ddcfbe128db338470e5a}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Quadro}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementação por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_cntrl_servico_quadro_doc-constructors}
+\Hypertarget{class_cntrl_servico_quadro_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cntrl_servico_quadro_a04ec035c4c8ce90e1b49926627c52188}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\index{CntrlServicoQuadro@{CntrlServicoQuadro}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{CntrlServicoQuadro()}{CntrlServicoQuadro()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_a04ec035c4c8ce90e1b49926627c52188} 
+Cntrl\+Servico\+Quadro::\+\+Cntrl\+Servico\+Quadro (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_container_quadros}{Container\+Quadros}} \&}]{container}{, }\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{usuario}{}\end{DoxyParamCaption})}
+
+
+
+Constrói a controladora associando o container de projetos e o usuário autenticado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em container} & Referência ao container responsável pelo armazenamento dos projetos. \\
+\hline
+{\em usuario} & Referência constante para a pessoa autenticada na sessão atual. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_cntrl_servico_quadro_doc-func-members}
+\Hypertarget{class_cntrl_servico_quadro_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_cntrl_servico_quadro_a8f4a6a7fe277195fe3ae217f1c410bcf}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!consultar@{consultar}}
+\index{consultar@{consultar}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{consultar()}{consultar()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_a8f4a6a7fe277195fe3ae217f1c410bcf} 
+bool Cntrl\+Servico\+Quadro::\+consultar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Consulta um quadro específico pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do quadro buscado. \\
+\hline
+{\em quadro} & Referência para o objeto \doxylink{class_quadro}{Quadro} onde os dados encontrados serão armazenados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o quadro for encontrado; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_quadro_a38dbb2637f21c84d758c8abb86e1633a}{Servico\+Quadro}}.
+
+\Hypertarget{class_cntrl_servico_quadro_a7ccb4abcbe31bccc060dc33875df455e}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!criar@{criar}}
+\index{criar@{criar}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_a7ccb4abcbe31bccc060dc33875df455e} 
+bool Cntrl\+Servico\+Quadro::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Cria e armazena um novo quadro de atividades no sistema. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_quadro}{Quadro} contendo os dados do quadro a ser criado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o quadro for criado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_quadro_ab52f0e4f9ce1666eb92f0afd1e150c90}{Servico\+Quadro}}.
+
+\Hypertarget{class_cntrl_servico_quadro_a498febd122eb8d16f50993797f47bcee}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!editar@{editar}}
+\index{editar@{editar}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_a498febd122eb8d16f50993797f47bcee} 
+bool Cntrl\+Servico\+Quadro::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_quadro}{Quadro}} \&}]{quadro}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Atualiza os dados de um quadro de atividades já cadastrado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_quadro}{Quadro} contendo os dados atualizados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a edição for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_quadro_a0d58e9b254b0b361870a4a100850b167}{Servico\+Quadro}}.
+
+\Hypertarget{class_cntrl_servico_quadro_a0847ffa11ed4b3a8246266e779be82e2}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!excluir@{excluir}}
+\index{excluir@{excluir}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_a0847ffa11ed4b3a8246266e779be82e2} 
+bool Cntrl\+Servico\+Quadro::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Remove um quadro de atividades do sistema pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do quadro a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a exclusão for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_quadro_a4ab54bd1db39c48935cd8b606e40db95}{Servico\+Quadro}}.
+
+\Hypertarget{class_cntrl_servico_quadro_af0b57e758212c03a5c714303eed3b8cb}\index{CntrlServicoQuadro@{CntrlServicoQuadro}!listar@{listar}}
+\index{listar@{listar}!CntrlServicoQuadro@{CntrlServicoQuadro}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_quadro_af0b57e758212c03a5c714303eed3b8cb} 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} $>$ Cntrl\+Servico\+Quadro::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Lista todos os quadros de atividades cadastrados no sistema. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_quadro}{Quadro} armazenados. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_quadro_abf3c9bd584d26eb9b7090d7e48e10d02}{Servico\+Quadro}}.
+
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_quadro_8hpp}{Cntrl\+Servico\+Quadro.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_quadro_8cpp}{Cntrl\+Servico\+Quadro.\+cpp}}\end{DoxyCompactItemize}

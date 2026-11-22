@@ -1,0 +1,89 @@
+\doxysection{Referência da Classe Cntrl\+Servico\+Autenticacao}
+\hypertarget{class_cntrl_servico_autenticacao}{}\label{class_cntrl_servico_autenticacao}\index{CntrlServicoAutenticacao@{CntrlServicoAutenticacao}}
+
+
+Implementa a autenticacao de pessoas armazenadas no container.  
+
+
+
+
+{\ttfamily \+\#include $<$Cntrl\+Servico\+Autenticacao.\+hpp$>$}
+
+Diagrama de hierarquia da classe Cntrl\+Servico\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntrl_servico_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cntrl_servico_autenticacao_ad239b0a1c4f5098d3e207db5a78bce0c}{Cntrl\+Servico\+Autenticacao}} (const \doxymbox{\hyperlink{class_container_pessoas}{Container\+Pessoas}} \&container)
+\begin{DoxyCompactList}\small\item\em Associa o servico ao container de pessoas. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_servico_autenticacao_aace3d7aa8ba7111d138e90e7281c4ec1}{autenticar}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email, const \doxymbox{\hyperlink{class_senha}{Senha}} \&senha) override
+\begin{DoxyCompactList}\small\item\em Busca uma pessoa e verifica a correspondencia da senha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros Públicos herdados de \doxymbox{\hyperlink{class_servico_autenticacao}{Servico\+Autenticacao}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_servico_autenticacao_a5829980b0622404548dece10bff9d732}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Autenticacao}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementacao por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementa a autenticacao de pessoas armazenadas no container. 
+
+Consulta o cadastro pelo email e compara a senha cadastrada com a informada. Nao realiza entrada ou saida de dados pelo terminal. 
+
+\label{class_cntrl_servico_autenticacao_doc-constructors}
+\Hypertarget{class_cntrl_servico_autenticacao_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cntrl_servico_autenticacao_ad239b0a1c4f5098d3e207db5a78bce0c}\index{CntrlServicoAutenticacao@{CntrlServicoAutenticacao}!CntrlServicoAutenticacao@{CntrlServicoAutenticacao}}
+\index{CntrlServicoAutenticacao@{CntrlServicoAutenticacao}!CntrlServicoAutenticacao@{CntrlServicoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{CntrlServicoAutenticacao()}{CntrlServicoAutenticacao()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_autenticacao_ad239b0a1c4f5098d3e207db5a78bce0c} 
+Cntrl\+Servico\+Autenticacao::\+\+Cntrl\+Servico\+Autenticacao (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_container_pessoas}{Container\+Pessoas}} \&}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Associa o servico ao container de pessoas. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em container} & Container que deve permanecer existente durante o uso do servico. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_cntrl_servico_autenticacao_doc-func-members}
+\Hypertarget{class_cntrl_servico_autenticacao_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_cntrl_servico_autenticacao_aace3d7aa8ba7111d138e90e7281c4ec1}\index{CntrlServicoAutenticacao@{CntrlServicoAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!CntrlServicoAutenticacao@{CntrlServicoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_autenticacao_aace3d7aa8ba7111d138e90e7281c4ec1} 
+bool Cntrl\+Servico\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{, }\item[{const \doxymbox{\hyperlink{class_senha}{Senha}} \&}]{senha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Busca uma pessoa e verifica a correspondencia da senha. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email} & \doxylink{class_email}{Email} do cadastro a ser consultado. \\
+\hline
+{\em senha} & \doxylink{class_senha}{Senha} informada para comparacao. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a pessoa existir e a senha corresponder; false caso contrario. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_autenticacao_a67f56cdd84b078c0730be51e04cf5be7}{Servico\+Autenticacao}}.
+
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_autenticacao_8hpp}{Cntrl\+Servico\+Autenticacao.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_autenticacao_8cpp}{Cntrl\+Servico\+Autenticacao.\+cpp}}\end{DoxyCompactItemize}

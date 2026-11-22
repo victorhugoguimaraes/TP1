@@ -307,3 +307,345 @@
 	"servico/CntrlServicoQuadro.hpp"
 	"servico/CntrlServicoRelatorio.hpp"
 
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\apresentacao\cntrlapresentacaoautenticacao.cpp
+	"CntrlApresentacaoAutenticacao.hpp"
+	<iostream>
+	<stdexcept>
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\apresentacao\cntrlapresentacaoautenticacao.hpp
+	"../interfaces/ServicoAutenticacao.hpp"
+	"../interfaces/ServicoPessoa.hpp"
+
+1795327894 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicoautenticacao.hpp
+	"../dominios/Email.hpp"
+	"../dominios/Senha.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\email.hpp
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\senha.hpp
+	<string>
+
+1795328723 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicopessoa.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../entidades/Pessoa.hpp"
+
+1795326489 c:\users\danie\onedrive\unb\tp1\tp1\entidades\pessoa.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Papel.hpp"
+	"../dominios/Senha.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\nome.hpp
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\papel.hpp
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\email.cpp
+	"Email.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\utilitario.hpp
+	<string>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\estado.cpp
+	"Estado.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\estado.hpp
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\identificador.cpp
+	"Identificador.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\identificador.hpp
+	<string>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\limite.cpp
+	"Limite.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\limite.hpp
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\nome.cpp
+	"Nome.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\papel.cpp
+	"Papel.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\prioridade.cpp
+	"Prioridade.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\prioridade.hpp
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\senha.cpp
+	"Senha.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\tamanho.cpp
+	"Tamanho.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\tamanho.hpp
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\texto.cpp
+	"Texto.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\texto.hpp
+	<string>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\timestamp.cpp
+	"Timestamp.hpp"
+	"Utilitario.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\dominios\timestamp.hpp
+	<string>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\dominios\utilitario.cpp
+	"Utilitario.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\entidades\cartaoatividade.cpp
+	"CartaoAtividade.hpp"
+
+1795326119 c:\users\danie\onedrive\unb\tp1\tp1\entidades\cartaoatividade.hpp
+	"../dominios/Estado.hpp"
+	"../dominios/Identificador.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Prioridade.hpp"
+	"../dominios/Tamanho.hpp"
+	"../dominios/Texto.hpp"
+	"../dominios/Timestamp.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\entidades\pessoa.cpp
+	"Pessoa.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\entidades\projeto.cpp
+	"Projeto.hpp"
+
+1795326885 c:\users\danie\onedrive\unb\tp1\tp1\entidades\projeto.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Identificador.hpp"
+	"../dominios/Nome.hpp"
+	"../dominios/Texto.hpp"
+	"../dominios/Timestamp.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\entidades\quadro.cpp
+	"Quadro.hpp"
+
+1795327255 c:\users\danie\onedrive\unb\tp1\tp1\entidades\quadro.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+	"../dominios/Limite.hpp"
+	"../dominios/Nome.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\persistencia\bancodados.cpp
+	"BancoDados.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\persistencia\bancodados.hpp
+	"../sqlite/sqlite3.h"
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\sqlite\sqlite3.h
+	<stdarg.h>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\persistencia\schema.cpp
+	"Schema.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\persistencia\schema.hpp
+	"BancoDados.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoautenticacao.cpp
+	"CntrlServicoAutenticacao.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoautenticacao.hpp
+	"../interfaces/ServicoAutenticacao.hpp"
+	"ContainerPessoa.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\containerpessoa.hpp
+	"../entidades/Pessoa.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicocartao.cpp
+	"CntrlServicoCartao.hpp"
+	<ctime>
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicocartao.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoCartao.hpp"
+	"ContainerCartao.hpp"
+	"ContainerQuadro.hpp"
+
+1795330349 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicocartao.hpp
+	<vector>
+	"../dominios/Estado.hpp"
+	"../dominios/Identificador.hpp"
+	"../entidades/CartaoAtividade.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\containercartao.hpp
+	<vector>
+	"../entidades/CartaoAtividade.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\containerquadro.hpp
+	"../entidades/Quadro.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicopessoa.cpp
+	"CntrlServicoPessoa.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicopessoa.hpp
+	"../interfaces/ServicoPessoa.hpp"
+	"ContainerPessoa.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoprojeto.cpp
+	"CntrlServicoProjeto.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoprojeto.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoProjeto.hpp"
+	"ContainerProjeto.hpp"
+
+1795329766 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicoprojeto.hpp
+	<vector>
+	"../dominios/Email.hpp"
+	"../dominios/Identificador.hpp"
+	"../entidades/Projeto.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\containerprojeto.hpp
+	"../entidades/Projeto.hpp"
+	"../persistencia/BancoDados.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoquadro.cpp
+	"CntrlServicoQuadro.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicoquadro.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoQuadro.hpp"
+	"ContainerQuadro.hpp"
+
+1795330027 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicoquadro.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+	"../entidades/Quadro.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicorelatorio.cpp
+	"CntrlServicoRelatorio.hpp"
+	<ctime>
+	<string>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\servico\cntrlservicorelatorio.hpp
+	"../entidades/Pessoa.hpp"
+	"../interfaces/ServicoRelatorio.hpp"
+	"ContainerCartao.hpp"
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\interfaces\servicorelatorio.hpp
+	<vector>
+	"../dominios/Identificador.hpp"
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\containercartao.cpp
+	"ContainerCartao.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795322242 c:\users\danie\onedrive\unb\tp1\tp1\persistencia\sqliteutil.hpp
+	"../sqlite/sqlite3.h"
+	<string>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\containerpessoa.cpp
+	"ContainerPessoa.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\containerprojeto.cpp
+	"ContainerProjeto.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\servico\containerquadro.cpp
+	"ContainerQuadro.hpp"
+	"../persistencia/SqliteUtil.hpp"
+	<stdexcept>
+
+1795322242 source:c:\users\danie\onedrive\unb\tp1\tp1\sqlite\sqlite3.c
+	<vxWorks.h>
+	<pthread.h>
+	"mingw.h"
+	"_mingw.h"
+	<stdarg.h>
+	"sqlite_cfg.h"
+	<stdint.h>
+	<inttypes.h>
+	<intrin.h>
+	<cmnintrin.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<ctype.h>
+	<TargetConditionals.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	"windows.h"
+	<sys/cygwin.h>
+	<sys/stat.h>
+	<unistd.h>
+	<errno.h>
+	<process.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<unistd.h>
+	<sys/time.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<sys/ioctl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/file.h>
+	<sys/param.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/mount.h>
+	<utime.h>
+	<sys/dcmd_blk.h>
+	<sys/statvfs.h>
+	<dlfcn.h>
+	<Windows.h>
+	<profileapi.h>
+	"tclsqlite.h"
+	"sqlite3rtree.h"
+	<ctype.h>
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+	<sys/uio.h>
+	<math.h>
+

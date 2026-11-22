@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: C√≥digo-Fonte de servico/ContainerQuadro.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_container_quadro_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ContainerQuadro.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_container_quadro_8hpp.html">Ir para a documenta√ß√£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CONTAINER_QUADROS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CONTAINER_QUADROS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_quadro_8hpp.html">../entidades/Quadro.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_banco_dados_8hpp.html">../persistencia/BancoDados.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_container_quadros.html">   20</a></span><span class="keyword">class </span><a class="code hl_function" href="class_container_quadros.html#a5093bdb07cb07f33be910b001b0745d7">ContainerQuadros</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_banco_dados.html">BancoDados</a> &amp;banco;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_container_quadros.html#a5093bdb07cb07f33be910b001b0745d7">ContainerQuadros</a>(<a class="code hl_class" href="class_banco_dados.html">BancoDados</a> &amp;banco);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_quadros.html#af72ab224aeb2f449a6712a63ae702a6a">inserir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;quadro);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_quadros.html#a2e2b21c223708ffe8d6b4d657ae5553a">buscar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador, <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;resultado) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    vector&lt;Quadro&gt; <a class="code hl_function" href="class_container_quadros.html#a9ad9755f0694adcc570921a689042dc3">listar</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_quadros.html#a91cc6edf14daa489bb6ffb74fbc65421">editar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_quadro.html">Quadro</a> &amp;quadro);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_quadros.html#a0b303dc112c132368dc0ce2788678fd2">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_identificador.html">Identificador</a> &amp;identificador);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_banco_dados_8hpp_html"><div class="ttname"><a href="_banco_dados_8hpp.html">BancoDados.hpp</a></div><div class="ttdoc">DeclaraÁ„o da classe de gerenciamento da conex„o com o banco de dados SQLite.</div></div>
+<div class="ttc" id="a_quadro_8hpp_html"><div class="ttname"><a href="_quadro_8hpp.html">Quadro.hpp</a></div><div class="ttdoc">DeclaraÁ„o da classe de entidade Quadro.</div></div>
+<div class="ttc" id="aclass_banco_dados_html"><div class="ttname"><a href="class_banco_dados.html">BancoDados</a></div><div class="ttdoc">Encapsula a abertura, execuÁ„o de comandos e fechamento de um banco SQLite.</div><div class="ttdef"><b>Defini√ß√£o</b> BancoDados.hpp:20</div></div>
+<div class="ttc" id="aclass_container_quadros_html_a0b303dc112c132368dc0ce2788678fd2"><div class="ttname"><a href="class_container_quadros.html#a0b303dc112c132368dc0ce2788678fd2">ContainerQuadros::excluir</a></div><div class="ttdeci">bool excluir(const Identificador &amp;identificador)</div><div class="ttdoc">Remove um quadro de atividades do banco de dados pelo seu identificador.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:118</div></div>
+<div class="ttc" id="aclass_container_quadros_html_a2e2b21c223708ffe8d6b4d657ae5553a"><div class="ttname"><a href="class_container_quadros.html#a2e2b21c223708ffe8d6b4d657ae5553a">ContainerQuadros::buscar</a></div><div class="ttdeci">bool buscar(const Identificador &amp;identificador, Quadro &amp;resultado) const</div><div class="ttdoc">Busca um quadro de atividades pelo seu identificador ˙nico.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:62</div></div>
+<div class="ttc" id="aclass_container_quadros_html_a5093bdb07cb07f33be910b001b0745d7"><div class="ttname"><a href="class_container_quadros.html#a5093bdb07cb07f33be910b001b0745d7">ContainerQuadros::ContainerQuadros</a></div><div class="ttdeci">ContainerQuadros(BancoDados &amp;banco)</div><div class="ttdoc">ConstrÛi o container associando-o a uma inst‚ncia ativa de BancoDados.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:38</div></div>
+<div class="ttc" id="aclass_container_quadros_html_a91cc6edf14daa489bb6ffb74fbc65421"><div class="ttname"><a href="class_container_quadros.html#a91cc6edf14daa489bb6ffb74fbc65421">ContainerQuadros::editar</a></div><div class="ttdeci">bool editar(const Quadro &amp;quadro)</div><div class="ttdoc">Atualiza os dados de um quadro de atividades existente no banco de dados.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:101</div></div>
+<div class="ttc" id="aclass_container_quadros_html_a9ad9755f0694adcc570921a689042dc3"><div class="ttname"><a href="class_container_quadros.html#a9ad9755f0694adcc570921a689042dc3">ContainerQuadros::listar</a></div><div class="ttdeci">vector&lt; Quadro &gt; listar() const</div><div class="ttdoc">Recupera todos os quadros de atividades cadastrados no banco de dados.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:86</div></div>
+<div class="ttc" id="aclass_container_quadros_html_af72ab224aeb2f449a6712a63ae702a6a"><div class="ttname"><a href="class_container_quadros.html#af72ab224aeb2f449a6712a63ae702a6a">ContainerQuadros::inserir</a></div><div class="ttdeci">bool inserir(const Quadro &amp;quadro)</div><div class="ttdoc">Insere um novo quadro de atividades no banco de dados.</div><div class="ttdef"><b>Defini√ß√£o</b> ContainerQuadro.cpp:41</div></div>
+<div class="ttc" id="aclass_identificador_html"><div class="ttname"><a href="class_identificador.html">Identificador</a></div><div class="ttdoc">Representa e valida um cÛdigo de identificaÁ„o alfanumÈrico com formato fixo.</div><div class="ttdef"><b>Defini√ß√£o</b> Identificador.hpp:15</div></div>
+<div class="ttc" id="aclass_quadro_html"><div class="ttname"><a href="class_quadro.html">Quadro</a></div><div class="ttdoc">Entidade que representa um quadro de atividades dentro de um projeto.</div><div class="ttdef"><b>Defini√ß√£o</b> Quadro.hpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_e946b11746fe93bccb3c3b0faa59667c.html">servico</a></li><li class="navelem"><a href="_container_quadro_8hpp.html">ContainerQuadro.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

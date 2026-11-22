@@ -1,0 +1,185 @@
+\doxysection{ReferÃªncia da Classe Cntrl\+Servico\+Relatorio}
+\hypertarget{class_cntrl_servico_relatorio}{}\label{class_cntrl_servico_relatorio}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+
+
+Implementa o cálculo de indicadores e métricas de desempenho dos cartões e quadros.  
+
+
+
+
+{\ttfamily \+\#include $<$Cntrl\+Servico\+Relatorio.\+hpp$>$}
+
+Diagrama de hierarquia da classe Cntrl\+Servico\+Relatorio:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntrl_servico_relatorio}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cntrl_servico_relatorio_ab02c60a572f521db323cdf956eea0199}{Cntrl\+Servico\+Relatorio}} (\doxymbox{\hyperlink{class_container_cartoes}{Container\+Cartoes}} \&container, const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&usuario)
+\begin{DoxyCompactList}\small\item\em Constrói a controladora associando o container de cartões e o usuário autenticado. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a5693f95b2505c36b806820e34d086b71}{ler\+Tempo\+Ciclo}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador) const override
+\begin{DoxyCompactList}\small\item\em Calcula o tempo de ciclo (Cycle Time) de um cartão de atividade específico. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a0f24b55ba3ff1626f9150bc7ccd1d0db}{ler\+Tempo\+Ciclo\+Medio}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro) const override
+\begin{DoxyCompactList}\small\item\em Calcula o tempo de ciclo médio dos cartões concluídos em um quadro. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a78d3bff6867c824219cd99b8115cdddf}{ler\+Lead\+Time}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador) const override
+\begin{DoxyCompactList}\small\item\em Calcula o Lead Time de um cartão de atividade específico. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a287a9f5d36c7e04b0c87f1d2a652fad7}{ler\+Lead\+Time\+Medio}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro) const override
+\begin{DoxyCompactList}\small\item\em Calcula o Lead Time médio dos cartões concluídos em um quadro. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_cntrl_servico_relatorio_a002067f17d7c9320d356dcdc23367cb5}{ler\+WIP}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro) const override
+\begin{DoxyCompactList}\small\item\em Obtém a quantidade atual de trabalho em progresso (Work In Progress -\/ WIP) de um quadro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros PÃºblicos herdados de \doxymbox{\hyperlink{class_servico_relatorio}{Servico\+Relatorio}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \doxymbox{\hyperlink{class_servico_relatorio_a271db4685698f8b372ba1f9466a792fa}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Relatorio}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementação por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Implementa o cálculo de indicadores e métricas de desempenho dos cartões e quadros. 
+
+Realiza as consultas e cálculos definidos em \doxylink{class_servico_relatorio}{Servico\+Relatorio} (Tempo de Ciclo, Lead Time e WIP) utilizando os dados armazenados no \doxylink{class_container_cartoes}{Container\+Cartoes} associado e o contexto do usuário autenticado. 
+
+\label{class_cntrl_servico_relatorio_doc-constructors}
+\Hypertarget{class_cntrl_servico_relatorio_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cntrl_servico_relatorio_ab02c60a572f521db323cdf956eea0199}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{CntrlServicoRelatorio()}{CntrlServicoRelatorio()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_ab02c60a572f521db323cdf956eea0199} 
+Cntrl\+Servico\+Relatorio::\+\+Cntrl\+Servico\+Relatorio (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_container_cartoes}{Container\+Cartoes}} \&}]{container}{, }\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{usuario}{}\end{DoxyParamCaption})}
+
+
+
+Constrói a controladora associando o container de cartões e o usuário autenticado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em container} & Referência ao container responsável pelo armazenamento dos cartões. \\
+\hline
+{\em usuario} & Referência constante para a pessoa autenticada na sessão atual. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_cntrl_servico_relatorio_doc-func-members}
+\Hypertarget{class_cntrl_servico_relatorio_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_cntrl_servico_relatorio_a78d3bff6867c824219cd99b8115cdddf}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!lerLeadTime@{lerLeadTime}}
+\index{lerLeadTime@{lerLeadTime}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{lerLeadTime()}{lerLeadTime()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_a78d3bff6867c824219cd99b8115cdddf} 
+int Cntrl\+Servico\+Relatorio::\+ler\+Lead\+Time (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcula o Lead Time de um cartão de atividade específico. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Valor inteiro correspondente ao tempo total decorrido desde a entrada (criação do cartão) até o término do cartão. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_relatorio_a41a7f9f691a666ef1dca8ec0e388db39}{Servico\+Relatorio}}.
+
+\Hypertarget{class_cntrl_servico_relatorio_a287a9f5d36c7e04b0c87f1d2a652fad7}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!lerLeadTimeMedio@{lerLeadTimeMedio}}
+\index{lerLeadTimeMedio@{lerLeadTimeMedio}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{lerLeadTimeMedio()}{lerLeadTimeMedio()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_a287a9f5d36c7e04b0c87f1d2a652fad7} 
+double Cntrl\+Servico\+Relatorio::\+ler\+Lead\+Time\+Medio (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcula o Lead Time médio dos cartões concluídos em um quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_identificador}{Identificador} do quadro analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Valor em ponto flutuante (double) representando a média do Lead Time do quadro. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_relatorio_a0815a759be5f82732c7fdfa3cd8b4686}{Servico\+Relatorio}}.
+
+\Hypertarget{class_cntrl_servico_relatorio_a5693f95b2505c36b806820e34d086b71}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!lerTempoCiclo@{lerTempoCiclo}}
+\index{lerTempoCiclo@{lerTempoCiclo}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{lerTempoCiclo()}{lerTempoCiclo()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_a5693f95b2505c36b806820e34d086b71} 
+int Cntrl\+Servico\+Relatorio::\+ler\+Tempo\+Ciclo (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcula o tempo de ciclo (Cycle Time) de um cartão de atividade específico. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Valor inteiro correspondente ao tempo decorrido entre o início (quando cartão é colocado no estado FAZENDO) e o término do cartão. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_relatorio_aa0c9b480dec5227144187de8a8c1cf4f}{Servico\+Relatorio}}.
+
+\Hypertarget{class_cntrl_servico_relatorio_a0f24b55ba3ff1626f9150bc7ccd1d0db}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!lerTempoCicloMedio@{lerTempoCicloMedio}}
+\index{lerTempoCicloMedio@{lerTempoCicloMedio}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{lerTempoCicloMedio()}{lerTempoCicloMedio()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_a0f24b55ba3ff1626f9150bc7ccd1d0db} 
+double Cntrl\+Servico\+Relatorio::\+ler\+Tempo\+Ciclo\+Medio (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calcula o tempo de ciclo médio dos cartões concluídos em um quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_identificador}{Identificador} do quadro analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Valor em ponto flutuante (double) representando a média do tempo de ciclo do quadro. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_relatorio_ab32ed2280cfb191fd076dcfe8f418ebb}{Servico\+Relatorio}}.
+
+\Hypertarget{class_cntrl_servico_relatorio_a002067f17d7c9320d356dcdc23367cb5}\index{CntrlServicoRelatorio@{CntrlServicoRelatorio}!lerWIP@{lerWIP}}
+\index{lerWIP@{lerWIP}!CntrlServicoRelatorio@{CntrlServicoRelatorio}}
+\doxysubsubsection{\texorpdfstring{lerWIP()}{lerWIP()}}
+{\footnotesize\ttfamily \label{class_cntrl_servico_relatorio_a002067f17d7c9320d356dcdc23367cb5} 
+int Cntrl\+Servico\+Relatorio::\+ler\+WIP (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Obtém a quantidade atual de trabalho em progresso (Work In Progress -\/ WIP) de um quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_identificador}{Identificador} do quadro analisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Número inteiro de cartões atualmente em execução no quadro. 
+\end{DoxyReturn}
+
+
+Implementa \doxymbox{\hyperlink{class_servico_relatorio_a236f7bf247661726ba21884b736740ff}{Servico\+Relatorio}}.
+
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_relatorio_8hpp}{Cntrl\+Servico\+Relatorio.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_cntrl_servico_relatorio_8cpp}{Cntrl\+Servico\+Relatorio.\+cpp}}\end{DoxyCompactItemize}

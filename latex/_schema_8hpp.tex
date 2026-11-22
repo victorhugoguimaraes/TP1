@@ -1,0 +1,38 @@
+\doxysection{ReferÃªncia do Arquivo persistencia/\+\+Schema.hpp}
+\hypertarget{_schema_8hpp}{}\label{_schema_8hpp}\index{persistencia/Schema.hpp@{persistencia/Schema.hpp}}
+
+
+Declaração da função de inicialização da estrutura (schema) do banco de dados.  
+
+
+{\ttfamily \+\#include "{}Banco\+Dados.\+hpp"{}}\newline
+\doxysubsubsection*{FunÃ§Ãµes}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{_schema_8hpp_af31ba2893ea1d69c9e1c47b6e5b9719e}{criar\+Tabelas}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Cria as tabelas necessárias para o funcionamento do sistema no banco de dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Declaração da função de inicialização da estrutura (schema) do banco de dados. 
+
+
+
+\label{_schema_8hpp_doc-func-members}
+\Hypertarget{_schema_8hpp_doc-func-members}
+\doxysubsection{FunÃ§Ãµes}
+\Hypertarget{_schema_8hpp_af31ba2893ea1d69c9e1c47b6e5b9719e}\index{Schema.hpp@{Schema.hpp}!criarTabelas@{criarTabelas}}
+\index{criarTabelas@{criarTabelas}!Schema.hpp@{Schema.hpp}}
+\doxysubsubsection{\texorpdfstring{criarTabelas()}{criarTabelas()}}
+{\footnotesize\ttfamily \label{_schema_8hpp_af31ba2893ea1d69c9e1c47b6e5b9719e} 
+void criar\+Tabelas (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})}
+
+
+
+Cria as tabelas necessárias para o funcionamento do sistema no banco de dados. 
+
+Executa as instruções DDL (CREATE TABLE IF NOT EXISTS) para estruturar as tabelas de entidades e relacionamentos caso ainda não existam. 
+\begin{DoxyParams}{ParÃ¢metros}
+{\em banco} & Referência para o objeto \doxylink{class_banco_dados}{Banco\+Dados} onde as tabelas serão criadas. \\
+\hline
+\end{DoxyParams}

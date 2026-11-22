@@ -1,0 +1,119 @@
+\doxysection{Referência da Estrutura PCache}
+\hypertarget{struct_p_cache}{}\label{struct_p_cache}\index{PCache@{PCache}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_p_cache_a1c692ce92c7d3fc7c6c1324d5658b252}{p\+Dirty}}
+\item 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_p_cache_a8eaca309bfb8fa49e7c5e77dd3398bb0}{p\+Dirty\+Tail}}
+\item 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_p_cache_a607eabd6768dd8df47d8fa353542b106}{p\+Synced}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} \doxymbox{\hyperlink{struct_p_cache_a784553b8a2e4d421f8bff655ec68d015}{n\+Ref\+Sum}}
+\item 
+int \doxymbox{\hyperlink{struct_p_cache_a93ed4b9d731d883c3ed22a5adfd9c636}{sz\+Cache}}
+\item 
+int \doxymbox{\hyperlink{struct_p_cache_abd30c4610f4087dad64f75e6c4e1e332}{sz\+Spill}}
+\item 
+int \doxymbox{\hyperlink{struct_p_cache_abb0bd0a3292780dcc07cb59bc577990d}{sz\+Page}}
+\item 
+int \doxymbox{\hyperlink{struct_p_cache_abcb37fcd3ea098b98a196a3f69e3c135}{sz\+Extra}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_p_cache_a87ff1d0738734375524e544cefa33b01}{b\+Purgeable}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_p_cache_a28629953493154d29ab7b6485a0471bf}{e\+Create}}
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{struct_p_cache_ad8844519450d46d0afded3708c51a6ce}{x\+Stress}} (void \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*})
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_p_cache_af04a2ea8a2c6d6b3eea7bb7051b8f447}{p\+Stress}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a096c453d937d51f7926d7d31c8e0bd2f}{sqlite3\+\_\+pcache}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_p_cache_ad0248655d30d327e0eeced6c3651b161}{p\+Cache}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_p_cache_doc-variable-members}
+\Hypertarget{struct_p_cache_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_p_cache_a87ff1d0738734375524e544cefa33b01}\index{PCache@{PCache}!bPurgeable@{bPurgeable}}
+\index{bPurgeable@{bPurgeable}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{bPurgeable}{bPurgeable}}
+{\footnotesize\ttfamily \label{struct_p_cache_a87ff1d0738734375524e544cefa33b01} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} PCache::\+b\+Purgeable}
+
+\Hypertarget{struct_p_cache_a28629953493154d29ab7b6485a0471bf}\index{PCache@{PCache}!eCreate@{eCreate}}
+\index{eCreate@{eCreate}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{eCreate}{eCreate}}
+{\footnotesize\ttfamily \label{struct_p_cache_a28629953493154d29ab7b6485a0471bf} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} PCache::\+e\+Create}
+
+\Hypertarget{struct_p_cache_a784553b8a2e4d421f8bff655ec68d015}\index{PCache@{PCache}!nRefSum@{nRefSum}}
+\index{nRefSum@{nRefSum}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{nRefSum}{nRefSum}}
+{\footnotesize\ttfamily \label{struct_p_cache_a784553b8a2e4d421f8bff655ec68d015} 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} PCache::\+n\+Ref\+Sum}
+
+\Hypertarget{struct_p_cache_ad0248655d30d327e0eeced6c3651b161}\index{PCache@{PCache}!pCache@{pCache}}
+\index{pCache@{pCache}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{pCache}{pCache}}
+{\footnotesize\ttfamily \label{struct_p_cache_ad0248655d30d327e0eeced6c3651b161} 
+\doxymbox{\hyperlink{sqlite3_8c_a096c453d937d51f7926d7d31c8e0bd2f}{sqlite3\+\_\+pcache}}\texorpdfstring{$\ast$}{*} PCache::\+p\+Cache}
+
+\Hypertarget{struct_p_cache_a1c692ce92c7d3fc7c6c1324d5658b252}\index{PCache@{PCache}!pDirty@{pDirty}}
+\index{pDirty@{pDirty}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{pDirty}{pDirty}}
+{\footnotesize\ttfamily \label{struct_p_cache_a1c692ce92c7d3fc7c6c1324d5658b252} 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}}\texorpdfstring{$\ast$}{*} PCache::\+p\+Dirty}
+
+\Hypertarget{struct_p_cache_a8eaca309bfb8fa49e7c5e77dd3398bb0}\index{PCache@{PCache}!pDirtyTail@{pDirtyTail}}
+\index{pDirtyTail@{pDirtyTail}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{pDirtyTail}{pDirtyTail}}
+{\footnotesize\ttfamily \label{struct_p_cache_a8eaca309bfb8fa49e7c5e77dd3398bb0} 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*} PCache::\+p\+Dirty\+Tail}
+
+\Hypertarget{struct_p_cache_af04a2ea8a2c6d6b3eea7bb7051b8f447}\index{PCache@{PCache}!pStress@{pStress}}
+\index{pStress@{pStress}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{pStress}{pStress}}
+{\footnotesize\ttfamily \label{struct_p_cache_af04a2ea8a2c6d6b3eea7bb7051b8f447} 
+void\texorpdfstring{$\ast$}{*} PCache::\+p\+Stress}
+
+\Hypertarget{struct_p_cache_a607eabd6768dd8df47d8fa353542b106}\index{PCache@{PCache}!pSynced@{pSynced}}
+\index{pSynced@{pSynced}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{pSynced}{pSynced}}
+{\footnotesize\ttfamily \label{struct_p_cache_a607eabd6768dd8df47d8fa353542b106} 
+\doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}}\texorpdfstring{$\ast$}{*} PCache::\+p\+Synced}
+
+\Hypertarget{struct_p_cache_a93ed4b9d731d883c3ed22a5adfd9c636}\index{PCache@{PCache}!szCache@{szCache}}
+\index{szCache@{szCache}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{szCache}{szCache}}
+{\footnotesize\ttfamily \label{struct_p_cache_a93ed4b9d731d883c3ed22a5adfd9c636} 
+int PCache::\+sz\+Cache}
+
+\Hypertarget{struct_p_cache_abcb37fcd3ea098b98a196a3f69e3c135}\index{PCache@{PCache}!szExtra@{szExtra}}
+\index{szExtra@{szExtra}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{szExtra}{szExtra}}
+{\footnotesize\ttfamily \label{struct_p_cache_abcb37fcd3ea098b98a196a3f69e3c135} 
+int PCache::\+sz\+Extra}
+
+\Hypertarget{struct_p_cache_abb0bd0a3292780dcc07cb59bc577990d}\index{PCache@{PCache}!szPage@{szPage}}
+\index{szPage@{szPage}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{szPage}{szPage}}
+{\footnotesize\ttfamily \label{struct_p_cache_abb0bd0a3292780dcc07cb59bc577990d} 
+int PCache::\+sz\+Page}
+
+\Hypertarget{struct_p_cache_abd30c4610f4087dad64f75e6c4e1e332}\index{PCache@{PCache}!szSpill@{szSpill}}
+\index{szSpill@{szSpill}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{szSpill}{szSpill}}
+{\footnotesize\ttfamily \label{struct_p_cache_abd30c4610f4087dad64f75e6c4e1e332} 
+int PCache::\+sz\+Spill}
+
+\Hypertarget{struct_p_cache_ad8844519450d46d0afded3708c51a6ce}\index{PCache@{PCache}!xStress@{xStress}}
+\index{xStress@{xStress}!PCache@{PCache}}
+\doxysubsubsection{\texorpdfstring{xStress}{xStress}}
+{\footnotesize\ttfamily \label{struct_p_cache_ad8844519450d46d0afded3708c51a6ce} 
+int(\texorpdfstring{$\ast$}{*}) PCache::\+x\+Stress(void \texorpdfstring{$\ast$}{*}, \doxymbox{\hyperlink{struct_pg_hdr}{Pg\+Hdr}} \texorpdfstring{$\ast$}{*})}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

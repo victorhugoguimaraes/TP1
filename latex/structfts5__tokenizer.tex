@@ -1,0 +1,44 @@
+\doxysection{Referência da Estrutura fts5\+\_\+tokenizer}
+\hypertarget{structfts5__tokenizer}{}\label{structfts5__tokenizer}\index{fts5\_tokenizer@{fts5\_tokenizer}}
+
+
+{\ttfamily \+\#include $<$sqlite3.\+h$>$}
+
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structfts5__tokenizer_a606d87b8429769910be378453e6ec859}{x\+Create}} (void \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}az\+Arg, int n\+Arg, \doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pp\+Out)
+\item 
+void(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structfts5__tokenizer_afdab42fc1d984794bae0aae61ff76c56}{x\+Delete}} (\doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*})
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structfts5__tokenizer_a1f06bb2118826d341d1ed40d00c73cce}{x\+Tokenize}} (\doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}p\+Ctx, int flags, const char \texorpdfstring{$\ast$}{*}p\+Text, int n\+Text, int(\texorpdfstring{$\ast$}{*}x\+Token)(void \texorpdfstring{$\ast$}{*}p\+Ctx, int tflags, const char \texorpdfstring{$\ast$}{*}p\+Token, int n\+Token, int i\+Start, int i\+End))
+\end{DoxyCompactItemize}
+
+
+\label{structfts5__tokenizer_doc-variable-members}
+\Hypertarget{structfts5__tokenizer_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{structfts5__tokenizer_a606d87b8429769910be378453e6ec859}\index{fts5\_tokenizer@{fts5\_tokenizer}!xCreate@{xCreate}}
+\index{xCreate@{xCreate}!fts5\_tokenizer@{fts5\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{xCreate}{xCreate}}
+{\footnotesize\ttfamily \label{structfts5__tokenizer_a606d87b8429769910be378453e6ec859} 
+int(\texorpdfstring{$\ast$}{*} fts5\+\_\+tokenizer::\+x\+Create)(void \texorpdfstring{$\ast$}{*}, const char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}az\+Arg, int n\+Arg, \doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}pp\+Out)}
+
+\Hypertarget{structfts5__tokenizer_afdab42fc1d984794bae0aae61ff76c56}\index{fts5\_tokenizer@{fts5\_tokenizer}!xDelete@{xDelete}}
+\index{xDelete@{xDelete}!fts5\_tokenizer@{fts5\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{xDelete}{xDelete}}
+{\footnotesize\ttfamily \label{structfts5__tokenizer_afdab42fc1d984794bae0aae61ff76c56} 
+void(\texorpdfstring{$\ast$}{*} fts5\+\_\+tokenizer::\+x\+Delete)(\doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{structfts5__tokenizer_a1f06bb2118826d341d1ed40d00c73cce}\index{fts5\_tokenizer@{fts5\_tokenizer}!xTokenize@{xTokenize}}
+\index{xTokenize@{xTokenize}!fts5\_tokenizer@{fts5\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{xTokenize}{xTokenize}}
+{\footnotesize\ttfamily \label{structfts5__tokenizer_a1f06bb2118826d341d1ed40d00c73cce} 
+int(\texorpdfstring{$\ast$}{*} fts5\+\_\+tokenizer::\+x\+Tokenize)(\doxymbox{\hyperlink{sqlite3_8c_ac015f88c5332d612a3125fc0014e468c}{Fts5\+Tokenizer}} \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}p\+Ctx, int flags, const char \texorpdfstring{$\ast$}{*}p\+Text, int n\+Text, int(\texorpdfstring{$\ast$}{*}x\+Token)(void \texorpdfstring{$\ast$}{*}p\+Ctx, int tflags, const char \texorpdfstring{$\ast$}{*}p\+Token, int n\+Token, int i\+Start, int i\+End))}
+
+
+
+A documentação para essa estrutura foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8h}{sqlite3.\+h}}\end{DoxyCompactItemize}

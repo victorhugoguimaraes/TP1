@@ -1,0 +1,110 @@
+\doxysection{ReferÃªncia da Classe Prioridade}
+\hypertarget{class_prioridade}{}\label{class_prioridade}\index{Prioridade@{Prioridade}}
+
+
+Gerencia e valida o nível de urgência ou importância de uma tarefa ou evento.  
+
+
+
+
+{\ttfamily \+\#include $<$Prioridade.\+hpp$>$}
+
+\doxysubsubsection*{Tipos PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}} \{ \doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974aa54b6d49b47720a4fd47db6b0872bfac}{ALTA}}
+, \doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974a7a2ddc3425cd1e8bb47f23b6cc5a1173}{MEDIA}}
+, \doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974a9f4d3f6bda9ed11f2bb0ae269ea73a35}{BAIXA}}
+ \}
+\begin{DoxyCompactList}\small\item\em Define os níveis de urgência aceitos pelo sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_prioridade_af2445141f969ba0db58a41507aaf624c}{set\+Prioridade}} (\doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}} prioridade)
+\begin{DoxyCompactList}\small\item\em Valida e define o novo nível de prioridade contanto que pertença ao enumerador \doxylink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}} \doxymbox{\hyperlink{class_prioridade_abb86b6bd8aff62e98ce492ce734a70f6}{get\+Prioridade}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de prioridade atualmente configurado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia e valida o nível de urgência ou importância de uma tarefa ou evento. 
+
+Esta classe encapsula um enumerador que representa três níveis de prioridade fixos (ALTA, MEDIA, BAIXA), garantindo que qualquer modificação de estado respeite as opções permitidas. 
+
+\label{class_prioridade_doc-enum-members}
+\Hypertarget{class_prioridade_doc-enum-members}
+\doxysubsection{DocumentaÃ§Ã£o das enumeraÃ§Ãµes}
+\Hypertarget{class_prioridade_aec074ec40654733c78a463bf74138974}\index{Prioridade@{Prioridade}!Nivel@{Nivel}}
+\index{Nivel@{Nivel}!Prioridade@{Prioridade}}
+\doxysubsubsection{\texorpdfstring{Nivel}{Nivel}}
+{\footnotesize\ttfamily \label{class_prioridade_aec074ec40654733c78a463bf74138974} 
+enum \doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Prioridade::\+\+Nivel}}}
+
+
+
+Define os níveis de urgência aceitos pelo sistema. 
+
+\begin{DoxyEnumFields}[2]{Enumeradores}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALTA@{ALTA}!Prioridade@{Prioridade}}
+\index{Prioridade@{Prioridade}!ALTA@{ALTA}}
+}\Hypertarget{class_prioridade_aec074ec40654733c78a463bf74138974aa54b6d49b47720a4fd47db6b0872bfac}\label{class_prioridade_aec074ec40654733c78a463bf74138974aa54b6d49b47720a4fd47db6b0872bfac} 
+ALTA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MEDIA@{MEDIA}!Prioridade@{Prioridade}}
+\index{Prioridade@{Prioridade}!MEDIA@{MEDIA}}
+}\Hypertarget{class_prioridade_aec074ec40654733c78a463bf74138974a7a2ddc3425cd1e8bb47f23b6cc5a1173}\label{class_prioridade_aec074ec40654733c78a463bf74138974a7a2ddc3425cd1e8bb47f23b6cc5a1173} 
+MEDIA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BAIXA@{BAIXA}!Prioridade@{Prioridade}}
+\index{Prioridade@{Prioridade}!BAIXA@{BAIXA}}
+}\Hypertarget{class_prioridade_aec074ec40654733c78a463bf74138974a9f4d3f6bda9ed11f2bb0ae269ea73a35}\label{class_prioridade_aec074ec40654733c78a463bf74138974a9f4d3f6bda9ed11f2bb0ae269ea73a35} 
+BAIXA&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{class_prioridade_doc-func-members}
+\Hypertarget{class_prioridade_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_prioridade_abb86b6bd8aff62e98ce492ce734a70f6}\index{Prioridade@{Prioridade}!getPrioridade@{getPrioridade}}
+\index{getPrioridade@{getPrioridade}!Prioridade@{Prioridade}}
+\doxysubsubsection{\texorpdfstring{getPrioridade()}{getPrioridade()}}
+{\footnotesize\ttfamily \label{class_prioridade_abb86b6bd8aff62e98ce492ce734a70f6} 
+\doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Prioridade::\+\+Nivel}} Prioridade::\+get\+Prioridade (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o nível de prioridade atualmente configurado. 
+
+\begin{DoxyReturn}{Retorna}
+O nível atual armazenado no objeto (do tipo \doxylink{class_prioridade_aec074ec40654733c78a463bf74138974}{Prioridade::\+\+Nivel}). 
+\end{DoxyReturn}
+\Hypertarget{class_prioridade_af2445141f969ba0db58a41507aaf624c}\index{Prioridade@{Prioridade}!setPrioridade@{setPrioridade}}
+\index{setPrioridade@{setPrioridade}!Prioridade@{Prioridade}}
+\doxysubsubsection{\texorpdfstring{setPrioridade()}{setPrioridade()}}
+{\footnotesize\ttfamily \label{class_prioridade_af2445141f969ba0db58a41507aaf624c} 
+void Prioridade::\+set\+Prioridade (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}}}]{prioridade}{}\end{DoxyParamCaption})}
+
+
+
+Valida e define o novo nível de prioridade contanto que pertença ao enumerador \doxylink{class_prioridade_aec074ec40654733c78a463bf74138974}{Nivel}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em prioridade} & O novo nível do tipo \doxylink{class_prioridade_aec074ec40654733c78a463bf74138974}{Prioridade::\+\+Nivel} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se o valor fornecido for inválido ou não mapeado ("{}\+Prioridade invalida"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_prioridade_8hpp}{Prioridade.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_prioridade_8cpp}{Prioridade.\+cpp}}\end{DoxyCompactItemize}

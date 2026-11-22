@@ -1,0 +1,87 @@
+\doxysection{Referência da Estrutura Row\+Set}
+\hypertarget{struct_row_set}{}\label{struct_row_set}\index{RowSet@{RowSet}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_row_set_chunk}{Row\+Set\+Chunk}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_af064f9ec7b1ba820a3d53622bde9d42f}{p\+Chunk}}
+\item 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_a7da847a06c2f90025fbd89c57516c6f6}{db}}
+\item 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_a3eccaf69ad7863abae2541a7c0b94e1d}{p\+Entry}}
+\item 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_a040c4b798e6f20d20aa99a45e93b2079}{p\+Last}}
+\item 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_a7c4e95bd08ff77135068bb3987be5ca1}{p\+Fresh}}
+\item 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_row_set_abe7ab16fffbe5992f637d6a17c6342ff}{p\+Forest}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} \doxymbox{\hyperlink{struct_row_set_a0ed2a47d6789a70081f3454ef2604e7f}{n\+Fresh}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} \doxymbox{\hyperlink{struct_row_set_abfbd103e329e88d0a09ca5a7c9bbd225}{rs\+Flags}}
+\item 
+int \doxymbox{\hyperlink{struct_row_set_a90ebc79619b880c1a38b96622ad0ffe0}{i\+Batch}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_row_set_doc-variable-members}
+\Hypertarget{struct_row_set_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_row_set_a7da847a06c2f90025fbd89c57516c6f6}\index{RowSet@{RowSet}!db@{db}}
+\index{db@{db}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{struct_row_set_a7da847a06c2f90025fbd89c57516c6f6} 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}}\texorpdfstring{$\ast$}{*} Row\+Set::\+db}
+
+\Hypertarget{struct_row_set_a90ebc79619b880c1a38b96622ad0ffe0}\index{RowSet@{RowSet}!iBatch@{iBatch}}
+\index{iBatch@{iBatch}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{iBatch}{iBatch}}
+{\footnotesize\ttfamily \label{struct_row_set_a90ebc79619b880c1a38b96622ad0ffe0} 
+int Row\+Set::\+i\+Batch}
+
+\Hypertarget{struct_row_set_a0ed2a47d6789a70081f3454ef2604e7f}\index{RowSet@{RowSet}!nFresh@{nFresh}}
+\index{nFresh@{nFresh}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{nFresh}{nFresh}}
+{\footnotesize\ttfamily \label{struct_row_set_a0ed2a47d6789a70081f3454ef2604e7f} 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} Row\+Set::\+n\+Fresh}
+
+\Hypertarget{struct_row_set_af064f9ec7b1ba820a3d53622bde9d42f}\index{RowSet@{RowSet}!pChunk@{pChunk}}
+\index{pChunk@{pChunk}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{pChunk}{pChunk}}
+{\footnotesize\ttfamily \label{struct_row_set_af064f9ec7b1ba820a3d53622bde9d42f} 
+struct \doxymbox{\hyperlink{struct_row_set_chunk}{Row\+Set\+Chunk}}\texorpdfstring{$\ast$}{*} Row\+Set::\+p\+Chunk}
+
+\Hypertarget{struct_row_set_a3eccaf69ad7863abae2541a7c0b94e1d}\index{RowSet@{RowSet}!pEntry@{pEntry}}
+\index{pEntry@{pEntry}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{pEntry}{pEntry}}
+{\footnotesize\ttfamily \label{struct_row_set_a3eccaf69ad7863abae2541a7c0b94e1d} 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}}\texorpdfstring{$\ast$}{*} Row\+Set::\+p\+Entry}
+
+\Hypertarget{struct_row_set_abe7ab16fffbe5992f637d6a17c6342ff}\index{RowSet@{RowSet}!pForest@{pForest}}
+\index{pForest@{pForest}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{pForest}{pForest}}
+{\footnotesize\ttfamily \label{struct_row_set_abe7ab16fffbe5992f637d6a17c6342ff} 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}}\texorpdfstring{$\ast$}{*} Row\+Set::\+p\+Forest}
+
+\Hypertarget{struct_row_set_a7c4e95bd08ff77135068bb3987be5ca1}\index{RowSet@{RowSet}!pFresh@{pFresh}}
+\index{pFresh@{pFresh}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{pFresh}{pFresh}}
+{\footnotesize\ttfamily \label{struct_row_set_a7c4e95bd08ff77135068bb3987be5ca1} 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}}\texorpdfstring{$\ast$}{*} Row\+Set::\+p\+Fresh}
+
+\Hypertarget{struct_row_set_a040c4b798e6f20d20aa99a45e93b2079}\index{RowSet@{RowSet}!pLast@{pLast}}
+\index{pLast@{pLast}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{pLast}{pLast}}
+{\footnotesize\ttfamily \label{struct_row_set_a040c4b798e6f20d20aa99a45e93b2079} 
+struct \doxymbox{\hyperlink{struct_row_set_entry}{Row\+Set\+Entry}}\texorpdfstring{$\ast$}{*} Row\+Set::\+p\+Last}
+
+\Hypertarget{struct_row_set_abfbd103e329e88d0a09ca5a7c9bbd225}\index{RowSet@{RowSet}!rsFlags@{rsFlags}}
+\index{rsFlags@{rsFlags}!RowSet@{RowSet}}
+\doxysubsubsection{\texorpdfstring{rsFlags}{rsFlags}}
+{\footnotesize\ttfamily \label{struct_row_set_abfbd103e329e88d0a09ca5a7c9bbd225} 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} Row\+Set::\+rs\+Flags}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

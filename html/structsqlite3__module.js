@@ -1,0 +1,28 @@
+var structsqlite3__module =
+[
+    [ "iVersion", "structsqlite3__module.html#a42b11d080dc205aea43581b18f925afe", null ],
+    [ "xBegin", "structsqlite3__module.html#aa93fab7562f71061736ab71b6fc91fb8", null ],
+    [ "xBestIndex", "structsqlite3__module.html#aef5230350d8a7272b4c7bccd7b2ecd5e", null ],
+    [ "xClose", "structsqlite3__module.html#a73a9fb7e52f0fb75da2dcdb2100cd3b4", null ],
+    [ "xColumn", "structsqlite3__module.html#a04cc28bd423031deb229b89851044a19", null ],
+    [ "xCommit", "structsqlite3__module.html#a52df45c3032a18f099bef066ee5c2615", null ],
+    [ "xConnect", "structsqlite3__module.html#a7dfab493ff3e4cdb88bd02ddd7047e49", null ],
+    [ "xCreate", "structsqlite3__module.html#a42980147864091ab0a8669767c0af25d", null ],
+    [ "xDestroy", "structsqlite3__module.html#ada22d3d1043ed7a023f9948463e735b8", null ],
+    [ "xDisconnect", "structsqlite3__module.html#a7fe2fcd6e0a226193509648929ff3945", null ],
+    [ "xEof", "structsqlite3__module.html#a72410f76c2fa27471efbd3b9464f85f7", null ],
+    [ "xFilter", "structsqlite3__module.html#acc2c2c6ffa644aaf60eedd9d62652c7c", null ],
+    [ "xFindFunction", "structsqlite3__module.html#a9538928623bc88734027d36b719e6d78", null ],
+    [ "xIntegrity", "structsqlite3__module.html#a7893fb900921c41d1c28e7cd1a1a8ff3", null ],
+    [ "xNext", "structsqlite3__module.html#aa56f5dc428210e15057da5271ba8d511", null ],
+    [ "xOpen", "structsqlite3__module.html#a8d94e3f2adc9d0a1f59e18d86881eed2", null ],
+    [ "xRelease", "structsqlite3__module.html#a76d6655f19b193c9e14c5ea7dd3d1538", null ],
+    [ "xRename", "structsqlite3__module.html#a2321cc49da6dd090c1581d08544b8cc7", null ],
+    [ "xRollback", "structsqlite3__module.html#adbcc4b88de74badda794bca1a7b3123a", null ],
+    [ "xRollbackTo", "structsqlite3__module.html#a9488938ec1864afa89104db6b619d131", null ],
+    [ "xRowid", "structsqlite3__module.html#a0bf4d2bb25dfa44e858fe191f80dc836", null ],
+    [ "xSavepoint", "structsqlite3__module.html#afc558ec789f9134197edab474b8a9546", null ],
+    [ "xShadowName", "structsqlite3__module.html#a05c5e88b3b2a263cedc879d7ecc89bfa", null ],
+    [ "xSync", "structsqlite3__module.html#a4627e17ebaccc6eca9bfb217074822f2", null ],
+    [ "xUpdate", "structsqlite3__module.html#a6a53fa88696e098aa0f68460118b8969", null ]
+];

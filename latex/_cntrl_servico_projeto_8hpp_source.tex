@@ -1,0 +1,35 @@
+\doxysection{Cntrl\+Servico\+Projeto.\+hpp}
+\hypertarget{_cntrl_servico_projeto_8hpp_source}{}\label{_cntrl_servico_projeto_8hpp_source}\index{servico/CntrlServicoProjeto.hpp@{servico/CntrlServicoProjeto.hpp}}
+\doxymbox{\hyperlink{_cntrl_servico_projeto_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CNTRLSERVICOPROJETO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CNTRLSERVICOPROJETO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_projeto_8hpp}{../interfaces/ServicoProjeto.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_projeto_8hpp}{ContainerProjeto.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_servico_projeto_ad0bbb7b4a047f7618f84cea5007725d6}{CntrlServicoProjeto}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_servico_projeto}{ServicoProjeto}}\ \{}
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \doxymbox{\hyperlink{class_container_projetos}{ContainerProjetos}}\ \&container;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_projeto_ad0bbb7b4a047f7618f84cea5007725d6}{CntrlServicoProjeto}}(\doxymbox{\hyperlink{class_container_projetos}{ContainerProjetos}}\ \&container,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_aa7db2e33c1f09a1fce0cfb5ef97cf841}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ \ \ \ \ vector<Projeto>\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_a18fb6e83da9217cf53ef5de2a090d1c6}{listar}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_a3fc4b6054a7b4f89699cfce3e1aeac53}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_a48dfc459cd50a63395e2e2d2241ec22d}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_a0c23c38b514485c6bfc466f0fb0d50fa}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_adb1240989fd0b147c6e44104d7d53ebd}{adicionarPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_a0d75e17933395c0471c905835443de08}{removerPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ \ \ \ \ vector<Email>\ \doxymbox{\hyperlink{class_cntrl_servico_projeto_aee1f174e333cedf0dbc0088f1f3eecc8}{listarPessoas}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

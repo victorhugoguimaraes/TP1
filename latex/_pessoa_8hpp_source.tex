@@ -1,0 +1,59 @@
+\doxysection{Pessoa.\+hpp}
+\hypertarget{_pessoa_8hpp_source}{}\label{_pessoa_8hpp_source}\index{entidades/Pessoa.hpp@{entidades/Pessoa.hpp}}
+\doxymbox{\hyperlink{_pessoa_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PESSOA\_HPP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PESSOA\_HPP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{../dominios/Email.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_nome_8hpp}{../dominios/Nome.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_papel_8hpp}{../dominios/Papel.hpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_senha_8hpp}{../dominios/Senha.hpp}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_projeto}{Projeto}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \{}
+\DoxyCodeLine{00028\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{class_email}{Email}}\ email;}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_nome}{Nome}}\ nome;}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_senha}{Senha}}\ senha;}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_papel}{Papel}}\ papel;}
+\DoxyCodeLine{00033\ \ \ \ \ vector<Projeto\ *>\ projetos;}
+\DoxyCodeLine{00034\ \ \ \ \ vector<CartaoAtividade\ *>\ cartoes;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_af94947d815f51279810f2f09c5adcef4}{setEmail}}(\doxymbox{\hyperlink{class_email}{Email}}\ email);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \doxymbox{\hyperlink{class_email}{Email}}\ \doxymbox{\hyperlink{class_pessoa_a137a2a665a10ffa4880d1f7d726b07c7}{getEmail}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_ae4d02733d9c4e645c80685f41fdc2b47}{setNome}}(\doxymbox{\hyperlink{class_nome}{Nome}}\ nome);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \doxymbox{\hyperlink{class_nome}{Nome}}\ \doxymbox{\hyperlink{class_pessoa_ad0c0448768ca2f5b5dfca86f156cdfe9}{getNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_a3c75be0743b65a69fbc8e35e20d84790}{setSenha}}(\doxymbox{\hyperlink{class_senha}{Senha}}\ senha);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \doxymbox{\hyperlink{class_senha}{Senha}}\ \doxymbox{\hyperlink{class_pessoa_a02498f338ca00cdd18e794f17d660281}{getSenha}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_ac79fd5094aab7de36a05843deb984832}{setPapel}}(\doxymbox{\hyperlink{class_papel}{Papel}}\ papel);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \doxymbox{\hyperlink{class_papel}{Papel}}\ \doxymbox{\hyperlink{class_pessoa_a8c7e1938888e9e84b5c30ca977b98b9d}{getPapel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_aed832795ce54167c80612f67fd0d1275}{adicionarProjeto}}(\doxymbox{\hyperlink{class_projeto}{Projeto}}\ *projeto);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \ \ \ \ vector<Projeto\ *>\ \doxymbox{\hyperlink{class_pessoa_ab3c36031321ee8aa7ae74c6b81d39393}{getProjetos}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_pessoa_a797c71e50556a5171c91f7c2e2479380}{adicionarCartao}}(\doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ *cartao);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00107\ \ \ \ \ vector<CartaoAtividade\ *>\ \doxymbox{\hyperlink{class_pessoa_ad7cf35f1963966028fad035cb061debb}{getCartoes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

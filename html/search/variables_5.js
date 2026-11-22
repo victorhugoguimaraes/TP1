@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['falha_0',['FALHA',['../class_t_u_email.html#af85d3036fdfc515f28636f9e5e60a98d',1,'TUEmail::FALHA'],['../class_t_u_nome.html#a50bf8928bc5e773eaf15a2fb5eb2f065',1,'TUNome::FALHA'],['../class_t_u_senha.html#a71eb0d9005b2d36da6a8530c0dd31842',1,'TUSenha::FALHA'],['../class_t_u_texto.html#ad225db82ebc02a313957712dbc70abd2',1,'TUTexto::FALHA'],['../class_t_u_timestamp.html#a21e365a0b183a1cf1e2e03f4809ed4d4',1,'TUTimestamp::FALHA'],['../class_t_u_identificador.html#a780484a997bcbed65d6aba1637a7ca27',1,'TUIdentificador::FALHA'],['../class_t_u_limite.html#ad065ac844058260359369695906e4943',1,'TULimite::FALHA'],['../class_t_u_estado.html#abaa25c39bec7de39e56f56dfae0b8c6a',1,'TUEstado::FALHA'],['../class_t_u_papel.html#a78411e0f22bbb1e25bf3605b379bfdda',1,'TUPapel::FALHA'],['../class_t_u_prioridade.html#ab294456eb9677a2a9257538cbda1aca8',1,'TUPrioridade::FALHA'],['../class_t_u_tamanho.html#ac8a3460e4ed191bbecad3567f89e6c00',1,'TUTamanho::FALHA'],['../class_t_u_pessoa.html#a279e07787e847fe53f51df459899db69',1,'TUPessoa::FALHA'],['../class_t_u_projeto.html#a54c2194699d4c916596666d6d60f37c7',1,'TUProjeto::FALHA'],['../class_t_u_quadro.html#a0c414e4a139b92a1c843aefac476eea5',1,'TUQuadro::FALHA'],['../class_t_u_cartao_atividade.html#ac3081f999f2ec288bf579501ae2f48ab',1,'TUCartaoAtividade::FALHA'],['../class_t_u_servicos.html#af4f830791ccabe08699e1938c678bf2e',1,'TUServicos::FALHA']]],
+  ['fd_1',['fd',['../struct_unix_unused_fd.html#a3f1a6127218af971aeb7b131c9c1600d',1,'UnixUnusedFd::fd'],['../struct_pager.html#a005ff1960fc1550a870cd1dae418c99e',1,'Pager::fd']]],
+  ['fg_2',['fg',['../struct_expr_list_1_1_expr_list__item.html#af486d82e3c53ed1de72b588a2dc6582d',1,'ExprList::ExprList_item::fg'],['../struct_src_item.html#a90422c619a9cf4c7520e6df31313f25d',1,'SrcItem::fg']]],
+  ['file_3',['file',['../struct_sort_subtask.html#a077f999ff1e4148e48bd8df25092fd85',1,'SortSubtask']]],
+  ['file2_4',['file2',['../struct_sort_subtask.html#a23b46687f7a96ef1052a062f8097234e',1,'SortSubtask']]],
+  ['file_5fcontrol_5',['file_control',['../structsqlite3__api__routines.html#a06ce2841b539d816e21b8f07ddf79a6e',1,'sqlite3_api_routines']]],
+  ['file_5fformat_6',['file_format',['../struct_schema.html#ab9f0371436e41b3080772995407a4cca',1,'Schema']]],
+  ['fileid_7',['fileId',['../structunix_inode_info.html#ae692731d449f4462a921dda9a061faa6',1,'unixInodeInfo']]],
+  ['filename_5fdatabase_8',['filename_database',['../structsqlite3__api__routines.html#a8be21be4060fe968138cab2b29422298',1,'sqlite3_api_routines']]],
+  ['filename_5fjournal_9',['filename_journal',['../structsqlite3__api__routines.html#a5271fc1d15d5cb53608f4b5d4f185f30',1,'sqlite3_api_routines']]],
+  ['filename_5fwal_10',['filename_wal',['../structsqlite3__api__routines.html#ac0920d0ce9a98a5b08f0592584ed6037',1,'sqlite3_api_routines']]],
+  ['finalize_11',['finalize',['../structsqlite3__api__routines.html#a76995ec1f410c4437bbe32b67a383c99',1,'sqlite3_api_routines']]],
+  ['first_12',['first',['../struct_hash.html#a2cfc9936ca2a624c6492ab6557f4705b',1,'Hash']]],
+  ['fixedschema_13',['fixedSchema',['../struct_src_item_1_1_0fstruct_0e_8fg.html#a2cccc089f95981a3a2ac0e8892fb533f',1,'SrcItem::[struct].fg']]],
+  ['fkeyhash_14',['fkeyHash',['../struct_schema.html#ad51ed96351701cfe8d9e871722827c11',1,'Schema']]],
+  ['flags_15',['flags',['../struct_pg_hdr.html#a8ef58380f7e04f1e3c76fa208e227f95',1,'PgHdr::flags'],['../structsqlite3.html#ada7b07091a8c201b19b31f25a5c3dd2f',1,'sqlite3::flags'],['../struct_expr.html#aebac9ee7e6aa7adca63969d3ba8d0ded',1,'Expr::flags'],['../structsqlite3__value.html#a83d279b3d99f2d6b202cb269dc5afb8b',1,'sqlite3_value::flags'],['../structet__info.html#a8f11646aaec803f0870683dc3ba2f756',1,'et_info::flags'],['../struct_unix_unused_fd.html#a744cd118bd91ec2019108e8205708684',1,'UnixUnusedFd::flags'],['../struct_mem_journal.html#a1fcfbcbb9da77a5cefef038b1b846f35',1,'MemJournal::flags']]],
+  ['fmttype_16',['fmttype',['../structet__info.html#a1740af27f0c9d5840e7dda59a129aa4b',1,'et_info']]],
+  ['forcealignment_17',['forceAlignment',['../union_0funion_0e_8sqlite3_digit_pairs.html#ada32e76082f9dcb31352e7023b393251',1,'[union].sqlite3DigitPairs']]],
+  ['free_18',['free',['../structsqlite3__api__routines.html#a4dc5eba2c475cb2387f07a774959298c',1,'sqlite3_api_routines']]],
+  ['free_5ffilename_19',['free_filename',['../structsqlite3__api__routines.html#adbc4e3cd2ca4881fa17d4206ba5db649',1,'sqlite3_api_routines']]],
+  ['free_5ftable_20',['free_table',['../structsqlite3__api__routines.html#a84e6c77c0c0bcb0eaec3b614f2cd696d',1,'sqlite3_api_routines']]],
+  ['fromddl_21',['fromDDL',['../struct_src_item_1_1_0fstruct_0e_8fg.html#afca457953bb9d30d4be3d7fd5b8d9fb9',1,'SrcItem::[struct].fg']]],
+  ['fromexists_22',['fromExists',['../struct_src_item_1_1_0fstruct_0e_8fg.html#a8d0a5fc416714e1e6b2f873606261520',1,'SrcItem::[struct].fg']]],
+  ['fullsync_23',['fullSync',['../struct_pager.html#abae5c9c3d85120ae266acc4c9a355b86',1,'Pager']]],
+  ['funcflags_24',['funcFlags',['../struct_func_def.html#a7f8a4391d6fbe77526ff5c513e5d1df8',1,'FuncDef']]]
+];

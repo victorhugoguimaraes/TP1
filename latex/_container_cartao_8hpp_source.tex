@@ -1,0 +1,41 @@
+\doxysection{Container\+Cartao.\+hpp}
+\hypertarget{_container_cartao_8hpp_source}{}\label{_container_cartao_8hpp_source}\index{servico/ContainerCartao.hpp@{servico/ContainerCartao.hpp}}
+\doxymbox{\hyperlink{_container_cartao_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CONTAINER\_CARTOES\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CONTAINER\_CARTOES\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cartao_atividade_8hpp}{../entidades/CartaoAtividade.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_banco_dados_8hpp}{../persistencia/BancoDados.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_container_cartoes_ad731a5c7a7b78efe1352ee32454ca877}{ContainerCartoes}}\ \{}
+\DoxyCodeLine{00023\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_container_cartoes_ad731a5c7a7b78efe1352ee32454ca877}{ContainerCartoes}}(\doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_cartoes_a938d467747595b0b13aa5ed29ea6fc9d}{inserir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_cartoes_abce9a5bb76b6093e686ad7a94d1dbe71}{buscar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&resultado)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ vector<CartaoAtividade>\ \doxymbox{\hyperlink{class_container_cartoes_a4727339f1212f8fc0161e8f513b74521}{listar}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_cartoes_ad4a5babd715b28f6724cd92a2e398bcb}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_cartoes_a0914d413ece4a3ac8b267cdf75c5f17e}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_cartoes_aaa2767c83f78392fc4380c321a23d70b}{mover}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\ \&estado);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_container_cartoes_a808c99f9c8854e072f5dae32d9f65989}{contarPorEstado}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&quadro,\ \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::Status}}\ estado)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

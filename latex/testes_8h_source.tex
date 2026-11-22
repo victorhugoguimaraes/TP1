@@ -1,0 +1,236 @@
+\doxysection{testes.\+h}
+\hypertarget{testes_8h_source}{}\label{testes_8h_source}\index{testes/testes.h@{testes/testes.h}}
+\doxymbox{\hyperlink{testes_8h}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TESTES\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TESTES\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{../dominios/Email.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8hpp}{../dominios/Estado.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8hpp}{../dominios/Identificador.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_limite_8hpp}{../dominios/Limite.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_nome_8hpp}{../dominios/Nome.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_papel_8hpp}{../dominios/Papel.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_prioridade_8hpp}{../dominios/Prioridade.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_senha_8hpp}{../dominios/Senha.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_tamanho_8hpp}{../dominios/Tamanho.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_texto_8hpp}{../dominios/Texto.hpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_timestamp_8hpp}{../dominios/Timestamp.hpp}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cartao_atividade_8hpp}{../entidades/CartaoAtividade.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_projeto_8hpp}{../entidades/Projeto.hpp}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_quadro_8hpp}{../entidades/Quadro.hpp}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_email}{TUEmail}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_email}{Email}}*\ email;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_email_a8b39fe0050c65de0c2968f4c4e164dbc}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_email_af85d3036fdfc515f28636f9e5e60a98d}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_email_a8d43b68b8b80ada3b28d72d35df9a34f}{run}}();}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_nome}{TUNome}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_nome}{Nome}}*\ nome;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_nome_af1d3faa5a4f6a302f96d193478f3013b}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_nome_a50bf8928bc5e773eaf15a2fb5eb2f065}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_nome_ae20734cb15f71890e57aff02a00f6313}{run}}();}
+\DoxyCodeLine{00046\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_senha}{TUSenha}}\ \{}
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_senha}{Senha}}*\ senha;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00056\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_senha_a1a1dabe034b25a899150c95acbc0684c}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_senha_a71eb0d9005b2d36da6a8530c0dd31842}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_senha_ac5ddea52ed42b828961f343b82074125}{run}}();}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_texto}{TUTexto}}\ \{}
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \ \ \doxymbox{\hyperlink{class_texto}{Texto}}*\ texto;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00070\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_texto_a85843f1840647cc1c8dc2606fe03dc36}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_texto_ad225db82ebc02a313957712dbc70abd2}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_texto_afd0ced06861f0e336ef7248f36b31e2c}{run}}();}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_timestamp}{TUTimestamp}}\ \{}
+\DoxyCodeLine{00077\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00078\ \ \ \ \ \doxymbox{\hyperlink{class_timestamp}{Timestamp}}*\ timestamp;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00084\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_timestamp_a3b0a469088c397fd207dacea5d5e8823}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_timestamp_a21e365a0b183a1cf1e2e03f4809ed4d4}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_timestamp_adc6284d9fa504d1e0ecf7828958df551}{run}}();}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_identificador}{TUIdentificador}}\ \{}
+\DoxyCodeLine{00091\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00092\ \ \ \ \ \doxymbox{\hyperlink{class_identificador}{Identificador}}*\ identificador;}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00098\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_identificador_a70f075be59c7a41d51db64a5e264959d}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_identificador_a780484a997bcbed65d6aba1637a7ca27}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_identificador_ade8ea26e011210c454c0c448926efd3b}{run}}();}
+\DoxyCodeLine{00102\ \};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_limite}{TULimite}}\ \{}
+\DoxyCodeLine{00105\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00106\ \ \ \ \ \doxymbox{\hyperlink{class_limite}{Limite}}*\ limite;}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00112\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_limite_a37b58ad0adbb27fa4149230bf978ac6b}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_limite_ad065ac844058260359369695906e4943}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_limite_a7e55537d465f32b1d48fd4c971ae5049}{run}}();}
+\DoxyCodeLine{00116\ \};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_estado}{TUEstado}}\ \{}
+\DoxyCodeLine{00119\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00120\ \ \ \ \ \doxymbox{\hyperlink{class_estado}{Estado}}*\ estado;}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ resultado;}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00126\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_estado_a6e8779cb4421926ecf36abe673e685a8}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_estado_abaa25c39bec7de39e56f56dfae0b8c6a}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_estado_a4c5b9e56f2d1282e575dcf153139d972}{run}}();}
+\DoxyCodeLine{00130\ \};}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_papel}{TUPapel}}\ \{}
+\DoxyCodeLine{00133\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00134\ \ \ \ \ \doxymbox{\hyperlink{class_papel}{Papel}}*\ papel;}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00140\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_papel_aa95508fb6041bc5909426f3a776167f1}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_papel_a78411e0f22bbb1e25bf3605b379bfdda}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_papel_aa639e87921152a25234fce1669377f49}{run}}();}
+\DoxyCodeLine{00144\ \};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_prioridade}{TUPrioridade}}\ \{}
+\DoxyCodeLine{00147\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00148\ \ \ \ \ \doxymbox{\hyperlink{class_prioridade}{Prioridade}}*\ prioridade;}
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00154\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_prioridade_a597f72921c32fe5792c91ddcc04f14ed}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_prioridade_ab294456eb9677a2a9257538cbda1aca8}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_prioridade_a284710e159a59a7fb46b3b22b49cbcf1}{run}}();}
+\DoxyCodeLine{00158\ \};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_tamanho}{TUTamanho}}\ \{}
+\DoxyCodeLine{00161\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00162\ \ \ \ \ \doxymbox{\hyperlink{class_tamanho}{Tamanho}}*\ tamanho;}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00166\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00168\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_tamanho_af832db5cf99f547d12e6f5ed2a89498e}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_tamanho_ac8a3460e4ed191bbecad3567f89e6c00}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_tamanho_a696fef44bdef595b34f71e9e056cd6c6}{run}}();}
+\DoxyCodeLine{00172\ \};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_pessoa}{TUPessoa}}\ \{}
+\DoxyCodeLine{00175\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00176\ \ \ \ \ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}*\ pessoa;}
+\DoxyCodeLine{00177\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00182\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_pessoa_a07ed262f1e00a319b93a9ba9981b06cd}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00184\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_pessoa_a279e07787e847fe53f51df459899db69}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_pessoa_aab95d4b039b6e3c22a0e4cd959c9ddc5}{run}}();}
+\DoxyCodeLine{00186\ \};}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00188\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_projeto}{TUProjeto}}\ \{}
+\DoxyCodeLine{00189\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00190\ \ \ \ \ \doxymbox{\hyperlink{class_projeto}{Projeto}}*\ projeto;}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00196\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_projeto_a2f6c8a99de471015ab4efda58abe4d57}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00198\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_projeto_a54c2194699d4c916596666d6d60f37c7}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_projeto_a87d7c15a616327485405931768707074}{run}}();}
+\DoxyCodeLine{00200\ \};}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_quadro}{TUQuadro}}\ \{}
+\DoxyCodeLine{00203\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00204\ \ \ \ \ \doxymbox{\hyperlink{class_quadro}{Quadro}}*\ quadro;}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00210\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_quadro_a962673bc7af751b616f3730002650074}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_quadro_a0c414e4a139b92a1c843aefac476eea5}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00213\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_quadro_a73681e8d6f87ecdc609cd100de70e34f}{run}}();}
+\DoxyCodeLine{00214\ \};}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_cartao_atividade}{TUCartaoAtividade}}\ \{}
+\DoxyCodeLine{00217\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00218\ \ \ \ \ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}*\ cartao;}
+\DoxyCodeLine{00219\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00222\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00223\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00224\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_cartao_atividade_af51c1502c3647bc6e8acec73a51b963b}{SUCESSO}}\ =\ 0;}
+\DoxyCodeLine{00226\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_cartao_atividade_ac3081f999f2ec288bf579501ae2f48ab}{FALHA}}\ =\ -\/1;}
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_cartao_atividade_aa5968e3476a06db0d3508ecd8055eec1}{run}}();}
+\DoxyCodeLine{00228\ \};}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

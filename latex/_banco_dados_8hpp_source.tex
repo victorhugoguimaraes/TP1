@@ -1,0 +1,31 @@
+\doxysection{Banco\+Dados.\+hpp}
+\hypertarget{_banco_dados_8hpp_source}{}\label{_banco_dados_8hpp_source}\index{persistencia/BancoDados.hpp@{persistencia/BancoDados.hpp}}
+\doxymbox{\hyperlink{_banco_dados_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ BANCODADOS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ BANCODADOS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{sqlite3_8h}{../sqlite/sqlite3.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54}{BancoDados}}\ \{}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{structsqlite3}{sqlite3}}\ *banco;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54}{BancoDados}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&caminho);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54}{\string~BancoDados}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \doxymbox{\hyperlink{structsqlite3}{sqlite3}}\ *\doxymbox{\hyperlink{class_banco_dados_acf8a30363548e6ba1c39996e82a469b2}{obterBanco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_banco_dados_ac2b6ab8f3ff1f73720453df4918c4eaf}{executar}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&sql)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

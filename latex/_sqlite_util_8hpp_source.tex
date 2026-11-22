@@ -1,0 +1,32 @@
+\doxysection{Sqlite\+Util.\+hpp}
+\hypertarget{_sqlite_util_8hpp_source}{}\label{_sqlite_util_8hpp_source}\index{persistencia/SqliteUtil.hpp@{persistencia/SqliteUtil.hpp}}
+\doxymbox{\hyperlink{_sqlite_util_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SQLITEUTIL\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SQLITEUTIL\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{sqlite3_8h}{../sqlite/sqlite3.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{_sqlite_util_8hpp_a9e9681fa5f646bb2610497841c9c260d}{obterTexto}}(\doxymbox{\hyperlink{sqlite3_8c_af2a033da1327cdd77f0a174a09aedd0c}{sqlite3\_stmt}}\ *comando,\ \textcolor{keywordtype}{int}\ coluna)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ *valor\ =\ \doxymbox{\hyperlink{sqlite3_8c_aee36f5eaf67b425ddf6f9b7a2004d018}{sqlite3\_column\_text}}(comando,\ coluna);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{string}\ resultado;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{if}\ (valor\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ resultado;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{while}\ (*valor\ !=\ \textcolor{charliteral}{'\(\backslash\)0'})\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ resultado\ +=\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{char}\textcolor{keyword}{>}(*valor);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ ++valor;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordflow}{return}\ resultado;}
+\DoxyCodeLine{00035\ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

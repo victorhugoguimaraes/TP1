@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['getcargo_0',['getCargo',['../class_papel.html#ad8fb0eed1cdd67d64405187ac80c8966',1,'Papel']]],
+  ['getcartoes_1',['getCartoes',['../class_pessoa.html#ad7cf35f1963966028fad035cb061debb',1,'Pessoa::getCartoes()'],['../class_quadro.html#a6a497db4eead68ddfcce55737790be98',1,'Quadro::getCartoes()']]],
+  ['getdescricao_2',['getDescricao',['../class_cartao_atividade.html#af3bc31936b2df05d05f4ba35317d57c3',1,'CartaoAtividade::getDescricao()'],['../class_projeto.html#a600487ea6215134c7035454139cfd348',1,'Projeto::getDescricao()']]],
+  ['getemail_3',['getEmail',['../class_pessoa.html#a137a2a665a10ffa4880d1f7d726b07c7',1,'Pessoa']]],
+  ['getentrada_4',['getEntrada',['../class_cartao_atividade.html#a59f6c9ccad5e9a5da88c25a2c67d724d',1,'CartaoAtividade']]],
+  ['getestado_5',['getEstado',['../class_estado.html#a585a847b67d73aa8718833793cf40e77',1,'Estado::getEstado()'],['../class_cartao_atividade.html#a16a069e11ad3e379d14353a08b643b54',1,'CartaoAtividade::getEstado()']]],
+  ['getgestor_6',['getGestor',['../class_projeto.html#a9996a8fd43aae5af0567f411ca1f65c5',1,'Projeto']]],
+  ['getidentificador_7',['getIdentificador',['../class_identificador.html#a98ea17bef93c0301fb28da2a6b7228b5',1,'Identificador::getIdentificador()'],['../class_cartao_atividade.html#a4a3cfc240b735d432801331727ef68a7',1,'CartaoAtividade::getIdentificador()'],['../class_projeto.html#a73c48a33c8a22c6fea1349184829eaae',1,'Projeto::getIdentificador()'],['../class_quadro.html#a422b4527e318b8fbb72d1a98a18dc98c',1,'Quadro::getIdentificador()']]],
+  ['getinicio_8',['getInicio',['../class_cartao_atividade.html#acd8075ddf874f39e2489fe9a7f759515',1,'CartaoAtividade::getInicio()'],['../class_projeto.html#a4644b46ebb4291e2993a6d811df50dd8',1,'Projeto::getInicio()']]],
+  ['getlimite_9',['getLimite',['../class_limite.html#ac7bea5b158cd6cede3bb164b81b764b5',1,'Limite::getLimite()'],['../class_quadro.html#a7799b0eea6c85113d94d4f231108c354',1,'Quadro::getLimite()']]],
+  ['getnome_10',['getNome',['../class_nome.html#a1c08f5b9827a1e97a2631196ff99fdef',1,'Nome::getNome()'],['../class_cartao_atividade.html#a1a05b2c596a6064a4cbe13b10791a69e',1,'CartaoAtividade::getNome()'],['../class_pessoa.html#ad0c0448768ca2f5b5dfca86f156cdfe9',1,'Pessoa::getNome()'],['../class_projeto.html#a1eb1c0d356d0f662ac6fda75ff766004',1,'Projeto::getNome()'],['../class_quadro.html#a260b4f46651e8551028185dc81ca2692',1,'Quadro::getNome()']]],
+  ['getpapel_11',['getPapel',['../class_pessoa.html#a8c7e1938888e9e84b5c30ca977b98b9d',1,'Pessoa']]],
+  ['getpessoas_12',['getPessoas',['../class_projeto.html#aa369738f408957b23c504c756ee00257',1,'Projeto']]],
+  ['getprioridade_13',['getPrioridade',['../class_prioridade.html#abb86b6bd8aff62e98ce492ce734a70f6',1,'Prioridade::getPrioridade()'],['../class_cartao_atividade.html#a5fdc8d9c57b351ae2abd79c531762516',1,'CartaoAtividade::getPrioridade()']]],
+  ['getprojeto_14',['getProjeto',['../class_quadro.html#aaab676b0fef8e6f464e21960447507c8',1,'Quadro']]],
+  ['getprojetos_15',['getProjetos',['../class_pessoa.html#ab3c36031321ee8aa7ae74c6b81d39393',1,'Pessoa']]],
+  ['getquadro_16',['getQuadro',['../class_cartao_atividade.html#a7e34aa215594138433382107443c8b12',1,'CartaoAtividade']]],
+  ['getquadros_17',['getQuadros',['../class_projeto.html#a6ca43adc5178e0baae3fc164e63882f5',1,'Projeto']]],
+  ['getsenha_18',['getSenha',['../class_pessoa.html#a02498f338ca00cdd18e794f17d660281',1,'Pessoa']]],
+  ['gettamanho_19',['getTamanho',['../class_tamanho.html#ab3ab5fd55f4c001089551f1fb09c1ec6',1,'Tamanho::getTamanho()'],['../class_cartao_atividade.html#a3203e84615858f16a2cc938d3e1b0ebc',1,'CartaoAtividade::getTamanho() const']]],
+  ['gettermino_20',['getTermino',['../class_cartao_atividade.html#ab3b33fde234c63ff72518e005e04f0fb',1,'CartaoAtividade::getTermino()'],['../class_projeto.html#a3278bde27423f1ab0027acb3e557cfe7',1,'Projeto::getTermino()']]],
+  ['gettexto_21',['getTexto',['../class_texto.html#a69463b543f36eaf86076ef48c896987f',1,'Texto']]],
+  ['gettimestamp_22',['getTimestamp',['../class_timestamp.html#a2625d4645e57c83af16ca7b03d7e0020',1,'Timestamp']]],
+  ['getvalor_23',['getValor',['../class_email.html#a573b7a1f21085bbb13cf6ec4dd802ecc',1,'Email::getValor()'],['../class_senha.html#ae0b4d9dfac80da4dc9c4965a9648e6b5',1,'Senha::getValor()'],['../class_timestamp.html#aaf3bf49967bcb6995e4f742f80359099',1,'Timestamp::getValor()']]]
+];

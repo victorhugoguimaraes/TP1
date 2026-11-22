@@ -1,0 +1,28 @@
+\doxysection{ReferÃªncia do Arquivo persistencia/\+\+Schema.cpp}
+\hypertarget{_schema_8cpp}{}\label{_schema_8cpp}\index{persistencia/Schema.cpp@{persistencia/Schema.cpp}}
+{\ttfamily \+\#include "{}Schema.\+hpp"{}}\newline
+\doxysubsubsection*{FunÃ§Ãµes}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{_schema_8cpp_af31ba2893ea1d69c9e1c47b6e5b9719e}{criar\+Tabelas}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Cria as tabelas necessárias para o funcionamento do sistema no banco de dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{_schema_8cpp_doc-func-members}
+\Hypertarget{_schema_8cpp_doc-func-members}
+\doxysubsection{FunÃ§Ãµes}
+\Hypertarget{_schema_8cpp_af31ba2893ea1d69c9e1c47b6e5b9719e}\index{Schema.cpp@{Schema.cpp}!criarTabelas@{criarTabelas}}
+\index{criarTabelas@{criarTabelas}!Schema.cpp@{Schema.cpp}}
+\doxysubsubsection{\texorpdfstring{criarTabelas()}{criarTabelas()}}
+{\footnotesize\ttfamily \label{_schema_8cpp_af31ba2893ea1d69c9e1c47b6e5b9719e} 
+void criar\+Tabelas (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})}
+
+
+
+Cria as tabelas necessárias para o funcionamento do sistema no banco de dados. 
+
+Executa as instruções DDL (CREATE TABLE IF NOT EXISTS) para estruturar as tabelas de entidades e relacionamentos caso ainda não existam. 
+\begin{DoxyParams}{ParÃ¢metros}
+{\em banco} & Referência para o objeto \doxylink{class_banco_dados}{Banco\+Dados} onde as tabelas serão criadas. \\
+\hline
+\end{DoxyParams}

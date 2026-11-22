@@ -1,0 +1,170 @@
+\doxysection{ReferÃªncia da Classe Utilitario}
+\hypertarget{class_utilitario}{}\label{class_utilitario}\index{Utilitario@{Utilitario}}
+
+
+Fornece métodos auxiliares estáticos para classificação e validação de caracteres.  
+
+
+
+
+{\ttfamily \+\#include $<$Utilitario.\+hpp$>$}
+
+\doxysubsubsection*{Membros pÃºblicos estÃ¡ticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \doxymbox{\hyperlink{class_utilitario_aaa34e543793e4cc2f67dd9876e19926a}{eh\+Letra}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é uma letra do alfabeto (maiúscula ou minúscula). \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_a973c43555085e2247f43ee2b9ddcfb45}{eh\+Letra\+Minuscula}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é uma letra minúscula. \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_ac55846ec7a1192962c13b8cfe76e19cb}{eh\+Digito}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é um dígito numérico. \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_ad71297b54189de6ea81d4b98a10607d7}{eh\+Alfanumerico}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é alfanumérico (letra ou dígito). \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_a22d3bfa61b3553126ac37dc3fe962d49}{eh\+Maiuscula}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é uma letra maiúscula. \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_ae025bdbb0028974adfb6e12062bc6588}{eh\+Especial}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado pertence ao conjunto de caracteres especiais permitidos. \end{DoxyCompactList}\item 
+static bool \doxymbox{\hyperlink{class_utilitario_a7c4015c1d648e6186677e4ebe36d57b8}{eh\+Pontuacao}} (char caractere)
+\begin{DoxyCompactList}\small\item\em Verifica se o caractere informado é um sinal de pontuação válido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Fornece métodos auxiliares estáticos para classificação e validação de caracteres. 
+
+Centraliza verificações léxicas utilizadas na validação sintática das classes de domínio do sistema (letras, dígitos, caracteres alfanuméricos, especiais e de pontuação). 
+
+\label{class_utilitario_doc-func-members}
+\Hypertarget{class_utilitario_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_utilitario_ad71297b54189de6ea81d4b98a10607d7}\index{Utilitario@{Utilitario}!ehAlfanumerico@{ehAlfanumerico}}
+\index{ehAlfanumerico@{ehAlfanumerico}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehAlfanumerico()}{ehAlfanumerico()}}
+{\footnotesize\ttfamily \label{class_utilitario_ad71297b54189de6ea81d4b98a10607d7} 
+bool Utilitario::\+eh\+Alfanumerico (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é alfanumérico (letra ou dígito). 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere for letra ou dígito numérico; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_ac55846ec7a1192962c13b8cfe76e19cb}\index{Utilitario@{Utilitario}!ehDigito@{ehDigito}}
+\index{ehDigito@{ehDigito}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehDigito()}{ehDigito()}}
+{\footnotesize\ttfamily \label{class_utilitario_ac55846ec7a1192962c13b8cfe76e19cb} 
+bool Utilitario::\+eh\+Digito (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é um dígito numérico. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere estiver no intervalo \textquotesingle{}0\textquotesingle{} a \textquotesingle{}9\textquotesingle{}; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_ae025bdbb0028974adfb6e12062bc6588}\index{Utilitario@{Utilitario}!ehEspecial@{ehEspecial}}
+\index{ehEspecial@{ehEspecial}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehEspecial()}{ehEspecial()}}
+{\footnotesize\ttfamily \label{class_utilitario_ae025bdbb0028974adfb6e12062bc6588} 
+bool Utilitario::\+eh\+Especial (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado pertence ao conjunto de caracteres especiais permitidos. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere for considerado especial pelas regras de domínio; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_aaa34e543793e4cc2f67dd9876e19926a}\index{Utilitario@{Utilitario}!ehLetra@{ehLetra}}
+\index{ehLetra@{ehLetra}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehLetra()}{ehLetra()}}
+{\footnotesize\ttfamily \label{class_utilitario_aaa34e543793e4cc2f67dd9876e19926a} 
+bool Utilitario::\+eh\+Letra (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é uma letra do alfabeto (maiúscula ou minúscula). 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere for uma letra (A-\/Z ou a-\/z); false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_a973c43555085e2247f43ee2b9ddcfb45}\index{Utilitario@{Utilitario}!ehLetraMinuscula@{ehLetraMinuscula}}
+\index{ehLetraMinuscula@{ehLetraMinuscula}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehLetraMinuscula()}{ehLetraMinuscula()}}
+{\footnotesize\ttfamily \label{class_utilitario_a973c43555085e2247f43ee2b9ddcfb45} 
+bool Utilitario::\+eh\+Letra\+Minuscula (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é uma letra minúscula. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere estiver no intervalo \textquotesingle{}a\textquotesingle{} a \textquotesingle{}z\textquotesingle{}; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_a22d3bfa61b3553126ac37dc3fe962d49}\index{Utilitario@{Utilitario}!ehMaiuscula@{ehMaiuscula}}
+\index{ehMaiuscula@{ehMaiuscula}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehMaiuscula()}{ehMaiuscula()}}
+{\footnotesize\ttfamily \label{class_utilitario_a22d3bfa61b3553126ac37dc3fe962d49} 
+bool Utilitario::\+eh\+Maiuscula (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é uma letra maiúscula. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere estiver no intervalo \textquotesingle{}A\textquotesingle{} a \textquotesingle{}Z\textquotesingle{}; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_utilitario_a7c4015c1d648e6186677e4ebe36d57b8}\index{Utilitario@{Utilitario}!ehPontuacao@{ehPontuacao}}
+\index{ehPontuacao@{ehPontuacao}!Utilitario@{Utilitario}}
+\doxysubsubsection{\texorpdfstring{ehPontuacao()}{ehPontuacao()}}
+{\footnotesize\ttfamily \label{class_utilitario_a7c4015c1d648e6186677e4ebe36d57b8} 
+bool Utilitario::\+eh\+Pontuacao (\begin{DoxyParamCaption}\item[{char}]{caractere}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verifica se o caractere informado é um sinal de pontuação válido. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caractere} & Caractere a ser avaliado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o caractere for um sinal de pontuação aceito; false caso contrário. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_utilitario_8hpp}{Utilitario.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_utilitario_8cpp}{Utilitario.\+cpp}}\end{DoxyCompactItemize}

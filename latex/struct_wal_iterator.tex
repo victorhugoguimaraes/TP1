@@ -1,0 +1,52 @@
+\doxysection{Referência da Estrutura Wal\+Iterator}
+\hypertarget{struct_wal_iterator}{}\label{struct_wal_iterator}\index{WalIterator@{WalIterator}}
+\doxysubsubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_wal_iterator_1_1_wal_segment}{Wal\+Segment}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_iterator_accc32feabc4acfea6d6de915225f15a7}{i\+Prior}}
+\item 
+int \doxymbox{\hyperlink{struct_wal_iterator_ad81bc9447d6043212289d127dc9fdafa}{n\+Segment}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_wal_iterator_ade088d63d398d961d56f3844c494e5b1}{n\+Pagemap}}
+\item 
+struct \doxymbox{\hyperlink{struct_wal_iterator_1_1_wal_segment}{Wal\+Iterator::\+\+Wal\+Segment}} \doxymbox{\hyperlink{struct_wal_iterator_aa1b1836f22ab9a9263737f2ca35c98e3}{a\+Segment}} \+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]
+\end{DoxyCompactItemize}
+
+
+\label{struct_wal_iterator_doc-variable-members}
+\Hypertarget{struct_wal_iterator_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_wal_iterator_aa1b1836f22ab9a9263737f2ca35c98e3}\index{WalIterator@{WalIterator}!aSegment@{aSegment}}
+\index{aSegment@{aSegment}!WalIterator@{WalIterator}}
+\doxysubsubsection{\texorpdfstring{aSegment}{aSegment}}
+{\footnotesize\ttfamily \label{struct_wal_iterator_aa1b1836f22ab9a9263737f2ca35c98e3} 
+struct \doxymbox{\hyperlink{struct_wal_iterator_1_1_wal_segment}{Wal\+Iterator::\+\+Wal\+Segment}} Wal\+Iterator::\+a\+Segment\+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]}
+
+\Hypertarget{struct_wal_iterator_accc32feabc4acfea6d6de915225f15a7}\index{WalIterator@{WalIterator}!iPrior@{iPrior}}
+\index{iPrior@{iPrior}!WalIterator@{WalIterator}}
+\doxysubsubsection{\texorpdfstring{iPrior}{iPrior}}
+{\footnotesize\ttfamily \label{struct_wal_iterator_accc32feabc4acfea6d6de915225f15a7} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Iterator::\+i\+Prior}
+
+\Hypertarget{struct_wal_iterator_ade088d63d398d961d56f3844c494e5b1}\index{WalIterator@{WalIterator}!nPagemap@{nPagemap}}
+\index{nPagemap@{nPagemap}!WalIterator@{WalIterator}}
+\doxysubsubsection{\texorpdfstring{nPagemap}{nPagemap}}
+{\footnotesize\ttfamily \label{struct_wal_iterator_ade088d63d398d961d56f3844c494e5b1} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Wal\+Iterator::\+n\+Pagemap}
+
+\Hypertarget{struct_wal_iterator_ad81bc9447d6043212289d127dc9fdafa}\index{WalIterator@{WalIterator}!nSegment@{nSegment}}
+\index{nSegment@{nSegment}!WalIterator@{WalIterator}}
+\doxysubsubsection{\texorpdfstring{nSegment}{nSegment}}
+{\footnotesize\ttfamily \label{struct_wal_iterator_ad81bc9447d6043212289d127dc9fdafa} 
+int Wal\+Iterator::\+n\+Segment}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

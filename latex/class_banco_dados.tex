@@ -1,0 +1,96 @@
+\doxysection{ReferÃªncia da Classe Banco\+Dados}
+\hypertarget{class_banco_dados}{}\label{class_banco_dados}\index{BancoDados@{BancoDados}}
+
+
+Encapsula a abertura, execução de comandos e fechamento de um banco SQLite.  
+
+
+
+
+{\ttfamily \+\#include $<$Banco\+Dados.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54}{Banco\+Dados}} (const string \&caminho)
+\begin{DoxyCompactList}\small\item\em Constrói o gerenciador e abre a conexão com o banco de dados SQLite. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96}{\texorpdfstring{$\sim$}{\string~}\+Banco\+Dados}} ()
+\begin{DoxyCompactList}\small\item\em Destrói o objeto e fecha a conexão ativa com o banco de dados. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_banco_dados_acf8a30363548e6ba1c39996e82a469b2}{obter\+Banco}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o ponteiro bruto para a instância aberta do banco SQLite. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_banco_dados_ac2b6ab8f3ff1f73720453df4918c4eaf}{executar}} (const string \&sql) const
+\begin{DoxyCompactList}\small\item\em Executa uma instrução SQL diretamente no banco de dados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Encapsula a abertura, execução de comandos e fechamento de um banco SQLite. 
+
+Gerencia o ciclo de vida da conexão com o arquivo de banco de dados utilizando RAII, abrindo a conexão no construtor e encerrando-\/a no destrutor. 
+
+\label{class_banco_dados_doc-constructors}
+\Hypertarget{class_banco_dados_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54}\index{BancoDados@{BancoDados}!BancoDados@{BancoDados}}
+\index{BancoDados@{BancoDados}!BancoDados@{BancoDados}}
+\doxysubsubsection{\texorpdfstring{BancoDados()}{BancoDados()}}
+{\footnotesize\ttfamily \label{class_banco_dados_a6a8855518ef408ea09cc7022a9031d54} 
+Banco\+Dados::\+\+Banco\+Dados (\begin{DoxyParamCaption}\item[{const string \&}]{caminho}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constrói o gerenciador e abre a conexão com o banco de dados SQLite. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em caminho} & Caminho do arquivo do banco de dados no sistema de arquivos. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96}\index{BancoDados@{BancoDados}!````~BancoDados@{\texorpdfstring{$\sim$}{\string~}BancoDados}}
+\index{````~BancoDados@{\texorpdfstring{$\sim$}{\string~}BancoDados}!BancoDados@{BancoDados}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}BancoDados()}{\string~BancoDados()}}
+{\footnotesize\ttfamily \label{class_banco_dados_ae1ed73b90d2b84126771e55459ffcf96} 
+Banco\+Dados::\+\texorpdfstring{$\sim$}{\string~}\+Banco\+Dados (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destrói o objeto e fecha a conexão ativa com o banco de dados. 
+
+
+
+\label{class_banco_dados_doc-func-members}
+\Hypertarget{class_banco_dados_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_banco_dados_ac2b6ab8f3ff1f73720453df4918c4eaf}\index{BancoDados@{BancoDados}!executar@{executar}}
+\index{executar@{executar}!BancoDados@{BancoDados}}
+\doxysubsubsection{\texorpdfstring{executar()}{executar()}}
+{\footnotesize\ttfamily \label{class_banco_dados_ac2b6ab8f3ff1f73720453df4918c4eaf} 
+void Banco\+Dados::\+executar (\begin{DoxyParamCaption}\item[{const string \&}]{sql}{}\end{DoxyParamCaption}) const}
+
+
+
+Executa uma instrução SQL diretamente no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em sql} & String contendo o comando SQL a ser executado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_banco_dados_acf8a30363548e6ba1c39996e82a469b2}\index{BancoDados@{BancoDados}!obterBanco@{obterBanco}}
+\index{obterBanco@{obterBanco}!BancoDados@{BancoDados}}
+\doxysubsubsection{\texorpdfstring{obterBanco()}{obterBanco()}}
+{\footnotesize\ttfamily \label{class_banco_dados_acf8a30363548e6ba1c39996e82a469b2} 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}} \texorpdfstring{$\ast$}{*} Banco\+Dados::\+obter\+Banco (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o ponteiro bruto para a instância aberta do banco SQLite. 
+
+\begin{DoxyReturn}{Retorna}
+Ponteiro sqlite3\texorpdfstring{$\ast$}{*} correspondente à conexão ativa. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+persistencia/\doxymbox{\hyperlink{_banco_dados_8hpp}{Banco\+Dados.\+hpp}}\item 
+persistencia/\doxymbox{\hyperlink{_banco_dados_8cpp}{Banco\+Dados.\+cpp}}\end{DoxyCompactItemize}

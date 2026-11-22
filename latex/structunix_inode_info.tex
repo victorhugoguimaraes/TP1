@@ -1,0 +1,103 @@
+\doxysection{Referência da Estrutura unix\+Inode\+Info}
+\hypertarget{structunix_inode_info}{}\label{structunix_inode_info}\index{unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structunix_file_id}{unix\+File\+Id}} \doxymbox{\hyperlink{structunix_inode_info_ae692731d449f4462a921dda9a061faa6}{file\+Id}}
+\item 
+\doxymbox{\hyperlink{structsqlite3__mutex}{sqlite3\+\_\+mutex}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structunix_inode_info_a8b0bb0ff004f010fc6dc5ab0aa62019c}{p\+Lock\+Mutex}}
+\item 
+int \doxymbox{\hyperlink{structunix_inode_info_a0d7f8dd92964f53e59c8d741dbe00a61}{n\+Shared}}
+\item 
+int \doxymbox{\hyperlink{structunix_inode_info_a477f3357a32adbc1a9b05017e535444d}{n\+Lock}}
+\item 
+unsigned char \doxymbox{\hyperlink{structunix_inode_info_a010a765bb3feecb16b650f68fc3a3c1f}{e\+File\+Lock}}
+\item 
+unsigned char \doxymbox{\hyperlink{structunix_inode_info_ade689e4231dd80bb33c86da1e5ed1586}{b\+Process\+Lock}}
+\item 
+\doxymbox{\hyperlink{struct_unix_unused_fd}{Unix\+Unused\+Fd}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structunix_inode_info_a0dda9ad35734fa161d1f0b13b671c1c6}{p\+Unused}}
+\item 
+int \doxymbox{\hyperlink{structunix_inode_info_a65cbd1fd05ed00f03a252266b04a8221}{n\+Ref}}
+\item 
+\doxymbox{\hyperlink{structunix_shm_node}{unix\+Shm\+Node}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structunix_inode_info_a302a8b82e27d5b3624ec122bc9c2ed61}{p\+Shm\+Node}}
+\item 
+\doxymbox{\hyperlink{structunix_inode_info}{unix\+Inode\+Info}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structunix_inode_info_a80181ba4ef71dd0d8e55e97baedc761e}{p\+Next}}
+\item 
+\doxymbox{\hyperlink{structunix_inode_info}{unix\+Inode\+Info}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structunix_inode_info_a6575edce9898b48870c6f48047c01d01}{p\+Prev}}
+\end{DoxyCompactItemize}
+
+
+\label{structunix_inode_info_doc-variable-members}
+\Hypertarget{structunix_inode_info_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{structunix_inode_info_ade689e4231dd80bb33c86da1e5ed1586}\index{unixInodeInfo@{unixInodeInfo}!bProcessLock@{bProcessLock}}
+\index{bProcessLock@{bProcessLock}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{bProcessLock}{bProcessLock}}
+{\footnotesize\ttfamily \label{structunix_inode_info_ade689e4231dd80bb33c86da1e5ed1586} 
+unsigned char unix\+Inode\+Info::\+b\+Process\+Lock}
+
+\Hypertarget{structunix_inode_info_a010a765bb3feecb16b650f68fc3a3c1f}\index{unixInodeInfo@{unixInodeInfo}!eFileLock@{eFileLock}}
+\index{eFileLock@{eFileLock}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{eFileLock}{eFileLock}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a010a765bb3feecb16b650f68fc3a3c1f} 
+unsigned char unix\+Inode\+Info::\+e\+File\+Lock}
+
+\Hypertarget{structunix_inode_info_ae692731d449f4462a921dda9a061faa6}\index{unixInodeInfo@{unixInodeInfo}!fileId@{fileId}}
+\index{fileId@{fileId}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{fileId}{fileId}}
+{\footnotesize\ttfamily \label{structunix_inode_info_ae692731d449f4462a921dda9a061faa6} 
+struct \doxymbox{\hyperlink{structunix_file_id}{unix\+File\+Id}} unix\+Inode\+Info::\+file\+Id}
+
+\Hypertarget{structunix_inode_info_a477f3357a32adbc1a9b05017e535444d}\index{unixInodeInfo@{unixInodeInfo}!nLock@{nLock}}
+\index{nLock@{nLock}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{nLock}{nLock}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a477f3357a32adbc1a9b05017e535444d} 
+int unix\+Inode\+Info::\+n\+Lock}
+
+\Hypertarget{structunix_inode_info_a65cbd1fd05ed00f03a252266b04a8221}\index{unixInodeInfo@{unixInodeInfo}!nRef@{nRef}}
+\index{nRef@{nRef}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{nRef}{nRef}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a65cbd1fd05ed00f03a252266b04a8221} 
+int unix\+Inode\+Info::\+n\+Ref}
+
+\Hypertarget{structunix_inode_info_a0d7f8dd92964f53e59c8d741dbe00a61}\index{unixInodeInfo@{unixInodeInfo}!nShared@{nShared}}
+\index{nShared@{nShared}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{nShared}{nShared}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a0d7f8dd92964f53e59c8d741dbe00a61} 
+int unix\+Inode\+Info::\+n\+Shared}
+
+\Hypertarget{structunix_inode_info_a8b0bb0ff004f010fc6dc5ab0aa62019c}\index{unixInodeInfo@{unixInodeInfo}!pLockMutex@{pLockMutex}}
+\index{pLockMutex@{pLockMutex}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{pLockMutex}{pLockMutex}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a8b0bb0ff004f010fc6dc5ab0aa62019c} 
+\doxymbox{\hyperlink{structsqlite3__mutex}{sqlite3\+\_\+mutex}}\texorpdfstring{$\ast$}{*} unix\+Inode\+Info::\+p\+Lock\+Mutex}
+
+\Hypertarget{structunix_inode_info_a80181ba4ef71dd0d8e55e97baedc761e}\index{unixInodeInfo@{unixInodeInfo}!pNext@{pNext}}
+\index{pNext@{pNext}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{pNext}{pNext}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a80181ba4ef71dd0d8e55e97baedc761e} 
+\doxymbox{\hyperlink{structunix_inode_info}{unix\+Inode\+Info}}\texorpdfstring{$\ast$}{*} unix\+Inode\+Info::\+p\+Next}
+
+\Hypertarget{structunix_inode_info_a6575edce9898b48870c6f48047c01d01}\index{unixInodeInfo@{unixInodeInfo}!pPrev@{pPrev}}
+\index{pPrev@{pPrev}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{pPrev}{pPrev}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a6575edce9898b48870c6f48047c01d01} 
+\doxymbox{\hyperlink{structunix_inode_info}{unix\+Inode\+Info}}\texorpdfstring{$\ast$}{*} unix\+Inode\+Info::\+p\+Prev}
+
+\Hypertarget{structunix_inode_info_a302a8b82e27d5b3624ec122bc9c2ed61}\index{unixInodeInfo@{unixInodeInfo}!pShmNode@{pShmNode}}
+\index{pShmNode@{pShmNode}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{pShmNode}{pShmNode}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a302a8b82e27d5b3624ec122bc9c2ed61} 
+\doxymbox{\hyperlink{structunix_shm_node}{unix\+Shm\+Node}}\texorpdfstring{$\ast$}{*} unix\+Inode\+Info::\+p\+Shm\+Node}
+
+\Hypertarget{structunix_inode_info_a0dda9ad35734fa161d1f0b13b671c1c6}\index{unixInodeInfo@{unixInodeInfo}!pUnused@{pUnused}}
+\index{pUnused@{pUnused}!unixInodeInfo@{unixInodeInfo}}
+\doxysubsubsection{\texorpdfstring{pUnused}{pUnused}}
+{\footnotesize\ttfamily \label{structunix_inode_info_a0dda9ad35734fa161d1f0b13b671c1c6} 
+\doxymbox{\hyperlink{struct_unix_unused_fd}{Unix\+Unused\+Fd}}\texorpdfstring{$\ast$}{*} unix\+Inode\+Info::\+p\+Unused}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\doxysection{ReferÃªncia da Classe Servico\+Pessoa}
+\hypertarget{class_servico_pessoa}{}\label{class_servico_pessoa}\index{ServicoPessoa@{ServicoPessoa}}
+
+
+Define a interface de operações de negócio sobre pessoas (usuários).  
+
+
+
+
+{\ttfamily \+\#include $<$Servico\+Pessoa.\+hpp$>$}
+
+Diagrama de hierarquia da classe Servico\+Pessoa:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_servico_pessoa}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_servico_pessoa_ad0651733f71aac52bde3e78a835a54e7}{criar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Cadastra uma nova pessoa no sistema. \end{DoxyCompactList}\item 
+virtual vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} $>$ \doxymbox{\hyperlink{class_servico_pessoa_a71e8a48ab0ab52afcf10a83f454f0116}{listar}} () const =0
+\begin{DoxyCompactList}\small\item\em Lista todas as pessoas cadastradas no sistema. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_pessoa_a4849a9bc8dfb01280e675f5fa33fb3b4}{consultar}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email, \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Consulta uma pessoa específica pelo seu endereço de e-\/mail. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_pessoa_acf65da6dbc671f8f0423c9810e1dd80d}{editar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma pessoa já cadastrada. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_pessoa_a29095a9dbe61d8a086d4bf5e067cbcd2}{excluir}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email)=0
+\begin{DoxyCompactList}\small\item\em Remove o cadastro de uma pessoa do sistema pelo seu e-\/mail. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_servico_pessoa_abe51bd3c341d9f564f8be32638d3d597}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Pessoa}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementação por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Define a interface de operações de negócio sobre pessoas (usuários). 
+
+Permite que a camada de apresentação realize operações de cadastro, listagem, consulta, edição e exclusão de pessoas sem depender da implementação concreta do armazenamento. 
+
+\label{class_servico_pessoa_doc-constructors}
+\Hypertarget{class_servico_pessoa_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_servico_pessoa_abe51bd3c341d9f564f8be32638d3d597}\index{ServicoPessoa@{ServicoPessoa}!````~ServicoPessoa@{\texorpdfstring{$\sim$}{\string~}ServicoPessoa}}
+\index{````~ServicoPessoa@{\texorpdfstring{$\sim$}{\string~}ServicoPessoa}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ServicoPessoa()}{\string~ServicoPessoa()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_abe51bd3c341d9f564f8be32638d3d597} 
+virtual Servico\+Pessoa::\+\texorpdfstring{$\sim$}{\string~}\+Servico\+Pessoa (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Permite destruir uma implementação por meio da interface. 
+
+
+
+\label{class_servico_pessoa_doc-func-members}
+\Hypertarget{class_servico_pessoa_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_servico_pessoa_a4849a9bc8dfb01280e675f5fa33fb3b4}\index{ServicoPessoa@{ServicoPessoa}!consultar@{consultar}}
+\index{consultar@{consultar}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{consultar()}{consultar()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_a4849a9bc8dfb01280e675f5fa33fb3b4} 
+virtual bool Servico\+Pessoa::\+consultar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{, }\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Consulta uma pessoa específica pelo seu endereço de e-\/mail. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em email} & Objeto \doxylink{class_email}{Email} identificador da pessoa buscada. \\
+\hline
+{\em pessoa} & Referência para o objeto \doxylink{class_pessoa}{Pessoa} onde os dados encontrados serão armazenados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a pessoa for encontrada; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_pessoa_a27b894943f8b9fa3cfa04180bfa00567}{Cntrl\+Servico\+Pessoa}}.
+
+\Hypertarget{class_servico_pessoa_ad0651733f71aac52bde3e78a835a54e7}\index{ServicoPessoa@{ServicoPessoa}!criar@{criar}}
+\index{criar@{criar}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_ad0651733f71aac52bde3e78a835a54e7} 
+virtual bool Servico\+Pessoa::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cadastra uma nova pessoa no sistema. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em pessoa} & Objeto \doxylink{class_pessoa}{Pessoa} contendo os dados da pessoa a ser cadastrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cadastro for realizado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_pessoa_a326a04ec17e186df51041a2cd9ed5300}{Cntrl\+Servico\+Pessoa}}.
+
+\Hypertarget{class_servico_pessoa_acf65da6dbc671f8f0423c9810e1dd80d}\index{ServicoPessoa@{ServicoPessoa}!editar@{editar}}
+\index{editar@{editar}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_acf65da6dbc671f8f0423c9810e1dd80d} 
+virtual bool Servico\+Pessoa::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de uma pessoa já cadastrada. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em pessoa} & Objeto \doxylink{class_pessoa}{Pessoa} contendo os dados atualizados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a edição for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_pessoa_a0ecd6f09dc20e7e1e57c0a55ab1680b9}{Cntrl\+Servico\+Pessoa}}.
+
+\Hypertarget{class_servico_pessoa_a29095a9dbe61d8a086d4bf5e067cbcd2}\index{ServicoPessoa@{ServicoPessoa}!excluir@{excluir}}
+\index{excluir@{excluir}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_a29095a9dbe61d8a086d4bf5e067cbcd2} 
+virtual bool Servico\+Pessoa::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove o cadastro de uma pessoa do sistema pelo seu e-\/mail. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em email} & Objeto \doxylink{class_email}{Email} identificador da pessoa a ser excluída. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a exclusão for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_pessoa_afeb6bc7de27b15150975a7deed426501}{Cntrl\+Servico\+Pessoa}}.
+
+\Hypertarget{class_servico_pessoa_a71e8a48ab0ab52afcf10a83f454f0116}\index{ServicoPessoa@{ServicoPessoa}!listar@{listar}}
+\index{listar@{listar}!ServicoPessoa@{ServicoPessoa}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_servico_pessoa_a71e8a48ab0ab52afcf10a83f454f0116} 
+virtual vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} $>$ Servico\+Pessoa::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todas as pessoas cadastradas no sistema. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_pessoa}{Pessoa} armazenados. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_pessoa_a1b0d7f6bc023259e48e0e441c737ad44}{Cntrl\+Servico\+Pessoa}}.
+
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+interfaces/\doxymbox{\hyperlink{_servico_pessoa_8hpp}{Servico\+Pessoa.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: C√≥digo-Fonte de entidades/CartaoAtividade.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_cartao_atividade_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CartaoAtividade.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_cartao_atividade_8hpp.html">Ir para a documenta√ß√£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef CARTAO_ATIVIDADE_HPP</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define CARTAO_ATIVIDADE_HPP</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_estado_8hpp.html">../dominios/Estado.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_identificador_8hpp.html">../dominios/Identificador.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_nome_8hpp.html">../dominios/Nome.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_prioridade_8hpp.html">../dominios/Prioridade.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_tamanho_8hpp.html">../dominios/Tamanho.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_texto_8hpp.html">../dominios/Texto.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_timestamp_8hpp.html">../dominios/Timestamp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_cartao_atividade.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cartao_atividade.html">CartaoAtividade</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_identificador.html">Identificador</a> identificador;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_identificador.html">Identificador</a> quadro;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_nome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_texto.html">Texto</a> descricao;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_prioridade.html">Prioridade</a> prioridade;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_estado.html">Estado</a> estado;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_tamanho.html">Tamanho</a> tamanho;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> entrada;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> inicio;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> termino;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a64ad50bbd661841b63f60218d044b694">setIdentificador</a>(<a class="code hl_class" href="class_identificador.html">Identificador</a> identificador);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_class" href="class_identificador.html">Identificador</a> <a class="code hl_function" href="class_cartao_atividade.html#a4a3cfc240b735d432801331727ef68a7">getIdentificador</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#acfcacda0757feb5baed171b7d15f3de9">setQuadro</a>(<a class="code hl_class" href="class_identificador.html">Identificador</a> quadro);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_class" href="class_identificador.html">Identificador</a> <a class="code hl_function" href="class_cartao_atividade.html#a7e34aa215594138433382107443c8b12">getQuadro</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a1379fd46533512ec26b0116a5ca99a46">setNome</a>(<a class="code hl_class" href="class_nome.html">Nome</a> nome);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_class" href="class_nome.html">Nome</a> <a class="code hl_function" href="class_cartao_atividade.html#a1a05b2c596a6064a4cbe13b10791a69e">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a9bc19391e11fa3cd2cab744770aee376">setDescricao</a>(<a class="code hl_class" href="class_texto.html">Texto</a> descricao);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_class" href="class_texto.html">Texto</a> <a class="code hl_function" href="class_cartao_atividade.html#af3bc31936b2df05d05f4ba35317d57c3">getDescricao</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a84964da27d2e8a9bcea0ab04ba98e104">setPrioridade</a>(<a class="code hl_class" href="class_prioridade.html">Prioridade</a> prioridade);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_class" href="class_prioridade.html">Prioridade</a> <a class="code hl_function" href="class_cartao_atividade.html#a5fdc8d9c57b351ae2abd79c531762516">getPrioridade</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a3df362f3e71d31ca719dd21abd0ad261">setEstado</a>(<a class="code hl_class" href="class_estado.html">Estado</a> estado);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_class" href="class_estado.html">Estado</a> <a class="code hl_function" href="class_cartao_atividade.html#a16a069e11ad3e379d14353a08b643b54">getEstado</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#ae37cdc8c1c39b8e6e735c55b28e5d8dd">setTamanho</a>(<a class="code hl_class" href="class_tamanho.html">Tamanho</a> tamanho);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_class" href="class_tamanho.html">Tamanho</a> <a class="code hl_function" href="class_cartao_atividade.html#a3203e84615858f16a2cc938d3e1b0ebc">getTamanho</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a5507ebd342367b177df1abd407c40302">setEntrada</a>(<a class="code hl_class" href="class_timestamp.html">Timestamp</a> entrada);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> <a class="code hl_function" href="class_cartao_atividade.html#a59f6c9ccad5e9a5da88c25a2c67d724d">getEntrada</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#a8550df2a58568c7a1e67b38820362e3a">setInicio</a>(<a class="code hl_class" href="class_timestamp.html">Timestamp</a> inicio);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> <a class="code hl_function" href="class_cartao_atividade.html#acd8075ddf874f39e2489fe9a7f759515">getInicio</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cartao_atividade.html#ac084294c7db39e5741c3b9d266be81e9">setTermino</a>(<a class="code hl_class" href="class_timestamp.html">Timestamp</a> termino);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_class" href="class_timestamp.html">Timestamp</a> <a class="code hl_function" href="class_cartao_atividade.html#ab3b33fde234c63ff72518e005e04f0fb">getTermino</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>};</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="_cartao_atividade_8hpp.html#a784bca5b7742658a0241502931c4bd7b">  165</a></span><span class="keyword">using </span><a class="code hl_typedef" href="_cartao_atividade_8hpp.html#a784bca5b7742658a0241502931c4bd7b">Cartao</a> = <a class="code hl_class" href="class_cartao_atividade.html">CartaoAtividade</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_cartao_atividade_8hpp_html_a784bca5b7742658a0241502931c4bd7b"><div class="ttname"><a href="_cartao_atividade_8hpp.html#a784bca5b7742658a0241502931c4bd7b">Cartao</a></div><div class="ttdeci">CartaoAtividade Cartao</div><div class="ttdoc">Alias (apelido) simplificado para a classe CartaoAtividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.hpp:165</div></div>
+<div class="ttc" id="a_estado_8hpp_html"><div class="ttname"><a href="_estado_8hpp.html">Estado.hpp</a></div></div>
+<div class="ttc" id="a_identificador_8hpp_html"><div class="ttname"><a href="_identificador_8hpp.html">Identificador.hpp</a></div></div>
+<div class="ttc" id="a_nome_8hpp_html"><div class="ttname"><a href="_nome_8hpp.html">Nome.hpp</a></div></div>
+<div class="ttc" id="a_prioridade_8hpp_html"><div class="ttname"><a href="_prioridade_8hpp.html">Prioridade.hpp</a></div></div>
+<div class="ttc" id="a_tamanho_8hpp_html"><div class="ttname"><a href="_tamanho_8hpp.html">Tamanho.hpp</a></div></div>
+<div class="ttc" id="a_texto_8hpp_html"><div class="ttname"><a href="_texto_8hpp.html">Texto.hpp</a></div></div>
+<div class="ttc" id="a_timestamp_8hpp_html"><div class="ttname"><a href="_timestamp_8hpp.html">Timestamp.hpp</a></div></div>
+<div class="ttc" id="aclass_cartao_atividade_html"><div class="ttname"><a href="class_cartao_atividade.html">CartaoAtividade</a></div><div class="ttdoc">Entidade que representa um cart„o de atividade no sistema.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.hpp:25</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a1379fd46533512ec26b0116a5ca99a46"><div class="ttname"><a href="class_cartao_atividade.html#a1379fd46533512ec26b0116a5ca99a46">CartaoAtividade::setNome</a></div><div class="ttdeci">void setNome(Nome nome)</div><div class="ttdoc">Define o nome do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:19</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a16a069e11ad3e379d14353a08b643b54"><div class="ttname"><a href="class_cartao_atividade.html#a16a069e11ad3e379d14353a08b643b54">CartaoAtividade::getEstado</a></div><div class="ttdeci">Estado getEstado() const</div><div class="ttdoc">ObtÈm o estado atual do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:47</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a1a05b2c596a6064a4cbe13b10791a69e"><div class="ttname"><a href="class_cartao_atividade.html#a1a05b2c596a6064a4cbe13b10791a69e">CartaoAtividade::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">ObtÈm o nome do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:23</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a3203e84615858f16a2cc938d3e1b0ebc"><div class="ttname"><a href="class_cartao_atividade.html#a3203e84615858f16a2cc938d3e1b0ebc">CartaoAtividade::getTamanho</a></div><div class="ttdeci">Tamanho getTamanho() const</div><div class="ttdoc">ObtÈm o tamanho estimado da atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:55</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a3df362f3e71d31ca719dd21abd0ad261"><div class="ttname"><a href="class_cartao_atividade.html#a3df362f3e71d31ca719dd21abd0ad261">CartaoAtividade::setEstado</a></div><div class="ttdeci">void setEstado(Estado estado)</div><div class="ttdoc">Define o estado atual do cart„o de atividade (A FAZER, FAZENDO ou FEITO).</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:43</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a4a3cfc240b735d432801331727ef68a7"><div class="ttname"><a href="class_cartao_atividade.html#a4a3cfc240b735d432801331727ef68a7">CartaoAtividade::getIdentificador</a></div><div class="ttdeci">Identificador getIdentificador() const</div><div class="ttdoc">ObtÈm o identificador do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:7</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a5507ebd342367b177df1abd407c40302"><div class="ttname"><a href="class_cartao_atividade.html#a5507ebd342367b177df1abd407c40302">CartaoAtividade::setEntrada</a></div><div class="ttdeci">void setEntrada(Timestamp entrada)</div><div class="ttdoc">Define o timestamp de entrada do cart„o, registrado em sua criaÁ„o.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:59</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a59f6c9ccad5e9a5da88c25a2c67d724d"><div class="ttname"><a href="class_cartao_atividade.html#a59f6c9ccad5e9a5da88c25a2c67d724d">CartaoAtividade::getEntrada</a></div><div class="ttdeci">Timestamp getEntrada() const</div><div class="ttdoc">ObtÈm o timestamp de entrada do cart„o.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:63</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a5fdc8d9c57b351ae2abd79c531762516"><div class="ttname"><a href="class_cartao_atividade.html#a5fdc8d9c57b351ae2abd79c531762516">CartaoAtividade::getPrioridade</a></div><div class="ttdeci">Prioridade getPrioridade() const</div><div class="ttdoc">ObtÈm a prioridade do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:39</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a64ad50bbd661841b63f60218d044b694"><div class="ttname"><a href="class_cartao_atividade.html#a64ad50bbd661841b63f60218d044b694">CartaoAtividade::setIdentificador</a></div><div class="ttdeci">void setIdentificador(Identificador identificador)</div><div class="ttdoc">Define o identificador do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:3</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a7e34aa215594138433382107443c8b12"><div class="ttname"><a href="class_cartao_atividade.html#a7e34aa215594138433382107443c8b12">CartaoAtividade::getQuadro</a></div><div class="ttdeci">Identificador getQuadro() const</div><div class="ttdoc">ObtÈm o identificador do quadro associado ao cart„o.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:15</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a84964da27d2e8a9bcea0ab04ba98e104"><div class="ttname"><a href="class_cartao_atividade.html#a84964da27d2e8a9bcea0ab04ba98e104">CartaoAtividade::setPrioridade</a></div><div class="ttdeci">void setPrioridade(Prioridade prioridade)</div><div class="ttdoc">Define a prioridade do cart„o de atividade (ALTA, MEDIA ou BAIXA).</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:35</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a8550df2a58568c7a1e67b38820362e3a"><div class="ttname"><a href="class_cartao_atividade.html#a8550df2a58568c7a1e67b38820362e3a">CartaoAtividade::setInicio</a></div><div class="ttdeci">void setInicio(Timestamp inicio)</div><div class="ttdoc">Define o timestamp de inÌcio da atividade, registrado quando o estado do cart„o È mudado para FAZENDO.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:67</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_a9bc19391e11fa3cd2cab744770aee376"><div class="ttname"><a href="class_cartao_atividade.html#a9bc19391e11fa3cd2cab744770aee376">CartaoAtividade::setDescricao</a></div><div class="ttdeci">void setDescricao(Texto descricao)</div><div class="ttdoc">Define a descriÁ„o do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:27</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_ab3b33fde234c63ff72518e005e04f0fb"><div class="ttname"><a href="class_cartao_atividade.html#ab3b33fde234c63ff72518e005e04f0fb">CartaoAtividade::getTermino</a></div><div class="ttdeci">Timestamp getTermino() const</div><div class="ttdoc">ObtÈm o timestamp de tÈrmino da atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:79</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_ac084294c7db39e5741c3b9d266be81e9"><div class="ttname"><a href="class_cartao_atividade.html#ac084294c7db39e5741c3b9d266be81e9">CartaoAtividade::setTermino</a></div><div class="ttdeci">void setTermino(Timestamp termino)</div><div class="ttdoc">Define o timestamp de tÈrmino da atividade, registrado quando o estado do cart„o È mudado para FEITO.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:75</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_acd8075ddf874f39e2489fe9a7f759515"><div class="ttname"><a href="class_cartao_atividade.html#acd8075ddf874f39e2489fe9a7f759515">CartaoAtividade::getInicio</a></div><div class="ttdeci">Timestamp getInicio() const</div><div class="ttdoc">ObtÈm o timestamp de inÌcio da atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:71</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_acfcacda0757feb5baed171b7d15f3de9"><div class="ttname"><a href="class_cartao_atividade.html#acfcacda0757feb5baed171b7d15f3de9">CartaoAtividade::setQuadro</a></div><div class="ttdeci">void setQuadro(Identificador quadro)</div><div class="ttdoc">Define o identificador do quadro associado ao cart„o.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:11</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_ae37cdc8c1c39b8e6e735c55b28e5d8dd"><div class="ttname"><a href="class_cartao_atividade.html#ae37cdc8c1c39b8e6e735c55b28e5d8dd">CartaoAtividade::setTamanho</a></div><div class="ttdeci">void setTamanho(Tamanho tamanho)</div><div class="ttdoc">Define o tamanho estimado da atividade (GRANDE, MEDIO ou PEQUENO).</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:51</div></div>
+<div class="ttc" id="aclass_cartao_atividade_html_af3bc31936b2df05d05f4ba35317d57c3"><div class="ttname"><a href="class_cartao_atividade.html#af3bc31936b2df05d05f4ba35317d57c3">CartaoAtividade::getDescricao</a></div><div class="ttdeci">Texto getDescricao() const</div><div class="ttdoc">ObtÈm a descriÁ„o do cart„o de atividade.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.cpp:31</div></div>
+<div class="ttc" id="aclass_estado_html"><div class="ttname"><a href="class_estado.html">Estado</a></div><div class="ttdoc">Gerencia o ciclo de vida ou progresso de uma tarefa ou objeto.</div><div class="ttdef"><b>Defini√ß√£o</b> Estado.hpp:14</div></div>
+<div class="ttc" id="aclass_identificador_html"><div class="ttname"><a href="class_identificador.html">Identificador</a></div><div class="ttdoc">Representa e valida um cÛdigo de identificaÁ„o alfanumÈrico com formato fixo.</div><div class="ttdef"><b>Defini√ß√£o</b> Identificador.hpp:15</div></div>
+<div class="ttc" id="aclass_nome_html"><div class="ttname"><a href="class_nome.html">Nome</a></div><div class="ttdef"><b>Defini√ß√£o</b> Nome.hpp:7</div></div>
+<div class="ttc" id="aclass_prioridade_html"><div class="ttname"><a href="class_prioridade.html">Prioridade</a></div><div class="ttdoc">Gerencia e valida o nÌvel de urgÍncia ou import‚ncia de uma tarefa ou evento.</div><div class="ttdef"><b>Defini√ß√£o</b> Prioridade.hpp:14</div></div>
+<div class="ttc" id="aclass_tamanho_html"><div class="ttname"><a href="class_tamanho.html">Tamanho</a></div><div class="ttdoc">Gerencia e valida o dimensionamento ou escala (Grande, MÈdio, Pequeno) de um objeto.</div><div class="ttdef"><b>Defini√ß√£o</b> Tamanho.hpp:14</div></div>
+<div class="ttc" id="aclass_texto_html"><div class="ttname"><a href="class_texto.html">Texto</a></div><div class="ttdoc">Entidade que representa um domÌnio de Texto.</div><div class="ttdef"><b>Defini√ß√£o</b> Texto.hpp:21</div></div>
+<div class="ttc" id="aclass_timestamp_html"><div class="ttname"><a href="class_timestamp.html">Timestamp</a></div><div class="ttdoc">Representa e valida um carimbo de data e hora com formato textual especÌfico.</div><div class="ttdef"><b>Defini√ß√£o</b> Timestamp.hpp:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97eb6680ba814fee2720e6d851c9f3cb.html">entidades</a></li><li class="navelem"><a href="_cartao_atividade_8hpp.html">CartaoAtividade.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

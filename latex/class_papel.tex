@@ -1,0 +1,113 @@
+\doxysection{ReferÃªncia da Classe Papel}
+\hypertarget{class_papel}{}\label{class_papel}\index{Papel@{Papel}}
+
+
+Gerencia e valida o cargo de um usuário no sistema.  
+
+
+
+
+{\ttfamily \+\#include $<$Papel.\+hpp$>$}
+
+\doxysubsubsection*{Tipos PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Cargo}} \{ \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9aca48bccc4ee5c75f8ae9a004f168a816}{Nenhum}}
+, \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9ac0de0656d0fef47b062514492623213f}{Gestor}}
+, \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9a2f8c89f13df09d07b280b78b76a5ac18}{Desenvolvedor}}
+ \}
+\begin{DoxyCompactList}\small\item\em Define os tipos de cargos disponíveis no sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_papel_ae3182ac97c96dbd9ac7c54825c187071}{set\+Cargo}} (\doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Cargo}} cargo)
+\begin{DoxyCompactList}\small\item\em Valida e define o novo cargo. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Cargo}} \doxymbox{\hyperlink{class_papel_ad8fb0eed1cdd67d64405187ac80c8966}{get\+Cargo}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o cargo atualmente atribuído. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia e valida o cargo de um usuário no sistema. 
+
+Esta classe encapsula um enumerador que representa os papéis profissionais disponíveis, garantindo que apenas atribuições administrativas válidas sejam aplicadas. 
+
+\label{class_papel_doc-enum-members}
+\Hypertarget{class_papel_doc-enum-members}
+\doxysubsection{DocumentaÃ§Ã£o das enumeraÃ§Ãµes}
+\Hypertarget{class_papel_a95b1be40108d16aab7a97437279740b9}\index{Papel@{Papel}!Cargo@{Cargo}}
+\index{Cargo@{Cargo}!Papel@{Papel}}
+\doxysubsubsection{\texorpdfstring{Cargo}{Cargo}}
+{\footnotesize\ttfamily \label{class_papel_a95b1be40108d16aab7a97437279740b9} 
+enum \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Papel::\+\+Cargo}}}
+
+
+
+Define os tipos de cargos disponíveis no sistema. 
+
+\begin{DoxyEnumFields}[2]{Enumeradores}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nenhum@{Nenhum}!Papel@{Papel}}
+\index{Papel@{Papel}!Nenhum@{Nenhum}}
+}\Hypertarget{class_papel_a95b1be40108d16aab7a97437279740b9aca48bccc4ee5c75f8ae9a004f168a816}\label{class_papel_a95b1be40108d16aab7a97437279740b9aca48bccc4ee5c75f8ae9a004f168a816} 
+Nenhum&\doxylink{class_estado}{Estado} inicial padrão (não atribuído). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gestor@{Gestor}!Papel@{Papel}}
+\index{Papel@{Papel}!Gestor@{Gestor}}
+}\Hypertarget{class_papel_a95b1be40108d16aab7a97437279740b9ac0de0656d0fef47b062514492623213f}\label{class_papel_a95b1be40108d16aab7a97437279740b9ac0de0656d0fef47b062514492623213f} 
+Gestor&\doxylink{class_papel}{Papel} de criador do projeto. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Desenvolvedor@{Desenvolvedor}!Papel@{Papel}}
+\index{Papel@{Papel}!Desenvolvedor@{Desenvolvedor}}
+}\Hypertarget{class_papel_a95b1be40108d16aab7a97437279740b9a2f8c89f13df09d07b280b78b76a5ac18}\label{class_papel_a95b1be40108d16aab7a97437279740b9a2f8c89f13df09d07b280b78b76a5ac18} 
+Desenvolvedor&\doxylink{class_papel}{Papel} de execução técnica e desenvolvimento. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{class_papel_doc-func-members}
+\Hypertarget{class_papel_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_papel_ad8fb0eed1cdd67d64405187ac80c8966}\index{Papel@{Papel}!getCargo@{getCargo}}
+\index{getCargo@{getCargo}!Papel@{Papel}}
+\doxysubsubsection{\texorpdfstring{getCargo()}{getCargo()}}
+{\footnotesize\ttfamily \label{class_papel_ad8fb0eed1cdd67d64405187ac80c8966} 
+\doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Papel::\+\+Cargo}} Papel::\+get\+Cargo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o cargo atualmente atribuído. 
+
+\begin{DoxyReturn}{Retorna}
+O cargo atual armazenado no objeto (do tipo \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9}{Papel::\+\+Cargo}). 
+\end{DoxyReturn}
+\Hypertarget{class_papel_ae3182ac97c96dbd9ac7c54825c187071}\index{Papel@{Papel}!setCargo@{setCargo}}
+\index{setCargo@{setCargo}!Papel@{Papel}}
+\doxysubsubsection{\texorpdfstring{setCargo()}{setCargo()}}
+{\footnotesize\ttfamily \label{class_papel_ae3182ac97c96dbd9ac7c54825c187071} 
+void Papel::\+set\+Cargo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Cargo}}}]{cargo}{}\end{DoxyParamCaption})}
+
+
+
+Valida e define o novo cargo. 
+
+Valida e define o novo cargo contanto que pertença ao enumerador \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9}{Cargo}. \begin{DoxyNote}{ObservaÃ§Ã£o}
+Embora o enumerador possua a opção \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9aca48bccc4ee5c75f8ae9a004f168a816}{Nenhum}, o método bloqueia sua atribuição explícita, aceitando apenas \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9ac0de0656d0fef47b062514492623213f}{Gestor} ou \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9a2f8c89f13df09d07b280b78b76a5ac18}{Desenvolvedor}.
+\end{DoxyNote}
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em cargo} & O novo cargo do tipo \doxylink{class_papel_a95b1be40108d16aab7a97437279740b9}{Papel::\+\+Cargo} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se o cargo fornecido for inválido ou igual a Nenhum ("{}\+Papel invalido"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_papel_8hpp}{Papel.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_papel_8cpp}{Papel.\+cpp}}\end{DoxyCompactItemize}

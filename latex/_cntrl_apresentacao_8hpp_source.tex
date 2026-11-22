@@ -1,0 +1,60 @@
+\doxysection{Cntrl\+Apresentacao.\+hpp}
+\hypertarget{_cntrl_apresentacao_8hpp_source}{}\label{_cntrl_apresentacao_8hpp_source}\index{apresentacao/CntrlApresentacao.hpp@{apresentacao/CntrlApresentacao.hpp}}
+\doxymbox{\hyperlink{_cntrl_apresentacao_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CNTRLAPRESENTACAO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CNTRLAPRESENTACAO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_cartao_8hpp}{../interfaces/ServicoCartao.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_pessoa_8hpp}{../interfaces/ServicoPessoa.hpp}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_projeto_8hpp}{../interfaces/ServicoProjeto.hpp}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_quadro_8hpp}{../interfaces/ServicoQuadro.hpp}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_relatorio_8hpp}{../interfaces/ServicoRelatorio.hpp}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cntrl_apresentacao_autenticacao_8hpp}{CntrlApresentacaoAutenticacao.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_interface_terminal_8hpp}{InterfaceTerminal.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_apresentacao_ad16077f348b2e8b53ab75a87de62c3ac}{CntrlApresentacao}}\ \{}
+\DoxyCodeLine{00013\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \doxymbox{\hyperlink{class_servico_pessoa}{ServicoPessoa}}\ \&pessoas;}
+\DoxyCodeLine{00015\ \ \ \ \ \doxymbox{\hyperlink{class_servico_projeto}{ServicoProjeto}}\ \&projetos;}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{class_servico_quadro}{ServicoQuadro}}\ \&quadros;}
+\DoxyCodeLine{00017\ \ \ \ \ \doxymbox{\hyperlink{class_servico_cartao}{ServicoCartao}}\ \&cartoes;}
+\DoxyCodeLine{00018\ \ \ \ \ \doxymbox{\hyperlink{class_servico_relatorio}{ServicoRelatorio}}\ \&relatorios;}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_apresentacao_autenticacao}{CntrlApresentacaoAutenticacao}}\ \&autenticacao;}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario;}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_interface_terminal}{InterfaceTerminal}}\ interfaceTerminal;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerTexto(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&mensagem,\ \textcolor{keywordtype}{string}\ \&valor);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerInteiro(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&mensagem,\ \textcolor{keywordtype}{int}\ \&valor);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ pausar();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerEmail(\doxymbox{\hyperlink{class_email}{Email}}\ \&email);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerIdentificador(\doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&mensagem);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ autenticar(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ cadastrarPessoaInicial();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ menuPessoa();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ menuProjeto(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ menuQuadro(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ menuCartao(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ menuRelatorio(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerPessoa(\doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa,\ \textcolor{keywordtype}{bool}\ incluirEmail);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerProjeto(\doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerQuadro(\doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ lerCartao(\doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao);}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ listarPessoas();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ listarProjetos(\doxymbox{\hyperlink{class_servico_projeto}{ServicoProjeto}}\ \&servico);}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ listarQuadros(\doxymbox{\hyperlink{class_servico_quadro}{ServicoQuadro}}\ \&servico);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ listarCartoes(\doxymbox{\hyperlink{class_servico_cartao}{ServicoCartao}}\ \&servico);}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarPessoa(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&pessoa);}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarProjeto(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto);}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarQuadro(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro);}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ mostrarCartao(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_apresentacao_ad16077f348b2e8b53ab75a87de62c3ac}{CntrlApresentacao}}(\doxymbox{\hyperlink{class_servico_pessoa}{ServicoPessoa}}\ \&pessoas,\ \doxymbox{\hyperlink{class_servico_projeto}{ServicoProjeto}}\ \&projetos,\ \doxymbox{\hyperlink{class_servico_quadro}{ServicoQuadro}}\ \&quadros,\ \doxymbox{\hyperlink{class_servico_cartao}{ServicoCartao}}\ \&cartoes,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_servico_relatorio}{ServicoRelatorio}}\ \&relatorios,\ \doxymbox{\hyperlink{class_cntrl_apresentacao_autenticacao}{CntrlApresentacaoAutenticacao}}\ \&autenticacao,\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_cntrl_apresentacao_a65bcadb5ad283c8e777d4027608f184f}{executar}}();}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

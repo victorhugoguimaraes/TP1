@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: Código-Fonte de servico/ContainerPessoa.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_container_pessoa_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ContainerPessoa.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_container_pessoa_8hpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONTAINER_PESSOAS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONTAINER_PESSOAS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_pessoa_8hpp.html">../entidades/Pessoa.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_banco_dados_8hpp.html">../persistencia/BancoDados.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_container_pessoas.html">   14</a></span><span class="keyword">class </span><a class="code hl_function" href="class_container_pessoas.html#afd06dcc4daa157ce685f5f997e423d60">ContainerPessoas</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_banco_dados.html">BancoDados</a> &amp;banco;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_container_pessoas.html#afd06dcc4daa157ce685f5f997e423d60">ContainerPessoas</a>(<a class="code hl_class" href="class_banco_dados.html">BancoDados</a> &amp;banco);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_pessoas.html#acaec641526e95646fda67b1a4a01e15d">inserir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_pessoa.html">Pessoa</a> &amp;pessoa);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_pessoas.html#a72393d1cc89716e2a799c3c97082c157">buscar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_email.html">Email</a> &amp;email, <a class="code hl_class" href="class_pessoa.html">Pessoa</a> &amp;resultado) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    vector&lt;Pessoa&gt; <a class="code hl_function" href="class_container_pessoas.html#af92d924f0e8f243d108568df833ab525">listar</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_pessoas.html#a04aa68721fa4725b4a29012ab403d072">editar</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_pessoa.html">Pessoa</a> &amp;pessoa);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_container_pessoas.html#a14e44114b273e8c7ba1e969b0cddf243">excluir</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_email.html">Email</a> &amp;email);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_banco_dados_8hpp_html"><div class="ttname"><a href="_banco_dados_8hpp.html">BancoDados.hpp</a></div><div class="ttdoc">Declara��o da classe de gerenciamento da conex�o com o banco de dados SQLite.</div></div>
+<div class="ttc" id="a_pessoa_8hpp_html"><div class="ttname"><a href="_pessoa_8hpp.html">Pessoa.hpp</a></div><div class="ttdoc">Declara��o da classe de entidade Pessoa.</div></div>
+<div class="ttc" id="aclass_banco_dados_html"><div class="ttname"><a href="class_banco_dados.html">BancoDados</a></div><div class="ttdoc">Encapsula a abertura, execu��o de comandos e fechamento de um banco SQLite.</div><div class="ttdef"><b>Definição</b> BancoDados.hpp:20</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_a04aa68721fa4725b4a29012ab403d072"><div class="ttname"><a href="class_container_pessoas.html#a04aa68721fa4725b4a29012ab403d072">ContainerPessoas::editar</a></div><div class="ttdeci">bool editar(const Pessoa &amp;pessoa)</div><div class="ttdoc">Atualiza os dados de uma pessoa identificada pelo email.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:105</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_a14e44114b273e8c7ba1e969b0cddf243"><div class="ttname"><a href="class_container_pessoas.html#a14e44114b273e8c7ba1e969b0cddf243">ContainerPessoas::excluir</a></div><div class="ttdeci">bool excluir(const Email &amp;email)</div><div class="ttdoc">Exclui uma pessoa identificada pelo email.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:124</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_a72393d1cc89716e2a799c3c97082c157"><div class="ttname"><a href="class_container_pessoas.html#a72393d1cc89716e2a799c3c97082c157">ContainerPessoas::buscar</a></div><div class="ttdeci">bool buscar(const Email &amp;email, Pessoa &amp;resultado) const</div><div class="ttdoc">Procura uma pessoa pelo email sem modificar o banco.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:64</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_acaec641526e95646fda67b1a4a01e15d"><div class="ttname"><a href="class_container_pessoas.html#acaec641526e95646fda67b1a4a01e15d">ContainerPessoas::inserir</a></div><div class="ttdeci">bool inserir(const Pessoa &amp;pessoa)</div><div class="ttdoc">Insere uma pessoa quando seu email ainda nao esta cadastrado.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:42</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_af92d924f0e8f243d108568df833ab525"><div class="ttname"><a href="class_container_pessoas.html#af92d924f0e8f243d108568df833ab525">ContainerPessoas::listar</a></div><div class="ttdeci">vector&lt; Pessoa &gt; listar() const</div><div class="ttdoc">Retorna uma copia de todas as pessoas cadastradas.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:89</div></div>
+<div class="ttc" id="aclass_container_pessoas_html_afd06dcc4daa157ce685f5f997e423d60"><div class="ttname"><a href="class_container_pessoas.html#afd06dcc4daa157ce685f5f997e423d60">ContainerPessoas::ContainerPessoas</a></div><div class="ttdeci">ContainerPessoas(BancoDados &amp;banco)</div><div class="ttdoc">Associa o container a uma conexao de banco existente.</div><div class="ttdef"><b>Definição</b> ContainerPessoa.cpp:39</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">Representa e valida sintaticamente um endere�o de e-mail.</div><div class="ttdef"><b>Definição</b> Email.hpp:16</div></div>
+<div class="ttc" id="aclass_pessoa_html"><div class="ttname"><a href="class_pessoa.html">Pessoa</a></div><div class="ttdoc">Entidade que representa uma pessoa (usu�rio) no sistema.</div><div class="ttdef"><b>Definição</b> Pessoa.hpp:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_e946b11746fe93bccb3c3b0faa59667c.html">servico</a></li><li class="navelem"><a href="_container_pessoa_8hpp.html">ContainerPessoa.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

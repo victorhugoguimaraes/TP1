@@ -1,0 +1,47 @@
+\doxysection{Referência da Estrutura Table\+Lock}
+\hypertarget{struct_table_lock}{}\label{struct_table_lock}\index{TableLock@{TableLock}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{struct_table_lock_ad5cc726ef29ffcca39ec0b72942513f6}{i\+Db}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_aec0c653e8dd16e4639caf2f8ea54f55c}{Pgno}} \doxymbox{\hyperlink{struct_table_lock_a3c8d4df7544f7d5ced9906a8b6e812ac}{i\+Tab}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_table_lock_a171121af9886ee08044d4b82b991ceeb}{is\+Write\+Lock}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_table_lock_a204750eb60519f1a5984c320953badd5}{z\+Lock\+Name}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_table_lock_doc-variable-members}
+\Hypertarget{struct_table_lock_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_table_lock_ad5cc726ef29ffcca39ec0b72942513f6}\index{TableLock@{TableLock}!iDb@{iDb}}
+\index{iDb@{iDb}!TableLock@{TableLock}}
+\doxysubsubsection{\texorpdfstring{iDb}{iDb}}
+{\footnotesize\ttfamily \label{struct_table_lock_ad5cc726ef29ffcca39ec0b72942513f6} 
+int Table\+Lock::\+i\+Db}
+
+\Hypertarget{struct_table_lock_a171121af9886ee08044d4b82b991ceeb}\index{TableLock@{TableLock}!isWriteLock@{isWriteLock}}
+\index{isWriteLock@{isWriteLock}!TableLock@{TableLock}}
+\doxysubsubsection{\texorpdfstring{isWriteLock}{isWriteLock}}
+{\footnotesize\ttfamily \label{struct_table_lock_a171121af9886ee08044d4b82b991ceeb} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Table\+Lock::\+is\+Write\+Lock}
+
+\Hypertarget{struct_table_lock_a3c8d4df7544f7d5ced9906a8b6e812ac}\index{TableLock@{TableLock}!iTab@{iTab}}
+\index{iTab@{iTab}!TableLock@{TableLock}}
+\doxysubsubsection{\texorpdfstring{iTab}{iTab}}
+{\footnotesize\ttfamily \label{struct_table_lock_a3c8d4df7544f7d5ced9906a8b6e812ac} 
+\doxymbox{\hyperlink{sqlite3_8c_aec0c653e8dd16e4639caf2f8ea54f55c}{Pgno}} Table\+Lock::\+i\+Tab}
+
+\Hypertarget{struct_table_lock_a204750eb60519f1a5984c320953badd5}\index{TableLock@{TableLock}!zLockName@{zLockName}}
+\index{zLockName@{zLockName}!TableLock@{TableLock}}
+\doxysubsubsection{\texorpdfstring{zLockName}{zLockName}}
+{\footnotesize\ttfamily \label{struct_table_lock_a204750eb60519f1a5984c320953badd5} 
+const char\texorpdfstring{$\ast$}{*} Table\+Lock::\+z\+Lock\+Name}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

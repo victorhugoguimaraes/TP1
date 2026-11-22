@@ -1,0 +1,56 @@
+\doxysection{Teste\+Servicos.\+h}
+\hypertarget{_teste_servicos_8h_source}{}\label{_teste_servicos_8h_source}\index{testes/TesteServicos.h@{testes/TesteServicos.h}}
+\doxymbox{\hyperlink{_teste_servicos_8h}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ TESTE\_SERVICOS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ TESTE\_SERVICOS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_banco_dados_8hpp}{../persistencia/BancoDados.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cntrl_servico_cartao_8hpp}{../servico/CntrlServicoCartao.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cntrl_servico_projeto_8hpp}{../servico/CntrlServicoProjeto.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cntrl_servico_quadro_8hpp}{../servico/CntrlServicoQuadro.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cntrl_servico_relatorio_8hpp}{../servico/CntrlServicoRelatorio.hpp}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_cartao_8hpp}{../servico/ContainerCartao.hpp}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_pessoa_8hpp}{../servico/ContainerPessoa.hpp}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_projeto_8hpp}{../servico/ContainerProjeto.hpp}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_quadro_8hpp}{../servico/ContainerQuadro.hpp}}"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_t_u_servicos}{TUServicos}}\ \{}
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ *banco;}
+\DoxyCodeLine{00029\ \ \ \ \ \doxymbox{\hyperlink{class_container_pessoas}{ContainerPessoas}}\ *pessoas;}
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_container_projetos}{ContainerProjetos}}\ *projetos;}
+\DoxyCodeLine{00031\ \ \ \ \ \doxymbox{\hyperlink{class_container_quadros}{ContainerQuadros}}\ *quadros;}
+\DoxyCodeLine{00032\ \ \ \ \ \doxymbox{\hyperlink{class_container_cartoes}{ContainerCartoes}}\ *cartoes;}
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ *gestor;}
+\DoxyCodeLine{00034\ \ \ \ \ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ *desenvolvedor;}
+\DoxyCodeLine{00035\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_projeto}{CntrlServicoProjeto}}\ *servicoProjetoGestor;}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_projeto}{CntrlServicoProjeto}}\ *servicoProjetoDesenvolvedor;}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_quadro}{CntrlServicoQuadro}}\ *servicoQuadroGestor;}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_quadro}{CntrlServicoQuadro}}\ *servicoQuadroDesenvolvedor;}
+\DoxyCodeLine{00039\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_cartao}{CntrlServicoCartao}}\ *servicoCartaoGestor;}
+\DoxyCodeLine{00040\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_cartao}{CntrlServicoCartao}}\ *servicoCartaoDesenvolvedor;}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_relatorio}{CntrlServicoRelatorio}}\ *servicoRelatorioGestor;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ estado;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ setUp();}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ tearDown();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioSucesso();}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ testarCenarioFalha();}
+\DoxyCodeLine{00048\ \ \ \ \ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ criarPessoa(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&email,\ \doxymbox{\hyperlink{class_papel_a95b1be40108d16aab7a97437279740b9}{Papel::Cargo}}\ cargo);}
+\DoxyCodeLine{00049\ \ \ \ \ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ criarProjeto();}
+\DoxyCodeLine{00050\ \ \ \ \ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ criarQuadro();}
+\DoxyCodeLine{00051\ \ \ \ \ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ criarCartao(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&identificador);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_servicos_a9191f87ed0d069e4f5507c28b242b856}{SUCESSO}}\ =\ 0;\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_servicos_af4f830791ccabe08699e1938c678bf2e}{FALHA}}\ =\ -\/1;\ \ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_t_u_servicos_a861171925dcca2cc879e36da60601902}{run}}();}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

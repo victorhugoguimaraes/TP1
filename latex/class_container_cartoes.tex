@@ -1,0 +1,193 @@
+\doxysection{ReferÃªncia da Classe Container\+Cartoes}
+\hypertarget{class_container_cartoes}{}\label{class_container_cartoes}\index{ContainerCartoes@{ContainerCartoes}}
+
+
+Gerencia a persistência de objetos \doxylink{class_cartao_atividade}{Cartao\+Atividade} no banco de dados SQLite.  
+
+
+
+
+{\ttfamily \+\#include $<$Container\+Cartao.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_container_cartoes_ad731a5c7a7b78efe1352ee32454ca877}{Container\+Cartoes}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_cartoes_a938d467747595b0b13aa5ed29ea6fc9d}{inserir}} (const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&cartao)
+\begin{DoxyCompactList}\small\item\em Insere um novo cartão de atividade no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_cartoes_abce9a5bb76b6093e686ad7a94d1dbe71}{buscar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&resultado) const
+\begin{DoxyCompactList}\small\item\em Busca um cartão de atividade pelo seu identificador único. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} $>$ \doxymbox{\hyperlink{class_container_cartoes_a4727339f1212f8fc0161e8f513b74521}{listar}} () const
+\begin{DoxyCompactList}\small\item\em Recupera todos os cartões de atividade cadastrados no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_cartoes_ad4a5babd715b28f6724cd92a2e398bcb}{editar}} (const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&cartao)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um cartão de atividade existente no banco de dados. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_cartoes_a0914d413ece4a3ac8b267cdf75c5f17e}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador)
+\begin{DoxyCompactList}\small\item\em Remove um cartão de atividade do banco de dados pelo seu identificador. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_cartoes_aaa2767c83f78392fc4380c321a23d70b}{mover}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, const \doxymbox{\hyperlink{class_estado}{Estado}} \&estado)
+\begin{DoxyCompactList}\small\item\em Atualiza o estado de um cartão de atividade e seus respectivos timestamps. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_container_cartoes_a808c99f9c8854e072f5dae32d9f65989}{contar\+Por\+Estado}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&quadro, \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::\+\+Status}} estado) const
+\begin{DoxyCompactList}\small\item\em Conta quantos cartões de um quadro específico encontram-\/se em determinado estado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia a persistência de objetos \doxylink{class_cartao_atividade}{Cartao\+Atividade} no banco de dados SQLite. 
+
+Encapsula as operações CRUD (inserção, busca, listagem, edição e exclusão), além de consultas específicas de mudança de estado e contagem para cálculo de métricas. 
+
+\label{class_container_cartoes_doc-constructors}
+\Hypertarget{class_container_cartoes_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_container_cartoes_ad731a5c7a7b78efe1352ee32454ca877}\index{ContainerCartoes@{ContainerCartoes}!ContainerCartoes@{ContainerCartoes}}
+\index{ContainerCartoes@{ContainerCartoes}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{ContainerCartoes()}{ContainerCartoes()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_ad731a5c7a7b78efe1352ee32454ca877} 
+Container\+Cartoes::\+\+Container\+Cartoes (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constrói o container associando-\/o a uma instância ativa de \doxylink{class_banco_dados}{Banco\+Dados}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em banco} & Referência ao objeto \doxylink{class_banco_dados}{Banco\+Dados} utilizado nas operações SQL. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_container_cartoes_doc-func-members}
+\Hypertarget{class_container_cartoes_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_container_cartoes_abce9a5bb76b6093e686ad7a94d1dbe71}\index{ContainerCartoes@{ContainerCartoes}!buscar@{buscar}}
+\index{buscar@{buscar}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_abce9a5bb76b6093e686ad7a94d1dbe71} 
+bool Container\+Cartoes::\+buscar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{resultado}{}\end{DoxyParamCaption}) const}
+
+
+
+Busca um cartão de atividade pelo seu identificador único. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão pesquisado. \\
+\hline
+{\em resultado} & Referência para o objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} que receberá os dados encontrados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cartão for encontrado; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_a808c99f9c8854e072f5dae32d9f65989}\index{ContainerCartoes@{ContainerCartoes}!contarPorEstado@{contarPorEstado}}
+\index{contarPorEstado@{contarPorEstado}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{contarPorEstado()}{contarPorEstado()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_a808c99f9c8854e072f5dae32d9f65989} 
+int Container\+Cartoes::\+contar\+Por\+Estado (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{quadro}{, }\item[{\doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::\+\+Status}}}]{estado}{}\end{DoxyParamCaption}) const}
+
+
+
+Conta quantos cartões de um quadro específico encontram-\/se em determinado estado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Objeto \doxylink{class_identificador}{Identificador} do quadro analisado. \\
+\hline
+{\em estado} & Valor enumerado \doxylink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::\+\+Status} usado como filtro da contagem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Número inteiro de cartões que satisfazem os critérios informados. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_ad4a5babd715b28f6724cd92a2e398bcb}\index{ContainerCartoes@{ContainerCartoes}!editar@{editar}}
+\index{editar@{editar}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_ad4a5babd715b28f6724cd92a2e398bcb} 
+bool Container\+Cartoes::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de um cartão de atividade existente no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em cartao} & Objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} contendo os novos dados do registro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o registro for atualizado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_a0914d413ece4a3ac8b267cdf75c5f17e}\index{ContainerCartoes@{ContainerCartoes}!excluir@{excluir}}
+\index{excluir@{excluir}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_a0914d413ece4a3ac8b267cdf75c5f17e} 
+bool Container\+Cartoes::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})}
+
+
+
+Remove um cartão de atividade do banco de dados pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cartão for removido com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_a938d467747595b0b13aa5ed29ea6fc9d}\index{ContainerCartoes@{ContainerCartoes}!inserir@{inserir}}
+\index{inserir@{inserir}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{inserir()}{inserir()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_a938d467747595b0b13aa5ed29ea6fc9d} 
+bool Container\+Cartoes::\+inserir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})}
+
+
+
+Insere um novo cartão de atividade no banco de dados. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em cartao} & Objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} contendo os dados a serem persistidos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a inserção for concluída com sucesso; false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_a4727339f1212f8fc0161e8f513b74521}\index{ContainerCartoes@{ContainerCartoes}!listar@{listar}}
+\index{listar@{listar}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_a4727339f1212f8fc0161e8f513b74521} 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} $>$ Container\+Cartoes::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera todos os cartões de atividade cadastrados no banco de dados. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo todos os objetos \doxylink{class_cartao_atividade}{Cartao\+Atividade} armazenados. 
+\end{DoxyReturn}
+\Hypertarget{class_container_cartoes_aaa2767c83f78392fc4380c321a23d70b}\index{ContainerCartoes@{ContainerCartoes}!mover@{mover}}
+\index{mover@{mover}!ContainerCartoes@{ContainerCartoes}}
+\doxysubsubsection{\texorpdfstring{mover()}{mover()}}
+{\footnotesize\ttfamily \label{class_container_cartoes_aaa2767c83f78392fc4380c321a23d70b} 
+bool Container\+Cartoes::\+mover (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{const \doxymbox{\hyperlink{class_estado}{Estado}} \&}]{estado}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza o estado de um cartão de atividade e seus respectivos timestamps. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão a ser movido. \\
+\hline
+{\em estado} & Novo objeto \doxylink{class_estado}{Estado} a ser atribuído ao cartão. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a atualização de estado for bem-\/sucedida; false caso contrário. 
+\end{DoxyReturn}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_container_cartao_8hpp}{Container\+Cartao.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_container_cartao_8cpp}{Container\+Cartao.\+cpp}}\end{DoxyCompactItemize}

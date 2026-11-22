@@ -1,0 +1,35 @@
+\doxysection{Container\+Quadro.\+hpp}
+\hypertarget{_container_quadro_8hpp_source}{}\label{_container_quadro_8hpp_source}\index{servico/ContainerQuadro.hpp@{servico/ContainerQuadro.hpp}}
+\doxymbox{\hyperlink{_container_quadro_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CONTAINER\_QUADROS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CONTAINER\_QUADROS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_quadro_8hpp}{../entidades/Quadro.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_banco_dados_8hpp}{../persistencia/BancoDados.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_container_quadros_a5093bdb07cb07f33be910b001b0745d7}{ContainerQuadros}}\ \{}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_container_quadros_a5093bdb07cb07f33be910b001b0745d7}{ContainerQuadros}}(\doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_quadros_af72ab224aeb2f449a6712a63ae702a6a}{inserir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_quadros_a2e2b21c223708ffe8d6b4d657ae5553a}{buscar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&resultado)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ vector<Quadro>\ \doxymbox{\hyperlink{class_container_quadros_a9ad9755f0694adcc570921a689042dc3}{listar}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_quadros_a91cc6edf14daa489bb6ffb74fbc65421}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_quadros_a0b303dc112c132368dc0ce2788678fd2}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador);}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

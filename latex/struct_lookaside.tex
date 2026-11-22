@@ -1,0 +1,127 @@
+\doxysection{Referência da Estrutura Lookaside}
+\hypertarget{struct_lookaside}{}\label{struct_lookaside}\index{Lookaside@{Lookaside}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_lookaside_ac81ee3b5b12d0bc89ed1286718224db1}{b\+Disable}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} \doxymbox{\hyperlink{struct_lookaside_a2e8346b6cebbb64d9a6886a19ef843a1}{sz}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} \doxymbox{\hyperlink{struct_lookaside_a4631667328027017e2b02e244b45dd52}{sz\+True}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_lookaside_a218f14cf9eb2c430867d286e9ac57ac5}{b\+Malloced}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_lookaside_a3cd23eb12e1111b2b46f7baa4bdf2204}{n\+Slot}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_lookaside_ad40d755aab79635a98a90fbe7fc698e8}{an\+Stat}} \+[3]
+\item 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_a237e0753acfe8506a3978178ada51a0d}{p\+Init}}
+\item 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_a318d2faa7f976f9d1b3c6e08bdc1d992}{p\+Free}}
+\item 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_ab1105c4419480b114270b6a757aea654}{p\+Small\+Init}}
+\item 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_af3e7369db024d354e9e1269ccf4c036f}{p\+Small\+Free}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_af605d2105c6b680180fb10ed9c20b1c2}{p\+Middle}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_a47073fcdffdc5a7a1464f0d09bfc17f9}{p\+Start}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_ad3555c5558e104f2b82f62bf642cf831}{p\+End}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_lookaside_a56c1d5cc92ff59c49abba7baf436a94a}{p\+True\+End}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_lookaside_doc-variable-members}
+\Hypertarget{struct_lookaside_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_lookaside_ad40d755aab79635a98a90fbe7fc698e8}\index{Lookaside@{Lookaside}!anStat@{anStat}}
+\index{anStat@{anStat}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{anStat}{anStat}}
+{\footnotesize\ttfamily \label{struct_lookaside_ad40d755aab79635a98a90fbe7fc698e8} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Lookaside::\+an\+Stat\+[3]}
+
+\Hypertarget{struct_lookaside_ac81ee3b5b12d0bc89ed1286718224db1}\index{Lookaside@{Lookaside}!bDisable@{bDisable}}
+\index{bDisable@{bDisable}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{bDisable}{bDisable}}
+{\footnotesize\ttfamily \label{struct_lookaside_ac81ee3b5b12d0bc89ed1286718224db1} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Lookaside::\+b\+Disable}
+
+\Hypertarget{struct_lookaside_a218f14cf9eb2c430867d286e9ac57ac5}\index{Lookaside@{Lookaside}!bMalloced@{bMalloced}}
+\index{bMalloced@{bMalloced}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{bMalloced}{bMalloced}}
+{\footnotesize\ttfamily \label{struct_lookaside_a218f14cf9eb2c430867d286e9ac57ac5} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Lookaside::\+b\+Malloced}
+
+\Hypertarget{struct_lookaside_a3cd23eb12e1111b2b46f7baa4bdf2204}\index{Lookaside@{Lookaside}!nSlot@{nSlot}}
+\index{nSlot@{nSlot}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{nSlot}{nSlot}}
+{\footnotesize\ttfamily \label{struct_lookaside_a3cd23eb12e1111b2b46f7baa4bdf2204} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Lookaside::\+n\+Slot}
+
+\Hypertarget{struct_lookaside_ad3555c5558e104f2b82f62bf642cf831}\index{Lookaside@{Lookaside}!pEnd@{pEnd}}
+\index{pEnd@{pEnd}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pEnd}{pEnd}}
+{\footnotesize\ttfamily \label{struct_lookaside_ad3555c5558e104f2b82f62bf642cf831} 
+void\texorpdfstring{$\ast$}{*} Lookaside::\+p\+End}
+
+\Hypertarget{struct_lookaside_a318d2faa7f976f9d1b3c6e08bdc1d992}\index{Lookaside@{Lookaside}!pFree@{pFree}}
+\index{pFree@{pFree}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pFree}{pFree}}
+{\footnotesize\ttfamily \label{struct_lookaside_a318d2faa7f976f9d1b3c6e08bdc1d992} 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}}\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Free}
+
+\Hypertarget{struct_lookaside_a237e0753acfe8506a3978178ada51a0d}\index{Lookaside@{Lookaside}!pInit@{pInit}}
+\index{pInit@{pInit}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pInit}{pInit}}
+{\footnotesize\ttfamily \label{struct_lookaside_a237e0753acfe8506a3978178ada51a0d} 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}}\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Init}
+
+\Hypertarget{struct_lookaside_af605d2105c6b680180fb10ed9c20b1c2}\index{Lookaside@{Lookaside}!pMiddle@{pMiddle}}
+\index{pMiddle@{pMiddle}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pMiddle}{pMiddle}}
+{\footnotesize\ttfamily \label{struct_lookaside_af605d2105c6b680180fb10ed9c20b1c2} 
+void\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Middle}
+
+\Hypertarget{struct_lookaside_af3e7369db024d354e9e1269ccf4c036f}\index{Lookaside@{Lookaside}!pSmallFree@{pSmallFree}}
+\index{pSmallFree@{pSmallFree}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pSmallFree}{pSmallFree}}
+{\footnotesize\ttfamily \label{struct_lookaside_af3e7369db024d354e9e1269ccf4c036f} 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}}\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Small\+Free}
+
+\Hypertarget{struct_lookaside_ab1105c4419480b114270b6a757aea654}\index{Lookaside@{Lookaside}!pSmallInit@{pSmallInit}}
+\index{pSmallInit@{pSmallInit}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pSmallInit}{pSmallInit}}
+{\footnotesize\ttfamily \label{struct_lookaside_ab1105c4419480b114270b6a757aea654} 
+\doxymbox{\hyperlink{struct_lookaside_slot}{Lookaside\+Slot}}\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Small\+Init}
+
+\Hypertarget{struct_lookaside_a47073fcdffdc5a7a1464f0d09bfc17f9}\index{Lookaside@{Lookaside}!pStart@{pStart}}
+\index{pStart@{pStart}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pStart}{pStart}}
+{\footnotesize\ttfamily \label{struct_lookaside_a47073fcdffdc5a7a1464f0d09bfc17f9} 
+void\texorpdfstring{$\ast$}{*} Lookaside::\+p\+Start}
+
+\Hypertarget{struct_lookaside_a56c1d5cc92ff59c49abba7baf436a94a}\index{Lookaside@{Lookaside}!pTrueEnd@{pTrueEnd}}
+\index{pTrueEnd@{pTrueEnd}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{pTrueEnd}{pTrueEnd}}
+{\footnotesize\ttfamily \label{struct_lookaside_a56c1d5cc92ff59c49abba7baf436a94a} 
+void\texorpdfstring{$\ast$}{*} Lookaside::\+p\+True\+End}
+
+\Hypertarget{struct_lookaside_a2e8346b6cebbb64d9a6886a19ef843a1}\index{Lookaside@{Lookaside}!sz@{sz}}
+\index{sz@{sz}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \label{struct_lookaside_a2e8346b6cebbb64d9a6886a19ef843a1} 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} Lookaside::\+sz}
+
+\Hypertarget{struct_lookaside_a4631667328027017e2b02e244b45dd52}\index{Lookaside@{Lookaside}!szTrue@{szTrue}}
+\index{szTrue@{szTrue}!Lookaside@{Lookaside}}
+\doxysubsubsection{\texorpdfstring{szTrue}{szTrue}}
+{\footnotesize\ttfamily \label{struct_lookaside_a4631667328027017e2b02e244b45dd52} 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} Lookaside::\+sz\+True}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

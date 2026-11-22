@@ -9,8 +9,7 @@ using namespace std;
 /**
  * @class ContainerPessoas
  * @brief Armazena e recupera pessoas identificadas pelo email.
- *
- * Utiliza um banco SQLite para persistir os cadastros.
+ * @details Utiliza um banco SQLite para persistir os cadastros.
  */
 class ContainerPessoas {
   private:

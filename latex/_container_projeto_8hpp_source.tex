@@ -1,0 +1,41 @@
+\doxysection{Container\+Projeto.\+hpp}
+\hypertarget{_container_projeto_8hpp_source}{}\label{_container_projeto_8hpp_source}\index{servico/ContainerProjeto.hpp@{servico/ContainerProjeto.hpp}}
+\doxymbox{\hyperlink{_container_projeto_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CONTAINER\_PROJETOS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CONTAINER\_PROJETOS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_projeto_8hpp}{../entidades/Projeto.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_banco_dados_8hpp}{../persistencia/BancoDados.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_container_projetos_ab34364f08f624b42299dd6c6be16de24}{ContainerProjetos}}\ \{}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_container_projetos_ab34364f08f624b42299dd6c6be16de24}{ContainerProjetos}}(\doxymbox{\hyperlink{class_banco_dados}{BancoDados}}\ \&banco);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_a71604450be0a22e2c07bbf82a796c58d}{inserir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_aeacaa566d91d9d785e79a9f561e21214}{buscar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&resultado)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ vector<Projeto>\ \doxymbox{\hyperlink{class_container_projetos_acf694a320440efd52c395ef91fe7e620}{listar}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_ab4b460acd99bd700efe712dc77c838ec}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_a408ff679c677dbdb2dc03eaf3e5c1419}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_aca895103dd5e40c1835fcd7cc49be207}{adicionarPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_container_projetos_a2b7ab783816d080eee37ada06a809153}{removerPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \ \ vector<Email>\ \doxymbox{\hyperlink{class_container_projetos_ac411b8924dc9793de70a8bca6abf369c}{listarPessoas}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

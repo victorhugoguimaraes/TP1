@@ -1,0 +1,54 @@
+\doxysection{ReferÃªncia do Arquivo testes/\+\+Teste\+Dominios.h}
+\hypertarget{_teste_dominios_8h}{}\label{_teste_dominios_8h}\index{testes/TesteDominios.h@{testes/TesteDominios.h}}
+
+
+Declaração das classes de teste unitário para os domínios do sistema.  
+
+
+{\ttfamily \+\#include "{}../\+dominios/\+\+Email.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Estado.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Identificador.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Limite.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Nome.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Papel.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Prioridade.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Senha.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Tamanho.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Texto.\+hpp"{}}\newline
+{\ttfamily \+\#include "{}../\+dominios/\+\+Timestamp.\+hpp"{}}\newline
+\doxysubsubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_t_u_email}{TUEmail}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_email}{Email}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_nome}{TUNome}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_nome}{Nome}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_senha}{TUSenha}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_senha}{Senha}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_texto}{TUTexto}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_texto}{Texto}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_timestamp}{TUTimestamp}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_timestamp}{Timestamp}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_identificador}{TUIdentificador}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_identificador}{Identificador}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_limite}{TULimite}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_limite}{Limite}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_estado}{TUEstado}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_estado}{Estado}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_papel}{TUPapel}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_papel}{Papel}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_prioridade}{TUPrioridade}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_prioridade}{Prioridade}. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{class_t_u_tamanho}{TUTamanho}}
+\begin{DoxyCompactList}\small\item\em Teste unitário para validação dos cenários de sucesso e falha da classe \doxylink{class_tamanho}{Tamanho}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Declaração das classes de teste unitário para os domínios do sistema. 
+
+Todas as classes deste arquivo seguem a mesma convenção de execução:
+\begin{DoxyItemize}
+\item {\ttfamily SUCESSO} (0): todos os cenários de validação foram aprovados.
+\item {\ttfamily FALHA} (-\/1): ocorreu erro em ao menos um cenário de teste.
+\item {\ttfamily run()}: executa a sequência {\ttfamily set\+Up()}, {\ttfamily testar\+Cenario\+Sucesso()}, {\ttfamily testar\+Cenario\+Falha()} e {\ttfamily tear\+Down()}. 
+\end{DoxyItemize}

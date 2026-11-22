@@ -1,3 +1,12 @@
+/**
+ * @file TesteDominios.h
+ * @brief Declaração das classes de teste unitário para os domínios do sistema.
+ * @details Todas as classes deste arquivo seguem a mesma convenção de execução:
+ * - `SUCESSO` (0): todos os cenários de validação foram aprovados.
+ * - `FALHA` (-1): ocorreu erro em ao menos um cenário de teste.
+ * - `run()`: executa a sequência `setUp()`, `testarCenarioSucesso()`, `testarCenarioFalha()` e `tearDown()`.
+ */
+
 #ifndef TESTE_DOMINIOS_H
 #define TESTE_DOMINIOS_H
 
@@ -13,6 +22,10 @@
 #include "../dominios/Texto.hpp"
 #include "../dominios/Timestamp.hpp"
 
+/**
+ * @class TUEmail
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Email.
+ */
 class TUEmail {
   private:
     Email *email;
@@ -28,6 +41,10 @@ class TUEmail {
     int run();
 };
 
+/**
+ * @class TUNome
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Nome.
+ */
 class TUNome {
   private:
     Nome *nome;
@@ -43,6 +60,10 @@ class TUNome {
     int run();
 };
 
+/**
+ * @class TUSenha
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Senha.
+ */
 class TUSenha {
   private:
     Senha *senha;
@@ -58,6 +79,10 @@ class TUSenha {
     int run();
 };
 
+/**
+ * @class TUTexto
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Texto.
+ */
 class TUTexto {
   private:
     Texto *texto;
@@ -73,6 +98,10 @@ class TUTexto {
     int run();
 };
 
+/**
+ * @class TUTimestamp
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Timestamp.
+ */
 class TUTimestamp {
   private:
     Timestamp *timestamp;
@@ -88,6 +117,10 @@ class TUTimestamp {
     int run();
 };
 
+/**
+ * @class TUIdentificador
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Identificador.
+ */
 class TUIdentificador {
   private:
     Identificador *identificador;
@@ -103,6 +136,10 @@ class TUIdentificador {
     int run();
 };
 
+/**
+ * @class TULimite
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Limite.
+ */
 class TULimite {
   private:
     Limite *limite;
@@ -118,6 +155,10 @@ class TULimite {
     int run();
 };
 
+/**
+ * @class TUEstado
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Estado.
+ */
 class TUEstado {
   private:
     Estado *estado;
@@ -133,6 +174,10 @@ class TUEstado {
     int run();
 };
 
+/**
+ * @class TUPapel
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Papel.
+ */
 class TUPapel {
   private:
     Papel *papel;
@@ -148,6 +193,10 @@ class TUPapel {
     int run();
 };
 
+/**
+ * @class TUPrioridade
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Prioridade.
+ */
 class TUPrioridade {
   private:
     Prioridade *prioridade;
@@ -163,6 +212,10 @@ class TUPrioridade {
     int run();
 };
 
+/**
+ * @class TUTamanho
+ * @brief Teste unitário para validação dos cenários de sucesso e falha da classe Tamanho.
+ */
 class TUTamanho {
   private:
     Tamanho *tamanho;

@@ -1,0 +1,72 @@
+\doxysection{Referência da Classe Cntrl\+Apresentacao\+Autenticacao}
+\hypertarget{class_cntrl_apresentacao_autenticacao}{}\label{class_cntrl_apresentacao_autenticacao}\index{CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}}
+
+
+Controla a interacao pelo terminal para autenticar uma pessoa.  
+
+
+
+
+{\ttfamily \+\#include $<$Cntrl\+Apresentacao\+Autenticacao.\+hpp$>$}
+
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_cntrl_apresentacao_autenticacao_ab4e5e05c38e92bf7643cba80643b14ff}{Cntrl\+Apresentacao\+Autenticacao}} (\doxymbox{\hyperlink{class_servico_autenticacao}{Servico\+Autenticacao}} \&servico, \doxymbox{\hyperlink{class_servico_pessoa}{Servico\+Pessoa}} \&pessoas)
+\begin{DoxyCompactList}\small\item\em Associa a apresentacao ao servico de autenticacao. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_cntrl_apresentacao_autenticacao_aeaef3f4854c45306d2da812ab93d440d}{autenticar}} (\doxymbox{\hyperlink{class_email}{Email}} \&email\+Autenticacao)
+\begin{DoxyCompactList}\small\item\em Solicita e valida as credenciais pelo terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Controla a interacao pelo terminal para autenticar uma pessoa. 
+
+Solicita email e senha, valida seus formatos usando os dominios e delega a verificacao das credenciais ao servico de autenticacao. 
+
+\label{class_cntrl_apresentacao_autenticacao_doc-constructors}
+\Hypertarget{class_cntrl_apresentacao_autenticacao_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_cntrl_apresentacao_autenticacao_ab4e5e05c38e92bf7643cba80643b14ff}\index{CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}!CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}}
+\index{CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}!CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{CntrlApresentacaoAutenticacao()}{CntrlApresentacaoAutenticacao()}}
+{\footnotesize\ttfamily \label{class_cntrl_apresentacao_autenticacao_ab4e5e05c38e92bf7643cba80643b14ff} 
+Cntrl\+Apresentacao\+Autenticacao::\+\+Cntrl\+Apresentacao\+Autenticacao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_servico_autenticacao}{Servico\+Autenticacao}} \&}]{servico}{, }\item[{\doxymbox{\hyperlink{class_servico_pessoa}{Servico\+Pessoa}} \&}]{pessoas}{}\end{DoxyParamCaption})}
+
+
+
+Associa a apresentacao ao servico de autenticacao. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em servico} & Servico que deve permanecer existente durante o uso da apresentacao. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_cntrl_apresentacao_autenticacao_doc-func-members}
+\Hypertarget{class_cntrl_apresentacao_autenticacao_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_cntrl_apresentacao_autenticacao_aeaef3f4854c45306d2da812ab93d440d}\index{CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!CntrlApresentacaoAutenticacao@{CntrlApresentacaoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_cntrl_apresentacao_autenticacao_aeaef3f4854c45306d2da812ab93d440d} 
+bool Cntrl\+Apresentacao\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_email}{Email}} \&}]{email\+Autenticacao}{}\end{DoxyParamCaption})}
+
+
+
+Solicita e valida as credenciais pelo terminal. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email\+Autenticacao} & Recebe o email em caso de sucesso; permanece inalterado em caso de falha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se autenticada; false para formato invalido, credenciais incorretas ou falha de leitura.
+\end{DoxyReturn}
+Exibe o resultado no terminal e trata excecoes de formato dos dominios. 
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+apresentacao/\doxymbox{\hyperlink{_cntrl_apresentacao_autenticacao_8hpp}{Cntrl\+Apresentacao\+Autenticacao.\+hpp}}\item 
+apresentacao/\doxymbox{\hyperlink{_cntrl_apresentacao_autenticacao_8cpp}{Cntrl\+Apresentacao\+Autenticacao.\+cpp}}\end{DoxyCompactItemize}

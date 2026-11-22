@@ -1,0 +1,34 @@
+\doxysection{Servico\+Quadro.\+hpp}
+\hypertarget{_servico_quadro_8hpp_source}{}\label{_servico_quadro_8hpp_source}\index{interfaces/ServicoQuadro.hpp@{interfaces/ServicoQuadro.hpp}}
+\doxymbox{\hyperlink{_servico_quadro_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SERVICOQUADRO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SERVICOQUADRO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8hpp}{../dominios/Identificador.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_quadro_8hpp}{../entidades/Quadro.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_servico_quadro}{ServicoQuadro}}\ \{}
+\DoxyCodeLine{00024\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_quadro_ab52f0e4f9ce1666eb92f0afd1e150c90}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ vector<Quadro>\ \doxymbox{\hyperlink{class_servico_quadro_abf3c9bd584d26eb9b7090d7e48e10d02}{listar}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00037\ \textcolor{comment}{//}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_quadro_a38dbb2637f21c84d758c8abb86e1633a}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ =\ 0;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_quadro_a0d58e9b254b0b361870a4a100850b167}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_quadro}{Quadro}}\ \&quadro)\ =\ 0;}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_quadro_a4ab54bd1db39c48935cd8b606e40db95}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_servico_quadro_aefcf15d0b0b5ddcfbe128db338470e5a}{\string~ServicoQuadro}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

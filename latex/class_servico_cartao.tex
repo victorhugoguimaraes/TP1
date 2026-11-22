@@ -1,0 +1,195 @@
+\doxysection{Referência da Classe Servico\+Cartao}
+\hypertarget{class_servico_cartao}{}\label{class_servico_cartao}\index{ServicoCartao@{ServicoCartao}}
+
+
+Define a interface de operações de negócio sobre cartões de atividade.  
+
+
+
+
+{\ttfamily \+\#include $<$Servico\+Cartao.\+hpp$>$}
+
+Diagrama de hierarquia da classe Servico\+Cartao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_servico_cartao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_servico_cartao_a81b0204b7ba07dc6b72ed087e728347e}{criar}} (const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&cartao)=0
+\begin{DoxyCompactList}\small\item\em Cria e armazena um novo cartão de atividade no sistema. \end{DoxyCompactList}\item 
+virtual vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} $>$ \doxymbox{\hyperlink{class_servico_cartao_aec7a4dbd70517b31eb1d3eff1b32a5d6}{listar}} () const =0
+\begin{DoxyCompactList}\small\item\em Lista todos os cartões de atividade cadastrados. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_cartao_abfdeaf4f95375ef494f4943a5f004dac}{consultar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&cartao)=0
+\begin{DoxyCompactList}\small\item\em Consulta um cartão de atividade específico pelo seu identificador. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_cartao_ade9595982440d006c0ed420cc7e219c9}{editar}} (const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&cartao)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um cartão de atividade existente. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_cartao_ae3eebcff38404c5f1a73ef59531860e4}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador)=0
+\begin{DoxyCompactList}\small\item\em Remove um cartão de atividade do sistema pelo seu identificador. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_cartao_a59ddce71af30eb7e0e6a8cafa407066f}{mover}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, const \doxymbox{\hyperlink{class_estado}{Estado}} \&estado)=0
+\begin{DoxyCompactList}\small\item\em Altera o estado atual de um cartão de atividade no fluxo de trabalho (FAZENDO ou FEITO). \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_servico_cartao_af1abade8eccd4c3132830a5e8f9c3093}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Cartao}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementação por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Define a interface de operações de negócio sobre cartões de atividade. 
+
+Permite que a camada de apresentação realize operações de criação, consulta, listagem, edição, exclusão e movimentação de estado de cartões sem depender da implementação concreta do armazenamento. 
+
+\label{class_servico_cartao_doc-constructors}
+\Hypertarget{class_servico_cartao_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_servico_cartao_af1abade8eccd4c3132830a5e8f9c3093}\index{ServicoCartao@{ServicoCartao}!````~ServicoCartao@{\texorpdfstring{$\sim$}{\string~}ServicoCartao}}
+\index{````~ServicoCartao@{\texorpdfstring{$\sim$}{\string~}ServicoCartao}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ServicoCartao()}{\string~ServicoCartao()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_af1abade8eccd4c3132830a5e8f9c3093} 
+virtual Servico\+Cartao::\+\texorpdfstring{$\sim$}{\string~}\+Servico\+Cartao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Permite destruir uma implementação por meio da interface. 
+
+
+
+\label{class_servico_cartao_doc-func-members}
+\Hypertarget{class_servico_cartao_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_servico_cartao_abfdeaf4f95375ef494f4943a5f004dac}\index{ServicoCartao@{ServicoCartao}!consultar@{consultar}}
+\index{consultar@{consultar}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{consultar()}{consultar()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_abfdeaf4f95375ef494f4943a5f004dac} 
+virtual bool Servico\+Cartao::\+consultar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Consulta um cartão de atividade específico pelo seu identificador. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão buscado. \\
+\hline
+{\em cartao} & Referência para o objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} onde os dados encontrados serão armazenados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cartão for encontrado; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_af8c26524356985cc22d9b1a742bddad6}{Cntrl\+Servico\+Cartao}}.
+
+\Hypertarget{class_servico_cartao_a81b0204b7ba07dc6b72ed087e728347e}\index{ServicoCartao@{ServicoCartao}!criar@{criar}}
+\index{criar@{criar}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_a81b0204b7ba07dc6b72ed087e728347e} 
+virtual bool Servico\+Cartao::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria e armazena um novo cartão de atividade no sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cartao} & Objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} contendo os dados do cartão a ser criado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cartão for criado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_aaccc701302debebda976501166b7ad52}{Cntrl\+Servico\+Cartao}}.
+
+\Hypertarget{class_servico_cartao_ade9595982440d006c0ed420cc7e219c9}\index{ServicoCartao@{ServicoCartao}!editar@{editar}}
+\index{editar@{editar}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_ade9595982440d006c0ed420cc7e219c9} 
+virtual bool Servico\+Cartao::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \&}]{cartao}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de um cartão de atividade existente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em cartao} & Objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} contendo os dados atualizados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a edição for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_ae9465c51af696deb4ac53a6e229c74d6}{Cntrl\+Servico\+Cartao}}.
+
+\Hypertarget{class_servico_cartao_ae3eebcff38404c5f1a73ef59531860e4}\index{ServicoCartao@{ServicoCartao}!excluir@{excluir}}
+\index{excluir@{excluir}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_ae3eebcff38404c5f1a73ef59531860e4} 
+virtual bool Servico\+Cartao::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove um cartão de atividade do sistema pelo seu identificador. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o cartão for removido com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_a103b4568b1ffb2b57f333974cd0ac054}{Cntrl\+Servico\+Cartao}}.
+
+\Hypertarget{class_servico_cartao_aec7a4dbd70517b31eb1d3eff1b32a5d6}\index{ServicoCartao@{ServicoCartao}!listar@{listar}}
+\index{listar@{listar}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_aec7a4dbd70517b31eb1d3eff1b32a5d6} 
+virtual vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} $>$ Servico\+Cartao::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todos os cartões de atividade cadastrados. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_cartao_atividade}{Cartao\+Atividade} armazenados. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_a7b5dd0680079dece5e1898c1989e2d66}{Cntrl\+Servico\+Cartao}}.
+
+\Hypertarget{class_servico_cartao_a59ddce71af30eb7e0e6a8cafa407066f}\index{ServicoCartao@{ServicoCartao}!mover@{mover}}
+\index{mover@{mover}!ServicoCartao@{ServicoCartao}}
+\doxysubsubsection{\texorpdfstring{mover()}{mover()}}
+{\footnotesize\ttfamily \label{class_servico_cartao_a59ddce71af30eb7e0e6a8cafa407066f} 
+virtual bool Servico\+Cartao::\+mover (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{const \doxymbox{\hyperlink{class_estado}{Estado}} \&}]{estado}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Altera o estado atual de um cartão de atividade no fluxo de trabalho (FAZENDO ou FEITO). 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do cartão a ser movido. \\
+\hline
+{\em estado} & Novo objeto \doxylink{class_estado}{Estado} a ser atribuído ao cartão. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a movimentação for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_cartao_a3bce8e1220a80646a0a68bd5234c3494}{Cntrl\+Servico\+Cartao}}.
+
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+interfaces/\doxymbox{\hyperlink{_servico_cartao_8hpp}{Servico\+Cartao.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,286 @@
+\doxysection{ReferÃªncia da Classe Projeto}
+\hypertarget{class_projeto}{}\label{class_projeto}\index{Projeto@{Projeto}}
+
+
+Entidade que representa um projeto no sistema.  
+
+
+
+
+{\ttfamily \+\#include $<$Projeto.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_projeto_ac8aa39ab9471731bef343d69652f03dc}{set\+Identificador}} (\doxymbox{\hyperlink{class_identificador}{Identificador}} identificador)
+\begin{DoxyCompactList}\small\item\em Define o identificador do projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} \doxymbox{\hyperlink{class_projeto_a73c48a33c8a22c6fea1349184829eaae}{get\+Identificador}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o identificador do projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_a33b9f10073787e68bbdbd8b560b82ab2}{set\+Gestor}} (\doxymbox{\hyperlink{class_email}{Email}} gestor)
+\begin{DoxyCompactList}\small\item\em Define o e-\/mail do gestor responsável pelo projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_email}{Email}} \doxymbox{\hyperlink{class_projeto_a9996a8fd43aae5af0567f411ca1f65c5}{get\+Gestor}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o e-\/mail do gestor responsável pelo projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_af2eb683a21ad0ce0401b0d313cee612b}{set\+Nome}} (\doxymbox{\hyperlink{class_nome}{Nome}} nome)
+\begin{DoxyCompactList}\small\item\em Define o nome do projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_nome}{Nome}} \doxymbox{\hyperlink{class_projeto_a1eb1c0d356d0f662ac6fda75ff766004}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_a1898aaeee64ac86545f9fc190ffc0141}{set\+Descricao}} (\doxymbox{\hyperlink{class_texto}{Texto}} descricao)
+\begin{DoxyCompactList}\small\item\em Define a descrição do projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_texto}{Texto}} \doxymbox{\hyperlink{class_projeto_a600487ea6215134c7035454139cfd348}{get\+Descricao}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a descrição do projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_a2595fbc8add4d59c031cee7ca8677f3d}{set\+Inicio}} (\doxymbox{\hyperlink{class_timestamp}{Timestamp}} inicio)
+\begin{DoxyCompactList}\small\item\em Define o timestamp de início do projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_timestamp}{Timestamp}} \doxymbox{\hyperlink{class_projeto_a4644b46ebb4291e2993a6d811df50dd8}{get\+Inicio}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o timestamp de início do projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_a16b40a498a15a1aae77a05fe060d8366}{set\+Termino}} (\doxymbox{\hyperlink{class_timestamp}{Timestamp}} termino)
+\begin{DoxyCompactList}\small\item\em Define o timestamp de término do projeto. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_timestamp}{Timestamp}} \doxymbox{\hyperlink{class_projeto_a3278bde27423f1ab0027acb3e557cfe7}{get\+Termino}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o timestamp de término do projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_a9a542f92bde4a87c0b86cb89a0ff8acd}{adicionar\+Quadro}} (\doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}quadro)
+\begin{DoxyCompactList}\small\item\em Vincula um quadro à lista de quadros do projeto. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_projeto_a6ca43adc5178e0baae3fc164e63882f5}{get\+Quadros}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de quadros pertencentes ao projeto. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_projeto_ac430b18b6744be5a9cca093d352231d4}{adicionar\+Pessoa}} (\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}pessoa)
+\begin{DoxyCompactList}\small\item\em Vincula uma pessoa à equipe participante do projeto. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_projeto_aa369738f408957b23c504c756ee00257}{get\+Pessoas}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de pessoas participantes do projeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Entidade que representa um projeto no sistema. 
+
+Armazena os dados principais de um projeto, incluindo seu gestor, período de vigência e as associações com seus respectivos quadros e membros participantes. 
+
+\label{class_projeto_doc-func-members}
+\Hypertarget{class_projeto_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_projeto_ac430b18b6744be5a9cca093d352231d4}\index{Projeto@{Projeto}!adicionarPessoa@{adicionarPessoa}}
+\index{adicionarPessoa@{adicionarPessoa}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{adicionarPessoa()}{adicionarPessoa()}}
+{\footnotesize\ttfamily \label{class_projeto_ac430b18b6744be5a9cca093d352231d4} 
+void Projeto::\+adicionar\+Pessoa (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*}}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Vincula uma pessoa à equipe participante do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em pessoa} & Ponteiro para o objeto \doxylink{class_pessoa}{Pessoa} a ser adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_a9a542f92bde4a87c0b86cb89a0ff8acd}\index{Projeto@{Projeto}!adicionarQuadro@{adicionarQuadro}}
+\index{adicionarQuadro@{adicionarQuadro}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{adicionarQuadro()}{adicionarQuadro()}}
+{\footnotesize\ttfamily \label{class_projeto_a9a542f92bde4a87c0b86cb89a0ff8acd} 
+void Projeto::\+adicionar\+Quadro (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*}}]{quadro}{}\end{DoxyParamCaption})}
+
+
+
+Vincula um quadro à lista de quadros do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em quadro} & Ponteiro para o objeto \doxylink{class_quadro}{Quadro} a ser adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_a600487ea6215134c7035454139cfd348}\index{Projeto@{Projeto}!getDescricao@{getDescricao}}
+\index{getDescricao@{getDescricao}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getDescricao()}{getDescricao()}}
+{\footnotesize\ttfamily \label{class_projeto_a600487ea6215134c7035454139cfd348} 
+\doxymbox{\hyperlink{class_texto}{Texto}} Projeto::\+get\+Descricao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a descrição do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_texto}{Texto} correspondente à descrição. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a9996a8fd43aae5af0567f411ca1f65c5}\index{Projeto@{Projeto}!getGestor@{getGestor}}
+\index{getGestor@{getGestor}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getGestor()}{getGestor()}}
+{\footnotesize\ttfamily \label{class_projeto_a9996a8fd43aae5af0567f411ca1f65c5} 
+\doxymbox{\hyperlink{class_email}{Email}} Projeto::\+get\+Gestor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o e-\/mail do gestor responsável pelo projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_email}{Email} correspondente ao gestor. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a73c48a33c8a22c6fea1349184829eaae}\index{Projeto@{Projeto}!getIdentificador@{getIdentificador}}
+\index{getIdentificador@{getIdentificador}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getIdentificador()}{getIdentificador()}}
+{\footnotesize\ttfamily \label{class_projeto_a73c48a33c8a22c6fea1349184829eaae} 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} Projeto::\+get\+Identificador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o identificador do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_identificador}{Identificador} correspondente ao projeto. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a4644b46ebb4291e2993a6d811df50dd8}\index{Projeto@{Projeto}!getInicio@{getInicio}}
+\index{getInicio@{getInicio}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getInicio()}{getInicio()}}
+{\footnotesize\ttfamily \label{class_projeto_a4644b46ebb4291e2993a6d811df50dd8} 
+\doxymbox{\hyperlink{class_timestamp}{Timestamp}} Projeto::\+get\+Inicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o timestamp de início do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_timestamp}{Timestamp} correspondente ao início. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a1eb1c0d356d0f662ac6fda75ff766004}\index{Projeto@{Projeto}!getNome@{getNome}}
+\index{getNome@{getNome}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_projeto_a1eb1c0d356d0f662ac6fda75ff766004} 
+\doxymbox{\hyperlink{class_nome}{Nome}} Projeto::\+get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_nome}{Nome} correspondente ao projeto. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_aa369738f408957b23c504c756ee00257}\index{Projeto@{Projeto}!getPessoas@{getPessoas}}
+\index{getPessoas@{getPessoas}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getPessoas()}{getPessoas()}}
+{\footnotesize\ttfamily \label{class_projeto_aa369738f408957b23c504c756ee00257} 
+vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \texorpdfstring{$\ast$}{*} $>$ Projeto::\+get\+Pessoas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de pessoas participantes do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de ponteiros (vector$<$\+Pessoa \texorpdfstring{$\ast$}{*}$>$) contendo os membros vinculados. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a6ca43adc5178e0baae3fc164e63882f5}\index{Projeto@{Projeto}!getQuadros@{getQuadros}}
+\index{getQuadros@{getQuadros}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getQuadros()}{getQuadros()}}
+{\footnotesize\ttfamily \label{class_projeto_a6ca43adc5178e0baae3fc164e63882f5} 
+vector$<$ \doxymbox{\hyperlink{class_quadro}{Quadro}} \texorpdfstring{$\ast$}{*} $>$ Projeto::\+get\+Quadros (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de quadros pertencentes ao projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de ponteiros (vector$<$\+Quadro \texorpdfstring{$\ast$}{*}$>$) contendo os quadros vinculados. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a3278bde27423f1ab0027acb3e557cfe7}\index{Projeto@{Projeto}!getTermino@{getTermino}}
+\index{getTermino@{getTermino}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{getTermino()}{getTermino()}}
+{\footnotesize\ttfamily \label{class_projeto_a3278bde27423f1ab0027acb3e557cfe7} 
+\doxymbox{\hyperlink{class_timestamp}{Timestamp}} Projeto::\+get\+Termino (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o timestamp de término do projeto. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_timestamp}{Timestamp} correspondente ao término. 
+\end{DoxyReturn}
+\Hypertarget{class_projeto_a1898aaeee64ac86545f9fc190ffc0141}\index{Projeto@{Projeto}!setDescricao@{setDescricao}}
+\index{setDescricao@{setDescricao}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setDescricao()}{setDescricao()}}
+{\footnotesize\ttfamily \label{class_projeto_a1898aaeee64ac86545f9fc190ffc0141} 
+void Projeto::\+set\+Descricao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_texto}{Texto}}}]{descricao}{}\end{DoxyParamCaption})}
+
+
+
+Define a descrição do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em descricao} & Objeto da classe \doxylink{class_texto}{Texto} contendo os detalhes do projeto. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_a33b9f10073787e68bbdbd8b560b82ab2}\index{Projeto@{Projeto}!setGestor@{setGestor}}
+\index{setGestor@{setGestor}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setGestor()}{setGestor()}}
+{\footnotesize\ttfamily \label{class_projeto_a33b9f10073787e68bbdbd8b560b82ab2} 
+void Projeto::\+set\+Gestor (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_email}{Email}}}]{gestor}{}\end{DoxyParamCaption})}
+
+
+
+Define o e-\/mail do gestor responsável pelo projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em gestor} & Objeto da classe \doxylink{class_email}{Email} referente ao gestor. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_ac8aa39ab9471731bef343d69652f03dc}\index{Projeto@{Projeto}!setIdentificador@{setIdentificador}}
+\index{setIdentificador@{setIdentificador}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setIdentificador()}{setIdentificador()}}
+{\footnotesize\ttfamily \label{class_projeto_ac8aa39ab9471731bef343d69652f03dc} 
+void Projeto::\+set\+Identificador (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_identificador}{Identificador}}}]{identificador}{}\end{DoxyParamCaption})}
+
+
+
+Define o identificador do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto da classe \doxylink{class_identificador}{Identificador} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_a2595fbc8add4d59c031cee7ca8677f3d}\index{Projeto@{Projeto}!setInicio@{setInicio}}
+\index{setInicio@{setInicio}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setInicio()}{setInicio()}}
+{\footnotesize\ttfamily \label{class_projeto_a2595fbc8add4d59c031cee7ca8677f3d} 
+void Projeto::\+set\+Inicio (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_timestamp}{Timestamp}}}]{inicio}{}\end{DoxyParamCaption})}
+
+
+
+Define o timestamp de início do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em inicio} & Objeto da classe \doxylink{class_timestamp}{Timestamp} representando a data e hora de início. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_af2eb683a21ad0ce0401b0d313cee612b}\index{Projeto@{Projeto}!setNome@{setNome}}
+\index{setNome@{setNome}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_projeto_af2eb683a21ad0ce0401b0d313cee612b} 
+void Projeto::\+set\+Nome (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_nome}{Nome}}}]{nome}{}\end{DoxyParamCaption})}
+
+
+
+Define o nome do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em nome} & Objeto da classe \doxylink{class_nome}{Nome} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_projeto_a16b40a498a15a1aae77a05fe060d8366}\index{Projeto@{Projeto}!setTermino@{setTermino}}
+\index{setTermino@{setTermino}!Projeto@{Projeto}}
+\doxysubsubsection{\texorpdfstring{setTermino()}{setTermino()}}
+{\footnotesize\ttfamily \label{class_projeto_a16b40a498a15a1aae77a05fe060d8366} 
+void Projeto::\+set\+Termino (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_timestamp}{Timestamp}}}]{termino}{}\end{DoxyParamCaption})}
+
+
+
+Define o timestamp de término do projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em termino} & Objeto da classe \doxylink{class_timestamp}{Timestamp} representando a data e hora de término. \\
+\hline
+\end{DoxyParams}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+entidades/\doxymbox{\hyperlink{_projeto_8hpp}{Projeto.\+hpp}}\item 
+entidades/\doxymbox{\hyperlink{_projeto_8cpp}{Projeto.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,190 @@
+\doxysection{ReferÃªncia da Classe Quadro}
+\hypertarget{class_quadro}{}\label{class_quadro}\index{Quadro@{Quadro}}
+
+
+Entidade que representa um quadro de atividades dentro de um projeto.  
+
+
+
+
+{\ttfamily \+\#include $<$Quadro.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_quadro_ac6658984fe3500f7b7defdb5515be01f}{set\+Identificador}} (\doxymbox{\hyperlink{class_identificador}{Identificador}} identificador)
+\begin{DoxyCompactList}\small\item\em Define o identificador do quadro. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} \doxymbox{\hyperlink{class_quadro_a422b4527e318b8fbb72d1a98a18dc98c}{get\+Identificador}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o identificador do quadro. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_quadro_a31e3d089fa85a7096b52a3537b5c174d}{set\+Projeto}} (\doxymbox{\hyperlink{class_identificador}{Identificador}} projeto)
+\begin{DoxyCompactList}\small\item\em Define o identificador do projeto ao qual o quadro pertence. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} \doxymbox{\hyperlink{class_quadro_aaab676b0fef8e6f464e21960447507c8}{get\+Projeto}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o identificador do projeto associado ao quadro. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_quadro_a174f1df58c9563b4ba445a8f1a5694cf}{set\+Nome}} (\doxymbox{\hyperlink{class_nome}{Nome}} nome)
+\begin{DoxyCompactList}\small\item\em Define o nome do quadro. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_nome}{Nome}} \doxymbox{\hyperlink{class_quadro_a260b4f46651e8551028185dc81ca2692}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do quadro. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_quadro_aebc46e9039ef7bc2af8e10e798e5c75f}{set\+Limite}} (\doxymbox{\hyperlink{class_limite}{Limite}} limite)
+\begin{DoxyCompactList}\small\item\em Define o limite máximo de cartões permitidos no quadro. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_limite}{Limite}} \doxymbox{\hyperlink{class_quadro_a7799b0eea6c85113d94d4f231108c354}{get\+Limite}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o limite máximo de cartões do quadro. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_quadro_ace5bd20f1732ed47c95c6d2e266d9699}{adicionar\+Cartao}} (\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*}cartao)
+\begin{DoxyCompactList}\small\item\em Adiciona um cartão de atividade à lista de cartões do quadro. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_quadro_a6a497db4eead68ddfcce55737790be98}{get\+Cartoes}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de cartões de atividade contidos no quadro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Entidade que representa um quadro de atividades dentro de um projeto. 
+
+Armazena a identificação do quadro, seu vínculo com o projeto pai, o limite máximo de capacidade e a coleção de cartões de atividade associados. 
+
+\label{class_quadro_doc-func-members}
+\Hypertarget{class_quadro_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_quadro_ace5bd20f1732ed47c95c6d2e266d9699}\index{Quadro@{Quadro}!adicionarCartao@{adicionarCartao}}
+\index{adicionarCartao@{adicionarCartao}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{adicionarCartao()}{adicionarCartao()}}
+{\footnotesize\ttfamily \label{class_quadro_ace5bd20f1732ed47c95c6d2e266d9699} 
+void Quadro::\+adicionar\+Cartao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*}}]{cartao}{}\end{DoxyParamCaption})}
+
+
+
+Adiciona um cartão de atividade à lista de cartões do quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em cartao} & Ponteiro para o objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} a ser adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quadro_a6a497db4eead68ddfcce55737790be98}\index{Quadro@{Quadro}!getCartoes@{getCartoes}}
+\index{getCartoes@{getCartoes}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{getCartoes()}{getCartoes()}}
+{\footnotesize\ttfamily \label{class_quadro_a6a497db4eead68ddfcce55737790be98} 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*} $>$ Quadro::\+get\+Cartoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de cartões de atividade contidos no quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de ponteiros (vector$<$\+Cartao\+Atividade \texorpdfstring{$\ast$}{*}$>$) contendo os cartões vinculados. 
+\end{DoxyReturn}
+\Hypertarget{class_quadro_a422b4527e318b8fbb72d1a98a18dc98c}\index{Quadro@{Quadro}!getIdentificador@{getIdentificador}}
+\index{getIdentificador@{getIdentificador}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{getIdentificador()}{getIdentificador()}}
+{\footnotesize\ttfamily \label{class_quadro_a422b4527e318b8fbb72d1a98a18dc98c} 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} Quadro::\+get\+Identificador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o identificador do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_identificador}{Identificador} correspondente ao quadro. 
+\end{DoxyReturn}
+\Hypertarget{class_quadro_a7799b0eea6c85113d94d4f231108c354}\index{Quadro@{Quadro}!getLimite@{getLimite}}
+\index{getLimite@{getLimite}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{getLimite()}{getLimite()}}
+{\footnotesize\ttfamily \label{class_quadro_a7799b0eea6c85113d94d4f231108c354} 
+\doxymbox{\hyperlink{class_limite}{Limite}} Quadro::\+get\+Limite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o limite máximo de cartões do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_limite}{Limite} correspondente à capacidade do quadro. 
+\end{DoxyReturn}
+\Hypertarget{class_quadro_a260b4f46651e8551028185dc81ca2692}\index{Quadro@{Quadro}!getNome@{getNome}}
+\index{getNome@{getNome}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_quadro_a260b4f46651e8551028185dc81ca2692} 
+\doxymbox{\hyperlink{class_nome}{Nome}} Quadro::\+get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome do quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_nome}{Nome} correspondente ao quadro. 
+\end{DoxyReturn}
+\Hypertarget{class_quadro_aaab676b0fef8e6f464e21960447507c8}\index{Quadro@{Quadro}!getProjeto@{getProjeto}}
+\index{getProjeto@{getProjeto}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{getProjeto()}{getProjeto()}}
+{\footnotesize\ttfamily \label{class_quadro_aaab676b0fef8e6f464e21960447507c8} 
+\doxymbox{\hyperlink{class_identificador}{Identificador}} Quadro::\+get\+Projeto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o identificador do projeto associado ao quadro. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_identificador}{Identificador} correspondente ao projeto. 
+\end{DoxyReturn}
+\Hypertarget{class_quadro_ac6658984fe3500f7b7defdb5515be01f}\index{Quadro@{Quadro}!setIdentificador@{setIdentificador}}
+\index{setIdentificador@{setIdentificador}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{setIdentificador()}{setIdentificador()}}
+{\footnotesize\ttfamily \label{class_quadro_ac6658984fe3500f7b7defdb5515be01f} 
+void Quadro::\+set\+Identificador (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_identificador}{Identificador}}}]{identificador}{}\end{DoxyParamCaption})}
+
+
+
+Define o identificador do quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto da classe \doxylink{class_identificador}{Identificador} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quadro_aebc46e9039ef7bc2af8e10e798e5c75f}\index{Quadro@{Quadro}!setLimite@{setLimite}}
+\index{setLimite@{setLimite}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{setLimite()}{setLimite()}}
+{\footnotesize\ttfamily \label{class_quadro_aebc46e9039ef7bc2af8e10e798e5c75f} 
+void Quadro::\+set\+Limite (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_limite}{Limite}}}]{limite}{}\end{DoxyParamCaption})}
+
+
+
+Define o limite máximo de cartões permitidos no quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em limite} & Objeto da classe \doxylink{class_limite}{Limite} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quadro_a174f1df58c9563b4ba445a8f1a5694cf}\index{Quadro@{Quadro}!setNome@{setNome}}
+\index{setNome@{setNome}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_quadro_a174f1df58c9563b4ba445a8f1a5694cf} 
+void Quadro::\+set\+Nome (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_nome}{Nome}}}]{nome}{}\end{DoxyParamCaption})}
+
+
+
+Define o nome do quadro. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em nome} & Objeto da classe \doxylink{class_nome}{Nome} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_quadro_a31e3d089fa85a7096b52a3537b5c174d}\index{Quadro@{Quadro}!setProjeto@{setProjeto}}
+\index{setProjeto@{setProjeto}!Quadro@{Quadro}}
+\doxysubsubsection{\texorpdfstring{setProjeto()}{setProjeto()}}
+{\footnotesize\ttfamily \label{class_quadro_a31e3d089fa85a7096b52a3537b5c174d} 
+void Quadro::\+set\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_identificador}{Identificador}}}]{projeto}{}\end{DoxyParamCaption})}
+
+
+
+Define o identificador do projeto ao qual o quadro pertence. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto da classe \doxylink{class_identificador}{Identificador} referente ao projeto. \\
+\hline
+\end{DoxyParams}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+entidades/\doxymbox{\hyperlink{_quadro_8hpp}{Quadro.\+hpp}}\item 
+entidades/\doxymbox{\hyperlink{_quadro_8cpp}{Quadro.\+cpp}}\end{DoxyCompactItemize}

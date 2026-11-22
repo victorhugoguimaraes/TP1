@@ -1,0 +1,34 @@
+\doxysection{Timestamp.\+hpp}
+\hypertarget{_timestamp_8hpp_source}{}\label{_timestamp_8hpp_source}\index{dominios/Timestamp.hpp@{dominios/Timestamp.hpp}}
+\doxymbox{\hyperlink{_timestamp_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TIMESTAMP\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TIMESTAMP\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_timestamp}{Timestamp}}\ \{}
+\DoxyCodeLine{00016\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_TIMESTAMP\_CURTO\ =\ 16;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_TIMESTAMP\_LONGO\ =\ 17;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ANO\_MINIMO\ =\ 2000;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ANO\_MAXIMO\ =\ 2099;}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ QUANTIDADE\_MESES\ =\ 12;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{string}\ valor;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ validar(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&timestamp)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_timestamp_a0d67c8c761bc3857322eaa91c32b5334}{setTimestamp}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&timestamp);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\doxymbox{\hyperlink{class_timestamp_a2625d4645e57c83af16ca7b03d7e0020}{getTimestamp}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_timestamp_a7ffe65aa7ceaa01bcf0fa15d5f2f8e76}{setValor}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&timestamp);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\doxymbox{\hyperlink{class_timestamp_aaf3bf49967bcb6995e4f742f80359099}{getValor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ \};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

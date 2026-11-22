@@ -1,0 +1,149 @@
+\doxysection{Referência da Classe Container\+Pessoas}
+\hypertarget{class_container_pessoas}{}\label{class_container_pessoas}\index{ContainerPessoas@{ContainerPessoas}}
+
+
+Armazena e recupera pessoas identificadas pelo email.  
+
+
+
+
+{\ttfamily \+\#include $<$Container\+Pessoa.\+hpp$>$}
+
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_container_pessoas_afd06dcc4daa157ce685f5f997e423d60}{Container\+Pessoas}} (\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&banco)
+\begin{DoxyCompactList}\small\item\em Associa o container a uma conexao de banco existente. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoas_acaec641526e95646fda67b1a4a01e15d}{inserir}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Insere uma pessoa quando seu email ainda nao esta cadastrado. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoas_a72393d1cc89716e2a799c3c97082c157}{buscar}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email, \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&resultado) const
+\begin{DoxyCompactList}\small\item\em Procura uma pessoa pelo email sem modificar o banco. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} $>$ \doxymbox{\hyperlink{class_container_pessoas_af92d924f0e8f243d108568df833ab525}{listar}} () const
+\begin{DoxyCompactList}\small\item\em Retorna uma copia de todas as pessoas cadastradas. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoas_a04aa68721fa4725b4a29012ab403d072}{editar}} (const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&pessoa)
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de uma pessoa identificada pelo email. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_container_pessoas_a14e44114b273e8c7ba1e969b0cddf243}{excluir}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email)
+\begin{DoxyCompactList}\small\item\em Exclui uma pessoa identificada pelo email. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Armazena e recupera pessoas identificadas pelo email. 
+
+Utiliza um banco SQLite para persistir os cadastros. 
+
+\label{class_container_pessoas_doc-constructors}
+\Hypertarget{class_container_pessoas_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_container_pessoas_afd06dcc4daa157ce685f5f997e423d60}\index{ContainerPessoas@{ContainerPessoas}!ContainerPessoas@{ContainerPessoas}}
+\index{ContainerPessoas@{ContainerPessoas}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{ContainerPessoas()}{ContainerPessoas()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_afd06dcc4daa157ce685f5f997e423d60} 
+Container\+Pessoas::\+\+Container\+Pessoas (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_banco_dados}{Banco\+Dados}} \&}]{banco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Associa o container a uma conexao de banco existente. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em banco} & Banco que deve permanecer existente durante o uso do container. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_container_pessoas_doc-func-members}
+\Hypertarget{class_container_pessoas_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_container_pessoas_a72393d1cc89716e2a799c3c97082c157}\index{ContainerPessoas@{ContainerPessoas}!buscar@{buscar}}
+\index{buscar@{buscar}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_a72393d1cc89716e2a799c3c97082c157} 
+bool Container\+Pessoas::\+buscar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{, }\item[{\doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{resultado}{}\end{DoxyParamCaption}) const}
+
+
+
+Procura uma pessoa pelo email sem modificar o banco. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email} & \doxylink{class_email}{Email} a ser procurado. \\
+\hline
+{\em resultado} & Recebe uma copia da pessoa encontrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a pessoa for encontrada; false caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoas_a04aa68721fa4725b4a29012ab403d072}\index{ContainerPessoas@{ContainerPessoas}!editar@{editar}}
+\index{editar@{editar}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_a04aa68721fa4725b4a29012ab403d072} 
+bool Container\+Pessoas::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Atualiza os dados de uma pessoa identificada pelo email. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pessoa} & \doxylink{class_pessoa}{Pessoa} com os novos dados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a pessoa foi atualizada; false se nao foi encontrada. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoas_a14e44114b273e8c7ba1e969b0cddf243}\index{ContainerPessoas@{ContainerPessoas}!excluir@{excluir}}
+\index{excluir@{excluir}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_a14e44114b273e8c7ba1e969b0cddf243} 
+bool Container\+Pessoas::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Exclui uma pessoa identificada pelo email. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email} & \doxylink{class_email}{Email} da pessoa a ser excluida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a pessoa foi excluida; false se nao foi encontrada. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoas_acaec641526e95646fda67b1a4a01e15d}\index{ContainerPessoas@{ContainerPessoas}!inserir@{inserir}}
+\index{inserir@{inserir}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{inserir()}{inserir()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_acaec641526e95646fda67b1a4a01e15d} 
+bool Container\+Pessoas::\+inserir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_pessoa}{Pessoa}} \&}]{pessoa}{}\end{DoxyParamCaption})}
+
+
+
+Insere uma pessoa quando seu email ainda nao esta cadastrado. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pessoa} & \doxylink{class_pessoa}{Pessoa} com os dados previamente validados pelos dominios. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se inserida; false se o email ja existir. 
+\end{DoxyReturn}
+\Hypertarget{class_container_pessoas_af92d924f0e8f243d108568df833ab525}\index{ContainerPessoas@{ContainerPessoas}!listar@{listar}}
+\index{listar@{listar}!ContainerPessoas@{ContainerPessoas}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_container_pessoas_af92d924f0e8f243d108568df833ab525} 
+vector$<$ \doxymbox{\hyperlink{class_pessoa}{Pessoa}} $>$ Container\+Pessoas::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retorna uma copia de todas as pessoas cadastradas. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de pessoas cadastradas. 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+servico/\doxymbox{\hyperlink{_container_pessoa_8hpp}{Container\+Pessoa.\+hpp}}\item 
+servico/\doxymbox{\hyperlink{_container_pessoa_8cpp}{Container\+Pessoa.\+cpp}}\end{DoxyCompactItemize}

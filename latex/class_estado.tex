@@ -1,0 +1,110 @@
+\doxysection{ReferÃªncia da Classe Estado}
+\hypertarget{class_estado}{}\label{class_estado}\index{Estado@{Estado}}
+
+
+Gerencia o ciclo de vida ou progresso de uma tarefa ou objeto.  
+
+
+
+
+{\ttfamily \+\#include $<$Estado.\+hpp$>$}
+
+\doxysubsubsection*{Tipos PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Status}} \{ \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bda0a6ddb6894c121dc4c803457b782a6d0}{A\+\_\+\+FAZER}}
+, \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdad02879d0831112791500c6932eb092be}{FAZENDO}}
+, \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdace7ac74607c2adf8202888cae70269d3}{FEITO}}
+ \}
+\begin{DoxyCompactList}\small\item\em Define as etapas possíveis para o progresso de um fluxo de trabalho. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_estado_a0e085092bd6d4b9ea39f50abd068348c}{set\+Estado}} (\doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Status}} estado)
+\begin{DoxyCompactList}\small\item\em Define e valida o novo estado, caso ele pertença ao enumerador status. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Status}} \doxymbox{\hyperlink{class_estado_a585a847b67d73aa8718833793cf40e77}{get\+Estado}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o estado atual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia o ciclo de vida ou progresso de uma tarefa ou objeto. 
+
+Esta classe encapsula um enumerador que representa três estados possíveis de progresso (A\+\_\+\+FAZER, FAZENDO, FEITO), garantindo que modificações passem por validação de integridade. 
+
+\label{class_estado_doc-enum-members}
+\Hypertarget{class_estado_doc-enum-members}
+\doxysubsection{DocumentaÃ§Ã£o das enumeraÃ§Ãµes}
+\Hypertarget{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}\index{Estado@{Estado}!Status@{Status}}
+\index{Status@{Status}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily \label{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd} 
+enum \doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::\+\+Status}}}
+
+
+
+Define as etapas possíveis para o progresso de um fluxo de trabalho. 
+
+\begin{DoxyEnumFields}[2]{Enumeradores}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\_FAZER@{A\_FAZER}!Estado@{Estado}}
+\index{Estado@{Estado}!A\_FAZER@{A\_FAZER}}
+}\Hypertarget{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bda0a6ddb6894c121dc4c803457b782a6d0}\label{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bda0a6ddb6894c121dc4c803457b782a6d0} 
+A\+\_\+\+FAZER&Tarefa ainda não iniciada. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FAZENDO@{FAZENDO}!Estado@{Estado}}
+\index{Estado@{Estado}!FAZENDO@{FAZENDO}}
+}\Hypertarget{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdad02879d0831112791500c6932eb092be}\label{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdad02879d0831112791500c6932eb092be} 
+FAZENDO&Tarefa em andamento. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEITO@{FEITO}!Estado@{Estado}}
+\index{Estado@{Estado}!FEITO@{FEITO}}
+}\Hypertarget{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdace7ac74607c2adf8202888cae70269d3}\label{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bdace7ac74607c2adf8202888cae70269d3} 
+FEITO&Tarefa concluída com sucesso. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{class_estado_doc-func-members}
+\Hypertarget{class_estado_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_estado_a585a847b67d73aa8718833793cf40e77}\index{Estado@{Estado}!getEstado@{getEstado}}
+\index{getEstado@{getEstado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{getEstado()}{getEstado()}}
+{\footnotesize\ttfamily \label{class_estado_a585a847b67d73aa8718833793cf40e77} 
+\doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Estado::\+\+Status}} Estado::\+get\+Estado (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o estado atual. 
+
+\begin{DoxyReturn}{Retorna}
+O status atual armazenado no objeto. 
+\end{DoxyReturn}
+\Hypertarget{class_estado_a0e085092bd6d4b9ea39f50abd068348c}\index{Estado@{Estado}!setEstado@{setEstado}}
+\index{setEstado@{setEstado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{setEstado()}{setEstado()}}
+{\footnotesize\ttfamily \label{class_estado_a0e085092bd6d4b9ea39f50abd068348c} 
+void Estado::\+set\+Estado (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_estado_a183a44e0b35da7ff5e33ed523ec4c3bd}{Status}}}]{estado}{}\end{DoxyParamCaption})}
+
+
+
+Define e valida o novo estado, caso ele pertença ao enumerador status. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em estado} & O novo status a ser atribuído à tarefa. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se o valor fornecido não corresponder a nenhum dos estados mapeados ("{}\+Estado invalido"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_estado_8hpp}{Estado.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_estado_8cpp}{Estado.\+cpp}}\end{DoxyCompactItemize}

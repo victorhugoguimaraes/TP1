@@ -1,0 +1,41 @@
+\doxysection{Servico\+Projeto.\+hpp}
+\hypertarget{_servico_projeto_8hpp_source}{}\label{_servico_projeto_8hpp_source}\index{interfaces/ServicoProjeto.hpp@{interfaces/ServicoProjeto.hpp}}
+\doxymbox{\hyperlink{_servico_projeto_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SERVICOPROJETO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SERVICOPROJETO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_email_8hpp}{../dominios/Email.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8hpp}{../dominios/Identificador.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_projeto_8hpp}{../entidades/Projeto.hpp}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_servico_projeto}{ServicoProjeto}}\ \{}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_a001f7a4bc76902336dc5169cefc60809}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ vector<Projeto>\ \doxymbox{\hyperlink{class_servico_projeto_a0f7c732479108f460fd12f33473bc338}{listar}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_ae966a313daf0242d07237b2bdc567f8f}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_a99afc5d7bd60d630cf21191182aa120a}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_projeto}{Projeto}}\ \&projeto)\ =\ 0;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_a04a1e11e3949e4a1035f101185ee498d}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ =\ 0;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_a124e1b8622f872c83ca0142ba3839002}{adicionarPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_projeto_abcfc5822fe69df9bf773b8b05e735f34}{removerPessoa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&pessoa)\ =\ 0;}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{virtual}\ vector<Email>\ \doxymbox{\hyperlink{class_servico_projeto_a14a5e0e6cec975243863d3c516c548bb}{listarPessoas}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&projeto)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_servico_projeto_a4a103d38cd29a8840879bd538a4881d9}{\string~ServicoProjeto}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

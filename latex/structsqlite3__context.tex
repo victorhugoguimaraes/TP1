@@ -1,0 +1,95 @@
+\doxysection{Referência da Estrutura sqlite3\+\_\+context}
+\hypertarget{structsqlite3__context}{}\label{structsqlite3__context}\index{sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a6a58ea0b22f29d55f73a700dca50eb2d}{Mem}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__context_ae22b1db2ea357b70dda4a86b6df01f34}{p\+Out}}
+\item 
+\doxymbox{\hyperlink{struct_func_def}{Func\+Def}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__context_af4215c87be2c0cb10868f623a552a2aa}{p\+Func}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a6a58ea0b22f29d55f73a700dca50eb2d}{Mem}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__context_a7b84aa5920329cb0eb943832175b48b5}{p\+Mem}}
+\item 
+\doxymbox{\hyperlink{struct_vdbe}{Vdbe}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__context_ab35b02abe9a81e0c8cbdaeb0aa1a5874}{p\+Vdbe}}
+\item 
+int \doxymbox{\hyperlink{structsqlite3__context_a6f5930106488b9ead6f8efefe9125b6c}{i\+Op}}
+\item 
+int \doxymbox{\hyperlink{structsqlite3__context_ae4351b8da8c6d2676074612c1b8d4af5}{is\+Error}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{structsqlite3__context_afe31e10da65ac92dd52f6fe8ab6b2a38}{enc}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{structsqlite3__context_a29c404b8744ed5967960c576f3e59bd3}{skip\+Flag}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} \doxymbox{\hyperlink{structsqlite3__context_acd9c7fc0b0b5749927e87f47f2734aa6}{argc}}
+\item 
+\doxymbox{\hyperlink{structsqlite3__value}{sqlite3\+\_\+value}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__context_a8e3f3a741ffa01683348ac52fda048e3}{argv}} \+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]
+\end{DoxyCompactItemize}
+
+
+\label{structsqlite3__context_doc-variable-members}
+\Hypertarget{structsqlite3__context_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{structsqlite3__context_acd9c7fc0b0b5749927e87f47f2734aa6}\index{sqlite3\_context@{sqlite3\_context}!argc@{argc}}
+\index{argc@{argc}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{argc}{argc}}
+{\footnotesize\ttfamily \label{structsqlite3__context_acd9c7fc0b0b5749927e87f47f2734aa6} 
+\doxymbox{\hyperlink{sqlite3_8c_a20f2299e322dcbde37cb07b16910b843}{u16}} sqlite3\+\_\+context::\+argc}
+
+\Hypertarget{structsqlite3__context_a8e3f3a741ffa01683348ac52fda048e3}\index{sqlite3\_context@{sqlite3\_context}!argv@{argv}}
+\index{argv@{argv}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{argv}{argv}}
+{\footnotesize\ttfamily \label{structsqlite3__context_a8e3f3a741ffa01683348ac52fda048e3} 
+\doxymbox{\hyperlink{structsqlite3__value}{sqlite3\+\_\+value}}\texorpdfstring{$\ast$}{*} sqlite3\+\_\+context::\+argv\+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]}
+
+\Hypertarget{structsqlite3__context_afe31e10da65ac92dd52f6fe8ab6b2a38}\index{sqlite3\_context@{sqlite3\_context}!enc@{enc}}
+\index{enc@{enc}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{enc}{enc}}
+{\footnotesize\ttfamily \label{structsqlite3__context_afe31e10da65ac92dd52f6fe8ab6b2a38} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} sqlite3\+\_\+context::\+enc}
+
+\Hypertarget{structsqlite3__context_a6f5930106488b9ead6f8efefe9125b6c}\index{sqlite3\_context@{sqlite3\_context}!iOp@{iOp}}
+\index{iOp@{iOp}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{iOp}{iOp}}
+{\footnotesize\ttfamily \label{structsqlite3__context_a6f5930106488b9ead6f8efefe9125b6c} 
+int sqlite3\+\_\+context::\+i\+Op}
+
+\Hypertarget{structsqlite3__context_ae4351b8da8c6d2676074612c1b8d4af5}\index{sqlite3\_context@{sqlite3\_context}!isError@{isError}}
+\index{isError@{isError}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{isError}{isError}}
+{\footnotesize\ttfamily \label{structsqlite3__context_ae4351b8da8c6d2676074612c1b8d4af5} 
+int sqlite3\+\_\+context::\+is\+Error}
+
+\Hypertarget{structsqlite3__context_af4215c87be2c0cb10868f623a552a2aa}\index{sqlite3\_context@{sqlite3\_context}!pFunc@{pFunc}}
+\index{pFunc@{pFunc}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{pFunc}{pFunc}}
+{\footnotesize\ttfamily \label{structsqlite3__context_af4215c87be2c0cb10868f623a552a2aa} 
+\doxymbox{\hyperlink{struct_func_def}{Func\+Def}}\texorpdfstring{$\ast$}{*} sqlite3\+\_\+context::\+p\+Func}
+
+\Hypertarget{structsqlite3__context_a7b84aa5920329cb0eb943832175b48b5}\index{sqlite3\_context@{sqlite3\_context}!pMem@{pMem}}
+\index{pMem@{pMem}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{pMem}{pMem}}
+{\footnotesize\ttfamily \label{structsqlite3__context_a7b84aa5920329cb0eb943832175b48b5} 
+\doxymbox{\hyperlink{sqlite3_8c_a6a58ea0b22f29d55f73a700dca50eb2d}{Mem}}\texorpdfstring{$\ast$}{*} sqlite3\+\_\+context::\+p\+Mem}
+
+\Hypertarget{structsqlite3__context_ae22b1db2ea357b70dda4a86b6df01f34}\index{sqlite3\_context@{sqlite3\_context}!pOut@{pOut}}
+\index{pOut@{pOut}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{pOut}{pOut}}
+{\footnotesize\ttfamily \label{structsqlite3__context_ae22b1db2ea357b70dda4a86b6df01f34} 
+\doxymbox{\hyperlink{sqlite3_8c_a6a58ea0b22f29d55f73a700dca50eb2d}{Mem}}\texorpdfstring{$\ast$}{*} sqlite3\+\_\+context::\+p\+Out}
+
+\Hypertarget{structsqlite3__context_ab35b02abe9a81e0c8cbdaeb0aa1a5874}\index{sqlite3\_context@{sqlite3\_context}!pVdbe@{pVdbe}}
+\index{pVdbe@{pVdbe}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{pVdbe}{pVdbe}}
+{\footnotesize\ttfamily \label{structsqlite3__context_ab35b02abe9a81e0c8cbdaeb0aa1a5874} 
+\doxymbox{\hyperlink{struct_vdbe}{Vdbe}}\texorpdfstring{$\ast$}{*} sqlite3\+\_\+context::\+p\+Vdbe}
+
+\Hypertarget{structsqlite3__context_a29c404b8744ed5967960c576f3e59bd3}\index{sqlite3\_context@{sqlite3\_context}!skipFlag@{skipFlag}}
+\index{skipFlag@{skipFlag}!sqlite3\_context@{sqlite3\_context}}
+\doxysubsubsection{\texorpdfstring{skipFlag}{skipFlag}}
+{\footnotesize\ttfamily \label{structsqlite3__context_a29c404b8744ed5967960c576f3e59bd3} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} sqlite3\+\_\+context::\+skip\+Flag}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

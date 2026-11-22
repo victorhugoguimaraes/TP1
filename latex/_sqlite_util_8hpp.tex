@@ -1,0 +1,44 @@
+\doxysection{ReferÃªncia do Arquivo persistencia/\+\+Sqlite\+Util.hpp}
+\hypertarget{_sqlite_util_8hpp}{}\label{_sqlite_util_8hpp}\index{persistencia/SqliteUtil.hpp@{persistencia/SqliteUtil.hpp}}
+
+
+Declaração de funções utilitárias para extração de dados de consultas SQLite.  
+
+
+{\ttfamily \+\#include "{}../\+sqlite/\+sqlite3.\+h"{}}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{FunÃ§Ãµes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{_sqlite_util_8hpp_a9e9681fa5f646bb2610497841c9c260d}{obter\+Texto}} (\doxymbox{\hyperlink{sqlite3_8c_af2a033da1327cdd77f0a174a09aedd0c}{sqlite3\+\_\+stmt}} \texorpdfstring{$\ast$}{*}comando, int coluna)
+\begin{DoxyCompactList}\small\item\em Extrai o valor textual de uma coluna específica de uma instrução SQLite preparada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Declaração de funções utilitárias para extração de dados de consultas SQLite. 
+
+
+
+\label{_sqlite_util_8hpp_doc-func-members}
+\Hypertarget{_sqlite_util_8hpp_doc-func-members}
+\doxysubsection{FunÃ§Ãµes}
+\Hypertarget{_sqlite_util_8hpp_a9e9681fa5f646bb2610497841c9c260d}\index{SqliteUtil.hpp@{SqliteUtil.hpp}!obterTexto@{obterTexto}}
+\index{obterTexto@{obterTexto}!SqliteUtil.hpp@{SqliteUtil.hpp}}
+\doxysubsubsection{\texorpdfstring{obterTexto()}{obterTexto()}}
+{\footnotesize\ttfamily \label{_sqlite_util_8hpp_a9e9681fa5f646bb2610497841c9c260d} 
+string obter\+Texto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{sqlite3_8c_af2a033da1327cdd77f0a174a09aedd0c}{sqlite3\+\_\+stmt}} \texorpdfstring{$\ast$}{*}}]{comando}{, }\item[{int}]{coluna}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Extrai o valor textual de uma coluna específica de uma instrução SQLite preparada. 
+
+Converte o ponteiro retornado por sqlite3\+\_\+column\+\_\+text para uma std::\+string, retornando uma string vazia caso o valor armazenado na coluna seja nulo (NULL). 
+\begin{DoxyParams}{ParÃ¢metros}
+{\em comando} & Ponteiro para a instrução preparada (sqlite3\+\_\+stmt\texorpdfstring{$\ast$}{*}) em execução. \\
+\hline
+{\em coluna} & Índice inteiro (baseado em zero) da coluna a ser lida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String contendo o texto da coluna ou string vazia se o campo for nulo. 
+\end{DoxyReturn}

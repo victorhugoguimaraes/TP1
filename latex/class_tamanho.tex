@@ -1,0 +1,110 @@
+\doxysection{ReferÃªncia da Classe Tamanho}
+\hypertarget{class_tamanho}{}\label{class_tamanho}\index{Tamanho@{Tamanho}}
+
+
+Gerencia e valida o dimensionamento ou escala (Grande, Médio, Pequeno) de um objeto.  
+
+
+
+
+{\ttfamily \+\#include $<$Tamanho.\+hpp$>$}
+
+\doxysubsubsection*{Tipos PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}} \{ \doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a9a9bab862a009858f69ca11e40a2973d}{GRANDE}}
+, \doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1acc4f09065d86a3d2f3840b47317059b5}{MEDIO}}
+, \doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a4cd9524273e36e464581626d51cd7fd4}{PEQUENO}}
+ \}
+\begin{DoxyCompactList}\small\item\em Define as opções de escala ou dimensão aceitas pelo sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_tamanho_a57c25b2f6e56e79ad5cffe1ad44e2eb3}{set\+Tamanho}} (\doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}} tamanho)
+\begin{DoxyCompactList}\small\item\em Valida e altera a escala do tamanho contanto que pertença ao enumerador \doxylink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}} \doxymbox{\hyperlink{class_tamanho_ab3ab5fd55f4c001089551f1fb09c1ec6}{get\+Tamanho}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o nível de tamanho atualmente configurado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Gerencia e valida o dimensionamento ou escala (Grande, Médio, Pequeno) de um objeto. 
+
+Esta classe encapsula um enumerador que representa três níveis de dimensão garantindo que qualquer alteração de escala respeite estritamente as opções permitidas pelo sistema. 
+
+\label{class_tamanho_doc-enum-members}
+\Hypertarget{class_tamanho_doc-enum-members}
+\doxysubsection{DocumentaÃ§Ã£o das enumeraÃ§Ãµes}
+\Hypertarget{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}\index{Tamanho@{Tamanho}!Nivel@{Nivel}}
+\index{Nivel@{Nivel}!Tamanho@{Tamanho}}
+\doxysubsubsection{\texorpdfstring{Nivel}{Nivel}}
+{\footnotesize\ttfamily \label{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1} 
+enum \doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Tamanho::\+\+Nivel}}}
+
+
+
+Define as opções de escala ou dimensão aceitas pelo sistema. 
+
+\begin{DoxyEnumFields}[2]{Enumeradores}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GRANDE@{GRANDE}!Tamanho@{Tamanho}}
+\index{Tamanho@{Tamanho}!GRANDE@{GRANDE}}
+}\Hypertarget{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a9a9bab862a009858f69ca11e40a2973d}\label{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a9a9bab862a009858f69ca11e40a2973d} 
+GRANDE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MEDIO@{MEDIO}!Tamanho@{Tamanho}}
+\index{Tamanho@{Tamanho}!MEDIO@{MEDIO}}
+}\Hypertarget{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1acc4f09065d86a3d2f3840b47317059b5}\label{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1acc4f09065d86a3d2f3840b47317059b5} 
+MEDIO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PEQUENO@{PEQUENO}!Tamanho@{Tamanho}}
+\index{Tamanho@{Tamanho}!PEQUENO@{PEQUENO}}
+}\Hypertarget{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a4cd9524273e36e464581626d51cd7fd4}\label{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1a4cd9524273e36e464581626d51cd7fd4} 
+PEQUENO&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{class_tamanho_doc-func-members}
+\Hypertarget{class_tamanho_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_tamanho_ab3ab5fd55f4c001089551f1fb09c1ec6}\index{Tamanho@{Tamanho}!getTamanho@{getTamanho}}
+\index{getTamanho@{getTamanho}!Tamanho@{Tamanho}}
+\doxysubsubsection{\texorpdfstring{getTamanho()}{getTamanho()}}
+{\footnotesize\ttfamily \label{class_tamanho_ab3ab5fd55f4c001089551f1fb09c1ec6} 
+\doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Tamanho::\+\+Nivel}} Tamanho::\+get\+Tamanho (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o nível de tamanho atualmente configurado. 
+
+\begin{DoxyReturn}{Retorna}
+O nível atual armazenado no objeto (do tipo \doxylink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Tamanho::\+\+Nivel}). 
+\end{DoxyReturn}
+\Hypertarget{class_tamanho_a57c25b2f6e56e79ad5cffe1ad44e2eb3}\index{Tamanho@{Tamanho}!setTamanho@{setTamanho}}
+\index{setTamanho@{setTamanho}!Tamanho@{Tamanho}}
+\doxysubsubsection{\texorpdfstring{setTamanho()}{setTamanho()}}
+{\footnotesize\ttfamily \label{class_tamanho_a57c25b2f6e56e79ad5cffe1ad44e2eb3} 
+void Tamanho::\+set\+Tamanho (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}}}]{tamanho}{}\end{DoxyParamCaption})}
+
+
+
+Valida e altera a escala do tamanho contanto que pertença ao enumerador \doxylink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Nivel}. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em tamanho} & O novo nível do tipo \doxylink{class_tamanho_a083b6a0cba4d31f8b8dd20c4cefac7d1}{Tamanho::\+\+Nivel} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se o valor fornecido for inválido ou não mapeado ("{}\+Tamanho invalido"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_tamanho_8hpp}{Tamanho.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_tamanho_8cpp}{Tamanho.\+cpp}}\end{DoxyCompactItemize}

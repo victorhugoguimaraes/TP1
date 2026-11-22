@@ -1,0 +1,24 @@
+\doxysection{Cntrl\+Servico\+Autenticacao.\+hpp}
+\hypertarget{_cntrl_servico_autenticacao_8hpp_source}{}\label{_cntrl_servico_autenticacao_8hpp_source}\index{servico/CntrlServicoAutenticacao.hpp@{servico/CntrlServicoAutenticacao.hpp}}
+\doxymbox{\hyperlink{_cntrl_servico_autenticacao_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CNTRLSERVICOAUTENTICACAO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CNTRLSERVICOAUTENTICACAO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_autenticacao_8hpp}{../interfaces/ServicoAutenticacao.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_pessoa_8hpp}{ContainerPessoa.hpp}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_servico_autenticacao_ad239b0a1c4f5098d3e207db5a78bce0c}{CntrlServicoAutenticacao}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_servico_autenticacao}{ServicoAutenticacao}}\ \{}
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_container_pessoas}{ContainerPessoas}}\ \&container;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{class_cntrl_servico_autenticacao_ad239b0a1c4f5098d3e207db5a78bce0c}{CntrlServicoAutenticacao}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_container_pessoas}{ContainerPessoas}}\ \&container);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_autenticacao_aace3d7aa8ba7111d138e90e7281c4ec1}{autenticar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_email}{Email}}\ \&email,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_senha}{Senha}}\ \&senha)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

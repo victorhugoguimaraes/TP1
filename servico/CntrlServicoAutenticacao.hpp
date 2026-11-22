@@ -1,3 +1,8 @@
+/**
+ * @file CntrlServicoAutenticacao.hpp
+ * @brief Declaração da classe controladora de serviço de autenticação.
+ */
+
 #ifndef CNTRLSERVICOAUTENTICACAO_H
 #define CNTRLSERVICOAUTENTICACAO_H
 

@@ -1,0 +1,37 @@
+\doxysection{Servico\+Cartao.\+hpp}
+\hypertarget{_servico_cartao_8hpp_source}{}\label{_servico_cartao_8hpp_source}\index{interfaces/ServicoCartao.hpp@{interfaces/ServicoCartao.hpp}}
+\doxymbox{\hyperlink{_servico_cartao_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SERVICOCARTAO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SERVICOCARTAO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_estado_8hpp}{../dominios/Estado.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_identificador_8hpp}{../dominios/Identificador.hpp}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_cartao_atividade_8hpp}{../entidades/CartaoAtividade.hpp}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_servico_cartao}{ServicoCartao}}\ \{}
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_cartao_a81b0204b7ba07dc6b72ed087e728347e}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ =\ 0;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ vector<CartaoAtividade>\ \doxymbox{\hyperlink{class_servico_cartao_aec7a4dbd70517b31eb1d3eff1b32a5d6}{listar}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_cartao_abfdeaf4f95375ef494f4943a5f004dac}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ =\ 0;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_cartao_ade9595982440d006c0ed420cc7e219c9}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ =\ 0;}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_cartao_ae3eebcff38404c5f1a73ef59531860e4}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ =\ 0;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_servico_cartao_a59ddce71af30eb7e0e6a8cafa407066f}{mover}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\ \&estado)\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_servico_cartao_af1abade8eccd4c3132830a5e8f9c3093}{\string~ServicoCartao}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

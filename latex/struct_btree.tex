@@ -1,0 +1,111 @@
+\doxysection{Referência da Estrutura Btree}
+\hypertarget{struct_btree}{}\label{struct_btree}\index{Btree@{Btree}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_btree_a2b3cfec48b6e9fcfd641d433816ae5c3}{db}}
+\item 
+\doxymbox{\hyperlink{struct_bt_shared}{Bt\+Shared}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_btree_a63bab5d744d48d14368af048dddf2f20}{p\+Bt}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_btree_a50007448960c05dfd1fdc7db3e277685}{in\+Trans}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_btree_a114f157127c76a1fbad8292e4b39c4dd}{sharable}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_btree_a16fc8292bae9a66cfec03f6cb82d06a8}{locked}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_btree_a247c6bd4123c5d53ebb96bd879047e25}{has\+Incrblob\+Cur}}
+\item 
+int \doxymbox{\hyperlink{struct_btree_a97368ea300f0b74b8e80ea07da0cea2a}{want\+To\+Lock}}
+\item 
+int \doxymbox{\hyperlink{struct_btree_a7a3e7cf38bc9c3021a9e270a54ecfb1e}{n\+Backup}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} \doxymbox{\hyperlink{struct_btree_ac2aa1e91d467d48ec73ea7845a9288a2}{i\+BData\+Version}}
+\item 
+\doxymbox{\hyperlink{struct_btree}{Btree}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_btree_a9e6d2ca44c10ed8ef0be004225a74ef5}{p\+Next}}
+\item 
+\doxymbox{\hyperlink{struct_btree}{Btree}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_btree_a0423f1c55c1fe6812161a49bb2bf604f}{p\+Prev}}
+\item 
+\doxymbox{\hyperlink{struct_bt_lock}{Bt\+Lock}} \doxymbox{\hyperlink{struct_btree_a943ed8799c9943f753a88cf44f1632dc}{lock}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_btree_doc-variable-members}
+\Hypertarget{struct_btree_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_btree_a2b3cfec48b6e9fcfd641d433816ae5c3}\index{Btree@{Btree}!db@{db}}
+\index{db@{db}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{db}{db}}
+{\footnotesize\ttfamily \label{struct_btree_a2b3cfec48b6e9fcfd641d433816ae5c3} 
+\doxymbox{\hyperlink{structsqlite3}{sqlite3}}\texorpdfstring{$\ast$}{*} Btree::\+db}
+
+\Hypertarget{struct_btree_a247c6bd4123c5d53ebb96bd879047e25}\index{Btree@{Btree}!hasIncrblobCur@{hasIncrblobCur}}
+\index{hasIncrblobCur@{hasIncrblobCur}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{hasIncrblobCur}{hasIncrblobCur}}
+{\footnotesize\ttfamily \label{struct_btree_a247c6bd4123c5d53ebb96bd879047e25} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Btree::\+has\+Incrblob\+Cur}
+
+\Hypertarget{struct_btree_ac2aa1e91d467d48ec73ea7845a9288a2}\index{Btree@{Btree}!iBDataVersion@{iBDataVersion}}
+\index{iBDataVersion@{iBDataVersion}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{iBDataVersion}{iBDataVersion}}
+{\footnotesize\ttfamily \label{struct_btree_ac2aa1e91d467d48ec73ea7845a9288a2} 
+\doxymbox{\hyperlink{sqlite3_8c_a03ad5adfaeb9b7640dde78a0cc390319}{u32}} Btree::\+i\+BData\+Version}
+
+\Hypertarget{struct_btree_a50007448960c05dfd1fdc7db3e277685}\index{Btree@{Btree}!inTrans@{inTrans}}
+\index{inTrans@{inTrans}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{inTrans}{inTrans}}
+{\footnotesize\ttfamily \label{struct_btree_a50007448960c05dfd1fdc7db3e277685} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Btree::\+in\+Trans}
+
+\Hypertarget{struct_btree_a943ed8799c9943f753a88cf44f1632dc}\index{Btree@{Btree}!lock@{lock}}
+\index{lock@{lock}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily \label{struct_btree_a943ed8799c9943f753a88cf44f1632dc} 
+\doxymbox{\hyperlink{struct_bt_lock}{Bt\+Lock}} Btree::\+lock}
+
+\Hypertarget{struct_btree_a16fc8292bae9a66cfec03f6cb82d06a8}\index{Btree@{Btree}!locked@{locked}}
+\index{locked@{locked}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{locked}{locked}}
+{\footnotesize\ttfamily \label{struct_btree_a16fc8292bae9a66cfec03f6cb82d06a8} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Btree::\+locked}
+
+\Hypertarget{struct_btree_a7a3e7cf38bc9c3021a9e270a54ecfb1e}\index{Btree@{Btree}!nBackup@{nBackup}}
+\index{nBackup@{nBackup}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{nBackup}{nBackup}}
+{\footnotesize\ttfamily \label{struct_btree_a7a3e7cf38bc9c3021a9e270a54ecfb1e} 
+int Btree::\+n\+Backup}
+
+\Hypertarget{struct_btree_a63bab5d744d48d14368af048dddf2f20}\index{Btree@{Btree}!pBt@{pBt}}
+\index{pBt@{pBt}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{pBt}{pBt}}
+{\footnotesize\ttfamily \label{struct_btree_a63bab5d744d48d14368af048dddf2f20} 
+\doxymbox{\hyperlink{struct_bt_shared}{Bt\+Shared}}\texorpdfstring{$\ast$}{*} Btree::\+p\+Bt}
+
+\Hypertarget{struct_btree_a9e6d2ca44c10ed8ef0be004225a74ef5}\index{Btree@{Btree}!pNext@{pNext}}
+\index{pNext@{pNext}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{pNext}{pNext}}
+{\footnotesize\ttfamily \label{struct_btree_a9e6d2ca44c10ed8ef0be004225a74ef5} 
+\doxymbox{\hyperlink{struct_btree}{Btree}}\texorpdfstring{$\ast$}{*} Btree::\+p\+Next}
+
+\Hypertarget{struct_btree_a0423f1c55c1fe6812161a49bb2bf604f}\index{Btree@{Btree}!pPrev@{pPrev}}
+\index{pPrev@{pPrev}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{pPrev}{pPrev}}
+{\footnotesize\ttfamily \label{struct_btree_a0423f1c55c1fe6812161a49bb2bf604f} 
+\doxymbox{\hyperlink{struct_btree}{Btree}}\texorpdfstring{$\ast$}{*} Btree::\+p\+Prev}
+
+\Hypertarget{struct_btree_a114f157127c76a1fbad8292e4b39c4dd}\index{Btree@{Btree}!sharable@{sharable}}
+\index{sharable@{sharable}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{sharable}{sharable}}
+{\footnotesize\ttfamily \label{struct_btree_a114f157127c76a1fbad8292e4b39c4dd} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Btree::\+sharable}
+
+\Hypertarget{struct_btree_a97368ea300f0b74b8e80ea07da0cea2a}\index{Btree@{Btree}!wantToLock@{wantToLock}}
+\index{wantToLock@{wantToLock}!Btree@{Btree}}
+\doxysubsubsection{\texorpdfstring{wantToLock}{wantToLock}}
+{\footnotesize\ttfamily \label{struct_btree_a97368ea300f0b74b8e80ea07da0cea2a} 
+int Btree::\+want\+To\+Lock}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

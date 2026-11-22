@@ -1,0 +1,78 @@
+\doxysection{Referência da Classe Servico\+Autenticacao}
+\hypertarget{class_servico_autenticacao}{}\label{class_servico_autenticacao}\index{ServicoAutenticacao@{ServicoAutenticacao}}
+
+
+Define a interface de verificacao das credenciais de uma pessoa.  
+
+
+
+
+{\ttfamily \+\#include $<$Servico\+Autenticacao.\+hpp$>$}
+
+Diagrama de hierarquia da classe Servico\+Autenticacao:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_servico_autenticacao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_servico_autenticacao_a67f56cdd84b078c0730be51e04cf5be7}{autenticar}} (const \doxymbox{\hyperlink{class_email}{Email}} \&email, const \doxymbox{\hyperlink{class_senha}{Senha}} \&senha)=0
+\begin{DoxyCompactList}\small\item\em Verifica as credenciais de uma pessoa cadastrada. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_servico_autenticacao_a5829980b0622404548dece10bff9d732}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Autenticacao}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementacao por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Define a interface de verificacao das credenciais de uma pessoa. 
+
+Permite que a camada de apresentacao solicite autenticacao sem depender da implementacao do armazenamento de pessoas. 
+
+\label{class_servico_autenticacao_doc-constructors}
+\Hypertarget{class_servico_autenticacao_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_servico_autenticacao_a5829980b0622404548dece10bff9d732}\index{ServicoAutenticacao@{ServicoAutenticacao}!````~ServicoAutenticacao@{\texorpdfstring{$\sim$}{\string~}ServicoAutenticacao}}
+\index{````~ServicoAutenticacao@{\texorpdfstring{$\sim$}{\string~}ServicoAutenticacao}!ServicoAutenticacao@{ServicoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ServicoAutenticacao()}{\string~ServicoAutenticacao()}}
+{\footnotesize\ttfamily \label{class_servico_autenticacao_a5829980b0622404548dece10bff9d732} 
+virtual Servico\+Autenticacao::\+\texorpdfstring{$\sim$}{\string~}\+Servico\+Autenticacao (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Permite destruir uma implementacao por meio da interface. 
+
+
+
+\label{class_servico_autenticacao_doc-func-members}
+\Hypertarget{class_servico_autenticacao_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_servico_autenticacao_a67f56cdd84b078c0730be51e04cf5be7}\index{ServicoAutenticacao@{ServicoAutenticacao}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!ServicoAutenticacao@{ServicoAutenticacao}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily \label{class_servico_autenticacao_a67f56cdd84b078c0730be51e04cf5be7} 
+virtual bool Servico\+Autenticacao::\+autenticar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{email}{, }\item[{const \doxymbox{\hyperlink{class_senha}{Senha}} \&}]{senha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Verifica as credenciais de uma pessoa cadastrada. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email} & \doxylink{class_email}{Email} da pessoa que deseja acessar o sistema. \\
+\hline
+{\em senha} & \doxylink{class_senha}{Senha} informada para autenticacao. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se as credenciais corresponderem a um cadastro; false caso contrario. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_autenticacao_aace3d7aa8ba7111d138e90e7281c4ec1}{Cntrl\+Servico\+Autenticacao}}.
+
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+interfaces/\doxymbox{\hyperlink{_servico_autenticacao_8hpp}{Servico\+Autenticacao.\+hpp}}\end{DoxyCompactItemize}

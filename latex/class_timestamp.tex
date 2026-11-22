@@ -1,0 +1,106 @@
+\doxysection{ReferÃªncia da Classe Timestamp}
+\hypertarget{class_timestamp}{}\label{class_timestamp}\index{Timestamp@{Timestamp}}
+
+
+Representa e valida um carimbo de data e hora com formato textual específico.  
+
+
+
+
+{\ttfamily \+\#include $<$Timestamp.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_timestamp_a0d67c8c761bc3857322eaa91c32b5334}{set\+Timestamp}} (const string \&timestamp)
+\begin{DoxyCompactList}\small\item\em Valida e define o carimbo de data e hora. \end{DoxyCompactList}\item 
+const string \& \doxymbox{\hyperlink{class_timestamp_a2625d4645e57c83af16ca7b03d7e0020}{get\+Timestamp}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o carimbo de data e hora atualmente armazenado. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_timestamp_a7ffe65aa7ceaa01bcf0fa15d5f2f8e76}{set\+Valor}} (const string \&timestamp)
+\begin{DoxyCompactList}\small\item\em Método alternativo (alias) para definir o valor do timestamp. \end{DoxyCompactList}\item 
+const string \& \doxymbox{\hyperlink{class_timestamp_aaf3bf49967bcb6995e4f742f80359099}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Método alternativo (alias) para recuperar o valor do timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Representa e valida um carimbo de data e hora com formato textual específico. 
+
+Esta classe encapsula um registro de data e hora, aplicando regras rígidas de validação no calendário (incluindo cálculo de ano bissexto) para garantir que apenas carimbos válidos e bem formatados sejam gravados. 
+
+\label{class_timestamp_doc-func-members}
+\Hypertarget{class_timestamp_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_timestamp_a2625d4645e57c83af16ca7b03d7e0020}\index{Timestamp@{Timestamp}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily \label{class_timestamp_a2625d4645e57c83af16ca7b03d7e0020} 
+const string \& Timestamp::\+get\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o carimbo de data e hora atualmente armazenado. 
+
+\begin{DoxyReturn}{Retorna}
+Uma referência constante para a string do timestamp. 
+\end{DoxyReturn}
+\Hypertarget{class_timestamp_aaf3bf49967bcb6995e4f742f80359099}\index{Timestamp@{Timestamp}!getValor@{getValor}}
+\index{getValor@{getValor}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily \label{class_timestamp_aaf3bf49967bcb6995e4f742f80359099} 
+const string \& Timestamp::\+get\+Valor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Método alternativo (alias) para recuperar o valor do timestamp. 
+
+\begin{DoxyReturn}{Retorna}
+Uma referência constante para a string do timestamp. 
+\end{DoxyReturn}
+\Hypertarget{class_timestamp_a0d67c8c761bc3857322eaa91c32b5334}\index{Timestamp@{Timestamp}!setTimestamp@{setTimestamp}}
+\index{setTimestamp@{setTimestamp}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{setTimestamp()}{setTimestamp()}}
+{\footnotesize\ttfamily \label{class_timestamp_a0d67c8c761bc3857322eaa91c32b5334} 
+void Timestamp::\+set\+Timestamp (\begin{DoxyParamCaption}\item[{const string \&}]{timestamp}{}\end{DoxyParamCaption})}
+
+
+
+Valida e define o carimbo de data e hora. 
+
+Interface de mutação primária. Caso a string fornecida falte com qualquer um dos critérios cronológicos ou estruturais, a alteração é abortada e uma exceção é lançada.
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em timestamp} & A string do carimbo proposto. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se a string falhar nos critérios de validação ("{}\+Timestamp invalido"{}). \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_timestamp_a7ffe65aa7ceaa01bcf0fa15d5f2f8e76}\index{Timestamp@{Timestamp}!setValor@{setValor}}
+\index{setValor@{setValor}!Timestamp@{Timestamp}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily \label{class_timestamp_a7ffe65aa7ceaa01bcf0fa15d5f2f8e76} 
+void Timestamp::\+set\+Valor (\begin{DoxyParamCaption}\item[{const string \&}]{timestamp}{}\end{DoxyParamCaption})}
+
+
+
+Método alternativo (alias) para definir o valor do timestamp. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em timestamp} & A string do carimbo proposto. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se a string falhar nos critérios de validação ("{}\+Timestamp invalido"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_timestamp_8hpp}{Timestamp.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_timestamp_8cpp}{Timestamp.\+cpp}}\end{DoxyCompactItemize}

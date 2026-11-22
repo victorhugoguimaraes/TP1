@@ -1,0 +1,119 @@
+\doxysection{Referência da Estrutura Upsert}
+\hypertarget{struct_upsert}{}\label{struct_upsert}\index{Upsert@{Upsert}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_expr_list}{Expr\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a502a6faab50ddbaa3be7c40560cc387c}{p\+Upsert\+Target}}
+\item 
+\doxymbox{\hyperlink{struct_expr}{Expr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a5ed0e4530676e8e083a1367de0431ccf}{p\+Upsert\+Target\+Where}}
+\item 
+\doxymbox{\hyperlink{struct_expr_list}{Expr\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a67a83b82a792661bf71e166233371bf6}{p\+Upsert\+Set}}
+\item 
+\doxymbox{\hyperlink{struct_expr}{Expr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a961b481398a4c9ff4fe2de2b4c91de60}{p\+Upsert\+Where}}
+\item 
+\doxymbox{\hyperlink{struct_upsert}{Upsert}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a574a2d74bc547300d1c1af7c65d9d7b5}{p\+Next\+Upsert}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_upsert_a6c7753965457537179ef994004b9a244}{is\+Do\+Update}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_upsert_a88d2201e59ca13f53cecfb63be03a142}{is\+Dup}}
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_aa20d8f17bcacf8f4c536246f0b61835b}{p\+To\+Free}}
+\item 
+\doxymbox{\hyperlink{struct_index}{Index}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a9524aa52c709d36baff2fed94a814cc9}{p\+Upsert\+Idx}}
+\item 
+\doxymbox{\hyperlink{struct_src_list}{Src\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_upsert_a85cde42e4ea925d0f7ec3bde6302d0d6}{p\+Upsert\+Src}}
+\item 
+int \doxymbox{\hyperlink{struct_upsert_ae04e06c0d34138e9f77c8d1a56322aa9}{reg\+Data}}
+\item 
+int \doxymbox{\hyperlink{struct_upsert_a8650f83a9c55c609980deffed8c3ced8}{i\+Data\+Cur}}
+\item 
+int \doxymbox{\hyperlink{struct_upsert_afa03ce78400b1f607648bb2739df88ec}{i\+Idx\+Cur}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_upsert_doc-variable-members}
+\Hypertarget{struct_upsert_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_upsert_a8650f83a9c55c609980deffed8c3ced8}\index{Upsert@{Upsert}!iDataCur@{iDataCur}}
+\index{iDataCur@{iDataCur}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{iDataCur}{iDataCur}}
+{\footnotesize\ttfamily \label{struct_upsert_a8650f83a9c55c609980deffed8c3ced8} 
+int Upsert::\+i\+Data\+Cur}
+
+\Hypertarget{struct_upsert_afa03ce78400b1f607648bb2739df88ec}\index{Upsert@{Upsert}!iIdxCur@{iIdxCur}}
+\index{iIdxCur@{iIdxCur}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{iIdxCur}{iIdxCur}}
+{\footnotesize\ttfamily \label{struct_upsert_afa03ce78400b1f607648bb2739df88ec} 
+int Upsert::\+i\+Idx\+Cur}
+
+\Hypertarget{struct_upsert_a6c7753965457537179ef994004b9a244}\index{Upsert@{Upsert}!isDoUpdate@{isDoUpdate}}
+\index{isDoUpdate@{isDoUpdate}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{isDoUpdate}{isDoUpdate}}
+{\footnotesize\ttfamily \label{struct_upsert_a6c7753965457537179ef994004b9a244} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Upsert::\+is\+Do\+Update}
+
+\Hypertarget{struct_upsert_a88d2201e59ca13f53cecfb63be03a142}\index{Upsert@{Upsert}!isDup@{isDup}}
+\index{isDup@{isDup}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{isDup}{isDup}}
+{\footnotesize\ttfamily \label{struct_upsert_a88d2201e59ca13f53cecfb63be03a142} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Upsert::\+is\+Dup}
+
+\Hypertarget{struct_upsert_a574a2d74bc547300d1c1af7c65d9d7b5}\index{Upsert@{Upsert}!pNextUpsert@{pNextUpsert}}
+\index{pNextUpsert@{pNextUpsert}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pNextUpsert}{pNextUpsert}}
+{\footnotesize\ttfamily \label{struct_upsert_a574a2d74bc547300d1c1af7c65d9d7b5} 
+\doxymbox{\hyperlink{struct_upsert}{Upsert}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Next\+Upsert}
+
+\Hypertarget{struct_upsert_aa20d8f17bcacf8f4c536246f0b61835b}\index{Upsert@{Upsert}!pToFree@{pToFree}}
+\index{pToFree@{pToFree}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pToFree}{pToFree}}
+{\footnotesize\ttfamily \label{struct_upsert_aa20d8f17bcacf8f4c536246f0b61835b} 
+void\texorpdfstring{$\ast$}{*} Upsert::\+p\+To\+Free}
+
+\Hypertarget{struct_upsert_a9524aa52c709d36baff2fed94a814cc9}\index{Upsert@{Upsert}!pUpsertIdx@{pUpsertIdx}}
+\index{pUpsertIdx@{pUpsertIdx}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertIdx}{pUpsertIdx}}
+{\footnotesize\ttfamily \label{struct_upsert_a9524aa52c709d36baff2fed94a814cc9} 
+\doxymbox{\hyperlink{struct_index}{Index}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Idx}
+
+\Hypertarget{struct_upsert_a67a83b82a792661bf71e166233371bf6}\index{Upsert@{Upsert}!pUpsertSet@{pUpsertSet}}
+\index{pUpsertSet@{pUpsertSet}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertSet}{pUpsertSet}}
+{\footnotesize\ttfamily \label{struct_upsert_a67a83b82a792661bf71e166233371bf6} 
+\doxymbox{\hyperlink{struct_expr_list}{Expr\+List}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Set}
+
+\Hypertarget{struct_upsert_a85cde42e4ea925d0f7ec3bde6302d0d6}\index{Upsert@{Upsert}!pUpsertSrc@{pUpsertSrc}}
+\index{pUpsertSrc@{pUpsertSrc}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertSrc}{pUpsertSrc}}
+{\footnotesize\ttfamily \label{struct_upsert_a85cde42e4ea925d0f7ec3bde6302d0d6} 
+\doxymbox{\hyperlink{struct_src_list}{Src\+List}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Src}
+
+\Hypertarget{struct_upsert_a502a6faab50ddbaa3be7c40560cc387c}\index{Upsert@{Upsert}!pUpsertTarget@{pUpsertTarget}}
+\index{pUpsertTarget@{pUpsertTarget}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertTarget}{pUpsertTarget}}
+{\footnotesize\ttfamily \label{struct_upsert_a502a6faab50ddbaa3be7c40560cc387c} 
+\doxymbox{\hyperlink{struct_expr_list}{Expr\+List}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Target}
+
+\Hypertarget{struct_upsert_a5ed0e4530676e8e083a1367de0431ccf}\index{Upsert@{Upsert}!pUpsertTargetWhere@{pUpsertTargetWhere}}
+\index{pUpsertTargetWhere@{pUpsertTargetWhere}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertTargetWhere}{pUpsertTargetWhere}}
+{\footnotesize\ttfamily \label{struct_upsert_a5ed0e4530676e8e083a1367de0431ccf} 
+\doxymbox{\hyperlink{struct_expr}{Expr}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Target\+Where}
+
+\Hypertarget{struct_upsert_a961b481398a4c9ff4fe2de2b4c91de60}\index{Upsert@{Upsert}!pUpsertWhere@{pUpsertWhere}}
+\index{pUpsertWhere@{pUpsertWhere}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{pUpsertWhere}{pUpsertWhere}}
+{\footnotesize\ttfamily \label{struct_upsert_a961b481398a4c9ff4fe2de2b4c91de60} 
+\doxymbox{\hyperlink{struct_expr}{Expr}}\texorpdfstring{$\ast$}{*} Upsert::\+p\+Upsert\+Where}
+
+\Hypertarget{struct_upsert_ae04e06c0d34138e9f77c8d1a56322aa9}\index{Upsert@{Upsert}!regData@{regData}}
+\index{regData@{regData}!Upsert@{Upsert}}
+\doxysubsubsection{\texorpdfstring{regData}{regData}}
+{\footnotesize\ttfamily \label{struct_upsert_ae04e06c0d34138e9f77c8d1a56322aa9} 
+int Upsert::\+reg\+Data}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

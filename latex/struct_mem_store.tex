@@ -1,0 +1,103 @@
+\doxysection{Referência da Estrutura Mem\+Store}
+\hypertarget{struct_mem_store}{}\label{struct_mem_store}\index{MemStore@{MemStore}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} \doxymbox{\hyperlink{struct_mem_store_aac47cf08b4683665e2aa7ad7809ad254}{sz}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} \doxymbox{\hyperlink{struct_mem_store_a676a4483e4e9b5c5af6629ab6367b02f}{sz\+Alloc}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} \doxymbox{\hyperlink{struct_mem_store_a3293e37f47eacfb078e97244e278e870}{sz\+Max}}
+\item 
+unsigned char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_mem_store_a87821a38123087d9190c71e5f81c4763}{a\+Data}}
+\item 
+\doxymbox{\hyperlink{structsqlite3__mutex}{sqlite3\+\_\+mutex}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_mem_store_a573cb8863b41be9a7026e89684c2002d}{p\+Mutex}}
+\item 
+int \doxymbox{\hyperlink{struct_mem_store_a45d9414d39a5a75ee18d26c92b31117d}{n\+Mmap}}
+\item 
+unsigned \doxymbox{\hyperlink{struct_mem_store_af39b0863897e72f69396c33ce28ba1da}{m\+Flags}}
+\item 
+int \doxymbox{\hyperlink{struct_mem_store_abc58fc7cefbaeb882a112c3bd33f1ab8}{n\+Rd\+Lock}}
+\item 
+int \doxymbox{\hyperlink{struct_mem_store_acab0420e3e63f727e94f8ae4ceae9674}{n\+Wr\+Lock}}
+\item 
+int \doxymbox{\hyperlink{struct_mem_store_ae705bb369e64fb139852b775fb5f07b2}{n\+Ref}}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_mem_store_a5bdf2546bb98c786234bc1dee553d5a9}{z\+FName}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_mem_store_doc-variable-members}
+\Hypertarget{struct_mem_store_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_mem_store_a87821a38123087d9190c71e5f81c4763}\index{MemStore@{MemStore}!aData@{aData}}
+\index{aData@{aData}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{aData}{aData}}
+{\footnotesize\ttfamily \label{struct_mem_store_a87821a38123087d9190c71e5f81c4763} 
+unsigned char\texorpdfstring{$\ast$}{*} Mem\+Store::\+a\+Data}
+
+\Hypertarget{struct_mem_store_af39b0863897e72f69396c33ce28ba1da}\index{MemStore@{MemStore}!mFlags@{mFlags}}
+\index{mFlags@{mFlags}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{mFlags}{mFlags}}
+{\footnotesize\ttfamily \label{struct_mem_store_af39b0863897e72f69396c33ce28ba1da} 
+unsigned Mem\+Store::\+m\+Flags}
+
+\Hypertarget{struct_mem_store_a45d9414d39a5a75ee18d26c92b31117d}\index{MemStore@{MemStore}!nMmap@{nMmap}}
+\index{nMmap@{nMmap}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{nMmap}{nMmap}}
+{\footnotesize\ttfamily \label{struct_mem_store_a45d9414d39a5a75ee18d26c92b31117d} 
+int Mem\+Store::\+n\+Mmap}
+
+\Hypertarget{struct_mem_store_abc58fc7cefbaeb882a112c3bd33f1ab8}\index{MemStore@{MemStore}!nRdLock@{nRdLock}}
+\index{nRdLock@{nRdLock}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{nRdLock}{nRdLock}}
+{\footnotesize\ttfamily \label{struct_mem_store_abc58fc7cefbaeb882a112c3bd33f1ab8} 
+int Mem\+Store::\+n\+Rd\+Lock}
+
+\Hypertarget{struct_mem_store_ae705bb369e64fb139852b775fb5f07b2}\index{MemStore@{MemStore}!nRef@{nRef}}
+\index{nRef@{nRef}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{nRef}{nRef}}
+{\footnotesize\ttfamily \label{struct_mem_store_ae705bb369e64fb139852b775fb5f07b2} 
+int Mem\+Store::\+n\+Ref}
+
+\Hypertarget{struct_mem_store_acab0420e3e63f727e94f8ae4ceae9674}\index{MemStore@{MemStore}!nWrLock@{nWrLock}}
+\index{nWrLock@{nWrLock}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{nWrLock}{nWrLock}}
+{\footnotesize\ttfamily \label{struct_mem_store_acab0420e3e63f727e94f8ae4ceae9674} 
+int Mem\+Store::\+n\+Wr\+Lock}
+
+\Hypertarget{struct_mem_store_a573cb8863b41be9a7026e89684c2002d}\index{MemStore@{MemStore}!pMutex@{pMutex}}
+\index{pMutex@{pMutex}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{pMutex}{pMutex}}
+{\footnotesize\ttfamily \label{struct_mem_store_a573cb8863b41be9a7026e89684c2002d} 
+\doxymbox{\hyperlink{structsqlite3__mutex}{sqlite3\+\_\+mutex}}\texorpdfstring{$\ast$}{*} Mem\+Store::\+p\+Mutex}
+
+\Hypertarget{struct_mem_store_aac47cf08b4683665e2aa7ad7809ad254}\index{MemStore@{MemStore}!sz@{sz}}
+\index{sz@{sz}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \label{struct_mem_store_aac47cf08b4683665e2aa7ad7809ad254} 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} Mem\+Store::\+sz}
+
+\Hypertarget{struct_mem_store_a676a4483e4e9b5c5af6629ab6367b02f}\index{MemStore@{MemStore}!szAlloc@{szAlloc}}
+\index{szAlloc@{szAlloc}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{szAlloc}{szAlloc}}
+{\footnotesize\ttfamily \label{struct_mem_store_a676a4483e4e9b5c5af6629ab6367b02f} 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} Mem\+Store::\+sz\+Alloc}
+
+\Hypertarget{struct_mem_store_a3293e37f47eacfb078e97244e278e870}\index{MemStore@{MemStore}!szMax@{szMax}}
+\index{szMax@{szMax}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{szMax}{szMax}}
+{\footnotesize\ttfamily \label{struct_mem_store_a3293e37f47eacfb078e97244e278e870} 
+\doxymbox{\hyperlink{sqlite3_8c_a0a4d3e6c1ad46f90e746b920ab6ca0d2}{sqlite3\+\_\+int64}} Mem\+Store::\+sz\+Max}
+
+\Hypertarget{struct_mem_store_a5bdf2546bb98c786234bc1dee553d5a9}\index{MemStore@{MemStore}!zFName@{zFName}}
+\index{zFName@{zFName}!MemStore@{MemStore}}
+\doxysubsubsection{\texorpdfstring{zFName}{zFName}}
+{\footnotesize\ttfamily \label{struct_mem_store_a5bdf2546bb98c786234bc1dee553d5a9} 
+char\texorpdfstring{$\ast$}{*} Mem\+Store::\+z\+FName}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

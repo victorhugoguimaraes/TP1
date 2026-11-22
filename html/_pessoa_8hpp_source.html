@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP1: C√≥digo-Fonte de entidades/Pessoa.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Busca" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('_pessoa_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Pessoa.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_pessoa_8hpp.html">Ir para a documenta√ß√£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef PESSOA_HPP</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define PESSOA_HPP</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_email_8hpp.html">../dominios/Email.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_nome_8hpp.html">../dominios/Nome.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_papel_8hpp.html">../dominios/Papel.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_senha_8hpp.html">../dominios/Senha.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_class" href="class_projeto.html">Projeto</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span><a class="code hl_class" href="class_cartao_atividade.html">CartaoAtividade</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_pessoa.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pessoa.html">Pessoa</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_email.html">Email</a> email;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_nome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_class" href="class_senha.html">Senha</a> senha;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_class" href="class_papel.html">Papel</a> papel;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    vector&lt;Projeto *&gt; projetos;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    vector&lt;CartaoAtividade *&gt; cartoes;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#af94947d815f51279810f2f09c5adcef4">setEmail</a>(<a class="code hl_class" href="class_email.html">Email</a> email);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="class_email.html">Email</a> <a class="code hl_function" href="class_pessoa.html#a137a2a665a10ffa4880d1f7d726b07c7">getEmail</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#ae4d02733d9c4e645c80685f41fdc2b47">setNome</a>(<a class="code hl_class" href="class_nome.html">Nome</a> nome);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_class" href="class_nome.html">Nome</a> <a class="code hl_function" href="class_pessoa.html#ad0c0448768ca2f5b5dfca86f156cdfe9">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#a3c75be0743b65a69fbc8e35e20d84790">setSenha</a>(<a class="code hl_class" href="class_senha.html">Senha</a> senha);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_class" href="class_senha.html">Senha</a> <a class="code hl_function" href="class_pessoa.html#a02498f338ca00cdd18e794f17d660281">getSenha</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#ac79fd5094aab7de36a05843deb984832">setPapel</a>(<a class="code hl_class" href="class_papel.html">Papel</a> papel);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_class" href="class_papel.html">Papel</a> <a class="code hl_function" href="class_pessoa.html#a8c7e1938888e9e84b5c30ca977b98b9d">getPapel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#aed832795ce54167c80612f67fd0d1275">adicionarProjeto</a>(<a class="code hl_class" href="class_projeto.html">Projeto</a> *projeto);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    vector&lt;Projeto *&gt; <a class="code hl_function" href="class_pessoa.html#ab3c36031321ee8aa7ae74c6b81d39393">getProjetos</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pessoa.html#a797c71e50556a5171c91f7c2e2479380">adicionarCartao</a>(<a class="code hl_class" href="class_cartao_atividade.html">CartaoAtividade</a> *cartao);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    vector&lt;CartaoAtividade *&gt; <a class="code hl_function" href="class_pessoa.html#ad7cf35f1963966028fad035cb061debb">getCartoes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_email_8hpp_html"><div class="ttname"><a href="_email_8hpp.html">Email.hpp</a></div></div>
+<div class="ttc" id="a_nome_8hpp_html"><div class="ttname"><a href="_nome_8hpp.html">Nome.hpp</a></div></div>
+<div class="ttc" id="a_papel_8hpp_html"><div class="ttname"><a href="_papel_8hpp.html">Papel.hpp</a></div></div>
+<div class="ttc" id="a_senha_8hpp_html"><div class="ttname"><a href="_senha_8hpp.html">Senha.hpp</a></div></div>
+<div class="ttc" id="aclass_cartao_atividade_html"><div class="ttname"><a href="class_cartao_atividade.html">CartaoAtividade</a></div><div class="ttdoc">Entidade que representa um cart„o de atividade no sistema.</div><div class="ttdef"><b>Defini√ß√£o</b> CartaoAtividade.hpp:25</div></div>
+<div class="ttc" id="aclass_email_html"><div class="ttname"><a href="class_email.html">Email</a></div><div class="ttdoc">Representa e valida sintaticamente um endereÁo de e-mail.</div><div class="ttdef"><b>Defini√ß√£o</b> Email.hpp:16</div></div>
+<div class="ttc" id="aclass_nome_html"><div class="ttname"><a href="class_nome.html">Nome</a></div><div class="ttdef"><b>Defini√ß√£o</b> Nome.hpp:7</div></div>
+<div class="ttc" id="aclass_papel_html"><div class="ttname"><a href="class_papel.html">Papel</a></div><div class="ttdoc">Gerencia e valida o cargo de um usu·rio no sistema.</div><div class="ttdef"><b>Defini√ß√£o</b> Papel.hpp:13</div></div>
+<div class="ttc" id="aclass_pessoa_html"><div class="ttname"><a href="class_pessoa.html">Pessoa</a></div><div class="ttdoc">Entidade que representa uma pessoa (usu·rio) no sistema.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.hpp:27</div></div>
+<div class="ttc" id="aclass_pessoa_html_a02498f338ca00cdd18e794f17d660281"><div class="ttname"><a href="class_pessoa.html#a02498f338ca00cdd18e794f17d660281">Pessoa::getSenha</a></div><div class="ttdeci">Senha getSenha() const</div><div class="ttdoc">ObtÈm a senha de acesso da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:27</div></div>
+<div class="ttc" id="aclass_pessoa_html_a137a2a665a10ffa4880d1f7d726b07c7"><div class="ttname"><a href="class_pessoa.html#a137a2a665a10ffa4880d1f7d726b07c7">Pessoa::getEmail</a></div><div class="ttdeci">Email getEmail() const</div><div class="ttdoc">ObtÈm o endereÁo de e-mail da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:11</div></div>
+<div class="ttc" id="aclass_pessoa_html_a3c75be0743b65a69fbc8e35e20d84790"><div class="ttname"><a href="class_pessoa.html#a3c75be0743b65a69fbc8e35e20d84790">Pessoa::setSenha</a></div><div class="ttdeci">void setSenha(Senha senha)</div><div class="ttdoc">Define a senha de acesso da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:23</div></div>
+<div class="ttc" id="aclass_pessoa_html_a797c71e50556a5171c91f7c2e2479380"><div class="ttname"><a href="class_pessoa.html#a797c71e50556a5171c91f7c2e2479380">Pessoa::adicionarCartao</a></div><div class="ttdeci">void adicionarCartao(CartaoAtividade *cartao)</div><div class="ttdoc">Atribui um cart„o de atividade ‡ lista de cartıes da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:49</div></div>
+<div class="ttc" id="aclass_pessoa_html_a8c7e1938888e9e84b5c30ca977b98b9d"><div class="ttname"><a href="class_pessoa.html#a8c7e1938888e9e84b5c30ca977b98b9d">Pessoa::getPapel</a></div><div class="ttdeci">Papel getPapel() const</div><div class="ttdoc">ObtÈm o papel desempenhado pela pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:35</div></div>
+<div class="ttc" id="aclass_pessoa_html_ab3c36031321ee8aa7ae74c6b81d39393"><div class="ttname"><a href="class_pessoa.html#ab3c36031321ee8aa7ae74c6b81d39393">Pessoa::getProjetos</a></div><div class="ttdeci">vector&lt; Projeto * &gt; getProjetos() const</div><div class="ttdoc">ObtÈm a lista de projetos associados ‡ pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:45</div></div>
+<div class="ttc" id="aclass_pessoa_html_ac79fd5094aab7de36a05843deb984832"><div class="ttname"><a href="class_pessoa.html#ac79fd5094aab7de36a05843deb984832">Pessoa::setPapel</a></div><div class="ttdeci">void setPapel(Papel papel)</div><div class="ttdoc">Define o papel desempenhado pela pessoa (GESTOR ou DESENVOLVEDOR).</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:31</div></div>
+<div class="ttc" id="aclass_pessoa_html_ad0c0448768ca2f5b5dfca86f156cdfe9"><div class="ttname"><a href="class_pessoa.html#ad0c0448768ca2f5b5dfca86f156cdfe9">Pessoa::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">ObtÈm o nome da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:19</div></div>
+<div class="ttc" id="aclass_pessoa_html_ad7cf35f1963966028fad035cb061debb"><div class="ttname"><a href="class_pessoa.html#ad7cf35f1963966028fad035cb061debb">Pessoa::getCartoes</a></div><div class="ttdeci">vector&lt; CartaoAtividade * &gt; getCartoes() const</div><div class="ttdoc">ObtÈm a lista de cartıes de atividade atribuÌdos ‡ pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:55</div></div>
+<div class="ttc" id="aclass_pessoa_html_ae4d02733d9c4e645c80685f41fdc2b47"><div class="ttname"><a href="class_pessoa.html#ae4d02733d9c4e645c80685f41fdc2b47">Pessoa::setNome</a></div><div class="ttdeci">void setNome(Nome nome)</div><div class="ttdoc">Define o nome da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:15</div></div>
+<div class="ttc" id="aclass_pessoa_html_aed832795ce54167c80612f67fd0d1275"><div class="ttname"><a href="class_pessoa.html#aed832795ce54167c80612f67fd0d1275">Pessoa::adicionarProjeto</a></div><div class="ttdeci">void adicionarProjeto(Projeto *projeto)</div><div class="ttdoc">Vincula um projeto ‡ lista de projetos da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:39</div></div>
+<div class="ttc" id="aclass_pessoa_html_af94947d815f51279810f2f09c5adcef4"><div class="ttname"><a href="class_pessoa.html#af94947d815f51279810f2f09c5adcef4">Pessoa::setEmail</a></div><div class="ttdeci">void setEmail(Email email)</div><div class="ttdoc">Define o endereÁo de e-mail da pessoa.</div><div class="ttdef"><b>Defini√ß√£o</b> Pessoa.cpp:7</div></div>
+<div class="ttc" id="aclass_projeto_html"><div class="ttname"><a href="class_projeto.html">Projeto</a></div><div class="ttdoc">Entidade que representa um projeto no sistema.</div><div class="ttdef"><b>Defini√ß√£o</b> Projeto.hpp:28</div></div>
+<div class="ttc" id="aclass_senha_html"><div class="ttname"><a href="class_senha.html">Senha</a></div><div class="ttdoc">Representa e valida uma senha alfanumÈrica segura com tamanho fixo.</div><div class="ttdef"><b>Defini√ß√£o</b> Senha.hpp:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_97eb6680ba814fee2720e6d851c9f3cb.html">entidades</a></li><li class="navelem"><a href="_pessoa_8hpp.html">Pessoa.hpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

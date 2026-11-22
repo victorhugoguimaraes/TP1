@@ -1,0 +1,70 @@
+\doxysection{ReferÃªncia da Classe Senha}
+\hypertarget{class_senha}{}\label{class_senha}\index{Senha@{Senha}}
+
+
+Representa e valida uma senha alfanumérica segura com tamanho fixo.  
+
+
+
+
+{\ttfamily \+\#include $<$Senha.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_senha_a0ffe30d8e291a593eff7689091388a51}{set\+Valor}} (string)
+\begin{DoxyCompactList}\small\item\em Valida e atualiza a senha caso ela cumpra os requisitos. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Recupera a senha atualmente armazenada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Representa e valida uma senha alfanumérica segura com tamanho fixo. 
+
+Esta classe encapsula uma string de senha, aplicando regras rígidas de validação de caracteres e tamanho. 
+
+\label{class_senha_doc-func-members}
+\Hypertarget{class_senha_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5}\index{Senha@{Senha}!getValor@{getValor}}
+\index{getValor@{getValor}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily \label{class_senha_ae0b4d9dfac80da4dc9c4965a9648e6b5} 
+string Senha::\+get\+Valor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera a senha atualmente armazenada. 
+
+\begin{DoxyReturn}{Retorna}
+Uma cópia da string da senha validada. 
+\end{DoxyReturn}
+\Hypertarget{class_senha_a0ffe30d8e291a593eff7689091388a51}\index{Senha@{Senha}!setValor@{setValor}}
+\index{setValor@{setValor}!Senha@{Senha}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily \label{class_senha_a0ffe30d8e291a593eff7689091388a51} 
+bool Senha::\+set\+Valor (\begin{DoxyParamCaption}\item[{string}]{senha}{}\end{DoxyParamCaption})}
+
+
+
+Valida e atualiza a senha caso ela cumpra os requisitos. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em senha} & A nova string de senha proposta para atribuição. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a operação foi concluída com sucesso. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{ExceÃ§Ãµes}
+{\em invalid\+\_\+argument} & Se a string falhar nos critérios de validação ("{}\+Senha invalida"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_senha_8hpp}{Senha.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_senha_8cpp}{Senha.\+cpp}}\end{DoxyCompactItemize}

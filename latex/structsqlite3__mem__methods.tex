@@ -1,0 +1,84 @@
+\doxysection{Referência da Estrutura sqlite3\+\_\+mem\+\_\+methods}
+\hypertarget{structsqlite3__mem__methods}{}\label{structsqlite3__mem__methods}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+
+
+{\ttfamily \+\#include $<$sqlite3.\+h$>$}
+
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a986a813c2f8cc0ab242578befccb67f3}{x\+Malloc}} (int)
+\item 
+void(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_af1663b3f9853ec60de1a7919de7d8597}{x\+Free}} (void \texorpdfstring{$\ast$}{*})
+\item 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a9dbc9ab88d51ab34fba51dcf6635f9ee}{x\+Realloc}} (void \texorpdfstring{$\ast$}{*}, int)
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a3b1b6c6b75930689487c4b11c82767f4}{x\+Size}} (void \texorpdfstring{$\ast$}{*})
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a9fc3f393741883c22b6b4aaf2b850856}{x\+Roundup}} (int)
+\item 
+int(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a2fbf441594592c3937464bbfc5700580}{x\+Init}} (void \texorpdfstring{$\ast$}{*})
+\item 
+void(\texorpdfstring{$\ast$}{*}) \doxymbox{\hyperlink{structsqlite3__mem__methods_a4636472825fe9dca8f2b6f1af745e081}{x\+Shutdown}} (void \texorpdfstring{$\ast$}{*})
+\item 
+void \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structsqlite3__mem__methods_af91b7adfa1f6aace0b129bac800bd444}{p\+App\+Data}}
+\end{DoxyCompactItemize}
+
+
+\label{structsqlite3__mem__methods_doc-variable-members}
+\Hypertarget{structsqlite3__mem__methods_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{structsqlite3__mem__methods_af91b7adfa1f6aace0b129bac800bd444}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!pAppData@{pAppData}}
+\index{pAppData@{pAppData}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{pAppData}{pAppData}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_af91b7adfa1f6aace0b129bac800bd444} 
+void \texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+p\+App\+Data}
+
+\Hypertarget{structsqlite3__mem__methods_af1663b3f9853ec60de1a7919de7d8597}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xFree@{xFree}}
+\index{xFree@{xFree}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xFree}{xFree}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_af1663b3f9853ec60de1a7919de7d8597} 
+void(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Free)(void \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{structsqlite3__mem__methods_a2fbf441594592c3937464bbfc5700580}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xInit@{xInit}}
+\index{xInit@{xInit}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xInit}{xInit}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a2fbf441594592c3937464bbfc5700580} 
+int(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Init)(void \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{structsqlite3__mem__methods_a986a813c2f8cc0ab242578befccb67f3}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xMalloc@{xMalloc}}
+\index{xMalloc@{xMalloc}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xMalloc}{xMalloc}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a986a813c2f8cc0ab242578befccb67f3} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Malloc)(int)}
+
+\Hypertarget{structsqlite3__mem__methods_a9dbc9ab88d51ab34fba51dcf6635f9ee}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xRealloc@{xRealloc}}
+\index{xRealloc@{xRealloc}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xRealloc}{xRealloc}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a9dbc9ab88d51ab34fba51dcf6635f9ee} 
+void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Realloc)(void \texorpdfstring{$\ast$}{*}, int)}
+
+\Hypertarget{structsqlite3__mem__methods_a9fc3f393741883c22b6b4aaf2b850856}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xRoundup@{xRoundup}}
+\index{xRoundup@{xRoundup}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xRoundup}{xRoundup}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a9fc3f393741883c22b6b4aaf2b850856} 
+int(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Roundup)(int)}
+
+\Hypertarget{structsqlite3__mem__methods_a4636472825fe9dca8f2b6f1af745e081}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xShutdown@{xShutdown}}
+\index{xShutdown@{xShutdown}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xShutdown}{xShutdown}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a4636472825fe9dca8f2b6f1af745e081} 
+void(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Shutdown)(void \texorpdfstring{$\ast$}{*})}
+
+\Hypertarget{structsqlite3__mem__methods_a3b1b6c6b75930689487c4b11c82767f4}\index{sqlite3\_mem\_methods@{sqlite3\_mem\_methods}!xSize@{xSize}}
+\index{xSize@{xSize}!sqlite3\_mem\_methods@{sqlite3\_mem\_methods}}
+\doxysubsubsection{\texorpdfstring{xSize}{xSize}}
+{\footnotesize\ttfamily \label{structsqlite3__mem__methods_a3b1b6c6b75930689487c4b11c82767f4} 
+int(\texorpdfstring{$\ast$}{*} sqlite3\+\_\+mem\+\_\+methods::\+x\+Size)(void \texorpdfstring{$\ast$}{*})}
+
+
+
+A documentação para essa estrutura foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8h}{sqlite3.\+h}}\end{DoxyCompactItemize}

@@ -1,3 +1,8 @@
+/**
+ * @file ServicoAutenticacao.hpp
+ * @brief Declaração da interface de serviço de autenticação de usuários.
+ */
+
 #ifndef SERVICOAUTENTICACAO_H
 #define SERVICOAUTENTICACAO_H
 
@@ -9,8 +14,7 @@ using namespace std;
 /**
  * @class ServicoAutenticacao
  * @brief Define a interface de verificacao das credenciais de uma pessoa.
- *
- * Permite que a camada de apresentacao solicite autenticacao sem depender
+ * @details Permite que a camada de apresentacao solicite autenticacao sem depender
  * da implementacao do armazenamento de pessoas.
  */
 class ServicoAutenticacao {

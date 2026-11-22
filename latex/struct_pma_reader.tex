@@ -1,0 +1,103 @@
+\doxysection{Referência da Estrutura Pma\+Reader}
+\hypertarget{struct_pma_reader}{}\label{struct_pma_reader}\index{PmaReader@{PmaReader}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} \doxymbox{\hyperlink{struct_pma_reader_a04a9b631060dcda1d94eb7b16ef8920e}{i\+Read\+Off}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} \doxymbox{\hyperlink{struct_pma_reader_a7a2e2745d054cd6d86e1ad57d641b657}{i\+Eof}}
+\item 
+int \doxymbox{\hyperlink{struct_pma_reader_a82522a9128afb8bfb79b88a7c51726ef}{n\+Alloc}}
+\item 
+int \doxymbox{\hyperlink{struct_pma_reader_a02c5dbf65efa252a84259b1ee2a7cd3c}{n\+Key}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_a1ae1caa6e4b1900937135aeeaf1336cd}{p\+Fd}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_af8d5ac60d1ba7ff84e84d5eb6aba4447}{a\+Alloc}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_af8f5dbc63cbbcbf9ee4c2c462ab1c6ff}{a\+Key}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_acd2a7f3e0375a3f8dfa9e565d080e2c2}{a\+Buffer}}
+\item 
+int \doxymbox{\hyperlink{struct_pma_reader_a422d021b0509c7e5eb2938bba36a5cdd}{n\+Buffer}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_ad90dc0ec0c900dd21377c146ac73c73f}{a\+Map}}
+\item 
+\doxymbox{\hyperlink{struct_incr_merger}{Incr\+Merger}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_pma_reader_a34569bea49de8122239eb40eaae8b10f}{p\+Incr}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_pma_reader_doc-variable-members}
+\Hypertarget{struct_pma_reader_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_pma_reader_af8d5ac60d1ba7ff84e84d5eb6aba4447}\index{PmaReader@{PmaReader}!aAlloc@{aAlloc}}
+\index{aAlloc@{aAlloc}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{aAlloc}{aAlloc}}
+{\footnotesize\ttfamily \label{struct_pma_reader_af8d5ac60d1ba7ff84e84d5eb6aba4447} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+a\+Alloc}
+
+\Hypertarget{struct_pma_reader_acd2a7f3e0375a3f8dfa9e565d080e2c2}\index{PmaReader@{PmaReader}!aBuffer@{aBuffer}}
+\index{aBuffer@{aBuffer}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{aBuffer}{aBuffer}}
+{\footnotesize\ttfamily \label{struct_pma_reader_acd2a7f3e0375a3f8dfa9e565d080e2c2} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+a\+Buffer}
+
+\Hypertarget{struct_pma_reader_af8f5dbc63cbbcbf9ee4c2c462ab1c6ff}\index{PmaReader@{PmaReader}!aKey@{aKey}}
+\index{aKey@{aKey}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{aKey}{aKey}}
+{\footnotesize\ttfamily \label{struct_pma_reader_af8f5dbc63cbbcbf9ee4c2c462ab1c6ff} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+a\+Key}
+
+\Hypertarget{struct_pma_reader_ad90dc0ec0c900dd21377c146ac73c73f}\index{PmaReader@{PmaReader}!aMap@{aMap}}
+\index{aMap@{aMap}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{aMap}{aMap}}
+{\footnotesize\ttfamily \label{struct_pma_reader_ad90dc0ec0c900dd21377c146ac73c73f} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+a\+Map}
+
+\Hypertarget{struct_pma_reader_a7a2e2745d054cd6d86e1ad57d641b657}\index{PmaReader@{PmaReader}!iEof@{iEof}}
+\index{iEof@{iEof}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{iEof}{iEof}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a7a2e2745d054cd6d86e1ad57d641b657} 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} Pma\+Reader::\+i\+Eof}
+
+\Hypertarget{struct_pma_reader_a04a9b631060dcda1d94eb7b16ef8920e}\index{PmaReader@{PmaReader}!iReadOff@{iReadOff}}
+\index{iReadOff@{iReadOff}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{iReadOff}{iReadOff}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a04a9b631060dcda1d94eb7b16ef8920e} 
+\doxymbox{\hyperlink{sqlite3_8c_a2a0f0f4ae7001eb54351f77ea1cdbcfd}{i64}} Pma\+Reader::\+i\+Read\+Off}
+
+\Hypertarget{struct_pma_reader_a82522a9128afb8bfb79b88a7c51726ef}\index{PmaReader@{PmaReader}!nAlloc@{nAlloc}}
+\index{nAlloc@{nAlloc}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{nAlloc}{nAlloc}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a82522a9128afb8bfb79b88a7c51726ef} 
+int Pma\+Reader::\+n\+Alloc}
+
+\Hypertarget{struct_pma_reader_a422d021b0509c7e5eb2938bba36a5cdd}\index{PmaReader@{PmaReader}!nBuffer@{nBuffer}}
+\index{nBuffer@{nBuffer}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{nBuffer}{nBuffer}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a422d021b0509c7e5eb2938bba36a5cdd} 
+int Pma\+Reader::\+n\+Buffer}
+
+\Hypertarget{struct_pma_reader_a02c5dbf65efa252a84259b1ee2a7cd3c}\index{PmaReader@{PmaReader}!nKey@{nKey}}
+\index{nKey@{nKey}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{nKey}{nKey}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a02c5dbf65efa252a84259b1ee2a7cd3c} 
+int Pma\+Reader::\+n\+Key}
+
+\Hypertarget{struct_pma_reader_a1ae1caa6e4b1900937135aeeaf1336cd}\index{PmaReader@{PmaReader}!pFd@{pFd}}
+\index{pFd@{pFd}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{pFd}{pFd}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a1ae1caa6e4b1900937135aeeaf1336cd} 
+\doxymbox{\hyperlink{sqlite3_8c_a3691103fd7c57f5f69123c4c03aea05a}{sqlite3\+\_\+file}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+p\+Fd}
+
+\Hypertarget{struct_pma_reader_a34569bea49de8122239eb40eaae8b10f}\index{PmaReader@{PmaReader}!pIncr@{pIncr}}
+\index{pIncr@{pIncr}!PmaReader@{PmaReader}}
+\doxysubsubsection{\texorpdfstring{pIncr}{pIncr}}
+{\footnotesize\ttfamily \label{struct_pma_reader_a34569bea49de8122239eb40eaae8b10f} 
+\doxymbox{\hyperlink{struct_incr_merger}{Incr\+Merger}}\texorpdfstring{$\ast$}{*} Pma\+Reader::\+p\+Incr}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

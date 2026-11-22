@@ -1,0 +1,222 @@
+\doxysection{ReferÃªncia da Classe Pessoa}
+\hypertarget{class_pessoa}{}\label{class_pessoa}\index{Pessoa@{Pessoa}}
+
+
+Entidade que representa uma pessoa (usuário) no sistema.  
+
+
+
+
+{\ttfamily \+\#include $<$Pessoa.\+hpp$>$}
+
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_pessoa_af94947d815f51279810f2f09c5adcef4}{set\+Email}} (\doxymbox{\hyperlink{class_email}{Email}} email)
+\begin{DoxyCompactList}\small\item\em Define o endereço de e-\/mail da pessoa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_email}{Email}} \doxymbox{\hyperlink{class_pessoa_a137a2a665a10ffa4880d1f7d726b07c7}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o endereço de e-\/mail da pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pessoa_ae4d02733d9c4e645c80685f41fdc2b47}{set\+Nome}} (\doxymbox{\hyperlink{class_nome}{Nome}} nome)
+\begin{DoxyCompactList}\small\item\em Define o nome da pessoa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_nome}{Nome}} \doxymbox{\hyperlink{class_pessoa_ad0c0448768ca2f5b5dfca86f156cdfe9}{get\+Nome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome da pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pessoa_a3c75be0743b65a69fbc8e35e20d84790}{set\+Senha}} (\doxymbox{\hyperlink{class_senha}{Senha}} senha)
+\begin{DoxyCompactList}\small\item\em Define a senha de acesso da pessoa. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_senha}{Senha}} \doxymbox{\hyperlink{class_pessoa_a02498f338ca00cdd18e794f17d660281}{get\+Senha}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a senha de acesso da pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pessoa_ac79fd5094aab7de36a05843deb984832}{set\+Papel}} (\doxymbox{\hyperlink{class_papel}{Papel}} papel)
+\begin{DoxyCompactList}\small\item\em Define o papel desempenhado pela pessoa (GESTOR ou DESENVOLVEDOR). \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_papel}{Papel}} \doxymbox{\hyperlink{class_pessoa_a8c7e1938888e9e84b5c30ca977b98b9d}{get\+Papel}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o papel desempenhado pela pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pessoa_aed832795ce54167c80612f67fd0d1275}{adicionar\+Projeto}} (\doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*}projeto)
+\begin{DoxyCompactList}\small\item\em Vincula um projeto à lista de projetos da pessoa. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_pessoa_ab3c36031321ee8aa7ae74c6b81d39393}{get\+Projetos}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de projetos associados à pessoa. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_pessoa_a797c71e50556a5171c91f7c2e2479380}{adicionar\+Cartao}} (\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*}cartao)
+\begin{DoxyCompactList}\small\item\em Atribui um cartão de atividade à lista de cartões da pessoa. \end{DoxyCompactList}\item 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*} $>$ \doxymbox{\hyperlink{class_pessoa_ad7cf35f1963966028fad035cb061debb}{get\+Cartoes}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de cartões de atividade atribuídos à pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Entidade que representa uma pessoa (usuário) no sistema. 
+
+Armazena os dados cadastrais e de autenticação de um participante, além de manter as referências para os projetos e cartões de atividade vinculados a ele. 
+
+\label{class_pessoa_doc-func-members}
+\Hypertarget{class_pessoa_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_pessoa_a797c71e50556a5171c91f7c2e2479380}\index{Pessoa@{Pessoa}!adicionarCartao@{adicionarCartao}}
+\index{adicionarCartao@{adicionarCartao}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{adicionarCartao()}{adicionarCartao()}}
+{\footnotesize\ttfamily \label{class_pessoa_a797c71e50556a5171c91f7c2e2479380} 
+void Pessoa::\+adicionar\+Cartao (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*}}]{cartao}{}\end{DoxyParamCaption})}
+
+
+
+Atribui um cartão de atividade à lista de cartões da pessoa. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em cartao} & Ponteiro para o objeto \doxylink{class_cartao_atividade}{Cartao\+Atividade} a ser adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pessoa_aed832795ce54167c80612f67fd0d1275}\index{Pessoa@{Pessoa}!adicionarProjeto@{adicionarProjeto}}
+\index{adicionarProjeto@{adicionarProjeto}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{adicionarProjeto()}{adicionarProjeto()}}
+{\footnotesize\ttfamily \label{class_pessoa_aed832795ce54167c80612f67fd0d1275} 
+void Pessoa::\+adicionar\+Projeto (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*}}]{projeto}{}\end{DoxyParamCaption})}
+
+
+
+Vincula um projeto à lista de projetos da pessoa. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Ponteiro para o objeto \doxylink{class_projeto}{Projeto} a ser adicionado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pessoa_ad7cf35f1963966028fad035cb061debb}\index{Pessoa@{Pessoa}!getCartoes@{getCartoes}}
+\index{getCartoes@{getCartoes}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getCartoes()}{getCartoes()}}
+{\footnotesize\ttfamily \label{class_pessoa_ad7cf35f1963966028fad035cb061debb} 
+vector$<$ \doxymbox{\hyperlink{class_cartao_atividade}{Cartao\+Atividade}} \texorpdfstring{$\ast$}{*} $>$ Pessoa::\+get\+Cartoes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de cartões de atividade atribuídos à pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de ponteiros (vector$<$\+Cartao\+Atividade \texorpdfstring{$\ast$}{*}$>$) contendo os cartões vinculados. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_a137a2a665a10ffa4880d1f7d726b07c7}\index{Pessoa@{Pessoa}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily \label{class_pessoa_a137a2a665a10ffa4880d1f7d726b07c7} 
+\doxymbox{\hyperlink{class_email}{Email}} Pessoa::\+get\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o endereço de e-\/mail da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_email}{Email} correspondente ao usuário. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_ad0c0448768ca2f5b5dfca86f156cdfe9}\index{Pessoa@{Pessoa}!getNome@{getNome}}
+\index{getNome@{getNome}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily \label{class_pessoa_ad0c0448768ca2f5b5dfca86f156cdfe9} 
+\doxymbox{\hyperlink{class_nome}{Nome}} Pessoa::\+get\+Nome (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_nome}{Nome} correspondente ao usuário. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_a8c7e1938888e9e84b5c30ca977b98b9d}\index{Pessoa@{Pessoa}!getPapel@{getPapel}}
+\index{getPapel@{getPapel}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getPapel()}{getPapel()}}
+{\footnotesize\ttfamily \label{class_pessoa_a8c7e1938888e9e84b5c30ca977b98b9d} 
+\doxymbox{\hyperlink{class_papel}{Papel}} Pessoa::\+get\+Papel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém o papel desempenhado pela pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_papel}{Papel} correspondente ao usuário. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_ab3c36031321ee8aa7ae74c6b81d39393}\index{Pessoa@{Pessoa}!getProjetos@{getProjetos}}
+\index{getProjetos@{getProjetos}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getProjetos()}{getProjetos()}}
+{\footnotesize\ttfamily \label{class_pessoa_ab3c36031321ee8aa7ae74c6b81d39393} 
+vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} \texorpdfstring{$\ast$}{*} $>$ Pessoa::\+get\+Projetos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de projetos associados à pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor de ponteiros (vector$<$\+Projeto \texorpdfstring{$\ast$}{*}$>$) contendo os projetos vinculados. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_a02498f338ca00cdd18e794f17d660281}\index{Pessoa@{Pessoa}!getSenha@{getSenha}}
+\index{getSenha@{getSenha}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{getSenha()}{getSenha()}}
+{\footnotesize\ttfamily \label{class_pessoa_a02498f338ca00cdd18e794f17d660281} 
+\doxymbox{\hyperlink{class_senha}{Senha}} Pessoa::\+get\+Senha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Obtém a senha de acesso da pessoa. 
+
+\begin{DoxyReturn}{Retorna}
+Objeto \doxylink{class_senha}{Senha} correspondente ao usuário. 
+\end{DoxyReturn}
+\Hypertarget{class_pessoa_af94947d815f51279810f2f09c5adcef4}\index{Pessoa@{Pessoa}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily \label{class_pessoa_af94947d815f51279810f2f09c5adcef4} 
+void Pessoa::\+set\+Email (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_email}{Email}}}]{email}{}\end{DoxyParamCaption})}
+
+
+
+Define o endereço de e-\/mail da pessoa. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em email} & Objeto da classe \doxylink{class_email}{Email} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pessoa_ae4d02733d9c4e645c80685f41fdc2b47}\index{Pessoa@{Pessoa}!setNome@{setNome}}
+\index{setNome@{setNome}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily \label{class_pessoa_ae4d02733d9c4e645c80685f41fdc2b47} 
+void Pessoa::\+set\+Nome (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_nome}{Nome}}}]{nome}{}\end{DoxyParamCaption})}
+
+
+
+Define o nome da pessoa. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em nome} & Objeto da classe \doxylink{class_nome}{Nome} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pessoa_ac79fd5094aab7de36a05843deb984832}\index{Pessoa@{Pessoa}!setPapel@{setPapel}}
+\index{setPapel@{setPapel}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setPapel()}{setPapel()}}
+{\footnotesize\ttfamily \label{class_pessoa_ac79fd5094aab7de36a05843deb984832} 
+void Pessoa::\+set\+Papel (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_papel}{Papel}}}]{papel}{}\end{DoxyParamCaption})}
+
+
+
+Define o papel desempenhado pela pessoa (GESTOR ou DESENVOLVEDOR). 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em papel} & Objeto da classe \doxylink{class_papel}{Papel} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_pessoa_a3c75be0743b65a69fbc8e35e20d84790}\index{Pessoa@{Pessoa}!setSenha@{setSenha}}
+\index{setSenha@{setSenha}!Pessoa@{Pessoa}}
+\doxysubsubsection{\texorpdfstring{setSenha()}{setSenha()}}
+{\footnotesize\ttfamily \label{class_pessoa_a3c75be0743b65a69fbc8e35e20d84790} 
+void Pessoa::\+set\+Senha (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_senha}{Senha}}}]{senha}{}\end{DoxyParamCaption})}
+
+
+
+Define a senha de acesso da pessoa. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em senha} & Objeto da classe \doxylink{class_senha}{Senha} a ser atribuído. \\
+\hline
+\end{DoxyParams}
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+entidades/\doxymbox{\hyperlink{_pessoa_8hpp}{Pessoa.\+hpp}}\item 
+entidades/\doxymbox{\hyperlink{_pessoa_8cpp}{Pessoa.\+cpp}}\end{DoxyCompactItemize}

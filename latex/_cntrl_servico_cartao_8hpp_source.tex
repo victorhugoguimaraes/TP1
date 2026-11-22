@@ -1,0 +1,36 @@
+\doxysection{Cntrl\+Servico\+Cartao.\+hpp}
+\hypertarget{_cntrl_servico_cartao_8hpp_source}{}\label{_cntrl_servico_cartao_8hpp_source}\index{servico/CntrlServicoCartao.hpp@{servico/CntrlServicoCartao.hpp}}
+\doxymbox{\hyperlink{_cntrl_servico_cartao_8hpp}{Ir para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CNTRLSERVICOCARTAO\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CNTRLSERVICOCARTAO\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_pessoa_8hpp}{../entidades/Pessoa.hpp}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_servico_cartao_8hpp}{../interfaces/ServicoCartao.hpp}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_cartao_8hpp}{ContainerCartao.hpp}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_container_quadro_8hpp}{ContainerQuadro.hpp}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_cntrl_servico_cartao_ae04a9b025defc109a637fc5424fff6ed}{CntrlServicoCartao}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_servico_cartao}{ServicoCartao}}\ \{}
+\DoxyCodeLine{00021\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \doxymbox{\hyperlink{class_container_cartoes}{ContainerCartoes}}\ \&container;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \doxymbox{\hyperlink{class_container_quadros}{ContainerQuadros}}\ \&quadros;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \doxymbox{\hyperlink{class_cntrl_servico_cartao_ae04a9b025defc109a637fc5424fff6ed}{CntrlServicoCartao}}(\doxymbox{\hyperlink{class_container_cartoes}{ContainerCartoes}}\ \&container,\ \doxymbox{\hyperlink{class_container_quadros}{ContainerQuadros}}\ \&quadros,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_pessoa}{Pessoa}}\ \&usuario);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_aaccc701302debebda976501166b7ad52}{criar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ \ \ \ \ vector<CartaoAtividade>\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_a7b5dd0680079dece5e1898c1989e2d66}{listar}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_af8c26524356985cc22d9b1a742bddad6}{consultar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_ae9465c51af696deb4ac53a6e229c74d6}{editar}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_cartao_atividade}{CartaoAtividade}}\ \&cartao)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_a103b4568b1ffb2b57f333974cd0ac054}{excluir}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_cntrl_servico_cartao_a3bce8e1220a80646a0a68bd5234c3494}{mover}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_identificador}{Identificador}}\ \&identificador,\ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_estado}{Estado}}\ \&estado)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

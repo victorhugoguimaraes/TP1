@@ -1,0 +1,95 @@
+\doxysection{Referência da Estrutura Sort\+Subtask}
+\hypertarget{struct_sort_subtask}{}\label{struct_sort_subtask}\index{SortSubtask@{SortSubtask}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_s_q_lite_thread}{SQLite\+Thread}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_sort_subtask_abb534010ac35e0c37e41c26712e7b58c}{p\+Thread}}
+\item 
+int \doxymbox{\hyperlink{struct_sort_subtask_a156fc75053f13e877c36d80885338060}{b\+Done}}
+\item 
+int \doxymbox{\hyperlink{struct_sort_subtask_a6ecceaeda562346b298aa9fb95355071}{n\+PMA}}
+\item 
+\doxymbox{\hyperlink{struct_vdbe_sorter}{Vdbe\+Sorter}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_sort_subtask_a2a8ec6b4b0d29090e3b33b1a6647655a}{p\+Sorter}}
+\item 
+\doxymbox{\hyperlink{struct_unpacked_record}{Unpacked\+Record}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_sort_subtask_af2312bacbb7e4cbe905eae20a60a3f39}{p\+Unpacked}}
+\item 
+\doxymbox{\hyperlink{struct_sorter_list}{Sorter\+List}} \doxymbox{\hyperlink{struct_sort_subtask_a0a79fd21798a08ceede3febbd08c88a2}{list}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a5682dd69f2cb0a4c7f1b5feb2884580a}{Sorter\+Compare}} \doxymbox{\hyperlink{struct_sort_subtask_a42bfd224f9e8125c22c2cc66f865d9af}{x\+Compare}}
+\item 
+\doxymbox{\hyperlink{struct_sorter_file}{Sorter\+File}} \doxymbox{\hyperlink{struct_sort_subtask_a077f999ff1e4148e48bd8df25092fd85}{file}}
+\item 
+\doxymbox{\hyperlink{struct_sorter_file}{Sorter\+File}} \doxymbox{\hyperlink{struct_sort_subtask_a23b46687f7a96ef1052a062f8097234e}{file2}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a0e0cdb443a471891a042a6bfdc4644ca}{u64}} \doxymbox{\hyperlink{struct_sort_subtask_ad408372e6b0def82761a47c391556fa8}{n\+Spill}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_sort_subtask_doc-variable-members}
+\Hypertarget{struct_sort_subtask_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_sort_subtask_a156fc75053f13e877c36d80885338060}\index{SortSubtask@{SortSubtask}!bDone@{bDone}}
+\index{bDone@{bDone}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{bDone}{bDone}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a156fc75053f13e877c36d80885338060} 
+int Sort\+Subtask::\+b\+Done}
+
+\Hypertarget{struct_sort_subtask_a077f999ff1e4148e48bd8df25092fd85}\index{SortSubtask@{SortSubtask}!file@{file}}
+\index{file@{file}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a077f999ff1e4148e48bd8df25092fd85} 
+\doxymbox{\hyperlink{struct_sorter_file}{Sorter\+File}} Sort\+Subtask::\+file}
+
+\Hypertarget{struct_sort_subtask_a23b46687f7a96ef1052a062f8097234e}\index{SortSubtask@{SortSubtask}!file2@{file2}}
+\index{file2@{file2}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{file2}{file2}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a23b46687f7a96ef1052a062f8097234e} 
+\doxymbox{\hyperlink{struct_sorter_file}{Sorter\+File}} Sort\+Subtask::\+file2}
+
+\Hypertarget{struct_sort_subtask_a0a79fd21798a08ceede3febbd08c88a2}\index{SortSubtask@{SortSubtask}!list@{list}}
+\index{list@{list}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a0a79fd21798a08ceede3febbd08c88a2} 
+\doxymbox{\hyperlink{struct_sorter_list}{Sorter\+List}} Sort\+Subtask::\+list}
+
+\Hypertarget{struct_sort_subtask_a6ecceaeda562346b298aa9fb95355071}\index{SortSubtask@{SortSubtask}!nPMA@{nPMA}}
+\index{nPMA@{nPMA}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{nPMA}{nPMA}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a6ecceaeda562346b298aa9fb95355071} 
+int Sort\+Subtask::\+n\+PMA}
+
+\Hypertarget{struct_sort_subtask_ad408372e6b0def82761a47c391556fa8}\index{SortSubtask@{SortSubtask}!nSpill@{nSpill}}
+\index{nSpill@{nSpill}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{nSpill}{nSpill}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_ad408372e6b0def82761a47c391556fa8} 
+\doxymbox{\hyperlink{sqlite3_8c_a0e0cdb443a471891a042a6bfdc4644ca}{u64}} Sort\+Subtask::\+n\+Spill}
+
+\Hypertarget{struct_sort_subtask_a2a8ec6b4b0d29090e3b33b1a6647655a}\index{SortSubtask@{SortSubtask}!pSorter@{pSorter}}
+\index{pSorter@{pSorter}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{pSorter}{pSorter}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a2a8ec6b4b0d29090e3b33b1a6647655a} 
+\doxymbox{\hyperlink{struct_vdbe_sorter}{Vdbe\+Sorter}}\texorpdfstring{$\ast$}{*} Sort\+Subtask::\+p\+Sorter}
+
+\Hypertarget{struct_sort_subtask_abb534010ac35e0c37e41c26712e7b58c}\index{SortSubtask@{SortSubtask}!pThread@{pThread}}
+\index{pThread@{pThread}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{pThread}{pThread}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_abb534010ac35e0c37e41c26712e7b58c} 
+\doxymbox{\hyperlink{struct_s_q_lite_thread}{SQLite\+Thread}}\texorpdfstring{$\ast$}{*} Sort\+Subtask::\+p\+Thread}
+
+\Hypertarget{struct_sort_subtask_af2312bacbb7e4cbe905eae20a60a3f39}\index{SortSubtask@{SortSubtask}!pUnpacked@{pUnpacked}}
+\index{pUnpacked@{pUnpacked}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{pUnpacked}{pUnpacked}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_af2312bacbb7e4cbe905eae20a60a3f39} 
+\doxymbox{\hyperlink{struct_unpacked_record}{Unpacked\+Record}}\texorpdfstring{$\ast$}{*} Sort\+Subtask::\+p\+Unpacked}
+
+\Hypertarget{struct_sort_subtask_a42bfd224f9e8125c22c2cc66f865d9af}\index{SortSubtask@{SortSubtask}!xCompare@{xCompare}}
+\index{xCompare@{xCompare}!SortSubtask@{SortSubtask}}
+\doxysubsubsection{\texorpdfstring{xCompare}{xCompare}}
+{\footnotesize\ttfamily \label{struct_sort_subtask_a42bfd224f9e8125c22c2cc66f865d9af} 
+\doxymbox{\hyperlink{sqlite3_8c_a5682dd69f2cb0a4c7f1b5feb2884580a}{Sorter\+Compare}} Sort\+Subtask::\+x\+Compare}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

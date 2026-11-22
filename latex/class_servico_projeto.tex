@@ -1,0 +1,245 @@
+\doxysection{ReferÃªncia da Classe Servico\+Projeto}
+\hypertarget{class_servico_projeto}{}\label{class_servico_projeto}\index{ServicoProjeto@{ServicoProjeto}}
+
+
+Define a interface de operações de negócio sobre projetos.  
+
+
+
+
+{\ttfamily \+\#include $<$Servico\+Projeto.\+hpp$>$}
+
+Diagrama de hierarquia da classe Servico\+Projeto:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_servico_projeto}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Membros PÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_a001f7a4bc76902336dc5169cefc60809}{criar}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Cria e armazena um novo projeto no sistema. \end{DoxyCompactList}\item 
+virtual vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} $>$ \doxymbox{\hyperlink{class_servico_projeto_a0f7c732479108f460fd12f33473bc338}{listar}} () const =0
+\begin{DoxyCompactList}\small\item\em Lista todos os projetos cadastrados no sistema. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_ae966a313daf0242d07237b2bdc567f8f}{consultar}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador, \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Consulta um projeto específico pelo seu identificador. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_a99afc5d7bd60d630cf21191182aa120a}{editar}} (const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&projeto)=0
+\begin{DoxyCompactList}\small\item\em Atualiza os dados de um projeto já cadastrado. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_a04a1e11e3949e4a1035f101185ee498d}{excluir}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&identificador)=0
+\begin{DoxyCompactList}\small\item\em Remove um projeto do sistema pelo seu identificador. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_a124e1b8622f872c83ca0142ba3839002}{adicionar\+Pessoa}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto, const \doxymbox{\hyperlink{class_email}{Email}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Vincula uma pessoa à equipe participante de um projeto. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{class_servico_projeto_abcfc5822fe69df9bf773b8b05e735f34}{remover\+Pessoa}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto, const \doxymbox{\hyperlink{class_email}{Email}} \&pessoa)=0
+\begin{DoxyCompactList}\small\item\em Remove o vínculo de uma pessoa com um projeto. \end{DoxyCompactList}\item 
+virtual vector$<$ \doxymbox{\hyperlink{class_email}{Email}} $>$ \doxymbox{\hyperlink{class_servico_projeto_a14a5e0e6cec975243863d3c516c548bb}{listar\+Pessoas}} (const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&projeto) const =0
+\begin{DoxyCompactList}\small\item\em Lista os e-\/mails de todas as pessoas vinculadas a um projeto. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{class_servico_projeto_a4a103d38cd29a8840879bd538a4881d9}{\texorpdfstring{$\sim$}{\string~}\+Servico\+Projeto}} ()=default
+\begin{DoxyCompactList}\small\item\em Permite destruir uma implementação por meio da interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Define a interface de operações de negócio sobre projetos. 
+
+Permite que a camada de apresentação realize operações de criação, listagem, consulta, edição e exclusão de projetos, além do gerenciamento de participantes vinculados a cada projeto, sem depender da implementação concreta. 
+
+\label{class_servico_projeto_doc-constructors}
+\Hypertarget{class_servico_projeto_doc-constructors}
+\doxysubsection{Construtores e Destrutores}
+\Hypertarget{class_servico_projeto_a4a103d38cd29a8840879bd538a4881d9}\index{ServicoProjeto@{ServicoProjeto}!````~ServicoProjeto@{\texorpdfstring{$\sim$}{\string~}ServicoProjeto}}
+\index{````~ServicoProjeto@{\texorpdfstring{$\sim$}{\string~}ServicoProjeto}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ServicoProjeto()}{\string~ServicoProjeto()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a4a103d38cd29a8840879bd538a4881d9} 
+virtual Servico\+Projeto::\+\texorpdfstring{$\sim$}{\string~}\+Servico\+Projeto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Permite destruir uma implementação por meio da interface. 
+
+
+
+\label{class_servico_projeto_doc-func-members}
+\Hypertarget{class_servico_projeto_doc-func-members}
+\doxysubsection{DocumentaÃ§Ã£o das funÃ§Ãµes}
+\Hypertarget{class_servico_projeto_a124e1b8622f872c83ca0142ba3839002}\index{ServicoProjeto@{ServicoProjeto}!adicionarPessoa@{adicionarPessoa}}
+\index{adicionarPessoa@{adicionarPessoa}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{adicionarPessoa()}{adicionarPessoa()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a124e1b8622f872c83ca0142ba3839002} 
+virtual bool Servico\+Projeto::\+adicionar\+Pessoa (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{, }\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Vincula uma pessoa à equipe participante de um projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto ao qual a pessoa será adicionada. \\
+\hline
+{\em pessoa} & Objeto \doxylink{class_email}{Email} identificador da pessoa a ser vinculada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a associação for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_adb1240989fd0b147c6e44104d7d53ebd}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_ae966a313daf0242d07237b2bdc567f8f}\index{ServicoProjeto@{ServicoProjeto}!consultar@{consultar}}
+\index{consultar@{consultar}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{consultar()}{consultar()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_ae966a313daf0242d07237b2bdc567f8f} 
+virtual bool Servico\+Projeto::\+consultar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{, }\item[{\doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Consulta um projeto específico pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do projeto buscado. \\
+\hline
+{\em projeto} & Referência para o objeto \doxylink{class_projeto}{Projeto} onde os dados encontrados serão armazenados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o projeto for encontrado; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_a3fc4b6054a7b4f89699cfce3e1aeac53}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_a001f7a4bc76902336dc5169cefc60809}\index{ServicoProjeto@{ServicoProjeto}!criar@{criar}}
+\index{criar@{criar}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a001f7a4bc76902336dc5169cefc60809} 
+virtual bool Servico\+Projeto::\+criar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria e armazena um novo projeto no sistema. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_projeto}{Projeto} contendo os dados do projeto a ser criado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se o projeto for criado com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_aa7db2e33c1f09a1fce0cfb5ef97cf841}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_a99afc5d7bd60d630cf21191182aa120a}\index{ServicoProjeto@{ServicoProjeto}!editar@{editar}}
+\index{editar@{editar}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{editar()}{editar()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a99afc5d7bd60d630cf21191182aa120a} 
+virtual bool Servico\+Projeto::\+editar (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_projeto}{Projeto}} \&}]{projeto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza os dados de um projeto já cadastrado. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_projeto}{Projeto} contendo os dados atualizados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a edição for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_a48dfc459cd50a63395e2e2d2241ec22d}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_a04a1e11e3949e4a1035f101185ee498d}\index{ServicoProjeto@{ServicoProjeto}!excluir@{excluir}}
+\index{excluir@{excluir}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{excluir()}{excluir()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a04a1e11e3949e4a1035f101185ee498d} 
+virtual bool Servico\+Projeto::\+excluir (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{identificador}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove um projeto do sistema pelo seu identificador. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em identificador} & Objeto \doxylink{class_identificador}{Identificador} do projeto a ser excluído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a exclusão for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_a0c23c38b514485c6bfc466f0fb0d50fa}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_a0f7c732479108f460fd12f33473bc338}\index{ServicoProjeto@{ServicoProjeto}!listar@{listar}}
+\index{listar@{listar}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{listar()}{listar()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a0f7c732479108f460fd12f33473bc338} 
+virtual vector$<$ \doxymbox{\hyperlink{class_projeto}{Projeto}} $>$ Servico\+Projeto::\+listar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todos os projetos cadastrados no sistema. 
+
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_projeto}{Projeto} armazenados. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_a18fb6e83da9217cf53ef5de2a090d1c6}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_a14a5e0e6cec975243863d3c516c548bb}\index{ServicoProjeto@{ServicoProjeto}!listarPessoas@{listarPessoas}}
+\index{listarPessoas@{listarPessoas}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{listarPessoas()}{listarPessoas()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_a14a5e0e6cec975243863d3c516c548bb} 
+virtual vector$<$ \doxymbox{\hyperlink{class_email}{Email}} $>$ Servico\+Projeto::\+listar\+Pessoas (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista os e-\/mails de todas as pessoas vinculadas a um projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto cujos participantes serão listados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Vetor contendo os objetos \doxylink{class_email}{Email} das pessoas associadas ao projeto. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_aee1f174e333cedf0dbc0088f1f3eecc8}{Cntrl\+Servico\+Projeto}}.
+
+\Hypertarget{class_servico_projeto_abcfc5822fe69df9bf773b8b05e735f34}\index{ServicoProjeto@{ServicoProjeto}!removerPessoa@{removerPessoa}}
+\index{removerPessoa@{removerPessoa}!ServicoProjeto@{ServicoProjeto}}
+\doxysubsubsection{\texorpdfstring{removerPessoa()}{removerPessoa()}}
+{\footnotesize\ttfamily \label{class_servico_projeto_abcfc5822fe69df9bf773b8b05e735f34} 
+virtual bool Servico\+Projeto::\+remover\+Pessoa (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_identificador}{Identificador}} \&}]{projeto}{, }\item[{const \doxymbox{\hyperlink{class_email}{Email}} \&}]{pessoa}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Remove o vínculo de uma pessoa com um projeto. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em projeto} & Objeto \doxylink{class_identificador}{Identificador} do projeto do qual a pessoa será removida. \\
+\hline
+{\em pessoa} & Objeto \doxylink{class_email}{Email} identificador da pessoa a ser desvinculada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true se a remoção for realizada com sucesso; false caso contrário. 
+\end{DoxyReturn}
+
+
+Implementado por \doxymbox{\hyperlink{class_cntrl_servico_projeto_a0d75e17933395c0471c905835443de08}{Cntrl\+Servico\+Projeto}}.
+
+
+
+A documentaÃ§Ã£o para essa classe foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+interfaces/\doxymbox{\hyperlink{_servico_projeto_8hpp}{Servico\+Projeto.\+hpp}}\end{DoxyCompactItemize}

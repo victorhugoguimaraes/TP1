@@ -1,0 +1,103 @@
+\doxysection{Referência da Estrutura Trigger}
+\hypertarget{struct_trigger}{}\label{struct_trigger}\index{Trigger@{Trigger}}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a9aecea5dadd7ae93b7f585c4b914791c}{z\+Name}}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_ab9d5500f7fc43382e867733a2968ecae}{table}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_trigger_a855d6b6a302d8d80e1d30ddd70fd403e}{op}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_trigger_af0d10da140b068bfd76aaeb6607fa6cf}{tr\+\_\+tm}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_trigger_af2144849ad284cb96fe45ab58504e9d1}{b\+Returning}}
+\item 
+\doxymbox{\hyperlink{struct_expr}{Expr}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a1b6cdd46e8b98562920d1acee86281ed}{p\+When}}
+\item 
+\doxymbox{\hyperlink{struct_id_list}{Id\+List}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a8505fbdf63ca9eadf4b2585e99faa4e4}{p\+Columns}}
+\item 
+\doxymbox{\hyperlink{struct_schema}{Schema}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a83edbfa91ce6520a6ebc1a21acc2cd5e}{p\+Schema}}
+\item 
+\doxymbox{\hyperlink{struct_schema}{Schema}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a8e4a9b3f4bcc5c645e1777b3bb94a6d8}{p\+Tab\+Schema}}
+\item 
+\doxymbox{\hyperlink{struct_trigger_step}{Trigger\+Step}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_a4206faaae6cdf1a2b22a2c9f15c88642}{step\+\_\+list}}
+\item 
+\doxymbox{\hyperlink{struct_trigger}{Trigger}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_trigger_ac28107e1c45789e0146fe45867b8dfdb}{p\+Next}}
+\end{DoxyCompactItemize}
+
+
+\label{struct_trigger_doc-variable-members}
+\Hypertarget{struct_trigger_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_trigger_af2144849ad284cb96fe45ab58504e9d1}\index{Trigger@{Trigger}!bReturning@{bReturning}}
+\index{bReturning@{bReturning}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{bReturning}{bReturning}}
+{\footnotesize\ttfamily \label{struct_trigger_af2144849ad284cb96fe45ab58504e9d1} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Trigger::\+b\+Returning}
+
+\Hypertarget{struct_trigger_a855d6b6a302d8d80e1d30ddd70fd403e}\index{Trigger@{Trigger}!op@{op}}
+\index{op@{op}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{op}{op}}
+{\footnotesize\ttfamily \label{struct_trigger_a855d6b6a302d8d80e1d30ddd70fd403e} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Trigger::\+op}
+
+\Hypertarget{struct_trigger_a8505fbdf63ca9eadf4b2585e99faa4e4}\index{Trigger@{Trigger}!pColumns@{pColumns}}
+\index{pColumns@{pColumns}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{pColumns}{pColumns}}
+{\footnotesize\ttfamily \label{struct_trigger_a8505fbdf63ca9eadf4b2585e99faa4e4} 
+\doxymbox{\hyperlink{struct_id_list}{Id\+List}}\texorpdfstring{$\ast$}{*} Trigger::\+p\+Columns}
+
+\Hypertarget{struct_trigger_ac28107e1c45789e0146fe45867b8dfdb}\index{Trigger@{Trigger}!pNext@{pNext}}
+\index{pNext@{pNext}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{pNext}{pNext}}
+{\footnotesize\ttfamily \label{struct_trigger_ac28107e1c45789e0146fe45867b8dfdb} 
+\doxymbox{\hyperlink{struct_trigger}{Trigger}}\texorpdfstring{$\ast$}{*} Trigger::\+p\+Next}
+
+\Hypertarget{struct_trigger_a83edbfa91ce6520a6ebc1a21acc2cd5e}\index{Trigger@{Trigger}!pSchema@{pSchema}}
+\index{pSchema@{pSchema}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{pSchema}{pSchema}}
+{\footnotesize\ttfamily \label{struct_trigger_a83edbfa91ce6520a6ebc1a21acc2cd5e} 
+\doxymbox{\hyperlink{struct_schema}{Schema}}\texorpdfstring{$\ast$}{*} Trigger::\+p\+Schema}
+
+\Hypertarget{struct_trigger_a8e4a9b3f4bcc5c645e1777b3bb94a6d8}\index{Trigger@{Trigger}!pTabSchema@{pTabSchema}}
+\index{pTabSchema@{pTabSchema}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{pTabSchema}{pTabSchema}}
+{\footnotesize\ttfamily \label{struct_trigger_a8e4a9b3f4bcc5c645e1777b3bb94a6d8} 
+\doxymbox{\hyperlink{struct_schema}{Schema}}\texorpdfstring{$\ast$}{*} Trigger::\+p\+Tab\+Schema}
+
+\Hypertarget{struct_trigger_a1b6cdd46e8b98562920d1acee86281ed}\index{Trigger@{Trigger}!pWhen@{pWhen}}
+\index{pWhen@{pWhen}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{pWhen}{pWhen}}
+{\footnotesize\ttfamily \label{struct_trigger_a1b6cdd46e8b98562920d1acee86281ed} 
+\doxymbox{\hyperlink{struct_expr}{Expr}}\texorpdfstring{$\ast$}{*} Trigger::\+p\+When}
+
+\Hypertarget{struct_trigger_a4206faaae6cdf1a2b22a2c9f15c88642}\index{Trigger@{Trigger}!step\_list@{step\_list}}
+\index{step\_list@{step\_list}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{step\_list}{step\_list}}
+{\footnotesize\ttfamily \label{struct_trigger_a4206faaae6cdf1a2b22a2c9f15c88642} 
+\doxymbox{\hyperlink{struct_trigger_step}{Trigger\+Step}}\texorpdfstring{$\ast$}{*} Trigger::\+step\+\_\+list}
+
+\Hypertarget{struct_trigger_ab9d5500f7fc43382e867733a2968ecae}\index{Trigger@{Trigger}!table@{table}}
+\index{table@{table}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily \label{struct_trigger_ab9d5500f7fc43382e867733a2968ecae} 
+char\texorpdfstring{$\ast$}{*} Trigger::\+table}
+
+\Hypertarget{struct_trigger_af0d10da140b068bfd76aaeb6607fa6cf}\index{Trigger@{Trigger}!tr\_tm@{tr\_tm}}
+\index{tr\_tm@{tr\_tm}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{tr\_tm}{tr\_tm}}
+{\footnotesize\ttfamily \label{struct_trigger_af0d10da140b068bfd76aaeb6607fa6cf} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} Trigger::\+tr\+\_\+tm}
+
+\Hypertarget{struct_trigger_a9aecea5dadd7ae93b7f585c4b914791c}\index{Trigger@{Trigger}!zName@{zName}}
+\index{zName@{zName}!Trigger@{Trigger}}
+\doxysubsubsection{\texorpdfstring{zName}{zName}}
+{\footnotesize\ttfamily \label{struct_trigger_a9aecea5dadd7ae93b7f585c4b914791c} 
+char\texorpdfstring{$\ast$}{*} Trigger::\+z\+Name}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}

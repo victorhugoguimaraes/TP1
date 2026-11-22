@@ -1,0 +1,67 @@
+\doxysection{Referência da Classe Limite}
+\hypertarget{class_limite}{}\label{class_limite}\index{Limite@{Limite}}
+
+
+Gerencia e valida um valor de limite num�rico inteiro dentro de um intervalo fixo.  
+
+
+
+
+{\ttfamily \+\#include $<$Limite.\+hpp$>$}
+
+\doxysubsubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_limite_ab6184ef868e2c406c66e02c8c8e81c8c}{set\+Limite}} (int limite)
+\begin{DoxyCompactList}\small\item\em Valida e define o novo valor do limite, caso dentro do intervalo permitido. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_limite_ac7bea5b158cd6cede3bb164b81b764b5}{get\+Limite}} () const
+\begin{DoxyCompactList}\small\item\em Recupera o valor do limite atualmente armazenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Gerencia e valida um valor de limite num�rico inteiro dentro de um intervalo fixo. 
+
+Esta classe encapsula um valor inteiro de limite de Work in Progress (WIP), garantindo que a quantidade de atividades no estado FAZENDO nunca sejam menor que 1 ou superior ao teto m�ximo definido. 
+
+\label{class_limite_doc-func-members}
+\Hypertarget{class_limite_doc-func-members}
+\doxysubsection{Documentação das funções}
+\Hypertarget{class_limite_ac7bea5b158cd6cede3bb164b81b764b5}\index{Limite@{Limite}!getLimite@{getLimite}}
+\index{getLimite@{getLimite}!Limite@{Limite}}
+\doxysubsubsection{\texorpdfstring{getLimite()}{getLimite()}}
+{\footnotesize\ttfamily \label{class_limite_ac7bea5b158cd6cede3bb164b81b764b5} 
+int Limite::\+get\+Limite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Recupera o valor do limite atualmente armazenado. 
+
+\begin{DoxyReturn}{Retorna}
+O valor inteiro do limite atual. 
+\end{DoxyReturn}
+\Hypertarget{class_limite_ab6184ef868e2c406c66e02c8c8e81c8c}\index{Limite@{Limite}!setLimite@{setLimite}}
+\index{setLimite@{setLimite}!Limite@{Limite}}
+\doxysubsubsection{\texorpdfstring{setLimite()}{setLimite()}}
+{\footnotesize\ttfamily \label{class_limite_ab6184ef868e2c406c66e02c8c8e81c8c} 
+void Limite::\+set\+Limite (\begin{DoxyParamCaption}\item[{int}]{limite}{}\end{DoxyParamCaption})}
+
+
+
+Valida e define o novo valor do limite, caso dentro do intervalo permitido. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em limite} & O novo valor inteiro a ser atribu�do. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceções}
+{\em invalid\+\_\+argument} & Se o valor for menor que 1 ou maior que limite\+Max ("{}\+Limite m�ximo atingido"{}). \\
+\hline
+\end{DoxyExceptions}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos:\begin{DoxyCompactItemize}
+\item 
+dominios/\doxymbox{\hyperlink{_limite_8hpp}{Limite.\+hpp}}\item 
+dominios/\doxymbox{\hyperlink{_limite_8cpp}{Limite.\+cpp}}\end{DoxyCompactItemize}

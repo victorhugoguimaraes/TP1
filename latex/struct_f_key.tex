@@ -1,0 +1,100 @@
+\doxysection{Referência da Estrutura FKey}
+\hypertarget{struct_f_key}{}\label{struct_f_key}\index{FKey@{FKey}}
+\doxysubsubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_f_key_1_1s_col_map}{s\+Col\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Campos de Dados}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{struct_table}{Table}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_a6d476f3fbfa75a19c5c5a9edec4e79eb}{p\+From}}
+\item 
+\doxymbox{\hyperlink{struct_f_key}{FKey}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_ac64ff66b30167715c8822a74c2809075}{p\+Next\+From}}
+\item 
+char \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_a1eac10bab38a0ac9f88306fbbabbe5d6}{z\+To}}
+\item 
+\doxymbox{\hyperlink{struct_f_key}{FKey}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_ac29b26999113602e7e3921bf07643c04}{p\+Next\+To}}
+\item 
+\doxymbox{\hyperlink{struct_f_key}{FKey}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_a56189e420e91df86513e6895db518eca}{p\+Prev\+To}}
+\item 
+int \doxymbox{\hyperlink{struct_f_key_a611e3223f3f434e0a635e036dc100cbb}{n\+Col}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_f_key_ab742714b17f2c13353837e1fdde51cc7}{is\+Deferred}}
+\item 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} \doxymbox{\hyperlink{struct_f_key_a68a08f58294bf845e9c77d785499d222}{a\+Action}} \+[2]
+\item 
+\doxymbox{\hyperlink{struct_trigger}{Trigger}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{struct_f_key_a9ce15cb27b675836bc714ab18fd8a008}{ap\+Trigger}} \+[2]
+\item 
+struct \doxymbox{\hyperlink{struct_f_key_1_1s_col_map}{FKey::\+s\+Col\+Map}} \doxymbox{\hyperlink{struct_f_key_a1c6a6bfc6bb35effef3cc92084e2c5ba}{a\+Col}} \+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]
+\end{DoxyCompactItemize}
+
+
+\label{struct_f_key_doc-variable-members}
+\Hypertarget{struct_f_key_doc-variable-members}
+\doxysubsection{Campos}
+\Hypertarget{struct_f_key_a68a08f58294bf845e9c77d785499d222}\index{FKey@{FKey}!aAction@{aAction}}
+\index{aAction@{aAction}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{aAction}{aAction}}
+{\footnotesize\ttfamily \label{struct_f_key_a68a08f58294bf845e9c77d785499d222} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} FKey::\+a\+Action\+[2]}
+
+\Hypertarget{struct_f_key_a1c6a6bfc6bb35effef3cc92084e2c5ba}\index{FKey@{FKey}!aCol@{aCol}}
+\index{aCol@{aCol}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{aCol}{aCol}}
+{\footnotesize\ttfamily \label{struct_f_key_a1c6a6bfc6bb35effef3cc92084e2c5ba} 
+struct \doxymbox{\hyperlink{struct_f_key_1_1s_col_map}{FKey::\+s\+Col\+Map}} FKey::\+a\+Col\+[\doxymbox{\hyperlink{sqlite3_8c_aea5804730a469abffcdaff833df37977}{FLEXARRAY}}]}
+
+\Hypertarget{struct_f_key_a9ce15cb27b675836bc714ab18fd8a008}\index{FKey@{FKey}!apTrigger@{apTrigger}}
+\index{apTrigger@{apTrigger}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{apTrigger}{apTrigger}}
+{\footnotesize\ttfamily \label{struct_f_key_a9ce15cb27b675836bc714ab18fd8a008} 
+\doxymbox{\hyperlink{struct_trigger}{Trigger}}\texorpdfstring{$\ast$}{*} FKey::\+ap\+Trigger\+[2]}
+
+\Hypertarget{struct_f_key_ab742714b17f2c13353837e1fdde51cc7}\index{FKey@{FKey}!isDeferred@{isDeferred}}
+\index{isDeferred@{isDeferred}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{isDeferred}{isDeferred}}
+{\footnotesize\ttfamily \label{struct_f_key_ab742714b17f2c13353837e1fdde51cc7} 
+\doxymbox{\hyperlink{sqlite3_8c_a74a0f6424ae628af25f23f0a35f6ead3}{u8}} FKey::\+is\+Deferred}
+
+\Hypertarget{struct_f_key_a611e3223f3f434e0a635e036dc100cbb}\index{FKey@{FKey}!nCol@{nCol}}
+\index{nCol@{nCol}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{nCol}{nCol}}
+{\footnotesize\ttfamily \label{struct_f_key_a611e3223f3f434e0a635e036dc100cbb} 
+int FKey::\+n\+Col}
+
+\Hypertarget{struct_f_key_a6d476f3fbfa75a19c5c5a9edec4e79eb}\index{FKey@{FKey}!pFrom@{pFrom}}
+\index{pFrom@{pFrom}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{pFrom}{pFrom}}
+{\footnotesize\ttfamily \label{struct_f_key_a6d476f3fbfa75a19c5c5a9edec4e79eb} 
+\doxymbox{\hyperlink{struct_table}{Table}}\texorpdfstring{$\ast$}{*} FKey::\+p\+From}
+
+\Hypertarget{struct_f_key_ac64ff66b30167715c8822a74c2809075}\index{FKey@{FKey}!pNextFrom@{pNextFrom}}
+\index{pNextFrom@{pNextFrom}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{pNextFrom}{pNextFrom}}
+{\footnotesize\ttfamily \label{struct_f_key_ac64ff66b30167715c8822a74c2809075} 
+\doxymbox{\hyperlink{struct_f_key}{FKey}}\texorpdfstring{$\ast$}{*} FKey::\+p\+Next\+From}
+
+\Hypertarget{struct_f_key_ac29b26999113602e7e3921bf07643c04}\index{FKey@{FKey}!pNextTo@{pNextTo}}
+\index{pNextTo@{pNextTo}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{pNextTo}{pNextTo}}
+{\footnotesize\ttfamily \label{struct_f_key_ac29b26999113602e7e3921bf07643c04} 
+\doxymbox{\hyperlink{struct_f_key}{FKey}}\texorpdfstring{$\ast$}{*} FKey::\+p\+Next\+To}
+
+\Hypertarget{struct_f_key_a56189e420e91df86513e6895db518eca}\index{FKey@{FKey}!pPrevTo@{pPrevTo}}
+\index{pPrevTo@{pPrevTo}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{pPrevTo}{pPrevTo}}
+{\footnotesize\ttfamily \label{struct_f_key_a56189e420e91df86513e6895db518eca} 
+\doxymbox{\hyperlink{struct_f_key}{FKey}}\texorpdfstring{$\ast$}{*} FKey::\+p\+Prev\+To}
+
+\Hypertarget{struct_f_key_a1eac10bab38a0ac9f88306fbbabbe5d6}\index{FKey@{FKey}!zTo@{zTo}}
+\index{zTo@{zTo}!FKey@{FKey}}
+\doxysubsubsection{\texorpdfstring{zTo}{zTo}}
+{\footnotesize\ttfamily \label{struct_f_key_a1eac10bab38a0ac9f88306fbbabbe5d6} 
+char\texorpdfstring{$\ast$}{*} FKey::\+z\+To}
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo:\begin{DoxyCompactItemize}
+\item 
+sqlite/\doxymbox{\hyperlink{sqlite3_8c}{sqlite3.\+c}}\end{DoxyCompactItemize}
